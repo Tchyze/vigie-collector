@@ -36,3 +36,5 @@
   file: openssh/tags.atom
 - url: https://support.fortinet.com/rss/firmware.xml
   file: fortinet/firmware.xml
+- url: https://www.fortiguard.com/rss/ir.xml
+  file: fortinet/ir.xml
