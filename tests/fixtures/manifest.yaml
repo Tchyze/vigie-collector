@@ -21,3 +21,9 @@
   file: endoflife/nginx.json
 - url: https://endoflife.date/api/v1/products/apache-http-server
   file: endoflife/apache-http-server.json
+- url: https://nginx.org/en/CHANGES
+  file: nginx/CHANGES
+  trim: {head_lines: 400}
+- url: https://nginx.org/en/CHANGES-1.30
+  file: nginx/CHANGES-1.30
+  trim: {head_lines: 200}

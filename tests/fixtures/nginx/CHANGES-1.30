@@ -1,0 +1,200 @@
+
+Changes with nginx 1.30.6                                        14 Oct 2026
+
+    *) Security: a buffer overflow might occur in a worker process when
+       using the "alias" directive if the request URI was changed by the
+       "rewrite" directive and was then mapped to a file path
+       (CVE-2026-15176).
+
+    *) Security: a buffer overflow might occur in a worker process while
+       evaluating string expressions with variables, which affected the
+       document root calculation and request logging in the http and stream
+       modules (CVE-2026-93479).
+       Thanks to Matt Suiche of Tolmo Inc.
+
+    *) Security: when using HTTP/3 a part of an unknown frame might be
+       treated as the request body, which might result in bypassing the
+       "client_max_body_size" limit or injecting data in the proxied request
+       (CVE-2026-95101).
+       Thanks to Hansol Lee of GOTROOT.
+
+    *) Security: when using TLS session ticket key rotation, one of the keys
+       was left uninitialized, which might allow to forge a session
+       (CVE-2026-97629).
+       Thanks to PhiNode Labs.
+
+    *) Security: when using asynchronous file I/O (AIO), use-after-free
+       might occur in certain configurations if the SSI page has "include
+       virtual" commands (CVE-2026-97205).
+       Thanks to cyberlancer.
+
+    *) Change: the logging level of the "invalid alert" and "record layer
+       failure" SSL errors, and of the "SSL alert number N" for any alert
+       numbers has been lowered from "crit" to "info".
+
+    *) Bugfix: a segmentation fault might occur in a worker process or
+       "request count is zero" alerts might appear in logs if the
+       "X-Accel-Redirect" header line was cached and the cached response was
+       then served to a client.
+       Thanks to Jiří Setnička and Maxim Dounin.
+
+    *) Bugfix: a segmentation fault might occur in a worker process if the
+       ngx_http_dav_module was used to handle COPY and MOVE methods in a
+       location with the "alias" directive.
+       Thanks to Maxim Dounin.
+
+    *) Bugfix: a segmentation fault might occur while reading configuration
+       if the "geo" directive with the "ranges" parameter was used and the
+       corresponding binary base file was corrupted.
+
+    *) Bugfix: use-after-free might occur in a worker process if proxying
+       with buffering was used and an error occurred while sending the
+       response to an HTTP/2 client.
+
+    *) Bugfix: a worker process might not exit or "accept4() failed (9: Bad
+       file descriptor)" alerts might appear in logs if the worker process
+       ran out of file descriptors before graceful shutdown.
+
+    *) Bugfix: a segmentation fault might occur in a worker process if the
+       "select" method was used.
+
+    *) Bugfix: in binary compatibility with third-party modules using script
+       codes; the bug had appeared in 1.30.4.
+
+    *) Bugfix: in the ngx_http_perl_module.
+       Thanks to Maxim Dounin.
+
+    *) Bugfix: in flow control in the ngx_http_v2_module.
+
+    *) Bugfix: "[error] upstream sent frame for unknown stream" and "[crit]
+       cache file ... contains invalid header" messages might appear in logs
+       when sending a cached HTTP/2 response in the ngx_http_proxy_v2_module
+       if the "proxy_cache_revalidate" directive was used.
+
+    *) Bugfix: IPv6 fragmentation might not be disabled when using QUIC on
+       some operating systems.
+
+    *) Bugfix: in the ngx_http_auth_basic_module on Solaris.
+
+    *) Bugfixes in HTTP/3, ngx_http_image_filter_module,
+       ngx_http_slice_module, and ngx_http_memcached_module.
+
+
+Changes with nginx 1.30.5                                        15 Sep 2026
+
+    *) Security: a heap memory buffer overflow might occur in a worker
+       process under certain configurations when using HTTP/3 with OpenSSL
+       3.5.0 and earlier (CVE-2026-90439).
+       Thanks to Banny Liao.
+
+    *) Change: now the QUIC transport parameters extension received in an
+       SSL connection is always ignored.
+
+
+Changes with nginx 1.30.4                                        15 Jul 2026
+
+    *) Security: heap buffer overflow might occur in a worker process when
+       using the map directive with regex matching if the map variable was
+       included in a string expression after a capture affected by this map;
+       a similar issue might happen when using a non-cacheable variable in a
+       string expression (CVE-2026-42533).
+       Thanks to Mufeed VH of Winfunc Research and Maxim Dounin.
+
+    *) Security: uninitialized memory access might occur when using unnamed
+       regex captures with the "slice" directive or background cache update,
+       which could result in worker process memory disclosure or worker
+       process termination (CVE-2026-60005).
+
+    *) Security: use-after-free might occur when processing a specially
+       crafted proxied backend response with the ngx_http_ssi_filter_module
+       (CVE-2026-56434).
+       Thanks to P4P3R-HAK.
+
+
+Changes with nginx 1.30.3                                        17 Jun 2026
+
+    *) Security: a heap memory buffer overflow might occur in a worker
+       process when using a configuration with "ignore_invalid_headers off;"
+       and "large_client_header_buffers" with large configured values when
+       proxying a specially crafted request to HTTP/2 or gRPC backend,
+       allowing an attacker to cause worker process memory corruption or
+       segmentation fault in a worker process (CVE-2026-42055).
+       Thanks to Mufeed VH of Winfunc Research.
+
+    *) Security: a heap memory buffer overread might occur in a worker
+       process while handling a specially sent response with decoding from
+       UTF-8 via the "charset_map" directive, allowing an attacker to cause
+       a limited disclosure of worker proccess memory or segmentation fault
+       in a worker process (CVE-2026-48142).
+       Thanks to Han Yan of Xiaomi and p4p3r of CYBERONE.
+
+
+Changes with nginx 1.30.2                                        22 May 2026
+
+    *) Security: a heap memory buffer overflow might occur in a worker
+       process when using a configuration with overlapping captures in
+       ngx_http_rewrite_module, potentially resulting in arbitrary code
+       execution (CVE-2026-9256).
+       Thanks to Mufeed VH of Winfunc Research.
+
+
+Changes with nginx 1.30.1                                        13 May 2026
+
+    *) Security: when using the "proxy_set_body" directive, an attacker
+       might inject data in the proxied request to an HTTP/2 backend
+       (CVE-2026-42926).
+       Thanks to Mufeed VH of Winfunc Research.
+
+    *) Security: a heap memory buffer overflow might occur in a worker
+       process while handling a specially crafted request by
+       ngx_http_rewrite_module, potentially resulting in arbitrary code
+       execution (CVE-2026-42945).
+       Thanks to Leo Lin.
+
+    *) Security: a heap memory buffer overread might occur in a worker
+       process while handling a specially crafted response by
+       ngx_http_scgi_module or ngx_http_uwsgi_module, allowing an attacker
+       to cause a disclosure of worker process memory or segmentation fault
+       in a worker process (CVE-2026-42946).
+       Thanks to Leo Lin.
+
+    *) Security: a heap memory buffer overread might occur in a worker
+       process while handling a specially sent response with decoding from
+       UTF-8 via the "charset_map" directive, allowing an attacker to cause
+       a limited disclosure of worker proccess memory or segmentation fault
+       in a worker process (CVE-2026-42934).
+       Thanks to David Carlier.
+
+    *) Security: when using HTTP/3, processing of connection migration might
+       cause new QUIC streams to receive a new client address before
+       validation, allowing an attacker to cause address spoofing
+       (CVE-2026-40460).
+       Thanks to Rodrigo Laneth.
+
+    *) Security: use-after-free might occur during DNS server response
+       processing if the "ssl_ocsp" directive was used, allowing an attacker
+       to cause worker process memory corruption or segmentation fault in a
+       worker process (CVE-2026-40701).
+       Thanks to Leo Lin.
+
+    *) Bugfix: connections with HTTP/2 backends might not be cached when
+       using the "proxy_set_body" or "proxy_pass_request_body" directives.
+
+    *) Bugfix: proxied HTTP/0.9, SCGI, or uWSGI responses might be
+       transferred incorrectly if the first line was not fully read.
+
+
+Changes with nginx 1.30.0                                        14 Apr 2026
+
+    *) 1.30.x stable branch.
+
+
+Changes with nginx 1.29.8                                        07 Apr 2026
+
+    *) Feature: the "max_headers" directive.
+       Thanks to Maxim Dounin.
+
+    *) Feature: OpenSSL 4.0 compatibility.
+
+    *) Feature: now the "include" directive inside the "geo" block supports
+       wildcards.
