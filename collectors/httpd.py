@@ -10,7 +10,7 @@ import re
 
 import feedparser
 
-from collectors._text import change_summary, cves, date_from_struct
+from collectors._text import change_summary, cves, date_from_struct, tag_name
 from collectors.base import Collector, Context
 from vigie.models import BranchData, CollectResult, Release
 
@@ -35,10 +35,10 @@ class Httpd(Collector):
 
         branches: dict[str, BranchData] = {}
         for entry in feed.entries:
-            match = VERSION.match(entry.title.strip())
+            version = tag_name(entry)
+            match = VERSION.match(version)
             if not match:
                 continue  # candidats « 2.4.69-rc1-candidate » et autres tags
-            version = entry.title.strip()
             security_fix, summary = changes.get(version, (None, None))
             name = f"{match[1]}.{match[2]}"
             branch = branches.setdefault(name, BranchData(product="apache-httpd", branch=name))

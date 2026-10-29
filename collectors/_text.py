@@ -50,6 +50,15 @@ def date_from_struct(value: time.struct_time | None) -> str | None:
     return time.strftime("%Y-%m-%d", value) if value else None
 
 
+def tag_name(entry) -> str:
+    """Nom d'un tag dans un flux Atom GitHub (tags.atom).
+
+    Le titre d'un tag annoté contient aussi son message (« V_10_0_P2: openssh-10.0p2 ») ;
+    l'identifiant, lui, se termine toujours par le nom seul.
+    """
+    return (entry.get("id") or entry.get("title") or "").rsplit("/", 1)[-1].strip()
+
+
 def parse_day_month_year(text: str) -> str:
     """« 21 Oct 2026 » -> « 2026-10-21 », indépendamment de la locale."""
     day, month, year = text.split()

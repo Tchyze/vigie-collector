@@ -9,7 +9,7 @@ import re
 
 import feedparser
 
-from collectors._text import date_from_struct
+from collectors._text import date_from_struct, tag_name
 from collectors.base import Collector, Context
 from vigie.models import BranchData, CollectResult, Release
 
@@ -30,7 +30,7 @@ class OpenSSH(Collector):
             raise ValueError(f"flux Atom illisible : {feed.bozo_exception}")
         branch = BranchData(product="openssh", branch="portable")
         for entry in feed.entries:
-            match = TAG.match(entry.title.strip())
+            match = TAG.match(tag_name(entry))
             if not match:
                 continue
             base = ".".join(part for part in match.groups()[:3] if part is not None)

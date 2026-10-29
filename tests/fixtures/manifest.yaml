@@ -32,3 +32,5 @@
 - url: https://downloads.apache.org/httpd/CHANGES_2.4
   file: httpd/CHANGES_2.4
   trim: {head_lines: 700}
+- url: https://github.com/openssh/openssh-portable/tags.atom
+  file: openssh/tags.atom

@@ -102,3 +102,9 @@ products:
     endoflife: apache-http-server
     eol_fields:
       eol: end_of_security_support    # « Security Support »
+
+  openssh:
+    label: OpenSSH
+    vendor: OpenBSD
+    category: service
+    single_branch: portable           # absent d'endoflife.date ; une seule branche maintenue
