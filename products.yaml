@@ -1,0 +1,26 @@
+# Catalogue des produits suivis par Vigie.
+#
+# Pour chaque produit :
+#   label, vendor, category (firewall | switch | os | service)
+#   endoflife     : identifiant endoflife.date (absent si le produit n'y est pas)
+#   eol_fields    : correspondance entre les dates endoflife.date et les dates Vigie.
+#                   Par défaut : eoas -> end_of_active_support, eol -> end_of_life,
+#                   eoes -> end_of_extended_support. Les libellés d'origine (labels)
+#                   sont publiés pour chaque date.
+#   trigger       : date qui fixe le statut (par défaut celle qui reçoit le champ « eol »)
+#   single_branch : nom de l'unique branche d'un produit qui n'en a pas
+
+settings:
+  eol_soon_months: 6
+  advisory_retention_days: 365
+
+products:
+  debian:
+    label: Debian
+    vendor: Debian
+    category: os
+    endoflife: debian
+    eol_fields:
+      eoas: end_of_security_support   # « Debian Security Support »
+      eol: end_of_life                 # « Debian LTS »
+      eoes: end_of_extended_support    # « ELTS »

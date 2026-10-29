@@ -1,0 +1,3 @@
+# Réponses réelles enregistrées par scripts/record_fixtures.py, rejouées par tests/conftest.py.
+- url: https://endoflife.date/api/v1/products/debian
+  file: endoflife/debian.json
