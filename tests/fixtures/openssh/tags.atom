@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/openssh/openssh-portable/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/openssh/openssh-portable/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/openssh/openssh-portable/releases.atom"/>
+  <title>Tags from openssh-portable</title>
+  <updated>2026-10-06T08:46:02Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_6_P1</id>
+    <updated>2026-10-06T08:46:02Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_6_P1"/>
+    <title>V_10_6_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_5_P1</id>
+    <updated>2026-08-11T02:22:35Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_5_P1"/>
+    <title>V_10_5_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_4_P1</id>
+    <updated>2026-07-06T08:00:26Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_4_P1"/>
+    <title>V_10_4_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_3_P1</id>
+    <updated>2026-04-02T08:09:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_3_P1"/>
+    <title>V_10_3_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_2_P1</id>
+    <updated>2025-10-10T02:41:32Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_2_P1"/>
+    <title>V_10_2_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_1_P1</id>
+    <updated>2025-10-06T02:26:00Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_1_P1"/>
+    <title>V_10_1_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_0_P2</id>
+    <updated>2025-04-09T23:41:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_0_P2"/>
+    <title>V_10_0_P2: openssh-10.0p2</title>
+    <content type="html">&lt;p&gt;openssh-10.0p2&lt;/p&gt;
+
+&lt;p&gt;(identical to 10.0p1)&lt;/p&gt;</content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_10_0_P1</id>
+    <updated>2025-04-09T07:02:49Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_10_0_P1"/>
+    <title>V_10_0_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_9_9_P2</id>
+    <updated>2025-02-18T08:16:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_9_9_P2"/>
+    <title>V_9_9_P2</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/15991457/V_9_9_P1</id>
+    <updated>2024-09-19T22:24:58Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/openssh/openssh-portable/releases/tag/V_9_9_P1"/>
+    <title>V_9_9_P1</title>
+    <content></content>
+    <author>
+      <name>djmdjm</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/170281?s=60&amp;v=4"/>
+  </entry>
+</feed>

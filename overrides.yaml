@@ -1,0 +1,26 @@
+# Surcharges manuelles, prioritaires sur toutes les sources.
+#
+# Format : produit -> branche -> champs à imposer. Tous les champs sont facultatifs.
+#
+# fortios:
+#   "7.4":
+#     label: "7.4"
+#     lts: false
+#     release_date: 2023-05-11
+#     latest_version: "7.4.13"
+#     latest_release_date: 2026-10-20
+#     eol:
+#       end_of_active_support: 2026-11-14
+#       end_of_life: 2027-11-14
+#       trigger: end_of_life
+#       declared_eol: false
+#       source_url: https://support.fortinet.com/...
+#     releases:
+#       - version: "7.4.13"
+#         date: 2026-10-20
+#         security_fix: true
+#         summary: "Correctifs de sécurité"
+#         url: https://docs.fortinet.com/...
+#
+# Une branche absente des sources peut être créée ici si son produit est dans products.yaml.
+{}

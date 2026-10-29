@@ -1,0 +1,60 @@
+# Réponses réelles enregistrées par scripts/record_fixtures.py, rejouées par tests/conftest.py.
+- url: https://endoflife.date/api/v1/products/debian
+  file: endoflife/debian.json
+- url: https://endoflife.date/api/v1/products/rhel
+  file: endoflife/rhel.json
+- url: https://endoflife.date/api/v1/products/rocky-linux
+  file: endoflife/rocky-linux.json
+- url: https://endoflife.date/api/v1/products/windows-server
+  file: endoflife/windows-server.json
+- url: https://endoflife.date/api/v1/products/proxmox-ve
+  file: endoflife/proxmox-ve.json
+- url: https://endoflife.date/api/v1/products/fortios
+  file: endoflife/fortios.json
+- url: https://endoflife.date/api/v1/products/panos
+  file: endoflife/panos.json
+- url: https://endoflife.date/api/v1/products/sns-firmware
+  file: endoflife/sns-firmware.json
+- url: https://endoflife.date/api/v1/products/cisco-ios-xe
+  file: endoflife/cisco-ios-xe.json
+- url: https://endoflife.date/api/v1/products/nginx
+  file: endoflife/nginx.json
+- url: https://endoflife.date/api/v1/products/apache-http-server
+  file: endoflife/apache-http-server.json
+- url: https://nginx.org/en/CHANGES
+  file: nginx/CHANGES
+  trim: {head_lines: 400}
+- url: https://nginx.org/en/CHANGES-1.30
+  file: nginx/CHANGES-1.30
+  trim: {head_lines: 200}
+- url: https://github.com/apache/httpd/tags.atom
+  file: httpd/tags.atom
+- url: https://downloads.apache.org/httpd/CHANGES_2.4
+  file: httpd/CHANGES_2.4
+  trim: {head_lines: 700}
+- url: https://github.com/openssh/openssh-portable/tags.atom
+  file: openssh/tags.atom
+- url: https://support.fortinet.com/rss/firmware.xml
+  file: fortinet/firmware.xml
+- url: https://www.fortiguard.com/rss/ir.xml
+  file: fortinet/ir.xml
+- url: https://security.paloaltonetworks.com/json/?limit=100&sort=-updated
+  file: paloalto/advisories.json
+  trim: {json_head: 30}
+- url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
+  file: cisco/CiscoSecurityAdvisory.xml
+- url: https://www.cert.cyber.gouv.fr/avis/feed/
+  file: certfr/avis.xml
+- url: https://www.cert.cyber.gouv.fr/alerte/feed/
+  file: certfr/alerte.xml
+- url: https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1381/json/
+  file: certfr/CERTFR-2026-AVI-1381.json
+- url: https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1382/json/
+  file: certfr/CERTFR-2026-AVI-1382.json
+- url: https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-004/json/
+  file: certfr/CERTFR-2024-ALE-004.json
+- url: https://salsa.debian.org/security-tracker-team/security-tracker/-/raw/master/data/DSA/list
+  file: debian/DSA-list
+  trim: {head_lines: 400}
+- url: https://www.debian.org/security/dsa-long
+  file: debian/dsa-long.rdf

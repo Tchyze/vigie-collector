@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/apache/httpd/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/apache/httpd/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/apache/httpd/releases.atom"/>
+  <title>Tags from httpd</title>
+  <updated>2026-10-01T12:55:04Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.69</id>
+    <updated>2026-10-01T12:55:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.69"/>
+    <title>2.4.69</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.69-rc1-candidate</id>
+    <updated>2026-09-29T11:57:11Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.69-rc1-candidate"/>
+    <title>2.4.69-rc1-candidate</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.68</id>
+    <updated>2026-06-08T12:04:29Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.68"/>
+    <title>2.4.68</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.68-rc1-candidate</id>
+    <updated>2026-06-05T12:03:44Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.68-rc1-candidate"/>
+    <title>2.4.68-rc1-candidate</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.67</id>
+    <updated>2026-05-04T11:25:09Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.67"/>
+    <title>2.4.67</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.67-rc2-candidate</id>
+    <updated>2026-04-28T18:13:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.67-rc2-candidate"/>
+    <title>2.4.67-rc2-candidate</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.67-rc1-candidate</id>
+    <updated>2026-04-26T16:46:27Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.67-rc1-candidate"/>
+    <title>2.4.67-rc1-candidate</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.66</id>
+    <updated>2025-12-04T13:18:31Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.66"/>
+    <title>2.4.66</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.66-rc1-candidate</id>
+    <updated>2025-12-01T12:43:04Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.66-rc1-candidate"/>
+    <title>2.4.66-rc1-candidate</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/205423/2.4.65</id>
+    <updated>2025-07-23T11:31:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/apache/httpd/releases/tag/2.4.65"/>
+    <title>2.4.65</title>
+    <content></content>
+    <author>
+      <name>covener</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/908093?s=60&amp;v=4"/>
+  </entry>
+</feed>
