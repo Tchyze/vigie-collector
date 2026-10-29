@@ -24,3 +24,81 @@ products:
       eoas: end_of_security_support   # « Debian Security Support »
       eol: end_of_life                 # « Debian LTS »
       eoes: end_of_extended_support    # « ELTS »
+
+  rhel:
+    label: Red Hat Enterprise Linux
+    vendor: Red Hat
+    category: os
+    endoflife: rhel
+    eol_fields:
+      eoas: end_of_active_support     # « Full Support »
+      eol: end_of_security_support    # « Maintenance Support » (correctifs de sécurité)
+      eoes: end_of_extended_support   # « Extended Life Cycle Support »
+
+  rocky-linux:
+    label: Rocky Linux
+    vendor: Rocky Enterprise Software Foundation
+    category: os
+    endoflife: rocky-linux
+    eol_fields:
+      eol: end_of_security_support    # « Security Support »
+
+  windows-server:
+    label: Windows Server
+    vendor: Microsoft
+    category: os
+    endoflife: windows-server
+    eol_fields:
+      eol: end_of_security_support    # « Security Support »
+      eoes: end_of_extended_support   # « Extended Security Updates »
+
+  proxmox-ve:
+    label: Proxmox VE
+    vendor: Proxmox
+    category: os
+    endoflife: proxmox-ve
+    eol_fields:
+      eol: end_of_security_support    # « Security Support »
+
+  fortios:
+    label: FortiOS
+    vendor: Fortinet
+    category: firewall
+    endoflife: fortios                # eoas « End of Engineering Support », eol « End of Support »
+
+  panos:
+    label: PAN-OS
+    vendor: Palo Alto Networks
+    category: firewall
+    endoflife: panos                  # eol « End-of-life Date »
+
+  stormshield-sns:
+    label: Stormshield SNS
+    vendor: Stormshield
+    category: firewall
+    endoflife: sns-firmware           # eoas « Maintenance Support », eol « Lifecycle Support »
+
+  cisco-ios-xe:
+    label: Cisco IOS XE
+    vendor: Cisco
+    category: switch
+    endoflife: cisco-ios-xe
+    eol_fields:
+      eoas: end_of_active_support     # « Maintenance Support »
+      eol: end_of_security_support    # « Security Support »
+
+  nginx:
+    label: nginx
+    vendor: F5 NGINX
+    category: service
+    endoflife: nginx
+    eol_fields:
+      eol: end_of_security_support    # « Security Support »
+
+  apache-httpd:
+    label: Apache HTTP Server
+    vendor: Apache Software Foundation
+    category: service
+    endoflife: apache-http-server
+    eol_fields:
+      eol: end_of_security_support    # « Security Support »

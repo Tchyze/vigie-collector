@@ -65,7 +65,9 @@ def test_failing_source_keeps_previous_data(tmp_path):
 
 def test_zero_results_after_non_zero_fails(tmp_path):
     assert run_build(tmp_path, out="first") == 0
-    empty = {"https://endoflife.date/api/v1/products/debian": httpx.Response(200, json={"result": {"releases": []}})}
+    catalog = load_catalog(ROOT / "products.yaml")
+    empty = {f"https://endoflife.date/api/v1/products/{p.endoflife}": httpx.Response(200, json={"result": {"releases": []}})
+             for p in catalog.products.values() if p.endoflife}
     sources = [c for c in collectors.ALL if c.name == "endoflife"]
     code = run_build(tmp_path, out="second", previous="first", client=fixture_client(empty), sources=sources)
     assert code == 1

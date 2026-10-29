@@ -1,3 +1,23 @@
 # Réponses réelles enregistrées par scripts/record_fixtures.py, rejouées par tests/conftest.py.
 - url: https://endoflife.date/api/v1/products/debian
   file: endoflife/debian.json
+- url: https://endoflife.date/api/v1/products/rhel
+  file: endoflife/rhel.json
+- url: https://endoflife.date/api/v1/products/rocky-linux
+  file: endoflife/rocky-linux.json
+- url: https://endoflife.date/api/v1/products/windows-server
+  file: endoflife/windows-server.json
+- url: https://endoflife.date/api/v1/products/proxmox-ve
+  file: endoflife/proxmox-ve.json
+- url: https://endoflife.date/api/v1/products/fortios
+  file: endoflife/fortios.json
+- url: https://endoflife.date/api/v1/products/panos
+  file: endoflife/panos.json
+- url: https://endoflife.date/api/v1/products/sns-firmware
+  file: endoflife/sns-firmware.json
+- url: https://endoflife.date/api/v1/products/cisco-ios-xe
+  file: endoflife/cisco-ios-xe.json
+- url: https://endoflife.date/api/v1/products/nginx
+  file: endoflife/nginx.json
+- url: https://endoflife.date/api/v1/products/apache-http-server
+  file: endoflife/apache-http-server.json
