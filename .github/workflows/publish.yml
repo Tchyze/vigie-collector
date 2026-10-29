@@ -1,0 +1,56 @@
+name: Collecte et publication
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # toutes les 6 heures
+  workflow_dispatch:
+
+permissions:
+  contents: write            # publication sur la branche gh-pages
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Installation
+        run: pip install .
+
+      # Dernière publication : état de chaque source (données à garder si une source échoue,
+      # historique des versions) et nombre de résultats précédents.
+      - name: Récupération de la dernière publication
+        run: |
+          mkdir previous
+          if git fetch --depth 1 origin gh-pages; then
+            git archive FETCH_HEAD | tar -x -C previous
+          else
+            echo "Pas encore de branche gh-pages : premier passage."
+          fi
+
+      # Échoue (et ne publie pas) si la validation du schéma échoue ou si une source
+      # tombe à 0 résultat alors qu'elle en renvoyait avant.
+      - name: Collecte
+        run: python build.py --output output --previous previous
+
+      - name: Publication sur gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./output
+          force_orphan: true   # un seul commit sur gh-pages : pas d'historique de données
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          full_commit_message: "Données Vigie (${{ github.sha }})"
