@@ -10,6 +10,7 @@ HPE Aruba, Microsoft…). Le domaine a migré vers cert.cyber.gouv.fr.
 Les systèmes touchés sont décrits en texte libre : `affected` reste vide.
 """
 
+import datetime as dt
 import logging
 import re
 
@@ -36,6 +37,7 @@ class CertFr(Collector):
 
     def collect(self, ctx: Context) -> CollectResult:
         previous = {a.id: a for a in (ctx.previous.advisories if ctx.previous else [])}
+        cutoff = (ctx.today - dt.timedelta(days=ctx.catalog.advisory_retention_days)).isoformat()
         advisories, budget = [], MAX_JSON_PER_RUN
         for feed_url in FEEDS:
             feed = feedparser.parse(ctx.client.get(feed_url).content)
@@ -59,6 +61,10 @@ class CertFr(Collector):
                 known = previous.get(advisory.id)
                 if known and known.title == advisory.title and known.cves:
                     advisory.cves, advisory.updated = known.cves, known.updated
+                elif not known and published[:10] < cutoff:
+                    # Alerte ancienne (le flux garde les alertes publiées il y a des années) :
+                    # hors rétention, elle serait retéléchargée à chaque passage pour rien.
+                    pass
                 elif budget > 0:
                     budget -= 1
                     self._enrich(ctx, advisory, link)

@@ -18,9 +18,8 @@ def test_avis_and_alertes(ctx):
     assert tenable.updated is None  # une seule révision
     assert tenable.affected == []
 
-    fortios = advisories["CERTFR-2024-ALE-004"]
-    assert fortios.cves == ["CVE-2024-21762"]
-    assert fortios.updated == "2024-07-01T00:00:00Z"  # dernière révision
+    # alerte de 2024, hors rétention : gardée dans le résultat, mais son JSON n'est pas demandé
+    assert advisories["CERTFR-2024-ALE-004"].cves == []
 
     # JSON absent : l'avis est gardé, sans CVE
     assert advisories["CERTFR-2026-AVI-1383"].cves == []
@@ -44,3 +43,10 @@ def test_json_budget_per_run(ctx, monkeypatch):
     certfr.COLLECTOR.collect(ctx)
     requested = [u for u in ctx.client._client._transport.requested if u.endswith("/json/")]
     assert len(requested) == 2
+
+
+def test_revision_date_from_json(ctx, monkeypatch):
+    monkeypatch.setattr(ctx.catalog, "advisory_retention_days", 365 * 5)
+    fortios = next(a for a in certfr.COLLECTOR.collect(ctx).advisories if a.id == "CERTFR-2024-ALE-004")
+    assert fortios.cves == ["CVE-2024-21762"]
+    assert fortios.updated == "2024-07-01T00:00:00Z"  # dernière révision
