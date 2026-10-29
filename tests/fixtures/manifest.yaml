@@ -38,3 +38,6 @@
   file: fortinet/firmware.xml
 - url: https://www.fortiguard.com/rss/ir.xml
   file: fortinet/ir.xml
+- url: https://security.paloaltonetworks.com/json/?limit=100&sort=-updated
+  file: paloalto/advisories.json
+  trim: {json_head: 30}
