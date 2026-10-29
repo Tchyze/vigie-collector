@@ -53,3 +53,8 @@
   file: certfr/CERTFR-2026-AVI-1382.json
 - url: https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-004/json/
   file: certfr/CERTFR-2024-ALE-004.json
+- url: https://salsa.debian.org/security-tracker-team/security-tracker/-/raw/master/data/DSA/list
+  file: debian/DSA-list
+  trim: {head_lines: 400}
+- url: https://www.debian.org/security/dsa-long
+  file: debian/dsa-long.rdf

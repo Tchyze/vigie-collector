@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel rdf:about="https://www.debian.org/security/dsa.rdf">
+<title>Debian Security</title>
+<link>https://www.debian.org/security/dsa.rdf</link>
+<dc:date>2026-10-29T15:24:14Z</dc:date>
+<description>Debian Security Advisories</description>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00511.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00510.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00509.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00505.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00508.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00507.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00506.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00504.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00503.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00502.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00499.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00498.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00497.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00496.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00495.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00494.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00493.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00492.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00491.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00490.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00489.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00488.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00487.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00486.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00485.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00484.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00483.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00482.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00481.html" />
+<rdf:li rdf:resource="https://lists.debian.org/debian-security-announce/2026/msg00480.html" />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00511.html">
+<title>DSA-6592-1 chromium - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00511.html</link>
+<dc:date>2026-10-28</dc:date>
+<description>Security issues were discovered in Chromium which could result
+in the execution of arbitrary code, denial of service, or information
+disclosure.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6592-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6592-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00510.html">
+<title>DSA-6591-1 openjdk-25 - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00510.html</link>
+<dc:date>2026-10-28</dc:date>
+<description>Several vulnerabilities have been discovered in the OpenJDK Java runtime,
+which may result in denial of service, sandbox breakout, incomplete
+certificate checks or information disclosure.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6591-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6591-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00509.html">
+<title>DSA-6590-1 firefox-esr - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00509.html</link>
+<dc:date>2026-10-28</dc:date>
+<description>Multiple security issues have been found in the Mozilla Firefox web
+browser, which could potentially result in the execution of arbitrary
+code, sandbox escape, bypass of the same-origin policy, privilege
+escalation, information disclosure or spoofing.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6590-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6590-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00505.html">
+<title>DSA-6585-2 thunderbird - regression update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00505.html</link>
+<dc:date>2026-10-27</dc:date>
+<description>The update for thunderbird in DSA-6585-1 introduced a regression in
+the supported for PGP-encrypted emails. Updated packages are now
+available to correct this issue.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6585-2&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6585-2&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00508.html">
+<title>DSA-6589-1 php-mongodb - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00508.html</link>
+<dc:date>2026-10-27</dc:date>
+<description>Multiple security vulnerabilities have been discovered in the MongoDB
+driver for PHP, which could result in denial of service.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6589-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6589-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00507.html">
+<title>DSA-6588-1 openjdk-21 - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00507.html</link>
+<dc:date>2026-10-27</dc:date>
+<description>Several vulnerabilities have been discovered in the OpenJDK Java runtime,
+which may result in denial of service, sandbox bypass, incomplete
+certificate checks or information disclosure.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6588-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6588-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00506.html">
+<title>DSA-6587-1 pdns - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00506.html</link>
+<dc:date>2026-10-27</dc:date>
+<description>It was discovered that incorrect parsing of packets with compression
+pointers in the PowerDNS DNS server could result in denial of service.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6587-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6587-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00504.html">
+<title>DSA-6586-1 valkey - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00504.html</link>
+<dc:date>2026-10-27</dc:date>
+<description>Several vulnerabilities were discovered in Valkey, an in-memory key-value
+database. These issues could cause denial of service and, in some cases,
+potentially allow arbitrary code execution.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6586-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6586-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00503.html">
+<title>DSA-6585-1 thunderbird - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00503.html</link>
+<dc:date>2026-10-25</dc:date>
+<description>Multiple security issues were discovered in Thunderbird, which could
+result in the execution of arbitrary code or information disclosure
+&lt;p&gt;
+Debian follows the Thunderbird upstream releases. Support for the 140.x
+series has ended, so starting with this update we&apos;re now following the
+153.x series.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6585-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6585-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00502.html">
+<title>DSA-6584-1 varnish - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00502.html</link>
+<dc:date>2026-10-25</dc:date>
+<description>Several vulnerabilities were discovered in Varnish Cache, an HTTP
+accelerator, which could result in cache poisoning, authentication bypass
+or denial of service.
+&lt;p&gt;
+CVE-2026-34475
+&lt;p&gt;
+    Tom Kinnaird discovered a deficiency in the parsing of HTTP/1.1
+    absolute-form request targets. If the request URL is passed unchecked
+    to a backend which accepts absolute-form URIs, a remote attacker
+    could potentially poison the cache or bypass authentication. The
+    issue affects requests for root URLs.                                                                               
+&lt;p&gt;
+CVE-2026-93894
+&lt;p&gt;
+    Tristan Madani discovered a workspace buffer overflow in the .upper()
+    and .lower() string methods of the Varnish Configuration Language.
+    A remote attacker with knowledge of the active configuration could
+    craft a request which exhausts the remaining workspace during case
+    conversion, causing the worker process to crash and restart,
+    resulting in denial of service. Exploitation depends on the
+    configuration using these methods on attacker-controlled strings
+    and on the applicable request size limits.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6584-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6584-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00499.html">
+<title>DSA-6583-1 libheif - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00499.html</link>
+<dc:date>2026-10-24</dc:date>
+<description>Multiple security issues were discovered in libheif, a library for reading
+and writing HEIF and AVIF images. Processing specially crafted images
+could result in denial of service through excessive resource consumption
+or crashes, or disclosure of process memory. A use-after-free and
+double-free affecting timestamp handling during image encoding, including
+transcoding of crafted images, is also addressed.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6583-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6583-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00498.html">
+<title>DSA-6582-1 brotli - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00498.html</link>
+<dc:date>2026-10-23</dc:date>
+<description>A vulnerability was discovered in Brotli, a generic-purpose lossless
+compression suite, which could result in denial of service, or
+potentially the execution of arbitrary code.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6582-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6582-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00497.html">
+<title>DSA-6581-1 unbound - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00497.html</link>
+<dc:date>2026-10-23</dc:date>
+<description>Multiple security vulnerabilities were discovered in Unbound, a validating,
+recursive, caching DNS resolver.
+&lt;p&gt;
+CVE-2026-35501
+&lt;p&gt;
+    (DNSSEC) Bypass of a configured island trust anchor underneath an insecure
+    parent from an attacker-controlled NSEC record.
+&lt;p&gt;
+CVE-2026-50106
+&lt;p&gt;
+    (DNSSEC) Possible insecure NXDOMAIN for non-existing records under a
+    configured island trust anchor underneath an insecure parent.
+&lt;p&gt;
+CVE-2026-96405
+&lt;p&gt;
+    Aggregate DNS name chained pointer decompression work leads to degradation
+    of service.
+&lt;p&gt;
+CVE-2026-97206
+&lt;p&gt;
+    DNS-over-QUIC path-migration can lead to use-after-free on multi-threaded
+    deployments, leading to potential denial of service.
+&lt;p&gt;
+CVE-2026-109125
+&lt;p&gt;
+    Possible cache poisoning vulnerability via a cache side-channel exposed by
+    &apos;unwanted-reply-threshold&apos;.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6581-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6581-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00496.html">
+<title>DSA-6580-1 erlang - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00496.html</link>
+<dc:date>2026-10-23</dc:date>
+<description>Several vulnerabilities were discovered in Erlang/OTP, a programming
+language and runtime environment. These issues could result in denial of
+service, HTTP request smuggling, or bypass of authentication and access
+restrictions, including TLS server impersonation.
+&lt;p&gt;&lt;p&gt;
+The affected components include the HTTP client and server, SSH, TLS,
+ASN.1 decoding, the network driver, and URI, LDAP and SNMP parsing. The
+update tightens protocol validation and HTTP/SSH resource limits.
+Applications relying on previously permissive behavior may need
+adjustment.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6580-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6580-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00495.html">
+<title>DSA-6579-1 roundcube - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00495.html</link>
+<dc:date>2026-10-23</dc:date>
+<description>Multiple vulnerabilities were discovered in roundcube, a skinnable AJAX
+based webmail solution for IMAP servers, which could result in IMAP
+command injection, cross-site scripting, SSRF bypass, email header
+injection, css property injection, remote content blocking bypass,
+information disclosure or privilege escalation.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6579-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6579-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00494.html">
+<title>DSA-6578-1 aide - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00494.html</link>
+<dc:date>2026-10-22</dc:date>
+<description>Two vulnerabilities were discovered in aide, an advanced intrusion
+detection system, which could allow a local user to bypass the detection
+of malicious files.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6578-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6578-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00493.html">
+<title>DSA-6577-1 chromium - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00493.html</link>
+<dc:date>2026-10-22</dc:date>
+<description>Security issues were discovered in Chromium which could result
+in the execution of arbitrary code, denial of service, or information
+disclosure.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6577-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6577-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00492.html">
+<title>DSA-6534-3 webkit2gtk - regression update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00492.html</link>
+<dc:date>2026-10-22</dc:date>
+<description>The webkit2gtk update released as DSA-6534-1 introduced a regression
+that prevents Evolution from displaying images embedded in HTML
+emails.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6534-3&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6534-3&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00491.html">
+<title>DSA-6576-1 bind9 - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00491.html</link>
+<dc:date>2026-10-21</dc:date>
+<description>Several vulnerabilities were discovered in BIND, a DNS server
+implementation, which could result in denial of service or remote code
+execution.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6576-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6576-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00490.html">
+<title>DSA-6575-1 nginx - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00490.html</link>
+<dc:date>2026-10-21</dc:date>
+<description>Several vulnerabilities were discovered in nginx, a high performance web
+and reverse proxy server. Depending on the configuration, these could
+result in memory corruption, denial of service, injection of requests to
+backend servers, or bypass of client certificate authentication.
+&lt;p&gt;
+CVE-2026-15176
+&lt;p&gt;
+    Mapping a rewritten request URI to a filesystem path in a location
+    using the alias directive could cause a buffer overflow.
+&lt;p&gt;
+CVE-2026-93479
+&lt;p&gt;
+    Evaluation of string expressions in the HTTP and stream modules
+    could overwrite reserved buffer space, resulting in a buffer overflow.
+    Affected operations include evaluation of variable document roots
+    and access log paths.
+&lt;p&gt;
+    The affected code was introduced into the trixie package by an earlier
+    security backport.
+&lt;p&gt;
+CVE-2026-95101
+&lt;p&gt;
+    Incorrect handling of fragmented unknown HTTP/3 frames could cause
+    their contents to be treated as request body data. When proxying
+    requests, this could allow injection of requests into a backend server
+    or bypass of request body size limits.
+&lt;p&gt;
+CVE-2026-97205
+&lt;p&gt;
+    A counter tracking pending asynchronous operations could overflow,
+    causing request memory to be freed while still in use. This
+    use-after-free could result in memory corruption or denial of service.
+&lt;p&gt;
+CVE-2026-97629
+&lt;p&gt;
+    Incomplete synchronisation of TLS session ticket keys between worker
+    processes could leave a worker using uninitialised key material. This
+    could allow forged TLS sessions and bypass of client certificate
+    authentication.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6575-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6575-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00489.html">
+<title>DSA-6574-1 php8.4 - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00489.html</link>
+<dc:date>2026-10-21</dc:date>
+<description>It was discovered that incorrect memory state tracking in PHP, a
+widely-used open source general purpose scripting language, could
+result in the execution of arbitrary code.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6574-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6574-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00488.html">
+<title>DSA-6573-1 firefox-esr - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00488.html</link>
+<dc:date>2026-10-21</dc:date>
+<description>This update blocks compromised intermediate certificates issued by the
+eMudhra CA.
+&lt;p&gt;
+Most users will have these certs already blocked by the OneCRL feature
+provided by Firefox. This update blocks the certificates also for
+installations which have RemoteSettings disabled or which are unable to
+connect to the revocation backend service due to network constraints.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6573-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6573-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00487.html">
+<title>DSA-6572-1 ca-certificates - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00487.html</link>
+<dc:date>2026-10-20</dc:date>
+<description>It was discovered that several eMudhra intermediate CA certificates have
+been compromised. Updated ca-certificate packages are provided to remove
+the &quot;emSign ECC Root CA - G3&quot; and &quot;Comodo AAA Services root&quot;
+certificates.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6572-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6572-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00486.html">
+<title>DSA-6571-1 xen - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00486.html</link>
+<dc:date>2026-10-18</dc:date>
+<description>Multiple vulnerabilities have been discovered in the Xen hypervisor,
+which could result in privilege escalation, information disclosure or
+denial of service.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6571-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6571-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00485.html">
+<title>DSA-6570-1 haproxy - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00485.html</link>
+<dc:date>2026-10-18</dc:date>
+<description>Two vulnerabilities were discovered in HAProxy, a fast and reliable load
+balancing reverse proxy, which could result in denial of service.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6570-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6570-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00484.html">
+<title>DSA-6567-2 cifs-utils - regression update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00484.html</link>
+<dc:date>2026-10-18</dc:date>
+<description>The update for cifs-utils announced in DSA 6567-1 introduced a
+regression when using the sec=krb5 and cruid mount options. Updated
+packages are now available to correct this issue.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6567-2&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6567-2&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00483.html">
+<title>DSA-6569-1 apache2 - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00483.html</link>
+<dc:date>2026-10-16</dc:date>
+<description>Multiple vulnerabilities have been discovered in the Apache HTTP server,
+which may result in denial of service, information disclosure,
+authentication bypass or HTTP request smuggling.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6569-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6569-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00482.html">
+<title>DSA-6568-1 linux - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00482.html</link>
+<dc:date>2026-10-16</dc:date>
+<description>Several vulnerabilities have been discovered in the Linux kernel that
+may lead to a privilege escalation, denial of service or information
+leaks.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6568-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6568-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00481.html">
+<title>DSA-6567-1 cifs-utils - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00481.html</link>
+<dc:date>2026-10-16</dc:date>
+<description>Two vulnerabilities were discovered in cifs-utils, the Common Internet
+File System utilities, which could result in privilege escalation.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6567-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6567-1&lt;/a&gt;</description>
+</item>
+<item rdf:about="https://lists.debian.org/debian-security-announce/2026/msg00480.html">
+<title>DSA-6566-1 expat - security update</title>
+<link>https://lists.debian.org/debian-security-announce/2026/msg00480.html</link>
+<dc:date>2026-10-16</dc:date>
+<description>Several vulnerabilities have been discovered in Expat, an XML parsing C
+library, which could result in denial of service or potentially the
+execution of arbitrary code, if a malformed XML file is processed.
+
+&lt;p&gt;
+&lt;a href=&quot;https://security-tracker.debian.org/tracker/DSA-6566-1&quot;&gt;https://security-tracker.debian.org/tracker/DSA-6566-1&lt;/a&gt;</description>
+</item>
+</rdf:RDF>
