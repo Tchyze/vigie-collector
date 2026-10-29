@@ -43,3 +43,13 @@
   trim: {json_head: 30}
 - url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
   file: cisco/CiscoSecurityAdvisory.xml
+- url: https://www.cert.cyber.gouv.fr/avis/feed/
+  file: certfr/avis.xml
+- url: https://www.cert.cyber.gouv.fr/alerte/feed/
+  file: certfr/alerte.xml
+- url: https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1381/json/
+  file: certfr/CERTFR-2026-AVI-1381.json
+- url: https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1382/json/
+  file: certfr/CERTFR-2026-AVI-1382.json
+- url: https://www.cert.cyber.gouv.fr/alerte/CERTFR-2024-ALE-004/json/
+  file: certfr/CERTFR-2024-ALE-004.json

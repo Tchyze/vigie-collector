@@ -1,6 +1,6 @@
 """Registre des collecteurs : chaque module expose un objet `COLLECTOR` (voir base.Collector)."""
 
-from collectors import cisco, endoflife, fortinet_firmware, fortinet_psirt, httpd, nginx, openssh, paloalto
+from collectors import certfr, cisco, endoflife, fortinet_firmware, fortinet_psirt, httpd, nginx, openssh, paloalto
 
 ALL = [
     endoflife.COLLECTOR,
@@ -11,4 +11,5 @@ ALL = [
     fortinet_psirt.COLLECTOR,
     paloalto.COLLECTOR,
     cisco.COLLECTOR,
+    certfr.COLLECTOR,
 ]
