@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tchyze.github.io/vigie-collector/schema/index.schema.json",
+  "title": "Vigie : index",
+  "description": "Point d'entrée de la publication (output/index.json).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "eol_soon_months", "products", "advisories", "sources"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "generated_at": {"$ref": "#/$defs/datetime"},
+    "eol_soon_months": {"type": "integer", "minimum": 0},
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "vendor", "category", "file", "branch_count", "status_counts"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
+          "label": {"type": "string"},
+          "vendor": {"type": "string"},
+          "category": {"enum": ["firewall", "switch", "os", "service"]},
+          "file": {"type": "string", "pattern": "^products/[a-z0-9.-]+\\.json$"},
+          "branch_count": {"type": "integer", "minimum": 0},
+          "status_counts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["active", "eol_soon", "eol"],
+            "properties": {
+              "active": {"type": "integer", "minimum": 0},
+              "eol_soon": {"type": "integer", "minimum": 0},
+              "eol": {"type": "integer", "minimum": 0}
+            }
+          }
+        }
+      }
+    },
+    "advisories": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "count"],
+      "properties": {
+        "file": {"const": "advisories.json"},
+        "count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "label", "kind", "status", "count", "last_attempt", "last_success", "error", "home", "attribution"],
+        "properties": {
+          "name": {"type": "string"},
+          "label": {"type": "string"},
+          "kind": {"enum": ["versions", "advisories"]},
+          "status": {"enum": ["ok", "error"]},
+          "count": {"type": "integer", "minimum": 0},
+          "last_attempt": {"$ref": "#/$defs/datetime"},
+          "last_success": {"oneOf": [{"$ref": "#/$defs/datetime"}, {"type": "null"}]},
+          "error": {"type": ["string", "null"]},
+          "home": {"type": "string", "pattern": "^https?://"},
+          "attribution": {"type": ["string", "null"]}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "datetime": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"}
+  }
+}

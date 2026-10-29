@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+# Sorties de build.py (publiées sur gh-pages, jamais sur main)
+output/
+previous/

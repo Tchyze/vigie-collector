@@ -1,0 +1,28 @@
+[project]
+name = "vigie-collector"
+version = "0.1.0"
+description = "Collecteur Vigie : versions, fins de support et avis de sécurité d'équipements d'infrastructure, publiés en JSON statique."
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "feedparser>=6.0",
+    "pyyaml>=6.0",
+    "jsonschema>=4.21",
+    "packaging>=24.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["vigie", "collectors"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
