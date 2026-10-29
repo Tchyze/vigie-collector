@@ -41,3 +41,5 @@
 - url: https://security.paloaltonetworks.com/json/?limit=100&sort=-updated
   file: paloalto/advisories.json
   trim: {json_head: 30}
+- url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
+  file: cisco/CiscoSecurityAdvisory.xml
