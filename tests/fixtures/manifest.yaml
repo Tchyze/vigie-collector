@@ -27,3 +27,8 @@
 - url: https://nginx.org/en/CHANGES-1.30
   file: nginx/CHANGES-1.30
   trim: {head_lines: 200}
+- url: https://github.com/apache/httpd/tags.atom
+  file: httpd/tags.atom
+- url: https://downloads.apache.org/httpd/CHANGES_2.4
+  file: httpd/CHANGES_2.4
+  trim: {head_lines: 700}
