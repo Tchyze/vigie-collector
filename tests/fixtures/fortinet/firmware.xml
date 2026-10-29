@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<channel>
+<title>Fortinet Firmware Updates</title>
+<link>http://support.fortinet.com/</link>
+<description><![CDATA[Updates for the latest firmware and patches for Fortinet products.]]></description>
+<lastBuildDate>Tue, 27 Oct 2026 19:26:25 GMT</lastBuildDate>
+<item>
+<title>FortiOS 7.2.8-FIPS-CC b9883-FIPS-CC-72-8</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 7.2.8-FIPS-CC b9883-FIPS-CC-72-8 and readme are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 27 Oct 2026 19:26:25 GMT</pubDate>
+<guid isPermaLink="false">Tue, 27 Oct 2026 19:26:25 GMT</guid>
+</item>
+<item>
+<title>FortiAP FIPS-140-3_Certified b4405-FIPS-CC-74-03</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAP FIPS-140-3_Certified b4405-FIPS-CC-74-03 and readme are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 27 Oct 2026 18:32:41 GMT</pubDate>
+<guid isPermaLink="false">Tue, 27 Oct 2026 18:32:41 GMT</guid>
+</item>
+<item>
+<title>FortiOS 7.4.4-FIPS-CC b9481-FIPS-CC-74-15</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 7.4.4-FIPS-CC b9481-FIPS-CC-74-15 and readme are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 26 Oct 2026 16:45:54 GMT</pubDate>
+<guid isPermaLink="false">Mon, 26 Oct 2026 16:45:54 GMT</guid>
+</item>
+<item>
+<title>FortiFoneAndroid 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiFoneAndroid 8.0.2 B0014 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 23 Oct 2026 17:09:19 GMT</pubDate>
+<guid isPermaLink="false">Fri, 23 Oct 2026 17:09:19 GMT</guid>
+</item>
+<item>
+<title>FortiAuthenticator 8.0.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAuthenticator 8.0.4 B0191 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 23:59:03 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 23:59:03 GMT</guid>
+</item>
+<item>
+<title>FortiOS 7.4.13</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 7.4.13 B2933 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 23:45:02 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 23:45:02 GMT</guid>
+</item>
+<item>
+<title>FortiOS 7.2.14</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 7.2.14 B1778 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 22:33:53 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 22:33:53 GMT</guid>
+</item>
+<item>
+<title>FortiManager 7.2.13</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiManager 7.2.13 B1750 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 20:55:56 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 20:55:56 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer 7.2.13</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer 7.2.13 B1750 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 20:51:26 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 20:51:26 GMT</guid>
+</item>
+<item>
+<title>FortiManager 7.4.12</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiManager 7.4.12 B2836 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 19:16:14 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 19:16:14 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer 7.4.12</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer 7.4.12 B2836 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 19:06:11 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 19:06:11 GMT</guid>
+</item>
+<item>
+<title>FortiManager 7.6.8</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiManager 7.6.8 B3788 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 18:33:21 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 18:33:21 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer 7.6.8</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer 7.6.8 B3788 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 18:08:24 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 18:08:24 GMT</guid>
+</item>
+<item>
+<title>FortiOS 7.6.8</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 7.6.8 B3744 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 18:01:55 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 18:01:55 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer 8.0.2 B0198 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 17:25:19 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 17:25:19 GMT</guid>
+</item>
+<item>
+<title>FortiManager 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiManager 8.0.2 B0198 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 17:18:21 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 17:18:21 GMT</guid>
+</item>
+<item>
+<title>FortiOS 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 8.0.2 B0251 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 22 Oct 2026 17:17:12 GMT</pubDate>
+<guid isPermaLink="false">Thu, 22 Oct 2026 17:17:12 GMT</guid>
+</item>
+<item>
+<title>FortiHSMLinux 7.0.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiHSMLinux 7.0.0 B0081 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 21 Oct 2026 16:39:23 GMT</pubDate>
+<guid isPermaLink="false">Wed, 21 Oct 2026 16:39:23 GMT</guid>
+</item>
+<item>
+<title>FortiHSMWindows 7.0.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiHSMWindows 7.0.0 B0111 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 21 Oct 2026 16:31:15 GMT</pubDate>
+<guid isPermaLink="false">Wed, 21 Oct 2026 16:31:15 GMT</guid>
+</item>
+<item>
+<title>FortiHSM 7.0.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiHSM 7.0.0 B0157 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 20 Oct 2026 22:50:02 GMT</pubDate>
+<guid isPermaLink="false">Tue, 20 Oct 2026 22:50:02 GMT</guid>
+</item>
+<item>
+<title>FortiRecorder 7.6.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiRecorder 7.6.2 B0403 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 19 Oct 2026 23:16:26 GMT</pubDate>
+<guid isPermaLink="false">Mon, 19 Oct 2026 23:16:26 GMT</guid>
+</item>
+<item>
+<title>FortiAIGate 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAIGate 8.0.2 B0055 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 16 Oct 2026 18:23:19 GMT</pubDate>
+<guid isPermaLink="false">Fri, 16 Oct 2026 18:23:19 GMT</guid>
+</item>
+<item>
+<title>FortiExtender 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiExtender 8.0.1 B0058 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 16 Oct 2026 16:48:59 GMT</pubDate>
+<guid isPermaLink="false">Fri, 16 Oct 2026 16:48:59 GMT</guid>
+</item>
+<item>
+<title>FortiIsolator 3.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiIsolator 3.0.2 B0168 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 14 Oct 2026 22:58:17 GMT</pubDate>
+<guid isPermaLink="false">Wed, 14 Oct 2026 22:58:17 GMT</guid>
+</item>
+<item>
+<title>FortiSIEM 7.6.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSIEM 7.6.1 B0753 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 13 Oct 2026 16:45:04 GMT</pubDate>
+<guid isPermaLink="false">Tue, 13 Oct 2026 16:45:04 GMT</guid>
+</item>
+<item>
+<title>FortiSIEMWindowsAgent 7.6.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSIEMWindowsAgent 7.6.1 B0932 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 9 Oct 2026 18:09:15 GMT</pubDate>
+<guid isPermaLink="false">Fri, 9 Oct 2026 18:09:15 GMT</guid>
+</item>
+<item>
+<title>FortiAIOps 3.6.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAIOps 3.6.0 B0335 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 8 Oct 2026 23:02:32 GMT</pubDate>
+<guid isPermaLink="false">Thu, 8 Oct 2026 23:02:32 GMT</guid>
+</item>
+<item>
+<title>FortiAuthenticator 6.6.11</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAuthenticator 6.6.11 B1958 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 7 Oct 2026 16:09:37 GMT</pubDate>
+<guid isPermaLink="false">Wed, 7 Oct 2026 16:09:37 GMT</guid>
+</item>
+<item>
+<title>FortiMail 8.0.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiMail 8.0.2 B0263 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Sat, 3 Oct 2026 21:29:01 GMT</pubDate>
+<guid isPermaLink="false">Sat, 3 Oct 2026 21:29:01 GMT</guid>
+</item>
+<item>
+<title>FortiMail 7.6.7</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiMail 7.6.7 B0858 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Sat, 3 Oct 2026 21:28:04 GMT</pubDate>
+<guid isPermaLink="false">Sat, 3 Oct 2026 21:28:04 GMT</guid>
+</item>
+<item>
+<title>FortiMail 7.4.9</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiMail 7.4.9 B0630 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Sat, 3 Oct 2026 21:23:12 GMT</pubDate>
+<guid isPermaLink="false">Sat, 3 Oct 2026 21:23:12 GMT</guid>
+</item>
+<item>
+<title>FortiAuthenticator 8.0.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAuthenticator 8.0.4 B0187 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 2 Oct 2026 23:04:33 GMT</pubDate>
+<guid isPermaLink="false">Fri, 2 Oct 2026 23:04:33 GMT</guid>
+</item>
+<item>
+<title>FortiNACAgent 7.6.5</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiNACAgent 7.6.5 B0062 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 2 Oct 2026 23:00:13 GMT</pubDate>
+<guid isPermaLink="false">Fri, 2 Oct 2026 23:00:13 GMT</guid>
+</item>
+<item>
+<title>FortiSandbox 5.2.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSandbox 5.2.2 B0319 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 2 Oct 2026 19:45:32 GMT</pubDate>
+<guid isPermaLink="false">Fri, 2 Oct 2026 19:45:32 GMT</guid>
+</item>
+<item>
+<title>FortiRecorder 7.6.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiRecorder 7.6.1 B0398 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 25 Sep 2026 21:06:26 GMT</pubDate>
+<guid isPermaLink="false">Fri, 25 Sep 2026 21:06:26 GMT</guid>
+</item>
+<item>
+<title>FortiRecorder 7.2.12</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiRecorder 7.2.12 B0323 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 25 Sep 2026 16:50:15 GMT</pubDate>
+<guid isPermaLink="false">Fri, 25 Sep 2026 16:50:15 GMT</guid>
+</item>
+<item>
+<title>FortiPortal 7.4.12</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiPortal 7.4.12 B2264 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 23 Sep 2026 18:38:29 GMT</pubDate>
+<guid isPermaLink="false">Wed, 23 Sep 2026 18:38:29 GMT</guid>
+</item>
+<item>
+<title>FortiWeb 8.0.8</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiWeb 8.0.8 B0140 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 21 Sep 2026 19:10:50 GMT</pubDate>
+<guid isPermaLink="false">Mon, 21 Sep 2026 19:10:50 GMT</guid>
+</item>
+<item>
+<title>FortiConverter 7.4.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiConverter 7.4.1 B0896 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 21 Sep 2026 19:01:20 GMT</pubDate>
+<guid isPermaLink="false">Mon, 21 Sep 2026 19:01:20 GMT</guid>
+</item>
+<item>
+<title>FortiSwitchAXChassis 1.1.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSwitchAXChassis 1.1.2 B0135 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 18 Sep 2026 17:32:30 GMT</pubDate>
+<guid isPermaLink="false">Fri, 18 Sep 2026 17:32:30 GMT</guid>
+</item>
+<item>
+<title>FSASESovereignOnPrem 2.3.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FSASESovereignOnPrem 2.3.2 B0034 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 16 Sep 2026 22:43:42 GMT</pubDate>
+<guid isPermaLink="false">Wed, 16 Sep 2026 22:43:42 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer 8.0.1 B0189 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 16 Sep 2026 00:54:02 GMT</pubDate>
+<guid isPermaLink="false">Wed, 16 Sep 2026 00:54:02 GMT</guid>
+</item>
+<item>
+<title>FortiManager 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiManager 8.0.1 B0189 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 16 Sep 2026 00:43:32 GMT</pubDate>
+<guid isPermaLink="false">Wed, 16 Sep 2026 00:43:32 GMT</guid>
+</item>
+<item>
+<title>FortiOS 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiOS 8.0.1 B0245 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 16 Sep 2026 00:33:22 GMT</pubDate>
+<guid isPermaLink="false">Wed, 16 Sep 2026 00:33:22 GMT</guid>
+</item>
+<item>
+<title>FortiPAM 7.0.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiPAM 7.0.0 B0029 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 15 Sep 2026 17:12:57 GMT</pubDate>
+<guid isPermaLink="false">Tue, 15 Sep 2026 17:12:57 GMT</guid>
+</item>
+<item>
+<title>FortiDDoS-F 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiDDoS-F 8.0.1 B0021 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 11 Sep 2026 20:07:36 GMT</pubDate>
+<guid isPermaLink="false">Fri, 11 Sep 2026 20:07:36 GMT</guid>
+</item>
+<item>
+<title>FortiADC 8.0.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiADC 8.0.4 B0136 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 9 Sep 2026 23:33:58 GMT</pubDate>
+<guid isPermaLink="false">Wed, 9 Sep 2026 23:33:58 GMT</guid>
+</item>
+<item>
+<title>FortiVoice 7.4.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiVoice 7.4.2 B0707 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 9 Sep 2026 18:02:00 GMT</pubDate>
+<guid isPermaLink="false">Wed, 9 Sep 2026 18:02:00 GMT</guid>
+</item>
+<item>
+<title>FortiNDR 7.6.5</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiNDR 7.6.5 B0688 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 3 Sep 2026 19:55:43 GMT</pubDate>
+<guid isPermaLink="false">Thu, 3 Sep 2026 19:55:43 GMT</guid>
+</item>
+<item>
+<title>FortiSIEMWindowsAgent 7.6.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSIEMWindowsAgent 7.6.0 B0918 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 2 Sep 2026 21:20:24 GMT</pubDate>
+<guid isPermaLink="false">Wed, 2 Sep 2026 21:20:24 GMT</guid>
+</item>
+<item>
+<title>FortiWeb 8.0.7</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiWeb 8.0.7 B0134 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 31 Aug 2026 23:45:55 GMT</pubDate>
+<guid isPermaLink="false">Mon, 31 Aug 2026 23:45:55 GMT</guid>
+</item>
+<item>
+<title>FortiNAC-F 7.4.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiNAC-F 7.4.4 B0532 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 31 Aug 2026 19:21:26 GMT</pubDate>
+<guid isPermaLink="false">Mon, 31 Aug 2026 19:21:26 GMT</guid>
+</item>
+<item>
+<title>FortiSandbox 4.4.10</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSandbox 4.4.10 B0432 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 28 Aug 2026 20:51:33 GMT</pubDate>
+<guid isPermaLink="false">Fri, 28 Aug 2026 20:51:33 GMT</guid>
+</item>
+<item>
+<title>FortiVoice 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiVoice 8.0.1 B0115 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 27 Aug 2026 16:29:11 GMT</pubDate>
+<guid isPermaLink="false">Thu, 27 Aug 2026 16:29:11 GMT</guid>
+</item>
+<item>
+<title>FortiPAM 1.9.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiPAM 1.9.2 B1762 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 25 Aug 2026 18:11:44 GMT</pubDate>
+<guid isPermaLink="false">Tue, 25 Aug 2026 18:11:44 GMT</guid>
+</item>
+<item>
+<title>FortiSIEM 7.6.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSIEM 7.6.0 B0739 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 21 Aug 2026 21:33:45 GMT</pubDate>
+<guid isPermaLink="false">Fri, 21 Aug 2026 21:33:45 GMT</guid>
+</item>
+<item>
+<title>FortiIsolator 2.4.9</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiIsolator 2.4.9 B1139 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 20 Aug 2026 19:07:09 GMT</pubDate>
+<guid isPermaLink="false">Thu, 20 Aug 2026 19:07:09 GMT</guid>
+</item>
+<item>
+<title>FortiSOAR 7.5.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSOAR 7.5.4 B4167 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 19 Aug 2026 19:55:32 GMT</pubDate>
+<guid isPermaLink="false">Wed, 19 Aug 2026 19:55:32 GMT</guid>
+</item>
+<item>
+<title>FortiSOAR 7.6.7</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSOAR 7.6.7 B5714 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 18 Aug 2026 20:44:31 GMT</pubDate>
+<guid isPermaLink="false">Tue, 18 Aug 2026 20:44:31 GMT</guid>
+</item>
+<item>
+<title>FortiSwitch 7.4.10</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSwitch 7.4.10 B0959 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Tue, 18 Aug 2026 20:12:34 GMT</pubDate>
+<guid isPermaLink="false">Tue, 18 Aug 2026 20:12:34 GMT</guid>
+</item>
+<item>
+<title>FortiProxy 7.6.7</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiProxy 7.6.7 B1663 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 17 Aug 2026 17:03:42 GMT</pubDate>
+<guid isPermaLink="false">Mon, 17 Aug 2026 17:03:42 GMT</guid>
+</item>
+<item>
+<title>FortiVoice 7.2.5</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiVoice 7.2.5 B0526 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 14 Aug 2026 18:33:51 GMT</pubDate>
+<guid isPermaLink="false">Fri, 14 Aug 2026 18:33:51 GMT</guid>
+</item>
+<item>
+<title>FortiSandbox 5.0.7</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSandbox 5.0.7 B0172 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 13 Aug 2026 22:09:56 GMT</pubDate>
+<guid isPermaLink="false">Thu, 13 Aug 2026 22:09:56 GMT</guid>
+</item>
+<item>
+<title>FortiSandbox 5.2.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSandbox 5.2.1 B0295 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 13 Aug 2026 19:34:05 GMT</pubDate>
+<guid isPermaLink="false">Thu, 13 Aug 2026 19:34:05 GMT</guid>
+</item>
+<item>
+<title>FortiWeb 7.6.10</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiWeb 7.6.10 B1142 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 13 Aug 2026 17:16:52 GMT</pubDate>
+<guid isPermaLink="false">Thu, 13 Aug 2026 17:16:52 GMT</guid>
+</item>
+<item>
+<title>FortiClientEMS 7.2.15</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiClientEMS 7.2.15 B1293 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 10 Aug 2026 23:40:15 GMT</pubDate>
+<guid isPermaLink="false">Mon, 10 Aug 2026 23:40:15 GMT</guid>
+</item>
+<item>
+<title>FortiClientLinux 7.2.15</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiClientLinux 7.2.15 B1053 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 10 Aug 2026 23:40:04 GMT</pubDate>
+<guid isPermaLink="false">Mon, 10 Aug 2026 23:40:04 GMT</guid>
+</item>
+<item>
+<title>FortiClientMac 7.2.15</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiClientMac 7.2.15 B1144 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 10 Aug 2026 23:39:50 GMT</pubDate>
+<guid isPermaLink="false">Mon, 10 Aug 2026 23:39:50 GMT</guid>
+</item>
+<item>
+<title>FortiClient 7.2.15</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiClient 7.2.15 B1309 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Mon, 10 Aug 2026 23:39:36 GMT</pubDate>
+<guid isPermaLink="false">Mon, 10 Aug 2026 23:39:36 GMT</guid>
+</item>
+<item>
+<title>FortiAnalyzer-BigData 7.6.2</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiAnalyzer-BigData 7.6.2 B1458 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 7 Aug 2026 15:26:14 GMT</pubDate>
+<guid isPermaLink="false">Fri, 7 Aug 2026 15:26:14 GMT</guid>
+</item>
+<item>
+<title>FortiSwitchNMS 1.13.5</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSwitchNMS 1.13.5 B0982 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 5 Aug 2026 17:00:32 GMT</pubDate>
+<guid isPermaLink="false">Wed, 5 Aug 2026 17:00:32 GMT</guid>
+</item>
+<item>
+<title>FortiWeb 7.2.13</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiWeb 7.2.13 B0441 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 31 Jul 2026 21:55:06 GMT</pubDate>
+<guid isPermaLink="false">Fri, 31 Jul 2026 21:55:06 GMT</guid>
+</item>
+<item>
+<title>FortiSwitch 8.0.1</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSwitch 8.0.1 B0069 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 31 Jul 2026 21:45:47 GMT</pubDate>
+<guid isPermaLink="false">Fri, 31 Jul 2026 21:45:47 GMT</guid>
+</item>
+<item>
+<title>FortiExtender 7.6.6</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiExtender 7.6.6 B0558 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Fri, 31 Jul 2026 20:38:44 GMT</pubDate>
+<guid isPermaLink="false">Fri, 31 Jul 2026 20:38:44 GMT</guid>
+</item>
+<item>
+<title>FortiSwitchNMS 1.13.4</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiSwitchNMS 1.13.4 B0981 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Thu, 30 Jul 2026 21:30:54 GMT</pubDate>
+<guid isPermaLink="false">Thu, 30 Jul 2026 21:30:54 GMT</guid>
+</item>
+<item>
+<title>FortiFone 8.0.0</title>
+<link>https://support.fortinet.com/EndUser/FirmwareImages.aspx</link>
+<description><![CDATA[<p>FortiFone 8.0.0 B0006 and release notes are available for download from the Support site : <a href="https://support.fortinet.com/EndUser/FirmwareImages.aspx">https://support.fortinet.com</a></p>]]></description>
+<pubDate>Wed, 29 Jul 2026 21:14:00 GMT</pubDate>
+<guid isPermaLink="false">Wed, 29 Jul 2026 21:14:00 GMT</guid>
+</item>
+</channel>
+</rss>

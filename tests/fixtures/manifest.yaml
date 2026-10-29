@@ -34,3 +34,5 @@
   trim: {head_lines: 700}
 - url: https://github.com/openssh/openssh-portable/tags.atom
   file: openssh/tags.atom
+- url: https://support.fortinet.com/rss/firmware.xml
+  file: fortinet/firmware.xml
