@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "proxmox-ve",
+  "label": "Proxmox VE",
+  "vendor": "Proxmox",
+  "category": "os",
+  "branches": [
+    {
+      "id": "proxmox-ve-9",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "9",
+      "label": "9",
+      "lts": false,
+      "release_date": "2025-08-05",
+      "status": "active",
+      "latest_version": "9.2",
+      "latest_release_date": "2026-05-21",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "9.2",
+          "date": "2026-05-21",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_9.2"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-8",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "8",
+      "label": "8",
+      "lts": false,
+      "release_date": "2023-06-22",
+      "status": "eol",
+      "latest_version": "8.4",
+      "latest_release_date": "2025-04-09",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2026-08-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2026-08-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "8.4",
+          "date": "2025-04-09",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_8.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-7",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "7",
+      "label": "7",
+      "lts": false,
+      "release_date": "2021-07-06",
+      "status": "eol",
+      "latest_version": "7.4",
+      "latest_release_date": "2023-03-23",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2024-07-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2024-07-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "7.4",
+          "date": "2023-03-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_7.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-6",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "6",
+      "label": "6",
+      "lts": false,
+      "release_date": "2019-07-16",
+      "status": "eol",
+      "latest_version": "6.4",
+      "latest_release_date": "2021-04-18",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-09-30",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-09-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "6.4",
+          "date": "2021-04-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_6.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-5",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "5",
+      "label": "5",
+      "lts": false,
+      "release_date": "2017-07-04",
+      "status": "eol",
+      "latest_version": "5.4",
+      "latest_release_date": "2019-04-11",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2020-07-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-07-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "5.4",
+          "date": "2019-04-11",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_5.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-4",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "4",
+      "label": "4",
+      "lts": false,
+      "release_date": "2015-10-06",
+      "status": "eol",
+      "latest_version": "4.4",
+      "latest_release_date": "2016-12-13",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2018-06-30",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2018-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "4.4",
+          "date": "2016-12-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_4.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-3",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "3",
+      "label": "3",
+      "lts": false,
+      "release_date": "2013-05-24",
+      "status": "eol",
+      "latest_version": "3.4",
+      "latest_release_date": "2015-02-19",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2017-02-28",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2017-02-28",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "3.4",
+          "date": "2015-02-19",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_3.4"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-2",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "2",
+      "label": "2",
+      "lts": false,
+      "release_date": "2012-03-30",
+      "status": "eol",
+      "latest_version": "2.3",
+      "latest_release_date": "2013-03-04",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2014-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2014-05-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "2.3",
+          "date": "2013-03-04",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_2.3"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "proxmox-ve-1",
+      "product": "proxmox-ve",
+      "vendor": "Proxmox",
+      "category": "os",
+      "branch": "1",
+      "label": "1",
+      "lts": false,
+      "release_date": "2008-10-29",
+      "status": "eol",
+      "latest_version": "1.9",
+      "latest_release_date": "2011-09-13",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2013-01-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2013-01-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/proxmox-ve"
+      },
+      "releases": [
+        {
+          "version": "1.9",
+          "date": "2011-09-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_1.9"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

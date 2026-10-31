@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "stormshield-sns",
+  "label": "Stormshield SNS",
+  "vendor": "Stormshield",
+  "category": "firewall",
+  "branches": [
+    {
+      "id": "stormshield-sns-5.0",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "5.0",
+      "label": "5.0",
+      "lts": false,
+      "release_date": "2025-09-24",
+      "status": "active",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.8",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.8",
+      "label": "4.8 (LTSB)",
+      "lts": true,
+      "release_date": "2024-07-02",
+      "status": "active",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2029-12-31",
+        "end_of_security_support": null,
+        "end_of_life": "2030-03-31",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2030-03-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.7",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.7",
+      "label": "4.7",
+      "lts": false,
+      "release_date": "2023-10-31",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-11-12",
+        "end_of_security_support": null,
+        "end_of_life": "2025-02-12",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2025-02-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.6",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.6",
+      "label": "4.6",
+      "lts": false,
+      "release_date": "2022-11-24",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-02-22",
+        "end_of_security_support": null,
+        "end_of_life": "2024-05-22",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-05-22",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.5",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.5",
+      "label": "4.5",
+      "lts": false,
+      "release_date": "2022-07-05",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-11-24",
+        "end_of_security_support": null,
+        "end_of_life": "2022-11-24",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-11-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.4",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.4",
+      "label": "4.4",
+      "lts": false,
+      "release_date": "2022-05-12",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-06-30",
+        "end_of_security_support": null,
+        "end_of_life": "2022-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.3",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.3",
+      "label": "4.3 (LTSB)",
+      "lts": true,
+      "release_date": "2022-01-12",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2025-12-31",
+        "end_of_security_support": null,
+        "end_of_life": "2026-03-31",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2026-03-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.2",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.2",
+      "label": "4.2",
+      "lts": false,
+      "release_date": "2021-04-06",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-07-21",
+        "end_of_security_support": null,
+        "end_of_life": "2022-07-21",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-07-21",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.1",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.1",
+      "label": "4.1",
+      "lts": false,
+      "release_date": "2020-09-24",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2021-04-06",
+        "end_of_security_support": null,
+        "end_of_life": "2021-04-06",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2021-04-06",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-4.0",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "4.0",
+      "label": "4.0",
+      "lts": false,
+      "release_date": "2020-01-07",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2020-09-24",
+        "end_of_security_support": null,
+        "end_of_life": "2020-09-24",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2020-09-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-3.11",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "3.11",
+      "label": "3.11 (LTSB)",
+      "lts": true,
+      "release_date": "2020-09-24",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-06-30",
+        "end_of_security_support": null,
+        "end_of_life": "2024-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-3.7",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "3.7",
+      "label": "3.7 (LTSB)",
+      "lts": true,
+      "release_date": "2018-09-29",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-06-30",
+        "end_of_security_support": null,
+        "end_of_life": "2024-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-3",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "3",
+      "label": "3",
+      "lts": false,
+      "release_date": "2016-11-21",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2020-09-24",
+        "end_of_security_support": null,
+        "end_of_life": "2020-09-24",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2020-09-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-2",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "2",
+      "label": "2",
+      "lts": false,
+      "release_date": "2015-03-31",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2021-09-13",
+        "end_of_security_support": null,
+        "end_of_life": "2021-09-13",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2021-09-13",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "stormshield-sns-1",
+      "product": "stormshield-sns",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "branch": "1",
+      "label": "1",
+      "lts": false,
+      "release_date": "2014-06-03",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2015-04-24",
+        "end_of_security_support": null,
+        "end_of_life": "2015-04-24",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2015-04-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Maintenance Support",
+          "end_of_life": "Lifecycle Support"
+        },
+        "source_url": "https://endoflife.date/sns-firmware"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

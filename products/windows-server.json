@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "windows-server",
+  "label": "Windows Server",
+  "vendor": "Microsoft",
+  "category": "os",
+  "branches": [
+    {
+      "id": "windows-server-2025",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2025",
+      "label": "Windows Server 2025 (LTSC)",
+      "lts": true,
+      "release_date": "2024-11-01",
+      "status": "active",
+      "latest_version": "10.0.26100",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2029-11-13",
+        "end_of_security_support": "2034-11-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2034-11-14",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.26100",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2022",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2022",
+      "label": "Windows Server 2022 (LTSC)",
+      "lts": true,
+      "release_date": "2021-08-18",
+      "status": "active",
+      "latest_version": "10.0.20348",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2026-10-13",
+        "end_of_security_support": "2031-10-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2031-10-14",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.20348",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2019",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2019",
+      "label": "Windows Server 2019 (LTSC)",
+      "lts": true,
+      "release_date": "2018-11-13",
+      "status": "active",
+      "latest_version": "10.0.17763",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-01-09",
+        "end_of_security_support": "2029-01-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2029-01-09",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.17763",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2016",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2016",
+      "label": "Windows Server 2016 (LTSC)",
+      "lts": true,
+      "release_date": "2016-10-15",
+      "status": "eol_soon",
+      "latest_version": "10.0.14393",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-01-11",
+        "end_of_security_support": "2027-01-12",
+        "end_of_life": null,
+        "end_of_extended_support": "2030-01-12",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-01-12",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.14393",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2012-r2",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2012-r2",
+      "label": "Windows Server 2012 R2 (LTSC)",
+      "lts": true,
+      "release_date": "2013-11-25",
+      "status": "eol",
+      "latest_version": "6.3.9600",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2018-10-09",
+        "end_of_security_support": "2023-10-10",
+        "end_of_life": null,
+        "end_of_extended_support": "2026-10-13",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2023-10-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "6.3.9600",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2012-r2"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2012",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2012",
+      "label": "Windows Server 2012 (LTSC)",
+      "lts": true,
+      "release_date": "2012-10-30",
+      "status": "eol",
+      "latest_version": "6.2.9200",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2018-10-09",
+        "end_of_security_support": "2023-10-10",
+        "end_of_life": null,
+        "end_of_extended_support": "2026-10-13",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2023-10-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "6.2.9200",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2012"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2008-sp2",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2008-sp2",
+      "label": "Windows Server 2008 SP2 (LTSC)",
+      "lts": true,
+      "release_date": "2009-04-29",
+      "status": "eol",
+      "latest_version": "6.0.6003",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2015-01-13",
+        "end_of_security_support": "2020-01-14",
+        "end_of_life": null,
+        "end_of_extended_support": "2023-01-10",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-01-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "6.0.6003",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2008"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2008-r2-sp1",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2008-r2-sp1",
+      "label": "Windows Server 2008 R2 SP1 (LTSC)",
+      "lts": true,
+      "release_date": "2011-02-22",
+      "status": "eol",
+      "latest_version": "6.1.7601",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2015-01-13",
+        "end_of_security_support": "2020-01-14",
+        "end_of_life": null,
+        "end_of_extended_support": "2023-01-10",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-01-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "6.1.7601",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2008-r2"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2004-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2004-sac",
+      "label": "Windows Server 2004 SAC",
+      "lts": false,
+      "release_date": "2020-05-27",
+      "status": "eol",
+      "latest_version": "10.0.19041",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2021-12-14",
+        "end_of_security_support": "2021-12-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2021-12-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.19041",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-version-2004-end-of-servicing"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2003-sp2",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2003-sp2",
+      "label": "Windows Server 2003 SP2 (LTSC)",
+      "lts": true,
+      "release_date": "2007-03-13",
+      "status": "eol",
+      "latest_version": "5.2.3790",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2010-07-13",
+        "end_of_security_support": "2015-07-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2015-07-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "5.2.3790",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2003-sp1",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2003-sp1",
+      "label": "Windows Server 2003 SP1",
+      "lts": false,
+      "release_date": "2005-03-30",
+      "status": "eol",
+      "latest_version": "5.2.3790",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2009-04-14",
+        "end_of_security_support": "2009-04-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2009-04-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "5.2.3790",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2003",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2003",
+      "label": "Windows Server 2003 (LTSC)",
+      "lts": true,
+      "release_date": "2003-04-24",
+      "status": "eol",
+      "latest_version": "5.2.3790",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2007-04-10",
+        "end_of_security_support": "2007-04-10",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2007-04-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "5.2.3790",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-2000",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "2000",
+      "label": "Windows Server 2000 (LTSC)",
+      "lts": true,
+      "release_date": "2000-02-17",
+      "status": "eol",
+      "latest_version": "5.0.2195",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2005-06-30",
+        "end_of_security_support": "2010-07-13",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2010-07-13",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "5.0.2195",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-1909-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "1909-sac",
+      "label": "Windows Server 1909 SAC",
+      "lts": false,
+      "release_date": "2019-11-12",
+      "status": "eol",
+      "latest_version": "10.0.18363",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2021-05-11",
+        "end_of_security_support": "2021-05-11",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2021-05-11",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.18363",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1909-end-of-servicing"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-1903-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "1903-sac",
+      "label": "Windows Server 1903 SAC",
+      "lts": false,
+      "release_date": "2019-05-21",
+      "status": "eol",
+      "latest_version": "10.0.18362",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2020-12-08",
+        "end_of_security_support": "2020-12-08",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-12-08",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.18362",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/products/windows-server-semiannual-channel"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-1809-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "1809-sac",
+      "label": "Windows Server 1809 SAC",
+      "lts": false,
+      "release_date": "2018-11-13",
+      "status": "eol",
+      "latest_version": "10.0.17763",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2020-11-10",
+        "end_of_security_support": "2020-11-10",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-11-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.17763",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1809-end-of-servicing"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-1803-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "1803-sac",
+      "label": "Windows Server 1803 SAC",
+      "lts": false,
+      "release_date": "2018-04-30",
+      "status": "eol",
+      "latest_version": "10.0.17134",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2019-11-12",
+        "end_of_security_support": "2019-11-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2019-11-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.17134",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1803-end-of-servicing"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-1709-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "1709-sac",
+      "label": "Windows Server 1709 SAC",
+      "lts": false,
+      "release_date": "2017-10-17",
+      "status": "eol",
+      "latest_version": "10.0.16299",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2019-04-09",
+        "end_of_security_support": "2019-04-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2019-04-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.16299",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techcommunity.microsoft.com/discussions/windows-server-for-developers/windows-server-version-1709-lifecycle-announcement/379766"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-23h2-ac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "23h2-ac",
+      "label": "Windows Server 23H2 AC",
+      "lts": false,
+      "release_date": "2023-10-24",
+      "status": "eol",
+      "latest_version": "10.0.25398",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2026-05-12",
+        "end_of_security_support": "2026-05-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2026-05-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.25398",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.microsoft.com/servicing/os/windows-server/2026/05/end-of-updates-statement"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "windows-server-20h2-sac",
+      "product": "windows-server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "branch": "20h2-sac",
+      "label": "Windows Server 20H2 SAC",
+      "lts": false,
+      "release_date": "2020-10-20",
+      "status": "eol",
+      "latest_version": "10.0.19042",
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-08-09",
+        "end_of_security_support": "2022-08-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-08-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support",
+          "end_of_extended_support": "Extended Security Updates"
+        },
+        "source_url": "https://endoflife.date/windows-server"
+      },
+      "releases": [
+        {
+          "version": "10.0.19042",
+          "date": null,
+          "security_fix": null,
+          "summary": null,
+          "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-20h2-retiring"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

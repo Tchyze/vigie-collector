@@ -1,0 +1,1809 @@
+{
+ "source": "paloalto",
+ "result": {
+  "branches": [],
+  "advisories": [
+   {
+    "id": "CVE-2026-111497",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products",
+    "published": "2026-10-26T18:30:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-111497",
+    "updated": "2026-10-31T03:15:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-111497"
+    ],
+    "summary": "Palo Alto Networks is aware of the vulnerability in Brotli: CVE-2026-111497. A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory…",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0005",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Informational Bulletin: Precautionary Fixes for Non-Exploitable OSS CVEs in PAN-OS",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0005",
+    "updated": "2026-04-08T16:00:00Z",
+    "severity": "info",
+    "cvss": 0.0,
+    "cves": [],
+    "summary": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to PAN-OS. These CVEs were determined to have no impact on PAN-OS, but they have been fixed out of an abundance of caution.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0006",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Informational Bulletin: Impact assessment of OSS CVEs in PAN-OS",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0006",
+    "updated": "2026-04-08T16:00:00Z",
+    "severity": "info",
+    "cvss": 0.0,
+    "cves": [],
+    "summary": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to PAN-OS software.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0266",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Stored Cross-Site Scripting (XSS) Vulnerability in the Web Interface",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0266",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0266"
+    ],
+    "summary": "A cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS® software enables a malicious authenticated administrator to store a JavaScript payload using the web interface.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-109618",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products",
+    "published": "2026-10-21T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-109618",
+    "updated": "2026-10-29T23:54:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-109618",
+     "CVE-2026-109619"
+    ],
+    "summary": "Palo Alto Networks is aware of two critical vulnerabilities in PHP: CVE-2026-109618 and CVE-2026-109619.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0317",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0317",
+    "updated": "2026-10-15T18:30:00Z",
+    "severity": "medium",
+    "cvss": 5.1,
+    "cves": [
+     "CVE-2026-0317"
+    ],
+    "summary": "A denial of service vulnerability in Palo Alto Networks PAN-OS software enables an authenticated user with a read-only administrator role to cause a denial of service (DoS) condition by sending a specially crafted API request.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0316",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Stored Cross-Site Scripting (XSS) Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0316",
+    "updated": "2026-10-15T18:30:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0316"
+    ],
+    "summary": "A stored cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS® software enables a malicious authenticated administrator to store or execute a JavaScript payload using the web interface.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0301",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Information Disclosure Vulnerability in URL Filtering",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0301",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.3,
+    "cves": [
+     "CVE-2026-0301"
+    ],
+    "summary": "An information disclosure vulnerability in the URL Filtering feature of Palo Alto Networks PAN-OS® software enables an unauthenticated user with network access to obtain sensitive information. Panorama is not impacted by this vulnerability.",
+    "affected": [
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0282",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: File Deletion Vulnerability in Management Web Interface",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0282",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2026-0282"
+    ],
+    "summary": "A file deletion vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to the management web interface to delete files from a temporary directory.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0281",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Information Disclosure Vulnerability in Management Web Interface",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0281",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "medium",
+    "cvss": 5.9,
+    "cves": [
+     "CVE-2026-0281"
+    ],
+    "summary": "An information disclosure vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to the management web interface to obtain web session tokens. This requires a legitimate user to first click on a malicious link provided by the attacker.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0279",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Multiple Cross-Site Scripting (XSS) Vulnerabilities",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0279",
+    "updated": "2026-07-08T20:30:00Z",
+    "severity": "medium",
+    "cvss": 5.3,
+    "cves": [
+     "CVE-2026-0279"
+    ],
+    "summary": "Multiple cross site scripting vulnerabilities in the User-ID™ Authentication Portal (aka Captive Portal) service, GlobalProtect™ gateway/portal features and Clientless VPN of Palo Alto Networks PAN-OS® software enables a malicious unauthenticated user to store or execute malicious JavaScript…",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0308",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Stored Cross-Site Scripting (XSS) Vulnerability in the Web Interface",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0308",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0308"
+    ],
+    "summary": "A stored cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS® software enables a malicious authenticated administrator to store or execute a JavaScript payload using the web interface.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0322",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0322",
+    "updated": "2026-10-15T18:30:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0322"
+    ],
+    "summary": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0307",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Privilege Escalation Vulnerabilities",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0307",
+    "updated": "2026-10-17T00:55:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0307"
+    ],
+    "summary": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect™ app allows a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows and root on macOS and Linux.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0320",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Admin Command Injection Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0320",
+    "updated": "2026-10-15T18:30:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0320"
+    ],
+    "summary": "A command injection vulnerability in Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS management interface.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0321",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service (DoS) Vulnerabilities in Network Services",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0321",
+    "updated": "2026-10-15T18:30:00Z",
+    "severity": "high",
+    "cvss": 8.7,
+    "cves": [
+     "CVE-2026-0321"
+    ],
+    "summary": "Denial of service vulnerabilities in Palo Alto Networks PAN-OS® software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition by sending specially crafted network traffic to or through a dataplane interface.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0319",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Improper Input Handling Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0319",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.6,
+    "cves": [
+     "CVE-2026-0319"
+    ],
+    "summary": "An improper input handling vulnerability in the GlobalProtect™ gateway of Palo Alto Networks PAN-OS software enables an authenticated user to establish a GlobalProtect session using the identity of another user. Cloud NGFW and Panorama are not affected by this vulnerability.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0318",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service (DoS) on Panorama",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0318",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.2,
+    "cves": [
+     "CVE-2026-0318"
+    ],
+    "summary": "A stack-based buffer overflow vulnerability in the log processing functionality of Palo Alto Networks PAN-OS® software on Panorama enables an attacker to cause a denial of service (DoS) condition. Repeated attempts to trigger this condition result in the Panorama entering maintenance mode.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0313",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XSOAR: OS Command Injection Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0313",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0313"
+    ],
+    "summary": "A command injection vulnerability in Palo Alto Networks Cortex XSOAR and Cortex XSIAM OS Query content pack enables an authenticated administrator to execute arbitrary OS commands on remote endpoints.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0315",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Privilege Escalation Vulnerability on macOS",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0315",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0315"
+    ],
+    "summary": "A local privilege escalation vulnerability in the Palo Alto Networks GlobalProtect™ app enables a local user to escalate their privileges to root on macOS. This enables a non-administrative user to execute arbitrary commands with administrative privileges.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0013",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (October 2026)",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0013",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.4,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0311",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Checkov by Prisma Cloud: Server-Side Request Forgery Vulnerability",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0311",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0311"
+    ],
+    "summary": "A server-side request forgery vulnerability in Palo Alto Networks Checkov by Prisma® Cloud enables a local unauthenticated user to make unauthorized network requests from host to internal services.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0312",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Checkov by Prisma Cloud: Path Traversal Vulnerabilities",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0312",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.8,
+    "cves": [
+     "CVE-2026-0312"
+    ],
+    "summary": "Path traversal vulnerabilities in Palo Alto Networks Checkov by Prisma® Cloud enable an unauthenticated local user to write files to arbitrary locations on the scanning filesystem.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0314",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Denial of Service (DoS) on Windows",
+    "published": "2026-10-14T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0314",
+    "updated": "2026-10-14T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.8,
+    "cves": [
+     "CVE-2026-0314"
+    ],
+    "summary": "A type confusion vulnerability in Palo Alto Networks GlobalProtect™ app on Windows enables a local user with low privileges to cause a denial of service (DoS) condition. The GlobalProtect™ app on Linux, macOS, iOS, Android, and Chrome OS is not affected by this vulnerability.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0011",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (August 2026)",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0011",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0012",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (September 2026)",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0012",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.4,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0250",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Buffer Overflow Vulnerability during connection to Portal or Gateway",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0250",
+    "updated": "2026-10-02T08:15:00Z",
+    "severity": "high",
+    "cvss": 7.7,
+    "cves": [
+     "CVE-2026-0250"
+    ],
+    "summary": "A buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect™ app that enables a man in the middle attacker to disrupt system processes and potentially execute arbitrary code with SYSTEM privileges.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0309",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Command Injection in CLI with Luna HSM Configuration",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0309",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.1,
+    "cves": [
+     "CVE-2026-0309"
+    ],
+    "summary": "A command injection vulnerability in Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user.",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0303",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Checkov by Prisma Cloud: Code Execution via Auto-Loaded Configuration File",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0303",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.3,
+    "cves": [
+     "CVE-2026-0303"
+    ],
+    "summary": "A code execution vulnerability in Palo Alto Networks Checkov by Prisma® Cloud can allow arbitrary code execution when Checkov scans a directory that contains an attacker-controlled configuration file.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0295",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Privilege Escalation via Race Condition on macOS",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0295",
+    "updated": "2026-09-12T00:30:00Z",
+    "severity": "high",
+    "cvss": 7.2,
+    "cves": [
+     "CVE-2026-0295"
+    ],
+    "summary": "A race condition in the Palo Alto Networks GlobalProtect™ client on macOS enables a locally authenticated low-privileged attacker to escalate their privileges to root. The GlobalProtect app on Linux, Windows, iOS, Android, and Chrome OS is not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0296",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Improper Certificate Validation Bypass Vulnerability",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0296",
+    "updated": "2026-09-12T00:30:00Z",
+    "severity": "high",
+    "cvss": 7.4,
+    "cves": [
+     "CVE-2026-0296"
+    ],
+    "summary": "Improper certificate validation vulnerabilities in Palo Alto Networks GlobalProtect™ app enable an unauthenticated attacker with man-in-the-middle (MitM) access to intercept and modify application communications. VPN tunnel traffic is not impacted.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0297",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Buffer Overflow Vulnerability during UDP Tunnel Handshake",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0297",
+    "updated": "2026-09-12T00:30:00Z",
+    "severity": "high",
+    "cvss": 7.7,
+    "cves": [
+     "CVE-2026-0297"
+    ],
+    "summary": "A buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect™ app that enables a man-in-the-middle (MitM) attacker or a rogue gateway to disrupt system processes and potentially execute arbitrary code with elevated privileges (SYSTEM privileges on Windows, and root privileges on…",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0298",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Code Execution Vulnerability in Windows Pre-Logon Access Provider (PLAP)",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0298",
+    "updated": "2026-09-12T00:30:00Z",
+    "severity": "high",
+    "cvss": 7.7,
+    "cves": [
+     "CVE-2026-0298"
+    ],
+    "summary": "An improper input validation vulnerability exists in the Windows Pre-Logon Access Provider (PLAP) component of the Palo Alto Networks GlobalProtect™ app on Windows devices which enables a man-in-the-middle (MitM) attacker to execute arbitrary code with SYSTEM privileges on an affected client.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0299",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Privilege Escalation Vulnerabilities",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0299",
+    "updated": "2026-09-12T00:30:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0299"
+    ],
+    "summary": "Local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect™ app enable a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows, and root on macOS and Linux.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0009",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Informational Bulletin: Impact assessment of OSS CVEs in Prisma SD-WAN ION",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0009",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "info",
+    "cvss": 0.0,
+    "cves": [],
+    "summary": "The Palo Alto Networks Product Security Assurance team has evaluated the following open source software (OSS) CVEs as they relate to Prisma SD-WAN ION.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0310",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Buffer Overflow Vulnerability via XML Processing",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0310",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0310"
+    ],
+    "summary": "A buffer overflow vulnerability in the XML processing functionality of Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to the management web or dataplane interface to cause a denial of service (DoS) condition on VM-Series firewalls or execute arbitrary…",
+    "affected": [
+     "panos-12.2",
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0302",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Checkov by Prisma Cloud: OS Command Injection Vulnerability",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0302",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.7,
+    "cves": [
+     "CVE-2026-0302"
+    ],
+    "summary": "An OS command injection vulnerability in Palo Alto Networks Checkov by Prisma® Cloud enables a local user to execute arbitrary commands in the processes running Checkov.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0304",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XDR Broker VM: Privilege Escalation Vulnerability",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0304",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.5,
+    "cves": [
+     "CVE-2026-0304"
+    ],
+    "summary": "A privilege escalation vulnerability in Palo Alto Networks Cortex XDR Broker VM enables an authenticated low privileged user with man-in-the-middle (MitM) access to execute code with root privileges on the Broker VM.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0305",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Information Disclosure Vulnerability on Linux",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0305",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.8,
+    "cves": [
+     "CVE-2026-0305"
+    ],
+    "summary": "An information disclosure vulnerability in the Palo Alto Networks Prisma® Access Agent on Linux enables a local user to access sensitive configuration data and credentials. The Prisma Access Agent on macOS, Windows, iOS, Android and Chrome OS is not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0306",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: EndPoint DLP Bypass Vulnerability on Windows",
+    "published": "2026-09-09T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0306",
+    "updated": "2026-09-09T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.4,
+    "cves": [
+     "CVE-2026-0306"
+    ],
+    "summary": "A vulnerability in the EndPoint Data Loss Prevention (DLP) enforcement of Palo Alto Networks Prisma® Access Agent enables a local user to bypass configured DLP policy enforcement controls and exfiltrate sensitive data.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0251",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Local Privilege Escalation Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0251",
+    "updated": "2026-08-27T01:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0251"
+    ],
+    "summary": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect™ app allow a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows and root on macOS and Linux.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0288",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Buffer Overflow Vulnerabilities in User-ID Terminal Server Agent",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0288",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0288"
+    ],
+    "summary": "Multiple buffer overflow vulnerabilities in the User-ID Terminal Server Agent (TSA) component of Palo Alto Networks PAN-OS software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition or potentially execute arbitrary code by sending specially crafted…",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0294",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Local Privilege Escalation",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0294",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0294"
+    ],
+    "summary": "A privilege escalation (PE) vulnerability in the Palo Alto Networks Prisma® Access Agent app on Windows and macOS devices enables a local user to execute code with elevated privileges. The Prisma Access Agent on Linux, iOS, Android, and ChromeOS is not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0293",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Anti-Tamper Protection Bypass on Windows",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0293",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.3,
+    "cves": [
+     "CVE-2026-0293"
+    ],
+    "summary": "A vulnerability in Palo Alto Networks Prisma® Access Agent on Windows enables a local attacker with administrator privileges to bypass the anti-tamper protection, enabling unauthorized access to protected processes and files.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0292",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Local Security Inspection Bypass Vulnerability on Windows",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0292",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.1,
+    "cves": [
+     "CVE-2026-0292"
+    ],
+    "summary": "An authentication bypass vulnerability in the network driver of Palo Alto Networks Prisma® Access Agent on Windows enables a local administrator to bypass security inspection, subsequently allowing them to inject and intercept arbitrary network traffic.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0291",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Authenticated Limited File Deletion on Linux",
+    "published": "2026-08-12T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0291",
+    "updated": "2026-08-12T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0291"
+    ],
+    "summary": "An improper link resolution before file access vulnerability exists in the Palo Alto Networks Prisma® Access Agent on Linux platforms that enables a local low privileged user to delete system files in a limited scope and disable Prisma Access Agent.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2025-4619",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Firewall Denial of Service (DoS) Using Specially Crafted Packets",
+    "published": "2025-11-12T17:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2025-4619",
+    "updated": "2025-11-12T17:00:00Z",
+    "severity": "high",
+    "cvss": 8.7,
+    "cves": [
+     "CVE-2025-4619"
+    ],
+    "summary": "A denial-of-service (DoS) vulnerability in Palo Alto Networks PAN-OS software enables an unauthenticated attacker to reboot a firewall by sending a specially crafted packet through the dataplane. Repeated attempts to initiate a reboot causes the firewall to enter maintenance mode.",
+    "affected": [
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0249",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Certificate Validation Bypass Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0249",
+    "updated": "2026-06-13T01:45:00Z",
+    "severity": "high",
+    "cvss": 7.6,
+    "cves": [
+     "CVE-2026-0249"
+    ],
+    "summary": "Multiple improper certificate validation vulnerabilities in the Palo Alto Networks GlobalProtect™ app enables an attacker to intercept encrypted communications and potentially compromise the endpoint.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0246",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Local Privilege Escalation Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0246",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0246"
+    ],
+    "summary": "A vulnerability with a privilege management mechanism in the Palo Alto Networks Prisma Access Agent® enables a locally authenticated non-administrative user to escalate their privileges to root on macOS and Linux or NT AUTHORITY\\SYSTEM on Windows.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0278",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Multiple DLP Policy Bypass Vulnerabilities on Windows",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0278",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.4,
+    "cves": [
+     "CVE-2026-0278"
+    ],
+    "summary": "Multiple protection mechanism failures in the Prisma Access Agent Data Loss Prevention (DLP) component for Windows allow a local user to bypass DLP policy enforcement controls. The Prisma Access Agent on macOS is not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0010",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium and Prisma Browser: Monthly Vulnerability Update (July 2026)",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0010",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0280",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: IPv6 Firewall Policy Bypass",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0280",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.3,
+    "cves": [
+     "CVE-2026-0280"
+    ],
+    "summary": "An IPv6 packet processing vulnerability in the dataplane of Palo Alto Networks PAN-OS® software enables an unauthenticated attacker to bypass firewall security policy enforcement, allowing network traffic that should be blocked to reach protected services.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0286",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Command Injection in CLI",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0286",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0286"
+    ],
+    "summary": "A command injection vulnerability in the management plane of Palo Alto Networks PAN-OS® software enables an authenticated administrator to execute arbitrary OS commands as root.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0283",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN)",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0283",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.8,
+    "cves": [
+     "CVE-2026-0283"
+    ],
+    "summary": "An authentication bypass vulnerability in Large Scale VPN ( LSVPN) functionality of Palo Alto Networks PAN-OS software allows an attacker with network access to bypass security restrictions and establish an unauthorized site-to-site VPN connection.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0284",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN)",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0284",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.8,
+    "cves": [
+     "CVE-2026-0284"
+    ],
+    "summary": "An XML injection vulnerability in the Large Scale VPN (LSVPN) functionality of Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to inject malicious XML content, potentially leading to information disclosure or corruption of internal LSVPN satellite data.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0285",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0285",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.0,
+    "cves": [
+     "CVE-2026-0285"
+    ],
+    "summary": "A server-side request forgery (SSRF) vulnerability in Palo Alto Networks PAN-OS software enables an authenticated administrator with network access to the management web interface to make unauthorized requests from the firewall to internal services.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0287",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service Vulnerabilities in Network Traffic Processing",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0287",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.7,
+    "cves": [
+     "CVE-2026-0287"
+    ],
+    "summary": "Multiple denial of service vulnerabilities in Palo Alto Networks PAN-OS® software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition by sending specially crafted network traffic to or through a dataplane interface.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0277",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Improper Certificate Validation on iOS",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0277",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.7,
+    "cves": [
+     "CVE-2026-0277"
+    ],
+    "summary": "An improper certificate validation vulnerability in the Prisma® Access Agent for iOS enables an attacker to perform a man-in-the-middle (MitM) attack to intercept VPN traffic. The Prisma Access Agent on Windows, macOS, Linux, Android and ChromeOS are not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0276",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XDR Broker VM: Privilege Escalation (PE) Vulnerability",
+    "published": "2026-07-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0276",
+    "updated": "2026-07-08T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0276"
+    ],
+    "summary": "A privilege escalation vulnerability in Palo Alto Networks Cortex® XDR Broker VM enables a locally authenticated user to perform actions as the root user.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0300",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Unauthenticated user initiated Buffer Overflow Vulnerability in User-ID™ Authentication Portal",
+    "published": "2026-05-05T23:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0300",
+    "updated": "2026-05-28T00:00:00Z",
+    "severity": "critical",
+    "cvss": 9.3,
+    "cves": [
+     "CVE-2026-0300"
+    ],
+    "summary": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0257",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: GlobalProtect Authentication Bypass Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0257",
+    "updated": "2026-06-03T05:45:00Z",
+    "severity": "high",
+    "cvss": 7.8,
+    "cves": [
+     "CVE-2026-0257"
+    ],
+    "summary": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection. Panorama and Cloud NGFW are not impacted by these issues.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0273",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Admin Command Injection Vulnerability via CLI or Web UI",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0273",
+    "updated": "2026-06-11T01:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0273"
+    ],
+    "summary": "A command injection vulnerability in Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI or Web UI.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0270",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XSOAR: Path Traversal Vulnerability",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0270",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.5,
+    "cves": [
+     "CVE-2026-0270"
+    ],
+    "summary": "A path traversal vulnerability in Palo Alto Networks Cortex XSOAR engine software running on Linux allows an unauthenticated attacker on an adjacent network, with the ability to intercept and manipulate network response traffic via a man-in-the-middle (MITM) attack, to write arbitrary files to the…",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0269",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service (DoS) in Tunnel Traffic Processing",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0269",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2026-0269"
+    ],
+    "summary": "A memory corruption vulnerability in the processing of tunnel traffic in Palo Alto Networks PAN-OS® software allows an authenticated user to initiate system reboots using a maliciously crafted packet. Repeated attempts to initiate a reboot causes the firewall to enter maintenance mode.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0268",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Local Authenticated VPN Enforcement Bypass on Linux",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0268",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2026-0268"
+    ],
+    "summary": "A security control bypass vulnerability in Prisma Access Agent for Linux allows a local attacker to route network traffic outside the VPN tunnel. This does not impact Prisma Access Agent on Windows, macOS, iOS, Android, or ChromeOS.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0271",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Local Privilege Escalation by Authorized Users",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0271",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0271"
+    ],
+    "summary": "A privilege escalation (PE) vulnerability in the Palo Alto Networks Prisma Access Agent app on Linux devices enables a local user to execute code with elevated privileges. This does not impact Prisma Access Agent on Windows, macOS, iOS, Android, or ChromeOS.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0274",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XSOAR: Improper Validation of Credentials in CommvaultSecurityIQ integration",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0274",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.3,
+    "cves": [
+     "CVE-2026-0274"
+    ],
+    "summary": "An improper validation of credentials vulnerability in the CommvaultSecurityIQ integration for Cortex XSOAR and Cortex XSIAM allows an unauthenticated attacker to access and modify protected resources.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0008",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (June 2026)",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0008",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.5,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0272",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Privilege Escalation (PE) Vulnerability in the Command Line Interface (CLI)",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0272",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0272"
+    ],
+    "summary": "A privilege escalation vulnerability in Palo Alto Networks PAN-OS® software allows an authenticated administrator with access to the Command Line Interface (CLI) to perform actions on the device with root privileges.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0267",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "GlobalProtect App: Information Exposure Vulnerability on macOS",
+    "published": "2026-06-10T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0267",
+    "updated": "2026-06-10T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2026-0267"
+    ],
+    "summary": "An information exposure vulnerability in the Palo Alto Networks GlobalProtect app on macOS enables a local user to learn the configured passcodes for disabling, disconnecting, or uninstalling the GlobalProtect app.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0256",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Stored Cross-Site Scripting (XSS) Vulnerability in the Web Interface",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0256",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2026-0256"
+    ],
+    "summary": "A stored cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS® software enables a malicious authenticated administrator to store a JavaScript payload using the web interface.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0258",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Server-Side Request Forgery (SSRF) in IKEv2 Certificate URL Fetching",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0258",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "high",
+    "cvss": 8.3,
+    "cves": [
+     "CVE-2026-0258"
+    ],
+    "summary": "A server-side request forgery (SSRF) vulnerability in the IKEv2 implementation of Palo Alto Networks PAN-OS® software allows an unauthenticated attacker to cause the firewall to send network requests to unintended destinations or cause a denial of service (DoS) condition.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0259",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "WildFire WF-500 and WF-500-B: Arbitrary File Read and Delete Vulnerability in WildFire Appliance (WF-500, WF-500-B)",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0259",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "high",
+    "cvss": 7.1,
+    "cves": [
+     "CVE-2026-0259"
+    ],
+    "summary": "An arbitrary File Read and Delete Vulnerability in Palo Alto Networks WildFire® WF-500 and WF-500-B appliances enables users to read sensitive information and delete arbitrary files. This vulnerability affects WF-500 and WF-500-B appliances running in the default non-FIPS configuration mode.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0261",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authenticated Admin Command Injection Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0261",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0261"
+    ],
+    "summary": "Multiple command injection vulnerabilities in Palo Alto Networks PAN-OS® software enable an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI or Web UI.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0262",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Denial of Service Vulnerabilities in Network Traffic Parsing",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0262",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "high",
+    "cvss": 8.7,
+    "cves": [
+     "CVE-2026-0262"
+    ],
+    "summary": "Multiple denial of service vulnerabilities in Palo Alto Networks PAN-OS® software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition by sending specially crafted network traffic to a dataplane interface.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0263",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Remote Code Execution (RCE) in IKEv2 Processing",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0263",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0263"
+    ],
+    "summary": "A buffer overflow vulnerability in the IKEv2 processing of Palo Alto Networks PAN-OS® software allows an unauthenticated network-based attacker to execute arbitrary code with elevated privileges on the firewall, or cause a denial of service (DoS) condition.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0264",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Heap-Based Buffer Overflow in DNS Proxy and DNS Server Allows Unauthenticated Remote Code Execution",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0264",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0264"
+    ],
+    "summary": "A buffer overflow vulnerability in the DNS proxy and DNS Server features of Palo Alto Networks PAN-OS® Software allows an unauthenticated attacker with network access to cause a denial of service (DoS) condition (all PAN-OS platforms except Cloud NGFW and Prisma Access) or potentially execute…",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0265",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Authentication Bypass with Cloud Authentication Service (CAS) enabled",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0265",
+    "updated": "2026-05-28T21:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0265"
+    ],
+    "summary": "An authentication bypass vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to bypass authentication controls when Cloud Authentication Service (CAS) is enabled.",
+    "affected": [
+     "panos-12.1",
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0007",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium and Prisma Browser: Monthly Vulnerability Update (May 2026)",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0007",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0242",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Trust Protection Foundation: SQL Injection Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0242",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0242"
+    ],
+    "summary": "A SQL injection vulnerability in Trust Protection Foundation allows an authenticated attacker to execute arbitrary SQL commands against the product database.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0244",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma SD-WAN: Improper Certificate Validation Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0244",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.7,
+    "cves": [
+     "CVE-2026-0244"
+    ],
+    "summary": "An improper certificate validation vulnerability in the Palo Alto Networks Prisma SD-WAN ION enables man-in-the-middle (MitM) attacker to impersonate the controller.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0239",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chronosphere Chronocollector Information Disclosure Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0239",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.1,
+    "cves": [
+     "CVE-2026-0239"
+    ],
+    "summary": "An information disclosure vulnerability in the Chronosphere Chronocollector enables an unauthenticated attacker with network access to the collector service to retrieve sensitive information.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0241",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Trust Protection Foundation: Multiple Authorization Bypass Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0241",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.2,
+    "cves": [
+     "CVE-2026-0241"
+    ],
+    "summary": "Incorrect Authorization vulnerabilities in Trust Protection Foundation allow attackers to bypass access controls and perform unauthorized actions on restricted resources.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0240",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Trust Protection Foundation: Sensitive Information Disclosure Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0240",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.4,
+    "cves": [
+     "CVE-2026-0240"
+    ],
+    "summary": "An information disclosure vulnerability in Trust Protection Foundation enables an authenticated attacker to obtain sensitive information from the server's vault.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0243",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma SD-WAN: Denial of Service (DoS) Vulnerability Through IPv6 Crafted Packet",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0243",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 7.1,
+    "cves": [
+     "CVE-2026-0243"
+    ],
+    "summary": "A denial of service (DoS) vulnerability in Palo Alto Networks Prisma SD-WAN ION devices enables an unauthenticated attacker in a network adjacent to a Prisma SD-WAN ION device to cause a system disruption by sending a specially crafted IPv6 packet.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0245",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Information Disclosure Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0245",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.8,
+    "cves": [
+     "CVE-2026-0245"
+    ],
+    "summary": "Multiple information disclosure vulnerabilities in Prisma Access Agent® allow a local user to access sensitive configuration data and credentials. The Prisma Access Agent on Linux, ChromeOS, Android, and iOS are not affected.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0247",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent Endpoint DLP: Authorization Bypass Vulnerabilities",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0247",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.5,
+    "cves": [
+     "CVE-2026-0247"
+    ],
+    "summary": "Multiple authorization bypass vulnerabilities in the Endpoint DLP component of Prisma Access Agent® allow a local attacker to bypass authentication controls and execute privileged operations.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0248",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Prisma Access Agent: Improper Certificate Validation Vulnerability",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0248",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [
+     "CVE-2026-0248"
+    ],
+    "summary": "An improper certificate validation vulnerability in the Prisma Access Agent® for Android and Chrome OS enables an attacker to perform a man-in-the-middle (MitM) attack to intercept VPN traffic.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0238",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Broker VM: Improper Input Validation in Broker VM Certificate and Key Fields",
+    "published": "2026-05-13T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0238",
+    "updated": "2026-05-13T16:00:00Z",
+    "severity": "medium",
+    "cvss": 4.8,
+    "cves": [
+     "CVE-2026-0238"
+    ],
+    "summary": "A vulnerability in Palo Alto Networks Broker VM allows an authenticated administrator to inject arbitrary content into certain Broker VM fields.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0233",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Autonomous Digital Experience Manager: Improper validation of ADEM certificate",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0233",
+    "updated": "2026-04-08T18:05:00Z",
+    "severity": "high",
+    "cvss": 7.7,
+    "cves": [
+     "CVE-2026-0233"
+    ],
+    "summary": "A certificate validation vulnerability in Palo Alto Networks Autonomous Digital Experience Manager on Windows allows an unauthenticated attacker with adjacent network access to execute arbitrary code with NT AUTHORITY\\SYSTEM privileges.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0234",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XSOAR: Improper Verification of Cryptographic Signature in Microsoft Teams integration",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0234",
+    "updated": "2026-04-08T16:00:00Z",
+    "severity": "critical",
+    "cvss": 9.2,
+    "cves": [
+     "CVE-2026-0234"
+    ],
+    "summary": "An improper verification of cryptographic signature vulnerability exists in Cortex XSOAR and Cortex XSIAM platforms during integration of Microsoft Teams that enables an unauthenticated user to access and modify protected resources.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0004",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (April 2026)",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0004",
+    "updated": "2026-04-08T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0232",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XDR Agent: Local Administrator can disable the agent on Windows",
+    "published": "2026-04-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0232",
+    "updated": "2026-04-08T16:00:00Z",
+    "severity": "medium",
+    "cvss": 6.7,
+    "cves": [
+     "CVE-2026-0232"
+    ],
+    "summary": "A problem with a protection mechanism in the Palo Alto Networks Cortex XDR agent on Windows allows a local Windows administrator to disable the agent. This issue may be leveraged by malware to perform malicious activity without detection.",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2025-4615",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "PAN-OS: Improper Neutralization of Input in the Management Web Interface",
+    "published": "2025-10-08T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2025-4615",
+    "updated": "2026-04-01T00:15:00Z",
+    "severity": "medium",
+    "cvss": 6.9,
+    "cves": [
+     "CVE-2025-4615"
+    ],
+    "summary": "An improper input neutralization vulnerability in the management web interface of the Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and execute arbitrary commands.",
+    "affected": [
+     "panos-11.2",
+     "panos-11.1",
+     "panos-10.2"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "PAN-SA-2026-0003",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Chromium: Monthly Vulnerability Update (March 2026)",
+    "published": "2026-03-11T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/PAN-SA-2026-0003",
+    "updated": "2026-03-11T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.6,
+    "cves": [],
+    "summary": "Palo Alto Networks incorporated the following Chromium security fixes into our products: * https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html",
+    "affected": [],
+    "attribution": null
+   },
+   {
+    "id": "CVE-2026-0231",
+    "source": "paloalto",
+    "vendor": "Palo Alto Networks",
+    "title": "Cortex XDR Broker VM: Sensitive Information Disclosure Vulnerability",
+    "published": "2026-03-11T16:00:00Z",
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0231",
+    "updated": "2026-03-11T16:00:00Z",
+    "severity": "high",
+    "cvss": 8.4,
+    "cves": [
+     "CVE-2026-0231"
+    ],
+    "summary": "An information disclosure vulnerability in Palo Alto Networks Cortex XDR® Broker VM allows an authenticated user to obtain and modify sensitive information by triggering live terminal session via Cortex UI and modifying any configuration setting.",
+    "affected": [],
+    "attribution": null
+   }
+  ]
+ }
+}

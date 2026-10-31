@@ -1,0 +1,940 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "panos",
+  "label": "PAN-OS",
+  "vendor": "Palo Alto Networks",
+  "category": "firewall",
+  "branches": [
+    {
+      "id": "panos-12.2",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "12.2",
+      "label": "12.2",
+      "lts": false,
+      "release_date": "2026-07-30",
+      "status": "active",
+      "latest_version": "12.2.4-h1",
+      "latest_release_date": "2026-10-26",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2029-07-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2029-07-30",
+        "declared_eol": false,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "12.2.4-h1",
+          "date": "2026-10-26",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-2/pan-os-12-2-4-known-and-addressed-issues/pan-os-12-2-4-h1-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-12.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "12.1",
+      "label": "12.1",
+      "lts": false,
+      "release_date": "2025-08-28",
+      "status": "active",
+      "latest_version": "12.1.10-h3",
+      "latest_release_date": "2026-10-28",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2028-08-28",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2028-08-28",
+        "declared_eol": false,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "12.1.10-h3",
+          "date": "2026-10-28",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/pan-os-12-1-10-known-and-addressed-issues/pan-os-12-1-10-h3-addressed-issues"
+        },
+        {
+          "version": "12.1.10-h2",
+          "date": "2026-10-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/pan-os-12-1-10-known-and-addressed-issues/pan-os-12-1-10-h2-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-11.2",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "11.2",
+      "label": "11.2",
+      "lts": false,
+      "release_date": "2024-05-02",
+      "status": "active",
+      "latest_version": "11.2.16-h1",
+      "latest_release_date": "2026-10-27",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2027-05-02",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2027-05-02",
+        "declared_eol": false,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "11.2.16-h1",
+          "date": "2026-10-27",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/11-2/pan-os-release-notes/pan-os-11-2-16-known-and-addressed-issues/pan-os-11-2-16-h1-addressed-issues"
+        },
+        {
+          "version": "11.2.16",
+          "date": "2026-10-15",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/11-2/pan-os-release-notes/pan-os-11-2-16-known-and-addressed-issues/pan-os-11-2-16-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-11.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "11.1",
+      "label": "11.1",
+      "lts": false,
+      "release_date": "2023-11-03",
+      "status": "active",
+      "latest_version": "11.1.16-h4",
+      "latest_release_date": "2026-10-24",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2027-05-03",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2027-05-03",
+        "declared_eol": false,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "11.1.16-h4",
+          "date": "2026-10-24",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-release-notes/pan-os-11-1-16-known-and-addressed-issues/pan-os-11-1-16-h4-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-11.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "11.0",
+      "label": "11.0",
+      "lts": false,
+      "release_date": "2022-11-17",
+      "status": "eol",
+      "latest_version": "11.0.6-h1",
+      "latest_release_date": "2024-11-17",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2024-11-17",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-11-17",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "11.0.6-h1",
+          "date": "2024-11-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-release-notes/pan-os-11-0-6-known-and-addressed-issues/pan-os-11-0-6-h1-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-10.2",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "10.2",
+      "label": "10.2",
+      "lts": false,
+      "release_date": "2022-02-27",
+      "status": "eol",
+      "latest_version": "10.2.18-h13",
+      "latest_release_date": "2026-10-24",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2025-08-27",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2025-08-27",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "10.2.18-h13",
+          "date": "2026-10-24",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/10-2/pan-os-release-notes/pan-os-10-2-18-known-and-addressed-issues/pan-os-10-2-18-h13-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-10.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "10.1",
+      "label": "10.1",
+      "lts": false,
+      "release_date": "2021-05-31",
+      "status": "eol",
+      "latest_version": "10.1.14-h20",
+      "latest_release_date": "2025-11-25",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2024-12-01",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-12-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "10.1.14-h20",
+          "date": "2025-11-25",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h20-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-10.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "10.0",
+      "label": "10.0",
+      "lts": false,
+      "release_date": "2020-07-16",
+      "status": "eol",
+      "latest_version": "10.0.12-h6",
+      "latest_release_date": "2024-05-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2022-07-16",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-07-16",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "10.0.12-h6",
+          "date": "2024-05-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-release-notes/pan-os-10-0-addressed-issues/pan-os-10-0-12-h6-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-9.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "9.1",
+      "label": "9.1",
+      "lts": false,
+      "release_date": "2019-12-13",
+      "status": "eol",
+      "latest_version": "9.1.19",
+      "latest_release_date": "2024-05-22",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2024-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "9.1.19",
+          "date": "2024-05-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-release-notes/pan-os-9-1-addressed-issues/pan-os-9-1-19-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-9.0-xfr",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "9.0-xfr",
+      "label": "9.0-XFR (VM-Series only)",
+      "lts": false,
+      "release_date": "2019-09-19",
+      "status": "eol",
+      "latest_version": "9.0-XFR (VM-Series only)",
+      "latest_release_date": "2019-09-19",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2020-09-19",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2020-09-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "9.0-XFR (VM-Series only)",
+          "date": "2019-09-19",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/vm-series/9-0/pan-os-xfr-release-notes/pan-os-90-xfr/pan-os-9-0-xfr-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-9.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "9.0",
+      "label": "9.0",
+      "lts": false,
+      "release_date": "2019-02-06",
+      "status": "eol",
+      "latest_version": "9.0.17-h5",
+      "latest_release_date": "2023-12-30",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2022-03-01",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-03-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "9.0.17-h5",
+          "date": "2023-12-30",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-17-h5-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-8.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "8.1",
+      "label": "8.1",
+      "lts": false,
+      "release_date": "2018-03-01",
+      "status": "eol",
+      "latest_version": "8.1.24",
+      "latest_release_date": "2022-10-11",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2022-03-01",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-03-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "8.1.24",
+          "date": "2022-10-11",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-24-addressed-issues"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-8.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "8.0",
+      "label": "8.0",
+      "lts": false,
+      "release_date": "2017-01-29",
+      "status": "eol",
+      "latest_version": "8.0.20",
+      "latest_release_date": "2019-10-23",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2019-10-31",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2019-10-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "8.0.20",
+          "date": "2019-10-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/pan-os/8-0/pan-os-release-notes/pan-os-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-7.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "7.1",
+      "label": "7.1",
+      "lts": false,
+      "release_date": "2016-03-29",
+      "status": "eol",
+      "latest_version": "7.1.26",
+      "latest_release_date": "2020-04-30",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2020-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2020-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "7.1.26",
+          "date": "2020-04-30",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/pan-os/7-1/pan-os-release-notes/pan-os-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-7.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "7.0",
+      "label": "7.0",
+      "lts": false,
+      "release_date": "2015-06-04",
+      "status": "eol",
+      "latest_version": "7.0.19",
+      "latest_release_date": "2018-03-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2017-12-04",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2017-12-04",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "7.0.19",
+          "date": "2018-03-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-70-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-6.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "6.1",
+      "label": "6.1",
+      "lts": false,
+      "release_date": "2014-10-25",
+      "status": "eol",
+      "latest_version": "6.1.22",
+      "latest_release_date": "2018-10-22",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2018-10-25",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2018-10-25",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "6.1.22",
+          "date": "2018-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-61-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-6.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "6.0",
+      "label": "6.0",
+      "lts": false,
+      "release_date": "2014-01-19",
+      "status": "eol",
+      "latest_version": "6.0.15",
+      "latest_release_date": "2017-11-14",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2017-03-19",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2017-03-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [
+        {
+          "version": "6.0.15",
+          "date": "2017-11-14",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-60-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-5.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "5.1",
+      "label": "5.1",
+      "lts": false,
+      "release_date": "2013-05-09",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2017-05-09",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2017-05-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-5.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "5.0",
+      "label": "5.0",
+      "lts": false,
+      "release_date": "2012-11-13",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2016-11-13",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2016-11-13",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-4.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "4.1",
+      "label": "4.1",
+      "lts": false,
+      "release_date": "2011-10-31",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2015-04-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2015-04-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-4.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "4.0",
+      "label": "4.0",
+      "lts": false,
+      "release_date": "2011-02-22",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2014-12-31",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2014-12-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-3.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "3.1",
+      "label": "3.1",
+      "lts": false,
+      "release_date": "2010-03-15",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2013-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2013-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-3.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "3.0",
+      "label": "3.0",
+      "lts": false,
+      "release_date": "2009-06-17",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2010-12-17",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2010-12-17",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-2.1",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "2.1",
+      "label": "2.1",
+      "lts": false,
+      "release_date": "2009-01-05",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2012-01-05",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2012-01-05",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-2.0",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "2.0",
+      "label": "2.0",
+      "lts": false,
+      "release_date": "2008-05-20",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2009-05-20",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2009-05-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "panos-1.3",
+      "product": "panos",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "branch": "1.3",
+      "label": "1.3",
+      "lts": false,
+      "release_date": "2007-11-15",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": "2008-11-20",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2008-11-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_life": "End-of-life Date"
+        },
+        "source_url": "https://endoflife.date/panos"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

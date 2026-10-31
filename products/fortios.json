@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "fortios",
+  "label": "FortiOS",
+  "vendor": "Fortinet",
+  "category": "firewall",
+  "branches": [
+    {
+      "id": "fortios-8.0",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "8.0",
+      "label": "8.0",
+      "lts": false,
+      "release_date": "2026-04-21",
+      "status": "active",
+      "latest_version": "8.0.2",
+      "latest_release_date": "2026-10-22",
+      "eol": {
+        "end_of_active_support": "2029-04-21",
+        "end_of_security_support": null,
+        "end_of_life": "2030-10-21",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2030-10-21",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [
+        {
+          "version": "8.0.2",
+          "date": "2026-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+        },
+        {
+          "version": "8.0.1",
+          "date": "2026-09-16",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+        }
+      ],
+      "sources": [
+        "fortinet_firmware",
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-7.6",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "7.6",
+      "label": "7.6",
+      "lts": false,
+      "release_date": "2024-07-25",
+      "status": "active",
+      "latest_version": "7.6.8",
+      "latest_release_date": "2026-10-22",
+      "eol": {
+        "end_of_active_support": "2028-07-25",
+        "end_of_security_support": null,
+        "end_of_life": "2030-01-25",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2030-01-25",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [
+        {
+          "version": "7.6.8",
+          "date": "2026-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+        }
+      ],
+      "sources": [
+        "fortinet_firmware",
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-7.4",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "7.4",
+      "label": "7.4",
+      "lts": false,
+      "release_date": "2023-05-11",
+      "status": "active",
+      "latest_version": "7.4.13",
+      "latest_release_date": "2026-10-22",
+      "eol": {
+        "end_of_active_support": "2027-05-11",
+        "end_of_security_support": null,
+        "end_of_life": "2028-11-11",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2028-11-11",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [
+        {
+          "version": "7.4.13",
+          "date": "2026-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+        }
+      ],
+      "sources": [
+        "fortinet_firmware",
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-7.2",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "7.2",
+      "label": "7.2",
+      "lts": false,
+      "release_date": "2022-03-31",
+      "status": "eol",
+      "latest_version": "7.2.14",
+      "latest_release_date": "2026-10-22",
+      "eol": {
+        "end_of_active_support": "2025-03-31",
+        "end_of_security_support": null,
+        "end_of_life": "2026-09-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2026-09-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [
+        {
+          "version": "7.2.14",
+          "date": "2026-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+        }
+      ],
+      "sources": [
+        "fortinet_firmware",
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-7.0",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "7.0",
+      "label": "7.0",
+      "lts": false,
+      "release_date": "2021-03-30",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2024-03-30",
+        "end_of_security_support": null,
+        "end_of_life": "2025-09-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2025-09-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-6.4",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "6.4",
+      "label": "6.4",
+      "lts": false,
+      "release_date": "2020-03-31",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2023-03-31",
+        "end_of_security_support": null,
+        "end_of_life": "2024-09-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2024-09-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-6.2",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "6.2",
+      "label": "6.2",
+      "lts": false,
+      "release_date": "2019-03-28",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2022-03-28",
+        "end_of_security_support": null,
+        "end_of_life": "2023-09-28",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2023-09-28",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "fortios-6.0",
+      "product": "fortios",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "branch": "6.0",
+      "label": "6.0",
+      "lts": false,
+      "release_date": "2018-03-29",
+      "status": "eol",
+      "latest_version": null,
+      "latest_release_date": null,
+      "eol": {
+        "end_of_active_support": "2021-03-29",
+        "end_of_security_support": null,
+        "end_of_life": "2022-09-29",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2022-09-29",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "End of Engineering Support",
+          "end_of_life": "End of Support"
+        },
+        "source_url": "https://endoflife.date/fortios"
+      },
+      "releases": [],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

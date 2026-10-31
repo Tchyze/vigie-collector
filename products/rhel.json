@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "rhel",
+  "label": "Red Hat Enterprise Linux",
+  "vendor": "Red Hat",
+  "category": "os",
+  "branches": [
+    {
+      "id": "rhel-10",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "10",
+      "label": "10 (Upcoming ELS)",
+      "lts": false,
+      "release_date": "2025-05-20",
+      "status": "active",
+      "latest_version": "10.2",
+      "latest_release_date": "2026-05-20",
+      "eol": {
+        "end_of_active_support": "2030-05-31",
+        "end_of_security_support": "2035-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2039-05-31",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2035-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "10.2",
+          "date": "2026-05-20",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/10/html/10.2_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-9",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "9",
+      "label": "9 (Upcoming ELS)",
+      "lts": false,
+      "release_date": "2022-05-18",
+      "status": "active",
+      "latest_version": "9.8",
+      "latest_release_date": "2026-05-20",
+      "eol": {
+        "end_of_active_support": "2027-05-31",
+        "end_of_security_support": "2032-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2036-05-31",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2032-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "9.8",
+          "date": "2026-05-20",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/9.8_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-8",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "8",
+      "label": "8 (Upcoming ELS)",
+      "lts": false,
+      "release_date": "2019-05-07",
+      "status": "active",
+      "latest_version": "8.10",
+      "latest_release_date": "2024-05-22",
+      "eol": {
+        "end_of_active_support": "2024-05-31",
+        "end_of_security_support": "2029-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2033-05-31",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2029-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "8.10",
+          "date": "2024-05-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.10_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-7",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "7",
+      "label": "7 (ELS)",
+      "lts": true,
+      "release_date": "2014-06-10",
+      "status": "eol",
+      "latest_version": "7.9",
+      "latest_release_date": "2020-09-29",
+      "eol": {
+        "end_of_active_support": "2019-08-06",
+        "end_of_security_support": "2024-06-30",
+        "end_of_life": null,
+        "end_of_extended_support": "2029-05-31",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2024-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "7.9",
+          "date": "2020-09-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.9_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-6",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "6",
+      "label": "6 (ELS)",
+      "lts": true,
+      "release_date": "2010-11-10",
+      "status": "eol",
+      "latest_version": "6.10",
+      "latest_release_date": "2018-06-19",
+      "eol": {
+        "end_of_active_support": "2016-05-10",
+        "end_of_security_support": "2020-11-30",
+        "end_of_life": null,
+        "end_of_extended_support": "2024-06-30",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-11-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "6.10",
+          "date": "2018-06-19",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/6.10_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-5",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "5",
+      "label": "5 (ELS)",
+      "lts": true,
+      "release_date": "2007-03-15",
+      "status": "eol",
+      "latest_version": "5.11",
+      "latest_release_date": "2014-09-16",
+      "eol": {
+        "end_of_active_support": "2013-01-08",
+        "end_of_security_support": "2017-03-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2020-11-30",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2017-03-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "5.11",
+          "date": "2014-09-16",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/5.11_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rhel-4",
+      "product": "rhel",
+      "vendor": "Red Hat",
+      "category": "os",
+      "branch": "4",
+      "label": "4",
+      "lts": false,
+      "release_date": "2005-02-15",
+      "status": "eol",
+      "latest_version": "4.9",
+      "latest_release_date": "2011-02-16",
+      "eol": {
+        "end_of_active_support": "2009-03-31",
+        "end_of_security_support": "2012-02-29",
+        "end_of_life": null,
+        "end_of_extended_support": "2017-03-31",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2012-02-29",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Full Support",
+          "end_of_security_support": "Maintenance Support",
+          "end_of_extended_support": "Extended Life Cycle Support"
+        },
+        "source_url": "https://endoflife.date/rhel"
+      },
+      "releases": [
+        {
+          "version": "4.9",
+          "date": "2011-02-16",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/4.9_release_notes/index"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

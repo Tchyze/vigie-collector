@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "rocky-linux",
+  "label": "Rocky Linux",
+  "vendor": "Rocky Enterprise Software Foundation",
+  "category": "os",
+  "branches": [
+    {
+      "id": "rocky-linux-10",
+      "product": "rocky-linux",
+      "vendor": "Rocky Enterprise Software Foundation",
+      "category": "os",
+      "branch": "10",
+      "label": "10",
+      "lts": false,
+      "release_date": "2025-06-11",
+      "status": "active",
+      "latest_version": "10.2",
+      "latest_release_date": "2026-05-29",
+      "eol": {
+        "end_of_active_support": "2030-05-31",
+        "end_of_security_support": "2035-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2035-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/rocky-linux"
+      },
+      "releases": [
+        {
+          "version": "10.2",
+          "date": "2026-05-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://rockylinux.org/news/rocky-linux-10-2-ga-release/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rocky-linux-9",
+      "product": "rocky-linux",
+      "vendor": "Rocky Enterprise Software Foundation",
+      "category": "os",
+      "branch": "9",
+      "label": "9",
+      "lts": false,
+      "release_date": "2022-07-14",
+      "status": "active",
+      "latest_version": "9.8",
+      "latest_release_date": "2026-05-28",
+      "eol": {
+        "end_of_active_support": "2027-05-31",
+        "end_of_security_support": "2032-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2032-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/rocky-linux"
+      },
+      "releases": [
+        {
+          "version": "9.8",
+          "date": "2026-05-28",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://rockylinux.org/news/rocky-linux-9-8-ga-release/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "rocky-linux-8",
+      "product": "rocky-linux",
+      "vendor": "Rocky Enterprise Software Foundation",
+      "category": "os",
+      "branch": "8",
+      "label": "8",
+      "lts": false,
+      "release_date": "2021-05-01",
+      "status": "active",
+      "latest_version": "8.10",
+      "latest_release_date": "2024-05-31",
+      "eol": {
+        "end_of_active_support": "2024-05-31",
+        "end_of_security_support": "2029-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2029-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Active Support",
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/rocky-linux"
+      },
+      "releases": [
+        {
+          "version": "8.10",
+          "date": "2024-05-31",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://rockylinux.org/news/rocky-linux-8-10-ga-release/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

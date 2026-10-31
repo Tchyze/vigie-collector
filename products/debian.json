@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "debian",
+  "label": "Debian",
+  "vendor": "Debian",
+  "category": "os",
+  "branches": [
+    {
+      "id": "debian-13",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "13",
+      "label": "13 (Trixie)",
+      "lts": false,
+      "release_date": "2025-08-09",
+      "status": "active",
+      "latest_version": "13.7",
+      "latest_release_date": "2026-09-12",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2028-08-09",
+        "end_of_life": "2030-06-30",
+        "end_of_extended_support": "2035-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2030-06-30",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "13.7",
+          "date": "2026-09-12",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.debian.org/News/2026/20260912"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-12",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "12",
+      "label": "12 (Bookworm)",
+      "lts": false,
+      "release_date": "2023-06-10",
+      "status": "active",
+      "latest_version": "12.15",
+      "latest_release_date": "2026-07-11",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2026-07-11",
+        "end_of_life": "2028-06-30",
+        "end_of_extended_support": "2033-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2028-06-30",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "12.15",
+          "date": "2026-07-11",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.debian.org/News/2026/2026051602"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-11",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "11",
+      "label": "11 (Bullseye)",
+      "lts": false,
+      "release_date": "2021-08-14",
+      "status": "eol",
+      "latest_version": "11.11",
+      "latest_release_date": "2024-08-31",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2024-08-14",
+        "end_of_life": "2026-08-31",
+        "end_of_extended_support": "2031-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2026-08-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "11.11",
+          "date": "2024-08-31",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-release/2024/06/msg00700.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-10",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "10",
+      "label": "10 (Buster)",
+      "lts": false,
+      "release_date": "2019-07-06",
+      "status": "eol",
+      "latest_version": "10.13",
+      "latest_release_date": "2022-09-10",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-09-10",
+        "end_of_life": "2024-06-30",
+        "end_of_extended_support": "2029-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2024-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "10.13",
+          "date": "2022-09-10",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.debian.org/News/2022/20220910"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-9",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "9",
+      "label": "9 (Stretch)",
+      "lts": false,
+      "release_date": "2017-06-17",
+      "status": "eol",
+      "latest_version": "9.13",
+      "latest_release_date": "2020-07-18",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2020-07-18",
+        "end_of_life": "2022-07-01",
+        "end_of_extended_support": "2027-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2022-07-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "9.13",
+          "date": "2020-07-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2017/msg00003.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-8",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "8",
+      "label": "8 (Jessie)",
+      "lts": false,
+      "release_date": "2015-04-25",
+      "status": "eol",
+      "latest_version": "8.11",
+      "latest_release_date": "2018-06-23",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2018-06-17",
+        "end_of_life": "2020-06-30",
+        "end_of_extended_support": "2025-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2020-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "8.11",
+          "date": "2018-06-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2015/msg00001.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-7",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "7",
+      "label": "7 (Wheezy)",
+      "lts": false,
+      "release_date": "2013-05-04",
+      "status": "eol",
+      "latest_version": "7.11",
+      "latest_release_date": "2016-06-04",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2016-04-25",
+        "end_of_life": "2018-05-31",
+        "end_of_extended_support": "2020-06-30",
+        "trigger": "end_of_life",
+        "trigger_date": "2018-05-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "7.11",
+          "date": "2016-06-04",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2013/msg00002.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-6",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "6",
+      "label": "6 (Squeeze)",
+      "lts": false,
+      "release_date": "2011-02-06",
+      "status": "eol",
+      "latest_version": "6.0.10",
+      "latest_release_date": "2014-07-19",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2014-05-31",
+        "end_of_life": "2016-02-29",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2016-02-29",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "6.0.10",
+          "date": "2014-07-19",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2011/msg00001.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-5",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "5",
+      "label": "5 (Lenny)",
+      "lts": false,
+      "release_date": "2009-02-14",
+      "status": "eol",
+      "latest_version": "5.0.10",
+      "latest_release_date": "2012-03-10",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2012-02-06",
+        "end_of_life": "2012-02-06",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2012-02-06",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "5.0.10",
+          "date": "2012-03-10",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2009/msg00002.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-4",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "4",
+      "label": "4 (Etch)",
+      "lts": false,
+      "release_date": "2007-04-08",
+      "status": "eol",
+      "latest_version": "4.0r9",
+      "latest_release_date": "2010-05-22",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2010-02-15",
+        "end_of_life": "2010-02-15",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2010-02-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "4.0r9",
+          "date": "2010-05-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2007/msg00002.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-3.1",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "3.1",
+      "label": "3.1 (Sarge)",
+      "lts": false,
+      "release_date": "2005-06-06",
+      "status": "eol",
+      "latest_version": "3.1r8",
+      "latest_release_date": "2008-04-13",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2008-03-31",
+        "end_of_life": "2008-03-31",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2008-03-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "3.1r8",
+          "date": "2008-04-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2005/msg00003.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-3.0",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "3.0",
+      "label": "3.0 (Woody)",
+      "lts": false,
+      "release_date": "2002-07-19",
+      "status": "eol",
+      "latest_version": "3.0r6",
+      "latest_release_date": "2005-06-02",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2006-06-30",
+        "end_of_life": "2006-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2006-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "3.0r6",
+          "date": "2005-06-02",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2002/msg00004.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-2.2",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "2.2",
+      "label": "2.2 (Potato)",
+      "lts": false,
+      "release_date": "2000-08-15",
+      "status": "eol",
+      "latest_version": "2.2r7",
+      "latest_release_date": "2002-07-13",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2003-06-30",
+        "end_of_life": "2003-06-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2003-06-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "2.2r7",
+          "date": "2002-07-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/2000/msg00009.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-2.1",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "2.1",
+      "label": "2.1 (Slink)",
+      "lts": false,
+      "release_date": "1999-03-09",
+      "status": "eol",
+      "latest_version": "2.1r5",
+      "latest_release_date": "2000-02-16",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2000-09-30",
+        "end_of_life": "2000-10-30",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "2000-10-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "2.1r5",
+          "date": "2000-02-16",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/1999/msg00005.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-2.0",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "2.0",
+      "label": "2.0 (Hamm)",
+      "lts": false,
+      "release_date": "1998-07-24",
+      "status": "eol",
+      "latest_version": "2.0r5",
+      "latest_release_date": "1999-02-17",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "1999-02-15",
+        "end_of_life": "1999-02-15",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "1999-02-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "2.0r5",
+          "date": "1999-02-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/1998/msg00015.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-1.3",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "1.3",
+      "label": "1.3 (Bo)",
+      "lts": false,
+      "release_date": "1997-07-02",
+      "status": "eol",
+      "latest_version": "1.3.1 r.6",
+      "latest_release_date": "1998-02-03",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "1998-12-08",
+        "end_of_life": "1998-12-08",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "1998-12-08",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "1.3.1 r.6",
+          "date": "1998-02-03",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/1997/msg00018.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-1.2",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "1.2",
+      "label": "1.2 (Rex)",
+      "lts": false,
+      "release_date": "1996-12-12",
+      "status": "eol",
+      "latest_version": "1.2",
+      "latest_release_date": "1996-12-12",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "1997-10-23",
+        "end_of_life": "1997-10-23",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "1997-10-23",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "1.2",
+          "date": "1996-12-12",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/1996/msg00026.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "debian-1.1",
+      "product": "debian",
+      "vendor": "Debian",
+      "category": "os",
+      "branch": "1.1",
+      "label": "1.1 (Buzz)",
+      "lts": false,
+      "release_date": "1996-06-17",
+      "status": "eol",
+      "latest_version": "1.1",
+      "latest_release_date": "1996-06-17",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "1996-12-12",
+        "end_of_life": "1996-12-12",
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": "1996-12-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Debian Security Support",
+          "end_of_life": "Debian LTS",
+          "end_of_extended_support": "ELTS"
+        },
+        "source_url": "https://endoflife.date/debian"
+      },
+      "releases": [
+        {
+          "version": "1.1",
+          "date": "1996-06-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://lists.debian.org/debian-announce/1996/msg00021.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

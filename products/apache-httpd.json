@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T12:40:35Z",
+  "product": "apache-httpd",
+  "label": "Apache HTTP Server",
+  "vendor": "Apache Software Foundation",
+  "category": "service",
+  "branches": [
+    {
+      "id": "apache-httpd-2.4",
+      "product": "apache-httpd",
+      "vendor": "Apache Software Foundation",
+      "category": "service",
+      "branch": "2.4",
+      "label": "2.4",
+      "lts": false,
+      "release_date": "2012-02-21",
+      "status": "active",
+      "latest_version": "2.4.69",
+      "latest_release_date": "2026-10-01",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/apache-http-server"
+      },
+      "releases": [
+        {
+          "version": "2.4.69",
+          "date": "2026-10-01",
+          "security_fix": true,
+          "summary": "20 correctif(s) de sécurité (CVE-2026-93546, CVE-2026-79768, CVE-2026-73637, CVE-2026-73636, CVE-2026-63718, CVE-2026-63686, …), 14 changement(s)",
+          "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+        },
+        {
+          "version": "2.4.68",
+          "date": "2026-06-08",
+          "security_fix": true,
+          "summary": "13 correctif(s) de sécurité (CVE-2026-49975, CVE-2026-48913, CVE-2026-44631, CVE-2026-44186, CVE-2026-44185, CVE-2026-44119, …), 14 changement(s)",
+          "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+        },
+        {
+          "version": "2.4.67",
+          "date": "2026-05-04",
+          "security_fix": true,
+          "summary": "11 correctif(s) de sécurité (CVE-2026-34059, CVE-2026-34032, CVE-2026-33857, CVE-2026-33523, CVE-2026-33007, CVE-2026-33006, …), 9 changement(s)",
+          "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+        },
+        {
+          "version": "2.4.66",
+          "date": "2025-12-04",
+          "security_fix": true,
+          "summary": "5 correctif(s) de sécurité (CVE-2025-66200, CVE-2025-65082, CVE-2025-59775, CVE-2025-58098, CVE-2025-55753), 9 changement(s)",
+          "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+        },
+        {
+          "version": "2.4.65",
+          "date": "2025-07-23",
+          "security_fix": true,
+          "summary": "1 correctif(s) de sécurité (CVE-2025-54090)",
+          "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+        }
+      ],
+      "sources": [
+        "httpd",
+        "endoflife"
+      ]
+    },
+    {
+      "id": "apache-httpd-2.2",
+      "product": "apache-httpd",
+      "vendor": "Apache Software Foundation",
+      "category": "service",
+      "branch": "2.2",
+      "label": "2.2",
+      "lts": false,
+      "release_date": "2005-12-01",
+      "status": "eol",
+      "latest_version": "2.2.34",
+      "latest_release_date": "2017-07-11",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2017-07-11",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2017-07-11",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/apache-http-server"
+      },
+      "releases": [
+        {
+          "version": "2.2.34",
+          "date": "2017-07-11",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://archive.apache.org/dist/httpd/CHANGES_2.2.34"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "apache-httpd-2.0",
+      "product": "apache-httpd",
+      "vendor": "Apache Software Foundation",
+      "category": "service",
+      "branch": "2.0",
+      "label": "2.0",
+      "lts": false,
+      "release_date": "2002-04-05",
+      "status": "eol",
+      "latest_version": "2.0.65",
+      "latest_release_date": "2013-07-09",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2013-07-10",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2013-07-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/apache-http-server"
+      },
+      "releases": [
+        {
+          "version": "2.0.65",
+          "date": "2013-07-09",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://archive.apache.org/dist/httpd/CHANGES_2.0.65"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "apache-httpd-1.3",
+      "product": "apache-httpd",
+      "vendor": "Apache Software Foundation",
+      "category": "service",
+      "branch": "1.3",
+      "label": "1.3",
+      "lts": false,
+      "release_date": "1998-06-01",
+      "status": "eol",
+      "latest_version": "1.3.42",
+      "latest_release_date": "2010-02-02",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2010-02-03",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2010-02-03",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "Security Support"
+        },
+        "source_url": "https://endoflife.date/apache-http-server"
+      },
+      "releases": [
+        {
+          "version": "1.3.42",
+          "date": "2010-02-02",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://archive.apache.org/dist/httpd/CHANGES_1.3.42"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

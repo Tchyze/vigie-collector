@@ -1,0 +1,56 @@
+{
+ "source": "httpd",
+ "result": {
+  "branches": [
+   {
+    "product": "apache-httpd",
+    "branch": "2.4",
+    "label": null,
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "2.4.69",
+      "date": "2026-10-01",
+      "security_fix": true,
+      "summary": "20 correctif(s) de sécurité (CVE-2026-93546, CVE-2026-79768, CVE-2026-73637, CVE-2026-73636, CVE-2026-63718, CVE-2026-63686, …), 14 changement(s)",
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     },
+     {
+      "version": "2.4.68",
+      "date": "2026-06-08",
+      "security_fix": true,
+      "summary": "13 correctif(s) de sécurité (CVE-2026-49975, CVE-2026-48913, CVE-2026-44631, CVE-2026-44186, CVE-2026-44185, CVE-2026-44119, …), 14 changement(s)",
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     },
+     {
+      "version": "2.4.67",
+      "date": "2026-05-04",
+      "security_fix": true,
+      "summary": "11 correctif(s) de sécurité (CVE-2026-34059, CVE-2026-34032, CVE-2026-33857, CVE-2026-33523, CVE-2026-33007, CVE-2026-33006, …), 9 changement(s)",
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     },
+     {
+      "version": "2.4.66",
+      "date": "2025-12-04",
+      "security_fix": true,
+      "summary": "5 correctif(s) de sécurité (CVE-2025-66200, CVE-2025-65082, CVE-2025-59775, CVE-2025-58098, CVE-2025-55753), 9 changement(s)",
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     },
+     {
+      "version": "2.4.65",
+      "date": "2025-07-23",
+      "security_fix": true,
+      "summary": "1 correctif(s) de sécurité (CVE-2025-54090)",
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     }
+    ]
+   }
+  ],
+  "advisories": []
+ }
+}
