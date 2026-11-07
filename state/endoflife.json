@@ -1,0 +1,3726 @@
+{
+ "source": "endoflife",
+ "result": {
+  "branches": [
+   {
+    "product": "debian",
+    "branch": "13",
+    "label": "13 (Trixie)",
+    "lts": false,
+    "release_date": "2025-08-09",
+    "eol_dates": {
+     "end_of_security_support": "2028-08-09",
+     "end_of_life": "2030-06-30",
+     "end_of_extended_support": "2035-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "13.7",
+      "date": "2026-09-12",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.debian.org/News/2026/20260912"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "12",
+    "label": "12 (Bookworm)",
+    "lts": false,
+    "release_date": "2023-06-10",
+    "eol_dates": {
+     "end_of_security_support": "2026-07-11",
+     "end_of_life": "2028-06-30",
+     "end_of_extended_support": "2033-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "12.15",
+      "date": "2026-07-11",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.debian.org/News/2026/2026051602"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "11",
+    "label": "11 (Bullseye)",
+    "lts": false,
+    "release_date": "2021-08-14",
+    "eol_dates": {
+     "end_of_security_support": "2024-08-14",
+     "end_of_life": "2026-08-31",
+     "end_of_extended_support": "2031-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "11.11",
+      "date": "2024-08-31",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-release/2024/06/msg00700.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "10",
+    "label": "10 (Buster)",
+    "lts": false,
+    "release_date": "2019-07-06",
+    "eol_dates": {
+     "end_of_security_support": "2022-09-10",
+     "end_of_life": "2024-06-30",
+     "end_of_extended_support": "2029-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.13",
+      "date": "2022-09-10",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.debian.org/News/2022/20220910"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "9",
+    "label": "9 (Stretch)",
+    "lts": false,
+    "release_date": "2017-06-17",
+    "eol_dates": {
+     "end_of_security_support": "2020-07-18",
+     "end_of_life": "2022-07-01",
+     "end_of_extended_support": "2027-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "9.13",
+      "date": "2020-07-18",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2017/msg00003.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "8",
+    "label": "8 (Jessie)",
+    "lts": false,
+    "release_date": "2015-04-25",
+    "eol_dates": {
+     "end_of_security_support": "2018-06-17",
+     "end_of_life": "2020-06-30",
+     "end_of_extended_support": "2025-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "8.11",
+      "date": "2018-06-23",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2015/msg00001.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "7",
+    "label": "7 (Wheezy)",
+    "lts": false,
+    "release_date": "2013-05-04",
+    "eol_dates": {
+     "end_of_security_support": "2016-04-25",
+     "end_of_life": "2018-05-31",
+     "end_of_extended_support": "2020-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "7.11",
+      "date": "2016-06-04",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2013/msg00002.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "6",
+    "label": "6 (Squeeze)",
+    "lts": false,
+    "release_date": "2011-02-06",
+    "eol_dates": {
+     "end_of_security_support": "2014-05-31",
+     "end_of_life": "2016-02-29"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.0.10",
+      "date": "2014-07-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2011/msg00001.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "5",
+    "label": "5 (Lenny)",
+    "lts": false,
+    "release_date": "2009-02-14",
+    "eol_dates": {
+     "end_of_security_support": "2012-02-06",
+     "end_of_life": "2012-02-06"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.0.10",
+      "date": "2012-03-10",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2009/msg00002.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "4",
+    "label": "4 (Etch)",
+    "lts": false,
+    "release_date": "2007-04-08",
+    "eol_dates": {
+     "end_of_security_support": "2010-02-15",
+     "end_of_life": "2010-02-15"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "4.0r9",
+      "date": "2010-05-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2007/msg00002.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "3.1",
+    "label": "3.1 (Sarge)",
+    "lts": false,
+    "release_date": "2005-06-06",
+    "eol_dates": {
+     "end_of_security_support": "2008-03-31",
+     "end_of_life": "2008-03-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "3.1r8",
+      "date": "2008-04-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2005/msg00003.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "3.0",
+    "label": "3.0 (Woody)",
+    "lts": false,
+    "release_date": "2002-07-19",
+    "eol_dates": {
+     "end_of_security_support": "2006-06-30",
+     "end_of_life": "2006-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "3.0r6",
+      "date": "2005-06-02",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2002/msg00004.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "2.2",
+    "label": "2.2 (Potato)",
+    "lts": false,
+    "release_date": "2000-08-15",
+    "eol_dates": {
+     "end_of_security_support": "2003-06-30",
+     "end_of_life": "2003-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.2r7",
+      "date": "2002-07-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/2000/msg00009.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "2.1",
+    "label": "2.1 (Slink)",
+    "lts": false,
+    "release_date": "1999-03-09",
+    "eol_dates": {
+     "end_of_security_support": "2000-09-30",
+     "end_of_life": "2000-10-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.1r5",
+      "date": "2000-02-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/1999/msg00005.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "2.0",
+    "label": "2.0 (Hamm)",
+    "lts": false,
+    "release_date": "1998-07-24",
+    "eol_dates": {
+     "end_of_security_support": "1999-02-15",
+     "end_of_life": "1999-02-15"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.0r5",
+      "date": "1999-02-17",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/1998/msg00015.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "1.3",
+    "label": "1.3 (Bo)",
+    "lts": false,
+    "release_date": "1997-07-02",
+    "eol_dates": {
+     "end_of_security_support": "1998-12-08",
+     "end_of_life": "1998-12-08"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.3.1 r.6",
+      "date": "1998-02-03",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/1997/msg00018.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "1.2",
+    "label": "1.2 (Rex)",
+    "lts": false,
+    "release_date": "1996-12-12",
+    "eol_dates": {
+     "end_of_security_support": "1997-10-23",
+     "end_of_life": "1997-10-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.2",
+      "date": "1996-12-12",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/1996/msg00026.html"
+     }
+    ]
+   },
+   {
+    "product": "debian",
+    "branch": "1.1",
+    "label": "1.1 (Buzz)",
+    "lts": false,
+    "release_date": "1996-06-17",
+    "eol_dates": {
+     "end_of_security_support": "1996-12-12",
+     "end_of_life": "1996-12-12"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Debian Security Support",
+     "end_of_life": "Debian LTS",
+     "end_of_extended_support": "ELTS"
+    },
+    "eol_source_url": "https://endoflife.date/debian",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.1",
+      "date": "1996-06-17",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://lists.debian.org/debian-announce/1996/msg00021.html"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "10",
+    "label": "10 (Upcoming ELS)",
+    "lts": false,
+    "release_date": "2025-05-20",
+    "eol_dates": {
+     "end_of_active_support": "2030-05-31",
+     "end_of_security_support": "2035-05-31",
+     "end_of_extended_support": "2039-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.2",
+      "date": "2026-05-20",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/10/html/10.2_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "9",
+    "label": "9 (Upcoming ELS)",
+    "lts": false,
+    "release_date": "2022-05-18",
+    "eol_dates": {
+     "end_of_active_support": "2027-05-31",
+     "end_of_security_support": "2032-05-31",
+     "end_of_extended_support": "2036-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "9.8",
+      "date": "2026-05-20",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/9.8_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "8",
+    "label": "8 (Upcoming ELS)",
+    "lts": false,
+    "release_date": "2019-05-07",
+    "eol_dates": {
+     "end_of_active_support": "2024-05-31",
+     "end_of_security_support": "2029-05-31",
+     "end_of_extended_support": "2033-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "8.10",
+      "date": "2024-05-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.10_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "7",
+    "label": "7 (ELS)",
+    "lts": true,
+    "release_date": "2014-06-10",
+    "eol_dates": {
+     "end_of_active_support": "2019-08-06",
+     "end_of_security_support": "2024-06-30",
+     "end_of_extended_support": "2029-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "7.9",
+      "date": "2020-09-29",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.9_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "6",
+    "label": "6 (ELS)",
+    "lts": true,
+    "release_date": "2010-11-10",
+    "eol_dates": {
+     "end_of_active_support": "2016-05-10",
+     "end_of_security_support": "2020-11-30",
+     "end_of_extended_support": "2024-06-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.10",
+      "date": "2018-06-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/6.10_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "5",
+    "label": "5 (ELS)",
+    "lts": true,
+    "release_date": "2007-03-15",
+    "eol_dates": {
+     "end_of_active_support": "2013-01-08",
+     "end_of_security_support": "2017-03-31",
+     "end_of_extended_support": "2020-11-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.11",
+      "date": "2014-09-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/5.11_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rhel",
+    "branch": "4",
+    "label": "4",
+    "lts": false,
+    "release_date": "2005-02-15",
+    "eol_dates": {
+     "end_of_active_support": "2009-03-31",
+     "end_of_security_support": "2012-02-29",
+     "end_of_extended_support": "2017-03-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Full Support",
+     "end_of_security_support": "Maintenance Support",
+     "end_of_extended_support": "Extended Life Cycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/rhel",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "4.9",
+      "date": "2011-02-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/4.9_release_notes/index"
+     }
+    ]
+   },
+   {
+    "product": "rocky-linux",
+    "branch": "10",
+    "label": "10",
+    "lts": false,
+    "release_date": "2025-06-11",
+    "eol_dates": {
+     "end_of_active_support": "2030-05-31",
+     "end_of_security_support": "2035-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/rocky-linux",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.2",
+      "date": "2026-05-29",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://rockylinux.org/news/rocky-linux-10-2-ga-release/"
+     }
+    ]
+   },
+   {
+    "product": "rocky-linux",
+    "branch": "9",
+    "label": "9",
+    "lts": false,
+    "release_date": "2022-07-14",
+    "eol_dates": {
+     "end_of_active_support": "2027-05-31",
+     "end_of_security_support": "2032-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/rocky-linux",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "9.8",
+      "date": "2026-05-28",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://rockylinux.org/news/rocky-linux-9-8-ga-release/"
+     }
+    ]
+   },
+   {
+    "product": "rocky-linux",
+    "branch": "8",
+    "label": "8",
+    "lts": false,
+    "release_date": "2021-05-01",
+    "eol_dates": {
+     "end_of_active_support": "2024-05-31",
+     "end_of_security_support": "2029-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/rocky-linux",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "8.10",
+      "date": "2024-05-31",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://rockylinux.org/news/rocky-linux-8-10-ga-release/"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2025",
+    "label": "Windows Server 2025 (LTSC)",
+    "lts": true,
+    "release_date": "2024-11-01",
+    "eol_dates": {
+     "end_of_active_support": "2029-11-13",
+     "end_of_security_support": "2034-11-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.0.26100",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "23h2-ac",
+    "label": "Windows Server 23H2 AC",
+    "lts": false,
+    "release_date": "2023-10-24",
+    "eol_dates": {
+     "end_of_active_support": "2026-05-12",
+     "end_of_security_support": "2026-05-12"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.25398",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.microsoft.com/servicing/os/windows-server/2026/05/end-of-updates-statement"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2022",
+    "label": "Windows Server 2022 (LTSC)",
+    "lts": true,
+    "release_date": "2021-08-18",
+    "eol_dates": {
+     "end_of_active_support": "2026-10-13",
+     "end_of_security_support": "2031-10-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.0.20348",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "20h2-sac",
+    "label": "Windows Server 20H2 SAC",
+    "lts": false,
+    "release_date": "2020-10-20",
+    "eol_dates": {
+     "end_of_active_support": "2022-08-09",
+     "end_of_security_support": "2022-08-09"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.19042",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-20h2-retiring"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2004-sac",
+    "label": "Windows Server 2004 SAC",
+    "lts": false,
+    "release_date": "2020-05-27",
+    "eol_dates": {
+     "end_of_active_support": "2021-12-14",
+     "end_of_security_support": "2021-12-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.19041",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-version-2004-end-of-servicing"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "1909-sac",
+    "label": "Windows Server 1909 SAC",
+    "lts": false,
+    "release_date": "2019-11-12",
+    "eol_dates": {
+     "end_of_active_support": "2021-05-11",
+     "end_of_security_support": "2021-05-11"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.18363",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1909-end-of-servicing"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "1903-sac",
+    "label": "Windows Server 1903 SAC",
+    "lts": false,
+    "release_date": "2019-05-21",
+    "eol_dates": {
+     "end_of_active_support": "2020-12-08",
+     "end_of_security_support": "2020-12-08"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.18362",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-semiannual-channel"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "1809-sac",
+    "label": "Windows Server 1809 SAC",
+    "lts": false,
+    "release_date": "2018-11-13",
+    "eol_dates": {
+     "end_of_active_support": "2020-11-10",
+     "end_of_security_support": "2020-11-10"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.17763",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1809-end-of-servicing"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2019",
+    "label": "Windows Server 2019 (LTSC)",
+    "lts": true,
+    "release_date": "2018-11-13",
+    "eol_dates": {
+     "end_of_active_support": "2024-01-09",
+     "end_of_security_support": "2029-01-09"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.0.17763",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "1803-sac",
+    "label": "Windows Server 1803 SAC",
+    "lts": false,
+    "release_date": "2018-04-30",
+    "eol_dates": {
+     "end_of_active_support": "2019-11-12",
+     "end_of_security_support": "2019-11-12"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.17134",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/announcements/windows-server-1803-end-of-servicing"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "1709-sac",
+    "label": "Windows Server 1709 SAC",
+    "lts": false,
+    "release_date": "2017-10-17",
+    "eol_dates": {
+     "end_of_active_support": "2019-04-09",
+     "end_of_security_support": "2019-04-09"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.16299",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://techcommunity.microsoft.com/discussions/windows-server-for-developers/windows-server-version-1709-lifecycle-announcement/379766"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2016",
+    "label": "Windows Server 2016 (LTSC)",
+    "lts": true,
+    "release_date": "2016-10-15",
+    "eol_dates": {
+     "end_of_active_support": "2022-01-11",
+     "end_of_security_support": "2027-01-12",
+     "end_of_extended_support": "2030-01-12"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "10.0.14393",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/windows/release-health/windows-server-release-info"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2012-r2",
+    "label": "Windows Server 2012 R2 (LTSC)",
+    "lts": true,
+    "release_date": "2013-11-25",
+    "eol_dates": {
+     "end_of_active_support": "2018-10-09",
+     "end_of_security_support": "2023-10-10",
+     "end_of_extended_support": "2026-10-13"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.3.9600",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2012-r2"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2012",
+    "label": "Windows Server 2012 (LTSC)",
+    "lts": true,
+    "release_date": "2012-10-30",
+    "eol_dates": {
+     "end_of_active_support": "2018-10-09",
+     "end_of_security_support": "2023-10-10",
+     "end_of_extended_support": "2026-10-13"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.2.9200",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2012"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2008-r2-sp1",
+    "label": "Windows Server 2008 R2 SP1 (LTSC)",
+    "lts": true,
+    "release_date": "2011-02-22",
+    "eol_dates": {
+     "end_of_active_support": "2015-01-13",
+     "end_of_security_support": "2020-01-14",
+     "end_of_extended_support": "2023-01-10"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.1.7601",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2008-r2"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2008-sp2",
+    "label": "Windows Server 2008 SP2 (LTSC)",
+    "lts": true,
+    "release_date": "2009-04-29",
+    "eol_dates": {
+     "end_of_active_support": "2015-01-13",
+     "end_of_security_support": "2020-01-14",
+     "end_of_extended_support": "2023-01-10"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.0.6003",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2008"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2003-sp2",
+    "label": "Windows Server 2003 SP2 (LTSC)",
+    "lts": true,
+    "release_date": "2007-03-13",
+    "eol_dates": {
+     "end_of_active_support": "2010-07-13",
+     "end_of_security_support": "2015-07-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.2.3790",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2003-sp1",
+    "label": "Windows Server 2003 SP1",
+    "lts": false,
+    "release_date": "2005-03-30",
+    "eol_dates": {
+     "end_of_active_support": "2009-04-14",
+     "end_of_security_support": "2009-04-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.2.3790",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2003",
+    "label": "Windows Server 2003 (LTSC)",
+    "lts": true,
+    "release_date": "2003-04-24",
+    "eol_dates": {
+     "end_of_active_support": "2007-04-10",
+     "end_of_security_support": "2007-04-10"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.2.3790",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": "https://learn.microsoft.com/lifecycle/products/windows-server-2003-"
+     }
+    ]
+   },
+   {
+    "product": "windows-server",
+    "branch": "2000",
+    "label": "Windows Server 2000 (LTSC)",
+    "lts": true,
+    "release_date": "2000-02-17",
+    "eol_dates": {
+     "end_of_active_support": "2005-06-30",
+     "end_of_security_support": "2010-07-13"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Active Support",
+     "end_of_security_support": "Security Support",
+     "end_of_extended_support": "Extended Security Updates"
+    },
+    "eol_source_url": "https://endoflife.date/windows-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.0.2195",
+      "date": null,
+      "security_fix": null,
+      "summary": null,
+      "url": null
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "9",
+    "label": "9",
+    "lts": false,
+    "release_date": "2025-08-05",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "9.2",
+      "date": "2026-05-21",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_9.2"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "8",
+    "label": "8",
+    "lts": false,
+    "release_date": "2023-06-22",
+    "eol_dates": {
+     "end_of_security_support": "2026-08-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "8.4",
+      "date": "2025-04-09",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_8.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "7",
+    "label": "7",
+    "lts": false,
+    "release_date": "2021-07-06",
+    "eol_dates": {
+     "end_of_security_support": "2024-07-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "7.4",
+      "date": "2023-03-23",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_7.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "6",
+    "label": "6",
+    "lts": false,
+    "release_date": "2019-07-16",
+    "eol_dates": {
+     "end_of_security_support": "2022-09-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.4",
+      "date": "2021-04-18",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_6.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "5",
+    "label": "5",
+    "lts": false,
+    "release_date": "2017-07-04",
+    "eol_dates": {
+     "end_of_security_support": "2020-07-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "5.4",
+      "date": "2019-04-11",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_5.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "4",
+    "label": "4",
+    "lts": false,
+    "release_date": "2015-10-06",
+    "eol_dates": {
+     "end_of_security_support": "2018-06-30"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "4.4",
+      "date": "2016-12-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_4.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "3",
+    "label": "3",
+    "lts": false,
+    "release_date": "2013-05-24",
+    "eol_dates": {
+     "end_of_security_support": "2017-02-28"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "3.4",
+      "date": "2015-02-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_3.4"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "2",
+    "label": "2",
+    "lts": false,
+    "release_date": "2012-03-30",
+    "eol_dates": {
+     "end_of_security_support": "2014-05-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.3",
+      "date": "2013-03-04",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_2.3"
+     }
+    ]
+   },
+   {
+    "product": "proxmox-ve",
+    "branch": "1",
+    "label": "1",
+    "lts": false,
+    "release_date": "2008-10-29",
+    "eol_dates": {
+     "end_of_security_support": "2013-01-31"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/proxmox-ve",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.9",
+      "date": "2011-09-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_1.9"
+     }
+    ]
+   },
+   {
+    "product": "fortios",
+    "branch": "8.0",
+    "label": "8.0",
+    "lts": false,
+    "release_date": "2026-04-21",
+    "eol_dates": {
+     "end_of_active_support": "2029-04-21",
+     "end_of_life": "2030-10-21"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "7.6",
+    "label": "7.6",
+    "lts": false,
+    "release_date": "2024-07-25",
+    "eol_dates": {
+     "end_of_active_support": "2028-07-25",
+     "end_of_life": "2030-01-25"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "7.4",
+    "label": "7.4",
+    "lts": false,
+    "release_date": "2023-05-11",
+    "eol_dates": {
+     "end_of_active_support": "2027-05-11",
+     "end_of_life": "2028-11-11"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "7.2",
+    "label": "7.2",
+    "lts": false,
+    "release_date": "2022-03-31",
+    "eol_dates": {
+     "end_of_active_support": "2025-03-31",
+     "end_of_life": "2026-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "7.0",
+    "label": "7.0",
+    "lts": false,
+    "release_date": "2021-03-30",
+    "eol_dates": {
+     "end_of_active_support": "2024-03-30",
+     "end_of_life": "2025-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "6.4",
+    "label": "6.4",
+    "lts": false,
+    "release_date": "2020-03-31",
+    "eol_dates": {
+     "end_of_active_support": "2023-03-31",
+     "end_of_life": "2024-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "6.2",
+    "label": "6.2",
+    "lts": false,
+    "release_date": "2019-03-28",
+    "eol_dates": {
+     "end_of_active_support": "2022-03-28",
+     "end_of_life": "2023-09-28"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "fortios",
+    "branch": "6.0",
+    "label": "6.0",
+    "lts": false,
+    "release_date": "2018-03-29",
+    "eol_dates": {
+     "end_of_active_support": "2021-03-29",
+     "end_of_life": "2022-09-29"
+    },
+    "eol_labels": {
+     "end_of_active_support": "End of Engineering Support",
+     "end_of_life": "End of Support"
+    },
+    "eol_source_url": "https://endoflife.date/fortios",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "12.2",
+    "label": "12.2",
+    "lts": false,
+    "release_date": "2026-07-30",
+    "eol_dates": {
+     "end_of_life": "2029-07-30"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "12.2.4-h1",
+      "date": "2026-10-26",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-2/pan-os-12-2-4-known-and-addressed-issues/pan-os-12-2-4-h1-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "12.1",
+    "label": "12.1",
+    "lts": false,
+    "release_date": "2025-08-28",
+    "eol_dates": {
+     "end_of_life": "2028-08-28"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "12.1.10-h3",
+      "date": "2026-10-28",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/pan-os-12-1-10-known-and-addressed-issues/pan-os-12-1-10-h3-addressed-issues"
+     },
+     {
+      "version": "12.1.10-h2",
+      "date": "2026-10-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/pan-os-12-1-10-known-and-addressed-issues/pan-os-12-1-10-h2-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "11.2",
+    "label": "11.2",
+    "lts": false,
+    "release_date": "2024-05-02",
+    "eol_dates": {
+     "end_of_life": "2027-05-02"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "11.2.16-h1",
+      "date": "2026-10-27",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/11-2/pan-os-release-notes/pan-os-11-2-16-known-and-addressed-issues/pan-os-11-2-16-h1-addressed-issues"
+     },
+     {
+      "version": "11.2.16",
+      "date": "2026-10-15",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/11-2/pan-os-release-notes/pan-os-11-2-16-known-and-addressed-issues/pan-os-11-2-16-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "11.1",
+    "label": "11.1",
+    "lts": false,
+    "release_date": "2023-11-03",
+    "eol_dates": {
+     "end_of_life": "2027-05-03"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "11.1.16-h4",
+      "date": "2026-10-24",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-release-notes/pan-os-11-1-16-known-and-addressed-issues/pan-os-11-1-16-h4-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "11.0",
+    "label": "11.0",
+    "lts": false,
+    "release_date": "2022-11-17",
+    "eol_dates": {
+     "end_of_life": "2024-11-17"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "11.0.6-h1",
+      "date": "2024-11-17",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-release-notes/pan-os-11-0-6-known-and-addressed-issues/pan-os-11-0-6-h1-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "10.2",
+    "label": "10.2",
+    "lts": false,
+    "release_date": "2022-02-27",
+    "eol_dates": {
+     "end_of_life": "2025-08-27"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.2.18-h13",
+      "date": "2026-10-24",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/10-2/pan-os-release-notes/pan-os-10-2-18-known-and-addressed-issues/pan-os-10-2-18-h13-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "10.1",
+    "label": "10.1",
+    "lts": false,
+    "release_date": "2021-05-31",
+    "eol_dates": {
+     "end_of_life": "2024-12-01"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.1.14-h20",
+      "date": "2025-11-25",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h20-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "10.0",
+    "label": "10.0",
+    "lts": false,
+    "release_date": "2020-07-16",
+    "eol_dates": {
+     "end_of_life": "2022-07-16"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "10.0.12-h6",
+      "date": "2024-05-29",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/10-0/pan-os-release-notes/pan-os-10-0-addressed-issues/pan-os-10-0-12-h6-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "9.1",
+    "label": "9.1",
+    "lts": false,
+    "release_date": "2019-12-13",
+    "eol_dates": {
+     "end_of_life": "2024-06-30"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "9.1.19",
+      "date": "2024-05-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-release-notes/pan-os-9-1-addressed-issues/pan-os-9-1-19-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "9.0-xfr",
+    "label": "9.0-XFR (VM-Series only)",
+    "lts": false,
+    "release_date": "2019-09-19",
+    "eol_dates": {
+     "end_of_life": "2020-09-19"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "9.0-XFR (VM-Series only)",
+      "date": "2019-09-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/vm-series/9-0/pan-os-xfr-release-notes/pan-os-90-xfr/pan-os-9-0-xfr-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "9.0",
+    "label": "9.0",
+    "lts": false,
+    "release_date": "2019-02-06",
+    "eol_dates": {
+     "end_of_life": "2022-03-01"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "9.0.17-h5",
+      "date": "2023-12-30",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-17-h5-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "8.1",
+    "label": "8.1",
+    "lts": false,
+    "release_date": "2018-03-01",
+    "eol_dates": {
+     "end_of_life": "2022-03-01"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "8.1.24",
+      "date": "2022-10-11",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-24-addressed-issues"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "8.0",
+    "label": "8.0",
+    "lts": false,
+    "release_date": "2017-01-29",
+    "eol_dates": {
+     "end_of_life": "2019-10-31"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "8.0.20",
+      "date": "2019-10-23",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/pan-os/8-0/pan-os-release-notes/pan-os-release-notes.pdf"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "7.1",
+    "label": "7.1",
+    "lts": false,
+    "release_date": "2016-03-29",
+    "eol_dates": {
+     "end_of_life": "2020-06-30"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "7.1.26",
+      "date": "2020-04-30",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/pan-os/7-1/pan-os-release-notes/pan-os-release-notes.pdf"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "7.0",
+    "label": "7.0",
+    "lts": false,
+    "release_date": "2015-06-04",
+    "eol_dates": {
+     "end_of_life": "2017-12-04"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "7.0.19",
+      "date": "2018-03-29",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-70-release-notes.pdf"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "6.1",
+    "label": "6.1",
+    "lts": false,
+    "release_date": "2014-10-25",
+    "eol_dates": {
+     "end_of_life": "2018-10-25"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.1.22",
+      "date": "2018-10-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-61-release-notes.pdf"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "6.0",
+    "label": "6.0",
+    "lts": false,
+    "release_date": "2014-01-19",
+    "eol_dates": {
+     "end_of_life": "2017-03-19"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "6.0.15",
+      "date": "2017-11-14",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/eol/pan-os-60-release-notes.pdf"
+     }
+    ]
+   },
+   {
+    "product": "panos",
+    "branch": "5.1",
+    "label": "5.1",
+    "lts": false,
+    "release_date": "2013-05-09",
+    "eol_dates": {
+     "end_of_life": "2017-05-09"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "5.0",
+    "label": "5.0",
+    "lts": false,
+    "release_date": "2012-11-13",
+    "eol_dates": {
+     "end_of_life": "2016-11-13"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "4.1",
+    "label": "4.1",
+    "lts": false,
+    "release_date": "2011-10-31",
+    "eol_dates": {
+     "end_of_life": "2015-04-30"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "4.0",
+    "label": "4.0",
+    "lts": false,
+    "release_date": "2011-02-22",
+    "eol_dates": {
+     "end_of_life": "2014-12-31"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "3.1",
+    "label": "3.1",
+    "lts": false,
+    "release_date": "2010-03-15",
+    "eol_dates": {
+     "end_of_life": "2013-06-30"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "3.0",
+    "label": "3.0",
+    "lts": false,
+    "release_date": "2009-06-17",
+    "eol_dates": {
+     "end_of_life": "2010-12-17"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "2.1",
+    "label": "2.1",
+    "lts": false,
+    "release_date": "2009-01-05",
+    "eol_dates": {
+     "end_of_life": "2012-01-05"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "2.0",
+    "label": "2.0",
+    "lts": false,
+    "release_date": "2008-05-20",
+    "eol_dates": {
+     "end_of_life": "2009-05-20"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "panos",
+    "branch": "1.3",
+    "label": "1.3",
+    "lts": false,
+    "release_date": "2007-11-15",
+    "eol_dates": {
+     "end_of_life": "2008-11-20"
+    },
+    "eol_labels": {
+     "end_of_life": "End-of-life Date"
+    },
+    "eol_source_url": "https://endoflife.date/panos",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "5.0",
+    "label": "5.0",
+    "lts": false,
+    "release_date": "2025-09-24",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.8",
+    "label": "4.8 (LTSB)",
+    "lts": true,
+    "release_date": "2024-07-02",
+    "eol_dates": {
+     "end_of_active_support": "2029-12-31",
+     "end_of_life": "2030-03-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.7",
+    "label": "4.7",
+    "lts": false,
+    "release_date": "2023-10-31",
+    "eol_dates": {
+     "end_of_active_support": "2024-11-12",
+     "end_of_life": "2025-02-12"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.6",
+    "label": "4.6",
+    "lts": false,
+    "release_date": "2022-11-24",
+    "eol_dates": {
+     "end_of_active_support": "2024-02-22",
+     "end_of_life": "2024-05-22"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.5",
+    "label": "4.5",
+    "lts": false,
+    "release_date": "2022-07-05",
+    "eol_dates": {
+     "end_of_active_support": "2022-11-24",
+     "end_of_life": "2022-11-24"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.4",
+    "label": "4.4",
+    "lts": false,
+    "release_date": "2022-05-12",
+    "eol_dates": {
+     "end_of_active_support": "2022-06-30",
+     "end_of_life": "2022-06-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.3",
+    "label": "4.3 (LTSB)",
+    "lts": true,
+    "release_date": "2022-01-12",
+    "eol_dates": {
+     "end_of_active_support": "2025-12-31",
+     "end_of_life": "2026-03-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.2",
+    "label": "4.2",
+    "lts": false,
+    "release_date": "2021-04-06",
+    "eol_dates": {
+     "end_of_active_support": "2022-07-21",
+     "end_of_life": "2022-07-21"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.1",
+    "label": "4.1",
+    "lts": false,
+    "release_date": "2020-09-24",
+    "eol_dates": {
+     "end_of_active_support": "2021-04-06",
+     "end_of_life": "2021-04-06"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "3.11",
+    "label": "3.11 (LTSB)",
+    "lts": true,
+    "release_date": "2020-09-24",
+    "eol_dates": {
+     "end_of_active_support": "2024-06-30",
+     "end_of_life": "2024-06-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "4.0",
+    "label": "4.0",
+    "lts": false,
+    "release_date": "2020-01-07",
+    "eol_dates": {
+     "end_of_active_support": "2020-09-24",
+     "end_of_life": "2020-09-24"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "3.7",
+    "label": "3.7 (LTSB)",
+    "lts": true,
+    "release_date": "2018-09-29",
+    "eol_dates": {
+     "end_of_active_support": "2024-06-30",
+     "end_of_life": "2024-06-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "3",
+    "label": "3",
+    "lts": false,
+    "release_date": "2016-11-21",
+    "eol_dates": {
+     "end_of_active_support": "2020-09-24",
+     "end_of_life": "2020-09-24"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "2",
+    "label": "2",
+    "lts": false,
+    "release_date": "2015-03-31",
+    "eol_dates": {
+     "end_of_active_support": "2021-09-13",
+     "end_of_life": "2021-09-13"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "stormshield-sns",
+    "branch": "1",
+    "label": "1",
+    "lts": false,
+    "release_date": "2014-06-03",
+    "eol_dates": {
+     "end_of_active_support": "2015-04-24",
+     "end_of_life": "2015-04-24"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_life": "Lifecycle Support"
+    },
+    "eol_source_url": "https://endoflife.date/sns-firmware",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "26.1",
+    "label": "26.1 (LTS)",
+    "lts": true,
+    "release_date": "2026-06-03",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.18",
+    "label": "17.18 (LTS)",
+    "lts": true,
+    "release_date": "2025-08-08",
+    "eol_dates": {
+     "end_of_active_support": "2028-02-08",
+     "end_of_security_support": "2029-08-08"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.17",
+    "label": "17.17",
+    "lts": false,
+    "release_date": "2025-03-31",
+    "eol_dates": {
+     "end_of_active_support": "2026-07-30",
+     "end_of_security_support": "2026-07-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.16",
+    "label": "17.16",
+    "lts": false,
+    "release_date": "2024-12-11",
+    "eol_dates": {
+     "end_of_active_support": "2026-01-13",
+     "end_of_security_support": "2026-01-13"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.15",
+    "label": "17.15 (LTS)",
+    "lts": true,
+    "release_date": "2024-08-09",
+    "eol_dates": {
+     "end_of_active_support": "2027-03-30",
+     "end_of_security_support": "2028-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.14",
+    "label": "17.14",
+    "lts": false,
+    "release_date": "2024-04-13",
+    "eol_dates": {
+     "end_of_active_support": "2025-05-31",
+     "end_of_security_support": "2025-05-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.13",
+    "label": "17.13",
+    "lts": false,
+    "release_date": "2023-11-30",
+    "eol_dates": {
+     "end_of_active_support": "2024-12-31",
+     "end_of_security_support": "2024-12-31"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.12",
+    "label": "17.12 (LTS)",
+    "lts": true,
+    "release_date": "2023-07-28",
+    "eol_dates": {
+     "end_of_active_support": "2026-03-30",
+     "end_of_security_support": "2027-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": false,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.11",
+    "label": "17.11",
+    "lts": false,
+    "release_date": "2023-03-28",
+    "eol_dates": {
+     "end_of_active_support": "2024-05-14",
+     "end_of_security_support": "2024-05-14"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.10",
+    "label": "17.10",
+    "lts": false,
+    "release_date": "2022-11-30",
+    "eol_dates": {
+     "end_of_active_support": "2024-01-03",
+     "end_of_security_support": "2024-01-03"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.9",
+    "label": "17.9 (LTS)",
+    "lts": true,
+    "release_date": "2022-07-29",
+    "eol_dates": {
+     "end_of_active_support": "2025-03-30",
+     "end_of_security_support": "2026-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.8",
+    "label": "17.8",
+    "lts": false,
+    "release_date": "2022-04-11",
+    "eol_dates": {
+     "end_of_active_support": "2023-05-30",
+     "end_of_security_support": "2023-05-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.7",
+    "label": "17.7",
+    "lts": false,
+    "release_date": "2021-11-30",
+    "eol_dates": {
+     "end_of_active_support": "2023-01-30",
+     "end_of_security_support": "2023-01-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.6",
+    "label": "17.6 (LTS)",
+    "lts": true,
+    "release_date": "2021-07-30",
+    "eol_dates": {
+     "end_of_active_support": "2024-03-31",
+     "end_of_security_support": "2024-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.5",
+    "label": "17.5",
+    "lts": false,
+    "release_date": "2021-03-31",
+    "eol_dates": {
+     "end_of_active_support": "2022-05-30",
+     "end_of_security_support": "2022-05-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.4",
+    "label": "17.4",
+    "lts": false,
+    "release_date": "2020-11-30",
+    "eol_dates": {
+     "end_of_active_support": "2022-01-28",
+     "end_of_security_support": "2022-01-28"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.3",
+    "label": "17.3 (LTS)",
+    "lts": true,
+    "release_date": "2020-07-31",
+    "eol_dates": {
+     "end_of_active_support": "2023-03-31",
+     "end_of_security_support": "2023-09-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.2",
+    "label": "17.2",
+    "lts": false,
+    "release_date": "2020-03-30",
+    "eol_dates": {
+     "end_of_active_support": "2021-07-15",
+     "end_of_security_support": "2021-07-15"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "17.1",
+    "label": "17.1",
+    "lts": false,
+    "release_date": "2019-11-21",
+    "eol_dates": {
+     "end_of_active_support": "2020-12-30",
+     "end_of_security_support": "2020-12-30"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "cisco-ios-xe",
+    "branch": "16.12",
+    "label": "16.12 (LTS)",
+    "lts": true,
+    "release_date": "2019-07-31",
+    "eol_dates": {
+     "end_of_active_support": "2022-02-17",
+     "end_of_security_support": "2022-08-18"
+    },
+    "eol_labels": {
+     "end_of_active_support": "Maintenance Support",
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/cisco-ios-xe",
+    "declared_eol": true,
+    "releases": []
+   },
+   {
+    "product": "nginx",
+    "branch": "1.31",
+    "label": "1.31",
+    "lts": false,
+    "release_date": "2026-05-13",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "1.31.8",
+      "date": "2026-10-21",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.30",
+    "label": "1.30",
+    "lts": false,
+    "release_date": "2026-04-14",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "1.30.6",
+      "date": "2026-10-14",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.30"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.29",
+    "label": "1.29",
+    "lts": false,
+    "release_date": "2025-06-24",
+    "eol_dates": {
+     "end_of_security_support": "2026-05-13"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.29.8",
+      "date": "2026-04-07",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.28",
+    "label": "1.28",
+    "lts": false,
+    "release_date": "2025-04-23",
+    "eol_dates": {
+     "end_of_security_support": "2026-04-14"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.28.3",
+      "date": "2026-03-24",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.28"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.27",
+    "label": "1.27",
+    "lts": false,
+    "release_date": "2024-05-28",
+    "eol_dates": {
+     "end_of_security_support": "2025-06-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.27.5",
+      "date": "2025-04-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.26",
+    "label": "1.26",
+    "lts": false,
+    "release_date": "2024-04-23",
+    "eol_dates": {
+     "end_of_security_support": "2025-04-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.26.3",
+      "date": "2025-02-05",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.26"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.25",
+    "label": "1.25",
+    "lts": false,
+    "release_date": "2023-05-23",
+    "eol_dates": {
+     "end_of_security_support": "2024-05-29"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.25.5",
+      "date": "2024-04-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.24",
+    "label": "1.24",
+    "lts": false,
+    "release_date": "2023-04-11",
+    "eol_dates": {
+     "end_of_security_support": "2024-04-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.24.0",
+      "date": "2023-04-11",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.24"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.23",
+    "label": "1.23",
+    "lts": false,
+    "release_date": "2022-06-21",
+    "eol_dates": {
+     "end_of_security_support": "2023-05-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.23.4",
+      "date": "2023-03-28",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.22",
+    "label": "1.22",
+    "lts": false,
+    "release_date": "2022-05-24",
+    "eol_dates": {
+     "end_of_security_support": "2023-04-11"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.22.1",
+      "date": "2022-10-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.22"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.21",
+    "label": "1.21",
+    "lts": false,
+    "release_date": "2021-05-25",
+    "eol_dates": {
+     "end_of_security_support": "2022-06-21"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.21.6",
+      "date": "2022-01-25",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.20",
+    "label": "1.20",
+    "lts": false,
+    "release_date": "2021-04-20",
+    "eol_dates": {
+     "end_of_security_support": "2022-05-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.20.2",
+      "date": "2021-11-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.20"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.19",
+    "label": "1.19",
+    "lts": false,
+    "release_date": "2020-05-26",
+    "eol_dates": {
+     "end_of_security_support": "2021-05-25"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.19.10",
+      "date": "2021-04-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.18",
+    "label": "1.18",
+    "lts": false,
+    "release_date": "2020-04-21",
+    "eol_dates": {
+     "end_of_security_support": "2021-04-20"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.18.0",
+      "date": "2020-04-21",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.18"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.17",
+    "label": "1.17",
+    "lts": false,
+    "release_date": "2019-05-21",
+    "eol_dates": {
+     "end_of_security_support": "2020-05-26"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.17.10",
+      "date": "2020-04-14",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.16",
+    "label": "1.16",
+    "lts": false,
+    "release_date": "2019-04-23",
+    "eol_dates": {
+     "end_of_security_support": "2020-04-20"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.16.1",
+      "date": "2019-08-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.16"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.15",
+    "label": "1.15",
+    "lts": false,
+    "release_date": "2018-06-05",
+    "eol_dates": {
+     "end_of_security_support": "2019-05-21"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.15.12",
+      "date": "2019-04-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.14",
+    "label": "1.14",
+    "lts": false,
+    "release_date": "2018-04-17",
+    "eol_dates": {
+     "end_of_security_support": "2019-04-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.14.2",
+      "date": "2018-12-04",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.14"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.13",
+    "label": "1.13",
+    "lts": false,
+    "release_date": "2017-04-25",
+    "eol_dates": {
+     "end_of_security_support": "2018-06-05"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.13.12",
+      "date": "2018-04-10",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.12",
+    "label": "1.12",
+    "lts": false,
+    "release_date": "2017-04-12",
+    "eol_dates": {
+     "end_of_security_support": "2018-04-17"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.12.2",
+      "date": "2017-10-17",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.12"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.11",
+    "label": "1.11",
+    "lts": false,
+    "release_date": "2016-05-24",
+    "eol_dates": {
+     "end_of_security_support": "2017-04-25"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.11.13",
+      "date": "2017-04-04",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.10",
+    "label": "1.10",
+    "lts": false,
+    "release_date": "2016-04-26",
+    "eol_dates": {
+     "end_of_security_support": "2017-04-12"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.10.3",
+      "date": "2017-01-31",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.10"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.9",
+    "label": "1.9",
+    "lts": false,
+    "release_date": "2015-04-28",
+    "eol_dates": {
+     "end_of_security_support": "2016-05-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.9.15",
+      "date": "2016-04-19",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.8",
+    "label": "1.8",
+    "lts": false,
+    "release_date": "2015-04-21",
+    "eol_dates": {
+     "end_of_security_support": "2016-04-26"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.8.1",
+      "date": "2016-01-26",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.8"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.7",
+    "label": "1.7",
+    "lts": false,
+    "release_date": "2014-04-24",
+    "eol_dates": {
+     "end_of_security_support": "2015-04-28"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.7.12",
+      "date": "2015-04-07",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.6",
+    "label": "1.6",
+    "lts": false,
+    "release_date": "2014-04-24",
+    "eol_dates": {
+     "end_of_security_support": "2015-04-21"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.6.3",
+      "date": "2015-04-07",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.6"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.5",
+    "label": "1.5",
+    "lts": false,
+    "release_date": "2013-05-07",
+    "eol_dates": {
+     "end_of_security_support": "2014-04-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.5.13",
+      "date": "2014-04-08",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.4",
+    "label": "1.4",
+    "lts": false,
+    "release_date": "2013-04-24",
+    "eol_dates": {
+     "end_of_security_support": "2014-04-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.4.7",
+      "date": "2014-03-18",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.4"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.3",
+    "label": "1.3",
+    "lts": false,
+    "release_date": "2012-05-15",
+    "eol_dates": {
+     "end_of_security_support": "2013-05-07"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.3.16",
+      "date": "2013-04-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.2",
+    "label": "1.2",
+    "lts": false,
+    "release_date": "2012-04-23",
+    "eol_dates": {
+     "end_of_security_support": "2013-04-24"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.2.9",
+      "date": "2013-05-13",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.2"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.1",
+    "label": "1.1",
+    "lts": false,
+    "release_date": "2011-08-01",
+    "eol_dates": {
+     "end_of_security_support": "2012-05-15"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.1.19",
+      "date": "2012-04-12",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES"
+     }
+    ]
+   },
+   {
+    "product": "nginx",
+    "branch": "1.0",
+    "label": "1.0",
+    "lts": false,
+    "release_date": "2011-04-12",
+    "eol_dates": {
+     "end_of_security_support": "2012-04-23"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/nginx",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.0.15",
+      "date": "2012-04-12",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://nginx.org/en/CHANGES-1.0"
+     }
+    ]
+   },
+   {
+    "product": "apache-httpd",
+    "branch": "2.4",
+    "label": "2.4",
+    "lts": false,
+    "release_date": "2012-02-21",
+    "eol_dates": {},
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/apache-http-server",
+    "declared_eol": false,
+    "releases": [
+     {
+      "version": "2.4.69",
+      "date": "2026-10-01",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://downloads.apache.org/httpd/CHANGES_2.4"
+     }
+    ]
+   },
+   {
+    "product": "apache-httpd",
+    "branch": "2.2",
+    "label": "2.2",
+    "lts": false,
+    "release_date": "2005-12-01",
+    "eol_dates": {
+     "end_of_security_support": "2017-07-11"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/apache-http-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.2.34",
+      "date": "2017-07-11",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://archive.apache.org/dist/httpd/CHANGES_2.2.34"
+     }
+    ]
+   },
+   {
+    "product": "apache-httpd",
+    "branch": "2.0",
+    "label": "2.0",
+    "lts": false,
+    "release_date": "2002-04-05",
+    "eol_dates": {
+     "end_of_security_support": "2013-07-10"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/apache-http-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "2.0.65",
+      "date": "2013-07-09",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://archive.apache.org/dist/httpd/CHANGES_2.0.65"
+     }
+    ]
+   },
+   {
+    "product": "apache-httpd",
+    "branch": "1.3",
+    "label": "1.3",
+    "lts": false,
+    "release_date": "1998-06-01",
+    "eol_dates": {
+     "end_of_security_support": "2010-02-03"
+    },
+    "eol_labels": {
+     "end_of_security_support": "Security Support"
+    },
+    "eol_source_url": "https://endoflife.date/apache-http-server",
+    "declared_eol": true,
+    "releases": [
+     {
+      "version": "1.3.42",
+      "date": "2010-02-02",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://archive.apache.org/dist/httpd/CHANGES_1.3.42"
+     }
+    ]
+   }
+  ],
+  "advisories": []
+ }
+}
