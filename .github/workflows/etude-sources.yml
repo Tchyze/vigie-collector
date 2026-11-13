@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches: [claude/great-bell-6u816g]
-    paths: [etude-sources/**, .github/workflows/etude-sources.yml]
+    paths: [etude-sources/candidats.tsv, etude-sources/probe.py, .github/workflows/etude-sources.yml]
 
 permissions:
   contents: write            # enregistrement des résultats sur la branche d'étude

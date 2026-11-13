@@ -74,8 +74,9 @@ sources:
     format: JSON
     auth: cle-facultative
     documentee: oui
-    acces: {session: 200, github: 200}
-    volume: 20 à 300 Ko par requête ; 12 à 15 s par requête ; 503 ponctuels
+    acces: {session: 200, github: "200 (instable)"}
+    volume: 20 à 300 Ko par requête ; 1 à 15 s par requête
+    fiabilite: "depuis GitHub : 4 requêtes sur 7 réussies le 2026-11-13 (2 délais dépassés à 30 s, un 503) ; prévoir 60 s, nouvel essai, jamais bloquante"
     fraicheur: CVE du jour ; enrichissement NVD souvent absent (« Awaiting Analysis », « Deferred »)
     conditions: >-
       sans clé 5 requêtes / 30 s, avec clé gratuite 50 / 30 s ; fenêtre de dates ≤ 120 jours ;
@@ -744,7 +745,7 @@ sources:
     url_humaine: https://pve.proxmox.com/wiki/FAQ
     format: AsciiDoc (tableau, dépôt git)
     auth: aucune
-    acces: {session: 200, github: voir RESULTATS.md}
+    acces: {session: 200, github: 200}
     volume: 8 Ko
     verifie_le: 2026-11-13
     statut: recommandee
@@ -784,7 +785,7 @@ sources:
     donnees: [C]
     url: https://forum.proxmox.com/forums/security-advisories.26/index.rss
     format: RSS
-    acces: {session: 200, github: voir RESULTATS.md}
+    acces: {session: 200, github: 200}
     fraicheur: dernier message du 2026-11-12
     verifie_le: 2026-11-13
     statut: secours
@@ -966,7 +967,7 @@ sources:
     donnees: [C]
     url: https://csaf.arubanetworking.hpe.com/changes.csv
     format: CSAF
-    acces: {session: 200, github: voir RESULTATS.md}
+    acces: {session: 200, github: 200}
     verifie_le: 2026-11-13
     statut: ecartee
     raison: hors périmètre (produits réseau Aruba) ; pas de provider-metadata.json

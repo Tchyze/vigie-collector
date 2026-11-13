@@ -56,7 +56,9 @@ session (S) et depuis un runner GitHub Actions (GH). « ✔ » = 200 et contenu 
 7. **Depuis GitHub Actions**, tout ce qui répond à la session répond aussi au runner, avec trois
    différences : `download.proxmox.com` n'a pas de certificat HTTPS valide (HTTP seulement), les
    anciens hôtes VMware (`hostupdate.vmware.com`, `vapp-updates.vmware.com`) n'existent plus en
-   DNS, et la page HTML de FortiGuard renvoie 429 (non utilisée). Les API GitHub non
+   DNS, et la page HTML de FortiGuard renvoie 429 (non utilisée). Surtout, **l'API NVD est
+   instable depuis le runner** (2 délais dépassés et un 503 sur 7 requêtes) : elle ne peut servir
+   qu'à la découverte, avec nouvel essai, jamais comme source bloquante. Les API GitHub non
    authentifiées sont limitées à 60 requêtes/heure **par adresse IP partagée** du runner : le
    collecteur doit passer le `GITHUB_TOKEN` du workflow (1 000/heure, sans secret à créer).
 
@@ -216,11 +218,11 @@ commercial : inchangés.
 
 | | Source | URL | Format | Accès S / GH | Fraîcheur, historique | Confiance |
 |---|---|---|---|---|---|---|
-| A — R | FAQ de pve-docs (source du wiki) | `https://git.proxmox.com/?p=pve-docs.git;a=blob_plain;f=pve-faq.adoc;hb=HEAD` | AsciiDoc (tableau, dépôt git) | ✔ / à confirmer | dates **au mois** (« 2026-08 ») | éditeur |
+| A — R | FAQ de pve-docs (source du wiki) | `https://git.proxmox.com/?p=pve-docs.git;a=blob_plain;f=pve-faq.adoc;hb=HEAD` | AsciiDoc (tableau, dépôt git) | ✔ / ✔ | dates **au mois** (« 2026-08 ») | éditeur |
 | A — S | endoflife.date | `.../products/proxmox-ve` | JSON | ✔ / ✔ | prend le dernier jour du mois | communautaire |
 | B — R | changelog de `pve-manager` | `https://git.proxmox.com/?p=pve-manager.git;a=blob_plain;f=debian/changelog;hb=HEAD` (branche 8 : `hb=refs/heads/stable-8`) | changelog Debian | ✔ / ✔ | 9.2.27 du 2026-11-10 | éditeur ; version du paquet ≠ nom commercial du point release (9.2) |
 | B — S | index APT | `http://download.proxmox.com/debian/pve/dists/trixie/pve-no-subscription/binary-amd64/Packages` | Packages | HTTPS : certificat invalide ; HTTP ✔ depuis GH | 2,3 Mo | éditeur ; HTTP seulement (fichier `Release` signé GPG) |
-| C — ✗ | forum « Security Advisories » | `https://forum.proxmox.com/forums/security-advisories.26/index.rss` | RSS | ✔ / à confirmer | un fil par produit : seule la date du dernier message | **signal seulement** ; détail en HTML |
+| C — ✗ | forum « Security Advisories » | `https://forum.proxmox.com/forums/security-advisories.26/index.rss` | RSS | ✔ / ✔ | un fil par produit : seule la date du dernier message | **signal seulement** ; détail en HTML |
 | C | — | — | — | — | — | **aucune source structurée** ; CVE via NVD (`cpe:…:proxmox:virtual_environment`, 8 CVE) et CERT-FR |
 
 ### nginx
@@ -278,7 +280,7 @@ nginx/nginx n'a aucun avis GitHub (`security-advisories` : liste vide).
 | D | **aucune** | — | — | — | — | — |
 | ✗ | CSAF HPE (serveurs) | `support.hpe.com/.well-known/csaf/` 404 ; `www.hpe.com` délai dépassé | — | — | — | — |
 
-Le CSAF HPE Aruba existe (`https://csaf.arubanetworking.hpe.com/changes.csv`, ✔) mais ne couvre
+Le CSAF HPE Aruba existe (`https://csaf.arubanetworking.hpe.com/changes.csv`, ✔ / ✔) mais ne couvre
 que les produits réseau Aruba : hors périmètre actuel.
 
 ### CERT-FR (transverse)
@@ -298,7 +300,7 @@ avec une branche reste du texte libre.
 |---|---|---|---|---|---|---|
 | endoflife.date API v1 | `https://endoflife.date/api/v1/products/<slug>` | JSON | ✔ / ✔ | 2 à 10 Ko par produit | A, B pour 14 produits | communautaire ; données sous licence MIT |
 | CISA KEV | `https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json` (miroir : `raw.githubusercontent.com/cisagov/kev-data/develop/...`) | JSON | ✔ / ✔ | 1,8 Mo | marquer les CVE exploitées | domaine public (CC0) |
-| NVD API 2.0 | `https://services.nvd.nist.gov/rest/json/cves/2.0?...` | JSON | ✔ / ✔ | 12 à 15 s par requête, 503 ponctuels | découverte des CVE par CNA ou mot-clé | sans clé : 5 requêtes / 30 s ; **clé gratuite** : 50 / 30 s ; mention « This product uses the NVD API but is not endorsed or certified by the NVD » |
+| NVD API 2.0 | `https://services.nvd.nist.gov/rest/json/cves/2.0?...` | JSON | ✔ / **instable** (4 sur 7 depuis GitHub) | 1 à 15 s par requête ; délais > 30 s et 503 depuis GitHub | découverte des CVE par CNA ou mot-clé | sans clé : 5 requêtes / 30 s ; **clé gratuite** : 50 / 30 s ; mention « This product uses the NVD API but is not endorsed or certified by the NVD » |
 | CVE.org (CVE Services) | `https://cveawg.mitre.org/api/cve/<id>` | JSON CVE 5 | ✔ / ✔ | 5 à 25 Ko par CVE | détail des enregistrements CNA | conditions d'utilisation CVE (reproduction libre avec mention) |
 | OSV (bucket) | `https://osv-vulnerabilities.storage.googleapis.com/<écosystème>/modified_id.csv` | CSV + OSV JSON | ✔ / ✔ | 0,2 à 3,7 Mo l'index | DSA, USN, RLSA | licence propre à chaque écosystème (Rocky : CC BY 4.0) |
 | OSV API | `https://api.osv.dev/v1/query` (POST), `/v1/vulns/<id>` | JSON | ✔ / ✔ | — | requêtes ponctuelles | — |
