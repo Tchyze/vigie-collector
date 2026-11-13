@@ -5,6 +5,8 @@ Usage : python scripts/record_fixtures.py [motif]
 Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la requête ; `post` :
 corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros fichiers :
 - head_lines: N  -> garde les N premières lignes d'un texte ;
+- lines_matching: {pattern: R, others: N} -> garde les lignes d'un texte qui contiennent l'expression
+  régulière R, plus les N premières autres lignes ;
 - json_head: N   -> garde les N premiers éléments d'une liste JSON ;
 - json_key_head: {key: K, n: N, drop: [champs]} -> garde les N premiers éléments de la liste
   data[K], sans les champs listés dans `drop`, et les listes de `truncate` ({champ: N}) coupées ;
@@ -34,6 +36,17 @@ def trim(body: bytes, spec: dict | None) -> bytes:
     if "head_lines" in spec:
         lines = body.decode("utf-8").splitlines(keepends=True)
         return "".join(lines[: spec["head_lines"]]).encode("utf-8")
+    if "lines_matching" in spec:
+        import re
+
+        rule, others, kept = spec["lines_matching"], spec["lines_matching"].get("others", 0), []
+        for line in body.decode("utf-8").splitlines(keepends=True):
+            if re.search(rule["pattern"], line):
+                kept.append(line)
+            elif others > 0:
+                kept.append(line)
+                others -= 1
+        return "".join(kept).encode("utf-8")
     if "json_head" in spec:
         return json.dumps(json.loads(body)[: spec["json_head"]], ensure_ascii=False, indent=1).encode("utf-8")
     if "json_key_head" in spec:

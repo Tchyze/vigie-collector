@@ -56,7 +56,7 @@ vers la page officielle.
 | Rocky Linux | API errata (v2) : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
 | Microsoft | API CVRF du MSRC : un avis **par mois** pour Windows Server (CVE critiques ou exploitées, versions touchées) |
 | Stormshield | flux RSS des avis de l'éditeur (titre, date, produit) |
-| Ubuntu | API notices.json : USN (CVE, versions corrigées) |
+| Ubuntu | USN publiés par Canonical dans OSV (index `modified_id.csv` et un JSON par avis : CVE, versions corrigées, Ubuntu Pro compris) |
 | VMware (Broadcom) | liste des VMSA du portail de support Broadcom (sévérité, CVE) |
 | HPE | flux RSS officiel des bulletins (tous produits ; générations d'iLO touchées) |
 
