@@ -48,33 +48,29 @@ jobs:
           print(f"::add-mask::{token}")
           print("expires_in :", json.loads(text).get("expires_in"))
 
-          def shape(value, depth=0):
-              """Structure d'un JSON : clés et types, premier élément des listes."""
-              pad = "  " * depth
-              if isinstance(value, dict):
-                  for k, v in value.items():
-                      kind = type(v).__name__ + (f"[{len(v)}]" if isinstance(v, (list, dict)) else "")
-                      print(f"{pad}{k}: {kind}" + ("" if isinstance(v, (list, dict)) else f" = {str(v)[:80]!r}"))
-                      if isinstance(v, (list, dict)) and depth < 4:
-                          shape(v, depth + 1)
-              elif isinstance(value, list) and value:
-                  print(f"{pad}[0]:")
-                  shape(value[0], depth + 1)
-
           base = "https://apix.cisco.com/security/advisories/v2/"
-          for path in ("OS_version/OS_data?OSType=iosxe",
-                       "OSType/iosxe?version=17.12.1",
-                       "latest/2"):
+          def get(path):
               time.sleep(1.5)
               status, text = call(urllib.request.Request(base + path, headers={
                   "Authorization": f"Bearer {token}", "Accept": "application/json",
                   "User-Agent": "Vigie-collector (+https://github.com/Tchyze/vigie-collector)"}))
               print(f"\n===== {path} : HTTP {status}, {len(text)} octets")
-              try:
-                  data = json.loads(text)
-              except ValueError:
-                  print(text[:800])
+              return json.loads(text) if status == 200 else None
+
+          # Toutes les versions IOS XE connues, groupées par branche (deux premiers nombres).
+          versions = [v["nos_version"] for v in get("OS_version/OS_data?OSType=iosxe") or []]
+          branches = {}
+          for v in versions:
+              branches.setdefault(".".join(v.split(".")[:2]), []).append(v)
+          for b, vs in branches.items():
+              print(f"{b}: {' '.join(vs)}")
+
+          # Avis touchant une version : identifiant, versions demandées, premières versions corrigées.
+          for version in ("17.12.1", "17.12.6", "17.9.10", "26.1.1"):
+              data = get(f"OSType/iosxe?version={version}")
+              if data is None:
                   continue
-              shape(data)
-              print("--- extrait brut :")
-              print(json.dumps(data, ensure_ascii=False)[:2500])
+              advisories = data.get("advisories") or []
+              print(f"{len(advisories)} avis ; clés hors avis : {[k for k in data if k != 'advisories']}")
+              for a in advisories:
+                  print(f"  {a['advisoryId']} | {a.get('sir')} | release={a.get('iosRelease')} | firstFixed={a.get('firstFixed')} | smu={a.get('smu')}")
