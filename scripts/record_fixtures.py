@@ -14,6 +14,8 @@ corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros
   le champ F contient T, plus N autres ;
 - dell_catalog: N -> catalogue Dell (XML UTF-16 compressé) réduit aux firmwares iDRAC, plus N
   autres composants ;
+- json_key_filter: {key: K, field: F, values: [V…], others: N} -> liste data[K] réduite aux éléments
+  dont le champ F vaut l'une des valeurs V, plus les N premiers autres ;
 - nvd_recent: N -> réponse de l'API NVD réduite à ses N CVE les plus récentes (`published`) ;
 - cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
   importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
@@ -71,6 +73,17 @@ def trim(body: bytes, spec: dict | None) -> bytes:
         return json.dumps(kept, ensure_ascii=False, indent=1).encode("utf-8")
     if "dell_catalog" in spec:
         return dell_catalog(body, spec["dell_catalog"])
+    if "json_key_filter" in spec:
+        rule, data = spec["json_key_filter"], json.loads(body)
+        others, kept = rule.get("others", 0), []
+        for item in data[rule["key"]]:
+            if item.get(rule["field"]) in rule["values"]:
+                kept.append(item)
+            elif others > 0:
+                kept.append(item)
+                others -= 1
+        data[rule["key"]] = kept
+        return json.dumps(data, ensure_ascii=False, indent=1).encode("utf-8")
     if "nvd_recent" in spec:
         data = json.loads(body)
         items = sorted(data["vulnerabilities"], key=lambda v: v["cve"]["published"])[-spec["nvd_recent"]:]

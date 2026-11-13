@@ -96,3 +96,20 @@ def test_advisory_document():
     assert validate.errors("advisories", doc) == []
     doc["advisories"][0]["cves"] = ["2026-118304"]
     assert validate.errors("advisories", doc)
+
+
+def test_advisory_exploited_is_optional_boolean_or_null():
+    doc = {
+        "schema_version": 1, "generated_at": "2026-10-29T12:00:00Z", "retention_days": 365,
+        "advisories": [{
+            "id": "CVE-2026-0322", "source": "paloalto", "vendor": "Palo Alto Networks", "title": "t",
+            "published": "2026-10-14T00:00:00Z", "updated": None, "severity": "high", "cvss": 8.0,
+            "cves": ["CVE-2026-0322"], "url": "https://security.paloaltonetworks.com/CVE-2026-0322",
+            "summary": None, "affected": [], "attribution": None,
+        }],
+    }
+    for value in (True, False, None):
+        doc["advisories"][0]["exploited"] = value
+        assert validate.errors("advisories", doc) == []
+    doc["advisories"][0]["exploited"] = "yes"
+    assert validate.errors("advisories", doc)

@@ -48,6 +48,10 @@ Conventions :
 `sources[].status` vaut `error` quand la dernière collecte a échoué. Les données de cette source
 sont alors celles de son dernier succès (`last_success`), et `error` décrit l'échec.
 
+`sources[].kind` vaut `versions`, `advisories` ou `enrichment`. La source `cisa_kev`
+(`enrichment`) ne publie pas d'avis : elle renseigne le champ `exploited` de tous les avis.
+Si elle échoue, le dernier catalogue lu reste appliqué.
+
 ## Objet `branch`
 
 Une branche de version d'un produit : FortiOS 7.4, Debian 12, nginx 1.30… Un produit sans
@@ -124,6 +128,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | `url` | URL | avis officiel complet |
 | `summary` | chaîne (≤ 300 car.) ou `null` | résumé court |
 | `affected` | liste d'`id` de branches | branches concernées **quand c'est déductible de façon fiable**, sinon vide |
+| `exploited` | booléen ou `null` (facultatif) | `true` si une CVE de l'avis figure au catalogue CISA KEV (exploitation avérée), `false` si l'avis cite des CVE dont aucune n'y figure, `null` si l'avis ne cite aucune CVE ou si le catalogue n'a jamais pu être lu |
 | `attribution` | chaîne ou `null` | mention de source obligatoire (Cisco) |
 
 Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le build le vérifie.

@@ -51,6 +51,7 @@ vers la page officielle.
 | Palo Alto Networks | API JSON du portail sécurité (branches PAN-OS touchées) |
 | Cisco | flux RSS des Cisco Security Advisories |
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
+| CISA KEV | catalogue des failles activement exploitées : renseigne le champ `exploited` de **tous** les avis |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
 | Red Hat | API Security Data : RHSA **critiques** touchant RHEL (branches d'après les paquets) |
 | Rocky Linux | API errata (v2) : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |

@@ -20,7 +20,7 @@ from pathlib import Path
 
 import collectors
 from collectors.base import CollectError, Context
-from vigie import SCHEMA_VERSION, state, validate
+from vigie import SCHEMA_VERSION, kev, state, validate
 from vigie.catalog import Catalog, load_catalog, load_overrides
 from vigie.http import HttpClient
 from vigie.merge import Contribution, merge_branches
@@ -43,6 +43,7 @@ def run(
     output: Path,
     previous: Path,
     now: dt.datetime,
+    enrich: bool = True,
 ) -> int:
     today = now.date()
     stamp = utc_stamp(now)
@@ -97,6 +98,13 @@ def run(
         contributions += [Contribution(collector.name, collector.role, b) for b in result.branches]
         advisories += result.advisories
 
+    # Enrichissement : failles activement exploitées (CISA KEV), appliqué à tous les avis.
+    kev_catalog = None
+    if enrich:
+        kev_catalog, kev_entry = kev.collect(client, previous / "state" / f"{kev.NAME}.json",
+                                             output / "state" / f"{kev.NAME}.json", prev_sources.get(kev.NAME), stamp)
+        source_entries.append(kev_entry)
+
     products = merge_branches(catalog, contributions, overrides, today)
     known_ids = {b["id"] for branches in products.values() for b in branches}
 
@@ -129,10 +137,11 @@ def run(
             failed = True
             continue
         seen[adv.id] = adv.source
-        item = adv.__dict__ | {"affected": [b for b in adv.affected if b in known_ids]}
+        item = adv.__dict__ | {"affected": [b for b in adv.affected if b in known_ids],
+                               "exploited": kev.exploited(adv.cves, kev_catalog)}
         published.append({key: item[key] for key in (
             "id", "source", "vendor", "title", "published", "updated", "severity", "cvss",
-            "cves", "url", "summary", "affected", "attribution")})
+            "cves", "url", "summary", "affected", "exploited", "attribution")})
     documents["advisories.json"] = ("advisories", {
         "schema_version": SCHEMA_VERSION,
         "generated_at": stamp,
@@ -178,14 +187,15 @@ def main(argv: list[str] | None = None) -> int:
 
     catalog = load_catalog(args.products)
     overrides = load_overrides(args.overrides, catalog)
-    sources = collectors.ALL
+    sources, enrich = collectors.ALL, True
     if args.only:
         wanted = set(args.only.split(","))
         sources = [c for c in sources if c.name in wanted]
+        enrich = kev.NAME in wanted
     client = HttpClient()
     try:
         return run(catalog=catalog, overrides=overrides, sources=sources, client=client,
-                   output=args.output, previous=args.previous, now=dt.datetime.now(dt.timezone.utc))
+                   output=args.output, previous=args.previous, now=dt.datetime.now(dt.timezone.utc), enrich=enrich)
     finally:
         client.close()
 

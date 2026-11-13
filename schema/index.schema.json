@@ -54,7 +54,7 @@
         "properties": {
           "name": {"type": "string"},
           "label": {"type": "string"},
-          "kind": {"enum": ["versions", "advisories"]},
+          "kind": {"enum": ["versions", "advisories", "enrichment"]},
           "status": {"enum": ["ok", "error"]},
           "count": {"type": "integer", "minimum": 0},
           "last_attempt": {"$ref": "#/$defs/datetime"},
