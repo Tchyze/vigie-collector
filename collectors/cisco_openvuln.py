@@ -1,9 +1,7 @@
 """Cisco IOS XE : versions publiées et versions de correctif, depuis l'API Cisco PSIRT openVuln.
 
-Accès : OAuth2 « client credentials ». Les identifiants viennent des variables d'environnement
-CISCO_CLIENT_ID et CISCO_CLIENT_SECRET (secrets de l'environnement GitHub « main ») ; sans elles,
-le collecteur échoue avec un message clair et Vigie garde le dernier état publié. Le jeton
-(valable 1 h) est redemandé à chaque passage et n'est jamais enregistré.
+Accès : OAuth2, voir collectors/_cisco_api.py. Sans identifiants, le collecteur échoue avec un
+message clair et Vigie garde le dernier état publié.
 
 1. `OS_version/OS_data?OSType=iosxe` : toutes les versions IOS XE connues du Cisco Software
    Checker, sans date. On ne garde que les versions courantes (17.12.8) et leurs reconstructions
@@ -19,18 +17,16 @@ l'API : 5 appels par seconde, 60 par minute).
 Conditions d'utilisation : citer Cisco comme source ; usage non commercial.
 """
 
-import os
 import re
 
 import httpx
 
+from collectors._cisco_api import API, auth_headers
 from collectors.base import CollectError, Collector, Context
 from collectors.cisco import ATTRIBUTION
 from vigie.models import BranchData, CollectResult, Release
 from vigie.versions import token_key
 
-TOKEN_URL = "https://id.cisco.com/oauth2/default/v1/token"
-API = "https://apix.cisco.com/security/advisories/v2/"
 OS_DATA = API + "OS_version/OS_data?OSType=iosxe"
 BY_VERSION = API + "OSType/iosxe?version={version}"
 PRODUCT = "cisco-ios-xe"
@@ -46,13 +42,7 @@ class CiscoOpenVuln(Collector):
     attribution = ATTRIBUTION
 
     def collect(self, ctx: Context) -> CollectResult:
-        client_id, secret = os.environ.get("CISCO_CLIENT_ID"), os.environ.get("CISCO_CLIENT_SECRET")
-        if not (client_id and secret):
-            raise RuntimeError("identifiants absents (CISCO_CLIENT_ID, CISCO_CLIENT_SECRET)")
-        token = ctx.client.post_form(TOKEN_URL, {
-            "grant_type": "client_credentials", "client_id": client_id, "client_secret": secret,
-        })["access_token"]
-        headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
+        headers = auth_headers(ctx.client)
 
         versions = [item["nos_version"] for item in ctx.client.json(OS_DATA, headers=headers)
                     if isinstance(item, dict) and item.get("nos_version")]

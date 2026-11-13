@@ -2,9 +2,16 @@
 
 https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
 (l'ancienne adresse rss.x?i=44 renvoie désormais une page HTML). Chaque description se termine
-par la sévérité (« Security Impact Rating ») et les CVE.
+par la sévérité (« Security Impact Rating ») et les CVE. La date du flux est celle de la dernière
+mise à jour de l'avis, pas de sa première publication.
 
-Branches IOS XE touchées : pour un avis qui cite IOS XE (titre ou description), le document CSAF
+Détails par l'API openVuln (si CISCO_CLIENT_ID et CISCO_CLIENT_SECRET sont définis, voir
+collectors/_cisco_api.py) : un seul appel, `latest/60`, donne pour les avis récents le score
+CVSS, les dates de première publication et de mise à jour, et la liste des produits touchés
+(« Cisco IOS XE Software 17.12.1 »), d'où les branches IOS XE. Sans identifiants ou en cas
+d'échec, l'avis garde les données du flux et les branches viennent du CSAF (ci-dessous).
+
+Branches IOS XE touchées, à défaut d'openVuln : pour un avis qui cite IOS XE (titre ou description), le document CSAF
 de Cisco (fournisseur CSAF de confiance) est lu. Il range chaque version touchée sous la famille
 « Cisco IOS XE Software », puis sous sa branche (`product_version` « 17.9 ») : la branche
 `cisco-ios-xe-17.9` se lit directement. L'index https://www.cisco.com/.well-known/csaf/changes.csv
@@ -21,6 +28,7 @@ from urllib.parse import urlsplit
 
 import feedparser
 
+from collectors import _cisco_api
 from collectors._text import cves, iso_utc, normalize_severity, short_summary, strip_html, utc_from_struct
 from collectors.base import Collector, Context
 from vigie.models import Advisory, CollectResult
@@ -28,6 +36,8 @@ from vigie.models import Advisory, CollectResult
 FEED = "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
 CSAF_INDEX = "https://www.cisco.com/.well-known/csaf/changes.csv"
 CSAF_DOCUMENT = "https://www.cisco.com/.well-known/csaf/{path}"
+OPENVULN_LATEST = _cisco_api.API + "latest/60"   # le flux en compte 50
+IOS_XE_PRODUCT = re.compile(r"^Cisco IOS XE Software (\d+)\.(\d+)\.\S+$")
 IOS_XE = re.compile(r"\bIOS XE\b")
 IOS_XE_FAMILY = "Cisco IOS XE Software"
 PRODUCT = "cisco-ios-xe"
@@ -70,8 +80,61 @@ class Cisco(Collector):
                 summary=short_summary(TRAILER.split(text, 1)[0]),
                 attribution=ATTRIBUTION,
             ))
-        add_ios_xe_branches(ctx, advisories)
+        enriched = add_openvuln_details(ctx, advisories)
+        add_ios_xe_branches(ctx, [a for a in advisories if a.id not in enriched])
         return CollectResult(advisories=advisories)
+
+
+def add_openvuln_details(ctx: Context, advisories: list[Advisory]) -> set[str]:
+    """Complète les avis depuis openVuln ; renvoie les identifiants complétés."""
+    if not _cisco_api.has_credentials():
+        return set()
+    try:
+        data = ctx.client.json(OPENVULN_LATEST, headers=_cisco_api.auth_headers(ctx.client))
+        details = {d["advisoryId"]: d for d in data.get("advisories") or [] if d.get("advisoryId")}
+    except Exception as exc:  # noqa: BLE001 — l'avis reste publié avec les données du flux
+        log.warning("Cisco : openVuln indisponible (%s)", exc)
+        return set()
+    enriched = set()
+    for advisory in advisories:
+        detail = details.get(advisory.id)
+        if detail is None:
+            continue
+        enriched.add(advisory.id)
+        advisory.cvss = cvss_score(detail.get("cvssBaseScore"))
+        if not advisory.severity:
+            advisory.severity = normalize_severity(detail.get("sir"))
+        if not advisory.cves:
+            advisory.cves = [c for c in detail.get("cves") or [] if c.startswith("CVE-")]
+        first, last = openvuln_date(detail.get("firstPublished")), openvuln_date(detail.get("lastUpdated"))
+        if first:
+            advisory.published = first
+        if last and last > advisory.published:
+            advisory.updated = last
+        advisory.affected = ios_xe_branches_from_names(detail.get("productNames") or [])
+    return enriched
+
+
+def cvss_score(value) -> float | None:
+    try:
+        score = float(value)
+    except (TypeError, ValueError):  # « NA » pour les avis informatifs
+        return None
+    return score if 0 <= score <= 10 else None
+
+
+def openvuln_date(value: str | None) -> str | None:
+    """« 2026-10-28T21:54:35 » (UTC, sans fuseau : identique à la date du flux) -> ISO UTC."""
+    if not value or not re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$", value):
+        return None
+    return value + "Z"
+
+
+def ios_xe_branches_from_names(names: list[str]) -> list[str]:
+    """Branches IOS XE (« cisco-ios-xe-17.12 ») d'après les noms de produits openVuln."""
+    branches = {f"{m[1]}.{m[2]}" for m in (IOS_XE_PRODUCT.match(n.strip()) for n in names) if m}
+    key = lambda b: tuple(int(p) for p in b.split("."))  # noqa: E731
+    return [f"{PRODUCT}-{b}" for b in sorted(branches, key=key, reverse=True)]
 
 
 def add_ios_xe_branches(ctx: Context, advisories: list[Advisory]) -> None:

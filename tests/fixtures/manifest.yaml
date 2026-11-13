@@ -163,3 +163,6 @@
 - url: https://apix.cisco.com/security/advisories/v2/OSType/iosxe?version=26.1.1
   file: cisco/openvuln/iosxe-26.1.1.json
   manual: true
+- url: https://apix.cisco.com/security/advisories/v2/latest/60
+  file: cisco/openvuln/latest.json
+  manual: true

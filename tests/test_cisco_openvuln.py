@@ -2,11 +2,12 @@ import httpx
 import pytest
 
 from collectors import cisco_openvuln
+from collectors._cisco_api import TOKEN_URL
 from collectors.base import CollectError, Context
 from tests.conftest import TODAY, fixture_client
 from vigie.versions import sort_versions
 
-TOKEN = cisco_openvuln.TOKEN_URL
+TOKEN = TOKEN_URL
 
 
 def run(catalog, overrides=None):

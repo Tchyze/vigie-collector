@@ -361,14 +361,16 @@ sources:
     conditions: mention de source Cisco ; usage non commercial
     verifie_le: 2026-11-13
     statut: actuelle
+    note: la date de l'entrée est celle de la dernière mise à jour de l'avis (identique au lastUpdated d'openVuln)
     collecteur: cisco
 
   - id: cisco-openvuln
     editeur: Cisco PSIRT
     confiance: editeur
     produits: [cisco-ios-xe]
-    donnees: [B, D]
+    donnees: [B, C, D]
     url: https://apix.cisco.com/security/advisories/v2/OS_version/OS_data?OSType=iosxe
+    url_avis: https://apix.cisco.com/security/advisories/v2/latest/60
     url_detail: https://apix.cisco.com/security/advisories/v2/OSType/iosxe?version={version}
     jeton: https://id.cisco.com/oauth2/default/v1/token
     methode: GET
@@ -376,13 +378,13 @@ sources:
     auth: oauth (client credentials ; application « Service » de la console API Cisco)
     documentee: oui
     acces: {session: 403 sans jeton, github: 200 avec jeton (environnement main)}
-    volume: OS_data 14 Ko ; 60 Ko à 1,1 Mo par version interrogée
+    volume: OS_data 14 Ko ; 60 Ko à 1,1 Mo par version interrogée ; latest/60 600 Ko
     fraicheur: OS_data liste 26.2.1 et 17.18.5 le 2026-11-13 ; versions sans date
     conditions: mention de source Cisco ; usage non commercial
     verifie_le: 2026-11-13
     statut: recommandee
     note: limite 5 appels/s, 60/min ; firstFixed liste les premières versions corrigées par branche
-    collecteur: cisco_openvuln (une requête par branche à partir de la 17)
+    collecteur: cisco_openvuln (une requête par branche à partir de la 17) ; cisco (latest/60 : CVSS, dates, branches IOS XE des avis)
     decision: compte Cisco + client OAuth ; identifiants en secrets de l'environnement GitHub main
 
   # ---------------------------------------------------------------- Debian et Ubuntu
