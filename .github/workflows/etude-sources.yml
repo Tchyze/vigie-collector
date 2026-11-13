@@ -23,6 +23,14 @@ jobs:
           python-version: "3.12"
       - name: Sonde des sources candidates
         run: python etude-sources/probe.py --title "Accès depuis GitHub Actions ($(date -u +%Y-%m-%dT%H:%MZ))" --json resultats-github.json
+      - name: Tableau compact (journal)
+        run: |
+          python - <<'PY'
+          import json
+          for r in json.load(open("resultats-github.json")):
+              size = f"{r['bytes']}{'+' if r['truncated'] else ''}"
+              print(f"COMPACT\t{r['id']}\t{r['status'] or r['error'][:60]}\t{size}\t{r['seconds']}")
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: resultats-acces-github
