@@ -50,7 +50,7 @@ vers la page officielle.
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
 | Red Hat | API Security Data : RHSA **critiques** touchant RHEL (branches d'après les paquets) |
-| Rocky Linux | API errata Apollo : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
+| Rocky Linux | API errata (v2) : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
 | Microsoft | API CVRF du MSRC : un avis **par mois** pour Windows Server (CVE critiques ou exploitées, versions touchées) |
 | Stormshield | flux RSS des avis de l'éditeur (titre, date, produit) |
 
