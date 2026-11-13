@@ -113,6 +113,11 @@ products:
     eol_fields:
       eol: end_of_security_support    # « General Support »
 
+  dell-idrac:
+    label: Dell iDRAC
+    vendor: Dell
+    category: server                  # pas sur endoflife.date : versions du catalogue Dell
+
   hpe-ilo:
     label: HPE iLO
     vendor: HPE

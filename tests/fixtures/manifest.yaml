@@ -121,3 +121,6 @@
   trim: {json_dict_filter: {field: description, contains: Lights-Out, others: 3}}
 - url: https://support.hpe.com/hpesc/public/api/document/sec_bull_rss_feed
   file: hpe/sec_bull_rss_feed.xml
+- url: https://downloads.dell.com/catalog/Catalog.xml.gz
+  file: dell/Catalog.xml.gz
+  trim: {dell_catalog: 3}

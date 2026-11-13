@@ -10,6 +10,8 @@ corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros
   data[K], sans les champs listés dans `drop`, et les listes de `truncate` ({champ: N}) coupées ;
 - json_dict_filter: {field: F, contains: T, others: N} -> dictionnaire JSON réduit aux entrées dont
   le champ F contient T, plus N autres ;
+- dell_catalog: N -> catalogue Dell (XML UTF-16 compressé) réduit aux firmwares iDRAC, plus N
+  autres composants ;
 - cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
   importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
 """
@@ -53,9 +55,28 @@ def trim(body: bytes, spec: dict | None) -> bytes:
             elif others < rule["others"]:
                 kept[key], others = value, others + 1
         return json.dumps(kept, ensure_ascii=False, indent=1).encode("utf-8")
+    if "dell_catalog" in spec:
+        return dell_catalog(body, spec["dell_catalog"])
     if "cvrf_sample" in spec:
         return cvrf_sample(json.loads(body), spec["cvrf_sample"])
     raise ValueError(f"trim inconnu : {spec}")
+
+
+def dell_catalog(body: bytes, others: int) -> bytes:
+    import gzip
+    import xml.etree.ElementTree as ET
+
+    root = ET.fromstring(gzip.decompress(body))
+    for component in list(root.findall("SoftwareComponent")):
+        if (component.findtext("Name/Display") or "").startswith("iDRAC "):
+            continue
+        if others > 0:
+            others -= 1
+            continue
+        root.remove(component)
+    for bundle in list(root.findall("SoftwareBundle")):
+        root.remove(bundle)
+    return gzip.compress(ET.tostring(root, encoding="utf-16"), mtime=0)
 
 
 def cvrf_sample(data: dict, n: int) -> bytes:

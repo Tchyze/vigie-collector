@@ -4,6 +4,7 @@ from collectors import (
     certfr,
     cisco,
     debian_dsa,
+    dell_idrac,
     endoflife,
     fortinet_firmware,
     fortinet_psirt,
@@ -29,6 +30,7 @@ ALL = [
     openssh.COLLECTOR,
     fortinet_firmware.COLLECTOR,
     hpe_ilo.COLLECTOR,
+    dell_idrac.COLLECTOR,
     # avis de sécurité
     fortinet_psirt.COLLECTOR,
     paloalto.COLLECTOR,
