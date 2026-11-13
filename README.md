@@ -63,8 +63,9 @@ vers la page officielle.
 Toutes les sources sont publiques et sans authentification. Les avis Cisco portent la mention de
 source exigée par Cisco ; leur usage doit rester non commercial.
 
-Dell et HPE ne publient pas de dates de fin de support exploitables pour iDRAC et iLO : leurs
-branches restent `active` tant que `overrides.yaml` ne fixe pas de date. Les avis de sécurité Dell
+Dell et HPE ne publient pas de dates de fin de support exploitables par un programme pour iDRAC
+et iLO. `overrides.yaml` fixe celles que Dell annonce (iDRAC8, iDRAC9 des PowerEdge 14G) ; HPE n'en
+publie pas pour iLO, dont les branches restent `active`. Les avis de sécurité Dell
 ne sont pas repris : leur portail refuse les clients automatiques ; le CERT-FR les couvre.
 
 Red Hat et Rocky publient chacun plusieurs milliers d'avis par an : seuls les avis de sévérité
