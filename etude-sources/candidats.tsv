@@ -147,7 +147,7 @@ hpe-bulletins-rss	GET	https://support.hpe.com/hpesc/public/api/document/sec_bull
 hpe-csaf-pm	GET	https://support.hpe.com/.well-known/csaf/provider-metadata.json
 hpe-csaf-pm-www	GET	https://www.hpe.com/.well-known/csaf/provider-metadata.json
 aruba-csaf-pm	GET	https://csaf.arubanetworking.hpe.com/.well-known/csaf/provider-metadata.json
-aruba-csaf-changes	GET	https://csaf.arubanetworking.hpe.com/white/changes.csv
+aruba-csaf-changes	GET	https://csaf.arubanetworking.hpe.com/changes.csv
 # --- Ajouts (deuxième passe)
 openssh-org-release-txt	GET	https://www.openssh.org/txt/release-10.2
 openssh-org-releasenotes	GET	https://www.openssh.org/releasenotes.html
@@ -186,3 +186,13 @@ redhat-csaf-advisory	GET	https://security.access.redhat.com/data/csaf/v2/advisor
 ubuntu-distro-info-salsa	GET	https://salsa.debian.org/debian/distro-info-data/-/raw/main/ubuntu.csv
 openssh-org-release-10.6p2	GET	https://www.openssh.org/txt/release-10.6p2
 eol-api-rhel	GET	https://endoflife.date/api/v1/products/rhel
+# --- Ajouts (quatrième passe)
+proxmox-pve-docs-faq	GET	https://git.proxmox.com/?p=pve-docs.git;a=blob_plain;f=pve-faq.adoc;hb=HEAD
+nvd-src-fortinet	GET	https://services.nvd.nist.gov/rest/json/cves/2.0?sourceIdentifier=psirt@fortinet.com&resultsPerPage=5
+nvd-src-hpe	GET	https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=Integrated%20Lights-Out&resultsPerPage=5
+nvd-src-vmware	GET	https://services.nvd.nist.gov/rest/json/cves/2.0?sourceIdentifier=security@vmware.com&resultsPerPage=5
+redhat-oval10	GET	https://security.access.redhat.com/data/oval/v2/RHEL10/rhel-10.oval.xml.bz2
+ubuntu-oval-jammy	GET	https://security-metadata.canonical.com/oval/com.ubuntu.jammy.usn.oval.xml.bz2
+msrc-cvrf-month	GET	https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Nov
+cisco-ios-xe-eol-bulletin	GET	https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-xe-17/ios-xe-17-9-x-eol.html
+ms-lifecycle-ws2016	GET	https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016
