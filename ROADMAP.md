@@ -8,11 +8,9 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 | Sujet | Raison | Piste |
 |---|---|---|
 | HPE Aruba | avis diffusés par liste de diffusion, sans flux confirmé | le CERT-FR couvre déjà les avis Aruba ; chercher un flux ou une archive web |
-| Stormshield (avis directs) | pas de flux structuré confirmé | le CERT-FR couvre déjà les avis Stormshield ; versions et fins de support via endoflife.date |
+| Stormshield : CVE et versions | le flux RSS n'a ni description ni CVE ; le détail n'est que dans la page HTML de l'avis | le CERT-FR reprend les avis Stormshield avec leurs CVE |
 | Dell (iDRAC, OS10…) | pas de flux public structuré identifié | à étudier |
-| Microsoft MSRC | API CVRF/CSAF riche mais volumineuse | à intégrer en phase 2 ; le CERT-FR couvre les bulletins mensuels |
-| Red Hat CSAF | gros volume (un document par erratum) | indexer seulement les RHSA critiques et importants |
-| Errata Rocky Linux | API errata à évaluer | à étudier |
+| Red Hat et Rocky : avis « important » | des milliers par an | seuls les avis critiques sont repris ; un filtre par composant (noyau, OpenSSH, OpenSSL…) pourrait en ajouter |
 | Cisco openVuln API | demande une authentification OAuth | le flux RSS suffit en phase 1 |
 | Scraping des notes de version | fragile, exclu en phase 1 | — |
 
