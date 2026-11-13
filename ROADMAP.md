@@ -13,7 +13,6 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 | Stormshield : CVE et versions | le flux RSS n'a ni description ni CVE ; le détail n'est que dans la page HTML de l'avis | le CERT-FR reprend les avis Stormshield avec leurs CVE |
 | Dell : autres firmwares (BIOS, PERC…) | un composant par modèle de serveur, trop fin pour des branches | le catalogue Dell les contient s'il faut les suivre |
 | Red Hat et Rocky : avis « important » | des milliers par an | seuls les avis critiques sont repris ; un filtre par composant (noyau, OpenSSH, OpenSSL…) pourrait en ajouter |
-| Cisco openVuln API | demande une authentification OAuth | le flux RSS suffit en phase 1 |
 | Scraping des notes de version | fragile, exclu en phase 1 | — |
 
 ## Améliorations identifiées
@@ -24,8 +23,10 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 - **Fortinet : avis sortis du flux.** Le CSAF n'est lu que pour les avis encore présents dans
   le flux RSS (50 derniers). Les avis plus anciens gardés dans l'historique n'ont pas de CVE ;
   leur URL CSAF n'est pas prévisible (elle contient le titre).
-- **Cisco IOS XE et Stormshield : dernière version.** endoflife.date ne la donne pas ; chercher
-  une source éditeur structurée.
+- **Stormshield : dernière version.** endoflife.date ne la donne pas ; chercher une source
+  éditeur structurée. (Cisco IOS XE : fait, par l'API openVuln.)
+- **Cisco IOS XE : dates de publication et `security_fix` complet.** `OS_data` ne date pas les
+  versions, et seule la première version de chaque branche est interrogée.
 - **CERT-FR : `affected`.** Les systèmes touchés sont du texte libre (« FortiOS versions 7.4.x
   antérieures à 7.4.9 »). Une correspondance prudente vers les branches suivies reste possible,
   mais seulement avec des règles explicites et testées.

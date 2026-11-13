@@ -1,0 +1,32 @@
+{
+ "advisories": [
+  {
+   "advisoryId": "cisco-sa-hardening-iosxe-V8NMuMZJ",
+   "advisoryTitle": "cisco-sa-hardening-iosxe-V8NMuMZJ",
+   "sir": "Critical",
+   "iosRelease": [
+    "26.1.1"
+   ],
+   "firstFixed": [],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-ios-xmcp-thbAr34t",
+   "advisoryTitle": "cisco-sa-ios-xmcp-thbAr34t",
+   "sir": "High",
+   "iosRelease": [
+    "26.1.1"
+   ],
+   "firstFixed": [
+    "26.1.2"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  }
+ ]
+}

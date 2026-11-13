@@ -3,6 +3,7 @@
 from collectors import (
     certfr,
     cisco,
+    cisco_openvuln,
     debian_dsa,
     dell_advisories,
     dell_idrac,
@@ -30,6 +31,7 @@ ALL = [
     httpd.COLLECTOR,
     openssh.COLLECTOR,
     fortinet_firmware.COLLECTOR,
+    cisco_openvuln.COLLECTOR,
     hpe_ilo.COLLECTOR,
     dell_idrac.COLLECTOR,
     # avis de sécurité

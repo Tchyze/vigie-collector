@@ -43,7 +43,16 @@ class HttpClient:
         """POST d'un corps JSON, réponse JSON (API de portail qui ne répond pas en GET)."""
         return self.request("POST", url, headers=headers, json=payload).json()
 
-    def request(self, method: str, url: str, *, headers: dict | None = None, json=None) -> httpx.Response:
+    def post_form(self, url: str, form: dict, *, headers: dict | None = None):
+        """POST d'un formulaire (application/x-www-form-urlencoded), réponse JSON : jeton OAuth2.
+
+        Les champs vont dans le corps, jamais dans l'URL : un message d'erreur, qui cite l'URL,
+        ne peut donc pas contenir d'identifiant.
+        """
+        return self.request("POST", url, headers=headers, data=form).json()
+
+    def request(self, method: str, url: str, *, headers: dict | None = None, json=None,
+                data: dict | None = None) -> httpx.Response:
         host = urlsplit(url).hostname or ""
         headers = dict(headers or {})
         if host == "api.github.com" and self.github_token:
@@ -51,7 +60,7 @@ class HttpClient:
         for attempt in range(self.retries + 1):
             self._wait(host)
             try:
-                response = self._client.request(method, url, headers=headers, json=json)
+                response = self._client.request(method, url, headers=headers, json=json, data=data)
                 if response.status_code < 500 or attempt == self.retries:
                     response.raise_for_status()
                     return response

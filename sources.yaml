@@ -367,17 +367,23 @@ sources:
     editeur: Cisco PSIRT
     confiance: editeur
     produits: [cisco-ios-xe]
-    donnees: [B, C, D]
-    url: https://apix.cisco.com/security/advisories/v2/...
+    donnees: [B, D]
+    url: https://apix.cisco.com/security/advisories/v2/OS_version/OS_data?OSType=iosxe
+    url_detail: https://apix.cisco.com/security/advisories/v2/OSType/iosxe?version={version}
     jeton: https://id.cisco.com/oauth2/default/v1/token
     methode: GET
     format: JSON
-    auth: oauth
+    auth: oauth (client credentials ; application « Service » de la console API Cisco)
     documentee: oui
-    acces: {session: 403 sans jeton, github: 403 sans jeton}
+    acces: {session: 403 sans jeton, github: 200 avec jeton (environnement main)}
+    volume: OS_data 14 Ko ; 60 Ko à 1,1 Mo par version interrogée
+    fraicheur: OS_data liste 26.2.1 et 17.18.5 le 2026-11-13 ; versions sans date
+    conditions: mention de source Cisco ; usage non commercial
     verifie_le: 2026-11-13
-    statut: secours
-    decision: compte Cisco + client OAuth ; identifiants en secrets GitHub
+    statut: recommandee
+    note: limite 5 appels/s, 60/min ; firstFixed liste les premières versions corrigées par branche
+    collecteur: cisco_openvuln (une requête par branche à partir de la 17)
+    decision: compte Cisco + client OAuth ; identifiants en secrets de l'environnement GitHub main
 
   # ---------------------------------------------------------------- Debian et Ubuntu
   - id: distro-info-data

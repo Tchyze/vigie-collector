@@ -149,3 +149,17 @@
 - url: https://www.cisco.com/.well-known/csaf/2026/cisco-sa-hardening-iosxe-v8nmumzj.json
   file: cisco/csaf/cisco-sa-hardening-iosxe-v8nmumzj.json
   trim: {csaf_compact: true}
+# Cisco openVuln : réponses authentifiées (OAuth2), réduites à la main d'après le workflow
+# cisco-openvuln-probe.yml du 2026-11-13 ; `manual` : non réenregistrées par le script.
+- url: https://id.cisco.com/oauth2/default/v1/token
+  file: cisco/openvuln/token.json
+  manual: true
+- url: https://apix.cisco.com/security/advisories/v2/OS_version/OS_data?OSType=iosxe
+  file: cisco/openvuln/os_data.json
+  manual: true
+- url: https://apix.cisco.com/security/advisories/v2/OSType/iosxe?version=17.12.1
+  file: cisco/openvuln/iosxe-17.12.1.json
+  manual: true
+- url: https://apix.cisco.com/security/advisories/v2/OSType/iosxe?version=26.1.1
+  file: cisco/openvuln/iosxe-26.1.1.json
+  manual: true

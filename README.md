@@ -115,6 +115,13 @@ Le CERT-FR ne retélécharge que les documents nouveaux ou modifiés.
   branche `gh-pages`. Celle-ci ne contient qu'un seul commit : les données ne polluent ni `main`
   ni l'historique.
 - `.github/workflows/tests.yml` : lance les tests à chaque push, sans accès réseau.
+- `.github/workflows/cisco-openvuln-probe.yml` : à la demande, vérifie l'accès à l'API Cisco
+  openVuln et affiche la structure de ses réponses.
+
+Le collecteur `cisco_openvuln` lit les secrets `CISCO_CLIENT_ID` et `CISCO_CLIENT_SECRET` de
+l'environnement GitHub `main` (*Settings → Environments*), donnés à la seule étape de collecte.
+Sans eux, la source est marquée en erreur et Vigie garde sa dernière publication. En local,
+exportez ces deux variables pour l'activer.
 
 GitHub Pages doit servir la branche `gh-pages`, à la racine
 (*Settings → Pages → Deploy from a branch*).

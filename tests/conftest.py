@@ -50,3 +50,10 @@ def catalog():
 @pytest.fixture
 def ctx(client, catalog):
     return Context(client=client, catalog=catalog, today=TODAY)
+
+
+@pytest.fixture(autouse=True)
+def cisco_credentials(monkeypatch):
+    """Identifiants factices : les réponses openVuln viennent des fixtures."""
+    monkeypatch.setenv("CISCO_CLIENT_ID", "id-de-test")
+    monkeypatch.setenv("CISCO_CLIENT_SECRET", "secret-de-test")

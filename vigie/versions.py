@@ -5,6 +5,9 @@ import re
 from packaging.version import InvalidVersion, Version
 
 _TOKEN = re.compile(r"\d+|[a-z]+")
+# Lettre finale collée à un nombre (Cisco 17.9.7b, 16.10.1g) : une reconstruction, postérieure à
+# 17.9.7. PEP 440 la lirait comme une préversion (17.9.7b0 < 17.9.7) : on trie alors par segments.
+_REBUILD = re.compile(r"\d[a-z]$")
 
 
 def token_key(version: str) -> tuple:
@@ -14,8 +17,11 @@ def token_key(version: str) -> tuple:
 
 
 def sort_versions(versions, *, key=lambda v: v, reverse: bool = True) -> list:
-    """Trie avec packaging quand toutes les versions sont conformes PEP 440, par segments sinon."""
+    """Trie avec packaging quand toutes les versions sont conformes PEP 440 (et sans lettre de
+    reconstruction finale), par segments sinon."""
     items = list(versions)
+    if any(_REBUILD.search(key(item).lower()) for item in items):
+        return sorted(items, key=lambda item: token_key(key(item)), reverse=reverse)
     try:
         parsed = {id(item): Version(key(item)) for item in items}
         return sorted(items, key=lambda item: parsed[id(item)], reverse=reverse)

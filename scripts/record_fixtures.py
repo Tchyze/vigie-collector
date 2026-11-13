@@ -3,7 +3,8 @@
 Usage : python scripts/record_fixtures.py [motif]
 
 Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la requête ; `post` :
-corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros fichiers :
+corps JSON d'une requête POST ; tous deux facultatifs). Les entrées `manual: true` (réponses d'API
+authentifiées, réduites à la main) ne sont pas réenregistrées. `trim` réduit les gros fichiers :
 - head_lines: N  -> garde les N premières lignes d'un texte ;
 - lines_matching: {pattern: R, others: N} -> garde les lignes d'un texte qui contiennent l'expression
   régulière R, plus les N premières autres lignes ;
@@ -139,7 +140,7 @@ def main() -> None:
     manifest = yaml.safe_load((FIXTURES / "manifest.yaml").read_text(encoding="utf-8"))
     client = HttpClient()
     for entry in manifest:
-        if pattern not in entry["file"] and pattern not in entry["url"]:
+        if entry.get("manual") or (pattern not in entry["file"] and pattern not in entry["url"]):
             continue
         if "post" in entry:
             response = client.request("POST", entry["url"], headers=entry.get("headers"), json=entry["post"])
