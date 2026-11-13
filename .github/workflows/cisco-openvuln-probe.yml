@@ -1,0 +1,80 @@
+name: Cisco openVuln — essai d'accès
+
+# Lancement manuel uniquement. Vérifie que les secrets CISCO_CLIENT_ID / CISCO_CLIENT_SECRET de
+# l'environnement « main » donnent accès à l'API openVuln et affiche la structure des réponses
+# (données publiques de Cisco) pour écrire le collecteur. Le jeton et les clés ne sont jamais
+# affichés ; le workflow n'écrit rien dans le dépôt.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    environment: main
+    timeout-minutes: 5
+    steps:
+      - name: Essai openVuln
+        env:
+          CISCO_CLIENT_ID: ${{ secrets.CISCO_CLIENT_ID }}
+          CISCO_CLIENT_SECRET: ${{ secrets.CISCO_CLIENT_SECRET }}
+        shell: python
+        run: |
+          import json, os, sys, time, urllib.error, urllib.parse, urllib.request
+
+          cid, secret = os.environ.get("CISCO_CLIENT_ID", ""), os.environ.get("CISCO_CLIENT_SECRET", "")
+          print(f"CISCO_CLIENT_ID présent : {bool(cid)} ; CISCO_CLIENT_SECRET présent : {bool(secret)}")
+          if not (cid and secret):
+              sys.exit("secrets absents : vérifier l'environnement « main » et les noms des secrets")
+
+          def call(req):
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status, r.read().decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode("utf-8", "replace")
+
+          body = urllib.parse.urlencode({"grant_type": "client_credentials",
+                                         "client_id": cid, "client_secret": secret}).encode()
+          status, text = call(urllib.request.Request("https://id.cisco.com/oauth2/default/v1/token", data=body,
+                                                     headers={"Content-Type": "application/x-www-form-urlencoded"}))
+          print(f"jeton : HTTP {status}")
+          if status != 200:
+              print(text[:500])
+              sys.exit(1)
+          token = json.loads(text)["access_token"]
+          print(f"::add-mask::{token}")
+          print("expires_in :", json.loads(text).get("expires_in"))
+
+          def shape(value, depth=0):
+              """Structure d'un JSON : clés et types, premier élément des listes."""
+              pad = "  " * depth
+              if isinstance(value, dict):
+                  for k, v in value.items():
+                      kind = type(v).__name__ + (f"[{len(v)}]" if isinstance(v, (list, dict)) else "")
+                      print(f"{pad}{k}: {kind}" + ("" if isinstance(v, (list, dict)) else f" = {str(v)[:80]!r}"))
+                      if isinstance(v, (list, dict)) and depth < 4:
+                          shape(v, depth + 1)
+              elif isinstance(value, list) and value:
+                  print(f"{pad}[0]:")
+                  shape(value[0], depth + 1)
+
+          base = "https://apix.cisco.com/security/advisories/v2/"
+          for path in ("OS_version/OS_data?OSType=iosxe",
+                       "OSType/iosxe?version=17.12.1",
+                       "latest/2"):
+              time.sleep(1.5)
+              status, text = call(urllib.request.Request(base + path, headers={
+                  "Authorization": f"Bearer {token}", "Accept": "application/json",
+                  "User-Agent": "Vigie-collector (+https://github.com/Tchyze/vigie-collector)"}))
+              print(f"\n===== {path} : HTTP {status}, {len(text)} octets")
+              try:
+                  data = json.loads(text)
+              except ValueError:
+                  print(text[:800])
+                  continue
+              shape(data)
+              print("--- extrait brut :")
+              print(json.dumps(data, ensure_ascii=False)[:2500])
