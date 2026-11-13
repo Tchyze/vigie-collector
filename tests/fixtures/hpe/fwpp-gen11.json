@@ -1,0 +1,838 @@
+{
+ "16_34_1002-MCX515A-CCA_HPE_Ax.pldm.fwpkg": {
+  "date": "20220909",
+  "description": "Mellanox Firmware Package (FWPKG) for HPE Ethernet 100Gb 1-port QSFP28 PCIe3 x16 MCX515A-CCAT Adapter : HPE part numbers P31246-B21 and P31246-H21",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715900346"
+  ],
+  "version": "16.34.1002"
+ },
+ "16_35_1012-MCX515A-CCA_HPE_Ax.pldm.fwpkg": {
+  "date": "20221215",
+  "description": "Mellanox Firmware Package (FWPKG) for HPE Ethernet 100Gb 1-port QSFP28 PCIe3 x16 MCX515A-CCAT Adapter : HPE part numbers P31246-B21 and P31246-H21",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715900346"
+  ],
+  "version": "16.35.1012"
+ },
+ "16_35_3006-MCX515A-CCA_HPE_Ax.pldm.fwpkg": {
+  "date": "20230811",
+  "description": "Mellanox Firmware Package (FWPKG) for HPE Ethernet 100Gb 1-port QSFP28 PCIe3 x16 MCX515A-CCAT Adapter : HPE part numbers P31246-B21 and P31246-H21",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715900346"
+  ],
+  "version": "16.35.3006"
+ },
+ "firmware-ilo6-1.10-1.1.x86_64.rpm": {
+  "date": "20221128",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.10"
+ },
+ "firmware-ilo6-1.20-1.1.x86_64.rpm": {
+  "date": "20230111",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.20"
+ },
+ "firmware-ilo6-1.30-1.1.x86_64.rpm": {
+  "date": "20230228",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.30"
+ },
+ "firmware-ilo6-1.51-1.1.x86_64.rpm": {
+  "date": "20230821",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.51"
+ },
+ "firmware-ilo6-1.53-1.1.x86_64.rpm": {
+  "date": "20231014",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.53"
+ },
+ "firmware-ilo6-1.55-1.1.x86_64.rpm": {
+  "date": "20231215",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.55"
+ },
+ "firmware-ilo6-1.56-1.1.x86_64.rpm": {
+  "date": "20240127",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.56"
+ },
+ "firmware-ilo6-1.58-1.1.x86_64.rpm": {
+  "date": "20240325",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.58"
+ },
+ "firmware-ilo6-1.59-1.1.x86_64.rpm": {
+  "date": "20240417",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.59"
+ },
+ "firmware-ilo6-1.61-1.1.x86_64.rpm": {
+  "date": "20240716",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.61"
+ },
+ "firmware-ilo6-1.63-1.1.x86_64.rpm": {
+  "date": "20240913",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.63"
+ },
+ "firmware-ilo6-1.65-1.1.x86_64.rpm": {
+  "date": "20241114",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.65"
+ },
+ "firmware-ilo6-1.66-1.1.x86_64.rpm": {
+  "date": "20241214",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.66"
+ },
+ "firmware-ilo6-1.67-1.1.x86_64.rpm": {
+  "date": "20250227",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.67"
+ },
+ "firmware-ilo6-1.68-1.1.x86_64.rpm": {
+  "date": "20250424",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.68"
+ },
+ "firmware-ilo6-1.69-1.1.x86_64.rpm": {
+  "date": "20250617",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.69"
+ },
+ "firmware-ilo6-1.70-1.1.x86_64.rpm": {
+  "date": "20250811",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.70"
+ },
+ "firmware-ilo6-1.72-1.1.x86_64.rpm": {
+  "date": "20251110",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.72"
+ },
+ "firmware-ilo6-1.73-1.1.x86_64.rpm": {
+  "date": "20251204",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.73"
+ },
+ "firmware-ilo6-1.74-1.1.x86_64.rpm": {
+  "date": "20260129",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.74"
+ },
+ "firmware-ilo6-1.75-1.1.x86_64.rpm": {
+  "date": "20260409",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.75"
+ },
+ "firmware-ilo6-1.76-1.1.x86_64.rpm": {
+  "date": "20260506",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.76"
+ },
+ "firmware-ilo6-1.77-1.1.x86_64.rpm": {
+  "date": "20260606",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.77"
+ },
+ "firmware-ilo6-1.78-1.1.x86_64.rpm": {
+  "date": "20260729",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.78"
+ },
+ "firmware-ilo6-1.79-1.1.x86_64.rpm": {
+  "date": "20260923",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.79"
+ },
+ "ilo6_110.fwpkg": {
+  "date": "20221128",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.10"
+ },
+ "ilo6_120.fwpkg": {
+  "date": "20230111",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.20"
+ },
+ "ilo6_130.fwpkg": {
+  "date": "20230228",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.30"
+ },
+ "ilo6_151.fwpkg": {
+  "date": "20230821",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.51"
+ },
+ "ilo6_153.fwpkg": {
+  "date": "20231014",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.53"
+ },
+ "ilo6_155.fwpkg": {
+  "date": "20231215",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.55"
+ },
+ "ilo6_156.fwpkg": {
+  "date": "20240127",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.56"
+ },
+ "ilo6_158.fwpkg": {
+  "date": "20240325",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.58"
+ },
+ "ilo6_159.fwpkg": {
+  "date": "20240417",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.59"
+ },
+ "ilo6_161.fwpkg": {
+  "date": "20240716",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.61"
+ },
+ "ilo6_163.fwpkg": {
+  "date": "20240913",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.63"
+ },
+ "ilo6_165.fwpkg": {
+  "date": "20241114",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.65"
+ },
+ "ilo6_166.fwpkg": {
+  "date": "20241214",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.66"
+ },
+ "ilo6_167.fwpkg": {
+  "date": "20250110",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.67"
+ },
+ "ilo6_168.fwpkg": {
+  "date": "20250405",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.68"
+ },
+ "ilo6_169.fwpkg": {
+  "date": "20250410",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.69"
+ },
+ "ilo6_170.fwpkg": {
+  "date": "20250725",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.70"
+ },
+ "ilo6_172.fwpkg": {
+  "date": "20251109",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.72"
+ },
+ "ilo6_173.fwpkg": {
+  "date": "20251123",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.73"
+ },
+ "ilo6_174.fwpkg": {
+  "date": "20260115",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.74"
+ },
+ "ilo6_175.fwpkg": {
+  "date": "20260228",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.75"
+ },
+ "ilo6_176.fwpkg": {
+  "date": "20260506",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.76"
+ },
+ "ilo6_177.fwpkg": {
+  "date": "20260516",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.77"
+ },
+ "ilo6_178.fwpkg": {
+  "date": "20260704",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.78"
+ },
+ "ilo6_179.fwpkg": {
+  "date": "20260827",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 6",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "e6d3c844-14a6-4f1f-84a3-c06013910406",
+   "e6d3c844-14a6-4f1f-84a3-c06013910306",
+   "e6d3c844-14a6-4f1f-84a3-c06013910206",
+   "e6d3c844-14a6-4f1f-84a3-c06013910106",
+   "e6d3c844-14a6-4f1f-84a3-c06013910006"
+  ],
+  "version": "1.79"
+ }
+}

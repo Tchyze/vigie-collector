@@ -7,9 +7,12 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 
 | Sujet | Raison | Piste |
 |---|---|---|
-| HPE Aruba | avis diffusés par liste de diffusion, sans flux confirmé | le CERT-FR couvre déjà les avis Aruba ; chercher un flux ou une archive web |
+| HPE Aruba (CSAF) | les bulletins réseau HPE sont repris du flux RSS HPE, sans versions | csaf.arubanetworking.hpe.com publie des CSAF (index `changes.csv`) : versions AOS touchées |
+| Dell : avis de sécurité (DSA) | dell.com/support/security répond 403 aux clients automatiques | le CERT-FR reprend les avis Dell |
+| Dell et HPE : fins de support | pas de dates publiées sous forme exploitable pour iDRAC et iLO | les fixer dans overrides.yaml à partir des pages de cycle de vie des éditeurs |
+| VMware : versions touchées | la liste Broadcom ne donne que les produits | l'avis complet est une page du portail (HTML) |
 | Stormshield : CVE et versions | le flux RSS n'a ni description ni CVE ; le détail n'est que dans la page HTML de l'avis | le CERT-FR reprend les avis Stormshield avec leurs CVE |
-| Dell (iDRAC, OS10…) | pas de flux public structuré identifié | à étudier |
+| Dell : autres firmwares (BIOS, PERC…) | un composant par modèle de serveur, trop fin pour des branches | le catalogue Dell les contient s'il faut les suivre |
 | Red Hat et Rocky : avis « important » | des milliers par an | seuls les avis critiques sont repris ; un filtre par composant (noyau, OpenSSH, OpenSSL…) pourrait en ajouter |
 | Cisco openVuln API | demande une authentification OAuth | le flux RSS suffit en phase 1 |
 | Scraping des notes de version | fragile, exclu en phase 1 | — |

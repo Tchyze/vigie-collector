@@ -37,6 +37,13 @@ class HttpClient:
         self._last_request: dict[str, float] = {}
 
     def get(self, url: str, *, headers: dict | None = None) -> httpx.Response:
+        return self.request("GET", url, headers=headers)
+
+    def post_json(self, url: str, payload, *, headers: dict | None = None):
+        """POST d'un corps JSON, réponse JSON (API de portail qui ne répond pas en GET)."""
+        return self.request("POST", url, headers=headers, json=payload).json()
+
+    def request(self, method: str, url: str, *, headers: dict | None = None, json=None) -> httpx.Response:
         host = urlsplit(url).hostname or ""
         headers = dict(headers or {})
         if host == "api.github.com" and self.github_token:
@@ -44,7 +51,7 @@ class HttpClient:
         for attempt in range(self.retries + 1):
             self._wait(host)
             try:
-                response = self._client.get(url, headers=headers)
+                response = self._client.request(method, url, headers=headers, json=json)
                 if response.status_code < 500 or attempt == self.retries:
                     response.raise_for_status()
                     return response

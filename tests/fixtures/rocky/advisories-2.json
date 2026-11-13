@@ -1,0 +1,816 @@
+{
+ "advisories": [
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:22963",
+   "synopsis": "Critical: samba security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for samba.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 10"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-1933",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1933",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+     "cvss3BaseScore": "7.1",
+     "cwe": "CWE-284"
+    },
+    {
+     "name": "CVE-2026-2340",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2340",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+     "cvss3BaseScore": "6.5",
+     "cwe": "CWE-280"
+    },
+    {
+     "name": "CVE-2026-3012",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3012",
+     "cvss3ScoringVector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+     "cvss3BaseScore": "8.0",
+     "cwe": "CWE-345"
+    },
+    {
+     "name": "CVE-2026-40170",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-40170",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3BaseScore": "7.5",
+     "cwe": "CWE-120"
+    },
+    {
+     "name": "CVE-2026-4408",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4408",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.0",
+     "cwe": "CWE-78"
+    },
+    {
+     "name": "CVE-2026-4480",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4480",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.0",
+     "cwe": "CWE-78"
+    }
+   ],
+   "publishedAt": "2026-06-11T12:05:12.507415Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:22963",
+    "url": "https://access.redhat.com/errata/RHSA-2026:22963",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:19374",
+   "synopsis": "Critical: nginx security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-30T18:03:01.190443Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:19374",
+    "url": "https://access.redhat.com/errata/RHSA-2026:19374",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:19159",
+   "synopsis": "Critical: nginx security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 10"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-29T16:03:24.060458Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:19159",
+    "url": "https://access.redhat.com/errata/RHSA-2026:19159",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:19372",
+   "synopsis": "Critical: nginx:1.26 security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx, module.nginx.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-28T15:43:06.024531Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:19372",
+    "url": "https://access.redhat.com/errata/RHSA-2026:19372",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:19371",
+   "synopsis": "Critical: nginx:1.24 security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx, module.nginx.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-28T15:43:06.024531Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:19371",
+    "url": "https://access.redhat.com/errata/RHSA-2026:19371",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:7383",
+   "synopsis": "Critical: cockpit: Unauthenticated remote code execution due to SSH command-line argument injection",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for cockpit.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 10"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-4631",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4631",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.8",
+     "cwe": "CWE-78"
+    }
+   ],
+   "publishedAt": "2026-05-21T16:30:00.730913Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:7383",
+    "url": "https://access.redhat.com/errata/RHSA-2026:7383",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:7384",
+   "synopsis": "Critical: cockpit: Unauthenticated remote code execution due to SSH command-line argument injection",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for cockpit.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-4631",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4631",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.8",
+     "cwe": "CWE-78"
+    }
+   ],
+   "publishedAt": "2026-05-21T16:27:07.119420Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:7384",
+    "url": "https://access.redhat.com/errata/RHSA-2026:7384",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:18029",
+   "synopsis": "Critical: nginx security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-21T16:27:07.119420Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:18029",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18029",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:18063",
+   "synopsis": "Critical: nginx security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 10"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-19T12:07:45.565447Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:18063",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18063",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:18041",
+   "synopsis": "Critical: nginx:1.24 security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for nginx, module.nginx.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 8"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-42945",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42945",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "8.1",
+     "cwe": "CWE-131"
+    }
+   ],
+   "publishedAt": "2026-05-18T18:01:05.945275Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:18041",
+    "url": "https://access.redhat.com/errata/RHSA-2026:18041",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:2224",
+   "synopsis": "Critical: keylime security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for keylime.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-1709",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1709",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H",
+     "cvss3BaseScore": "9.4",
+     "cwe": "CWE-322"
+    }
+   ],
+   "publishedAt": "2026-02-13T09:06:49.393244Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:2224",
+    "url": "https://access.redhat.com/errata/RHSA-2026:2224",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2026:2225",
+   "synopsis": "Critical: keylime security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for keylime.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 10"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2026-1709",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1709",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H",
+     "cvss3BaseScore": "9.4",
+     "cwe": "CWE-322"
+    }
+   ],
+   "publishedAt": "2026-02-11T09:16:03.960464Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2026:2225",
+    "url": "https://access.redhat.com/errata/RHSA-2026:2225",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2025:21462",
+   "synopsis": "Critical: lasso security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for lasso.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2025-47151",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47151",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.8",
+     "cwe": "CWE-843"
+    }
+   ],
+   "publishedAt": "2025-11-21T18:13:51.682496Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2025:21462",
+    "url": "https://access.redhat.com/errata/RHSA-2025:21462",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2025:21628",
+   "synopsis": "Critical: lasso security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for lasso.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 8"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2025-47151",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47151",
+     "cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3BaseScore": "9.8",
+     "cwe": "CWE-843"
+    }
+   ],
+   "publishedAt": "2025-11-18T09:00:59.220200Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2025:21628",
+    "url": "https://access.redhat.com/errata/RHSA-2025:21628",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2024:1484",
+   "synopsis": "Critical: firefox security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for firefox.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 8"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-5388",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5388",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-0743",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0743",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2607",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2607",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2608",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2608",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2610",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2610",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2611",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2611",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2612",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2612",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2614",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2614",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-2616",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2616",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2024-29944",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-29944",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2024-03-27T04:34:32.999941Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2024:1484",
+    "url": "https://access.redhat.com/errata/RHSA-2024:1484",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2023:7213",
+   "synopsis": "Critical: squid:4 security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for module.libecap, module.squid, squid, libecap.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 8"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-46846",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46846",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-46847",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46847",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2023-11-28T22:43:02.525343Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2023:7213",
+    "url": "https://access.redhat.com/errata/RHSA-2023:7213",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2023:6266",
+   "synopsis": "Critical: squid security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for squid.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-46846",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46846",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-46847",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46847",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-46848",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46848",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2023-11-11T23:00:06.080015Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2023:6266",
+    "url": "https://access.redhat.com/errata/RHSA-2023:6266",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2023:6267",
+   "synopsis": "Critical: squid:4 security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for module.libecap, module.squid, squid, libecap.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 8"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-46846",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46846",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-46847",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46847",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2023-11-11T22:59:08.669026Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2023:6267",
+    "url": "https://access.redhat.com/errata/RHSA-2023:6267",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2023:4030",
+   "synopsis": "Critical: grafana security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for grafana.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-3128",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3128",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2023-07-19T17:53:40.018347Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2023:4030",
+    "url": "https://access.redhat.com/errata/RHSA-2023:4030",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "type": "TYPE_SECURITY",
+   "shortCode": "RL",
+   "name": "RLSA-2023:3923",
+   "synopsis": "Critical: go-toolset and golang security update",
+   "severity": "SEVERITY_CRITICAL",
+   "topic": "An update is available for go-toolset, golang.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "solution": null,
+   "affectedProducts": [
+    "Rocky Linux 9"
+   ],
+   "cves": [
+    {
+     "name": "CVE-2023-29402",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29402",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-29403",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29403",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-29404",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29404",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    },
+    {
+     "name": "CVE-2023-29405",
+     "sourceBy": "MITRE",
+     "sourceLink": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29405",
+     "cvss3ScoringVector": "UNKNOWN",
+     "cvss3BaseScore": "UNKNOWN",
+     "cwe": "UNKNOWN"
+    }
+   ],
+   "publishedAt": "2023-07-08T02:54:41.143214Z",
+   "rebootSuggested": false,
+   "buildReferences": [],
+   "source": {
+    "name": "RHSA-2023:3923",
+    "url": "https://access.redhat.com/errata/RHSA-2023:3923",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  }
+ ],
+ "total": 67,
+ "lastUpdated": "2026-11-13T07:18:22Z",
+ "page": 2,
+ "size": 20
+}

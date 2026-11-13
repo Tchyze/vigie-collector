@@ -58,7 +58,7 @@ notion de branche n'en a qu'une (OpenSSH : branche `portable`).
 | `id` | chaîne | `<produit>-<branche>`, ex. `fortios-7.4`, `debian-12` |
 | `product` | chaîne | identifiant du produit, ex. `fortios` |
 | `vendor` | chaîne | éditeur, ex. `Fortinet` |
-| `category` | `firewall` \| `switch` \| `os` \| `service` | |
+| `category` | `firewall` \| `switch` \| `os` \| `service` \| `server` | `server` : contrôleurs de gestion des serveurs (iLO, iDRAC) |
 | `branch` | chaîne | nom de la branche, ex. `7.4` |
 | `label` | chaîne | libellé lisible, ex. `12 (Bookworm)` |
 | `lts` | booléen ou `null` | branche à support long |
@@ -113,7 +113,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | Champ | Type | Description |
 |---|---|---|
 | `id` | chaîne | identifiant d'origine : `FG-IR-26-187`, `CVE-2026-0308`, `PAN-SA-2026-0006`, `cisco-sa-…`, `CERTFR-2026-AVI-1381`, `DSA-6592-1` |
-| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
+| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` \| `ubuntu` \| `vmware` \| `hpe` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
 | `vendor` | chaîne | éditeur de l'avis (`CERT-FR` pour le CERT-FR) |
 | `title` | chaîne | titre de l'avis |
 | `published` | horodatage | première publication |
@@ -137,7 +137,9 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
 - Red Hat : version des paquets sources (`570.el9_6` → `rhel-9`), seulement si tous sont des paquets
   RHEL (un paquet OpenShift, Satellite, JBoss… écarte l'avis) ;
 - Rocky Linux : versions majeures touchées données par l'API (`rocky-linux-9`) ;
-- Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`).
+- Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`) ;
+- Ubuntu : versions corrigées par l'USN (`ubuntu-24.04`) ;
+- HPE : générations d'iLO citées dans le titre du bulletin (`hpe-ilo-6`).
 
 Un avis Microsoft (`MSRC-2026-Nov`) couvre un mois entier pour Windows Server : `cves` n'y liste que
 les CVE critiques ou déjà exploitées, et `summary` donne le nombre total de vulnérabilités.

@@ -3,7 +3,7 @@ from collectors import rocky
 
 def test_advisories(ctx):
     advisories = {a.id: a for a in rocky.COLLECTOR.collect(ctx).advisories}
-    assert len(advisories) == 25
+    assert len(advisories) == 53  # trois pages de 20, arrêt à la date limite
 
     edk2 = advisories["RLSA-2026:96240"]
     assert edk2.title == "Critical: edk2 security update"
@@ -18,14 +18,10 @@ def test_advisories(ctx):
 
 def item(**changes):
     data = {
-        "name": "RLSA-2026:1", "synopsis": "Critical: kernel security update", "severity": "Critical",
-        "published_at": "2026-11-01T10:00:00.123456Z", "topic": "An update is available for kernel.",
-        "affected_products": [
-            {"variant": "Rocky Linux", "major_version": 9, "name": "Rocky Linux 9 x86_64"},
-            {"variant": "Rocky Linux", "major_version": 9, "name": "Rocky Linux 9 aarch64"},
-            {"variant": "Rocky Linux", "major_version": 8, "name": "Rocky Linux 8 x86_64"},
-        ],
-        "cves": [{"cve": "CVE-2026-1", "cvss3_base_score": "9.8"}, {"cve": "CVE-2026-2", "cvss3_base_score": ""}],
+        "name": "RLSA-2026:1", "synopsis": "Critical: kernel security update", "severity": "SEVERITY_CRITICAL",
+        "publishedAt": "2026-11-01T10:00:00.123456Z", "topic": "An update is available for kernel.",
+        "affectedProducts": ["Rocky Linux 9", "Rocky Linux 8"],
+        "cves": [{"name": "CVE-2026-1", "cvss3BaseScore": "9.8"}, {"name": "CVE-2026-2", "cvss3BaseScore": ""}],
     }
     data.update(changes)
     return data
@@ -39,5 +35,5 @@ def test_parse():
 
 
 def test_sig_advisory_is_ignored():
-    sig = item(name="RXSA-2026:1", affected_products=[{"variant": "Rocky Linux SIG Cloud", "major_version": 8}])
+    sig = item(name="RXSA-2026:1", affectedProducts=["Rocky Linux SIG Cloud 8"])
     assert rocky.parse(sig) is None

@@ -1,0 +1,477 @@
+{
+ "notices": [
+  {
+   "id": "USN-9090-1",
+   "title": "Apache HTTP Server vulnerabilities",
+   "summary": "Several security issues were fixed in Apache HTTP Server.",
+   "published": "2026-11-12T21:25:57.995360",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2026-42356",
+    "CVE-2026-119618",
+    "CVE-2026-109163",
+    "CVE-2026-106023",
+    "CVE-2026-42528"
+   ],
+   "releases": [
+    {
+     "codename": "stonking",
+     "version": "26.10",
+     "support_tag": ""
+    },
+    {
+     "codename": "resolute",
+     "version": "26.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "noble",
+     "version": "24.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "jammy",
+     "version": "22.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "trusty",
+     "version": "14.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9068-1",
+   "title": "Debian-LAN vulnerability",
+   "summary": "Debian-LAN could allow users to change the Kerberos passwords of other\nusers.",
+   "published": "2026-11-12T21:02:18.313836",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-3467"
+   ],
+   "releases": [
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9089-1",
+   "title": "x11vnc vulnerability",
+   "summary": "x11vnc could be made to expose sensitive information to local users.",
+   "published": "2026-11-12T20:55:34.375331",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2020-29074"
+   ],
+   "releases": [
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9088-1",
+   "title": "TigerVNC vulnerability",
+   "summary": "TigerVNC could be made to expose sensitive information over the network.",
+   "published": "2026-11-12T20:55:23.167043",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2020-26117"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9087-1",
+   "title": "signing-party vulnerability",
+   "summary": "signing-party could be made to run programs as your login if it processed a\nspecially crafted OpenPGP key.",
+   "published": "2026-11-12T20:55:13.032229",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-11627"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9086-1",
+   "title": "SA-Exim vulnerability",
+   "summary": "SA-Exim could be made to run programs if it loaded specially crafted\nSpamAssassin rules.",
+   "published": "2026-11-12T20:54:57.160590",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-19920"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9085-1",
+   "title": "Ruby OpenID vulnerability",
+   "summary": "Ruby OpenID could be made to connect to arbitrary servers.",
+   "published": "2026-11-12T20:54:47.687372",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-11027"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9084-1",
+   "title": "Radicale vulnerability",
+   "summary": "Radicale could be made to expose sensitive information over the network.",
+   "published": "2026-11-12T20:54:41.142676",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2017-8342"
+   ],
+   "releases": [
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9083-1",
+   "title": "gevent vulnerability",
+   "summary": "gevent could allow unintended access to network services.",
+   "published": "2026-11-12T20:54:27.830274",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2023-41419"
+   ],
+   "releases": [
+    {
+     "codename": "jammy",
+     "version": "22.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9082-1",
+   "title": "pngquant vulnerability",
+   "summary": "pngquant could be made to crash or run programs as your login if it opened\na specially crafted file.",
+   "published": "2026-11-12T20:53:59.123207",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2016-5735"
+   ],
+   "releases": [
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9081-1",
+   "title": "OpenConnect vulnerability",
+   "summary": "OpenConnect could be made to crash or run programs if it received specially\ncrafted network traffic.",
+   "published": "2026-11-12T20:53:50.764504",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2020-12823"
+   ],
+   "releases": [
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9080-1",
+   "title": "tough-cookie vulnerability",
+   "summary": "tough-cookie could be made to modify application data if it received\nspecially crafted cookies.",
+   "published": "2026-11-12T20:53:29.430192",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2023-26136"
+   ],
+   "releases": [
+    {
+     "codename": "jammy",
+     "version": "22.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9079-1",
+   "title": "nfdump vulnerabilities",
+   "summary": "Several security issues were fixed in nfdump.",
+   "published": "2026-11-12T20:53:13.543096",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-14459",
+    "CVE-2019-1010057"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9078-1",
+   "title": "ncmpc vulnerability",
+   "summary": "ncmpc could be made to crash if it received a long chat message.",
+   "published": "2026-11-12T20:52:44.800654",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2018-9240"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9077-1",
+   "title": "MiniSSDPd vulnerability",
+   "summary": "MiniSSDPd could be made to crash if it received specially crafted network\ntraffic.",
+   "published": "2026-11-12T20:52:35.543483",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-12106"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9076-1",
+   "title": "libsolv vulnerability",
+   "summary": "libsolv could be made to crash if it opened a specially crafted file.",
+   "published": "2026-11-12T20:52:25.945510",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2019-20387"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9075-1",
+   "title": "libjwt vulnerability",
+   "summary": "libjwt could be made to accept forged tokens.",
+   "published": "2026-11-12T20:52:10.814963",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2024-25189"
+   ],
+   "releases": [
+    {
+     "codename": "jammy",
+     "version": "22.04",
+     "support_tag": "LTS"
+    },
+    {
+     "codename": "focal",
+     "version": "20.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9074-1",
+   "title": "JGraphX vulnerability",
+   "summary": "JGraphX could be made to expose sensitive information if it opened a\nspecially crafted file.",
+   "published": "2026-11-12T20:51:49.360667",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2017-18197"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9073-1",
+   "title": "Lhasa vulnerability",
+   "summary": "Lhasa could be made to crash or run programs as your login if it opened a\nspecially crafted file.",
+   "published": "2026-11-12T20:51:41.950472",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2016-2347"
+   ],
+   "releases": [
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  },
+  {
+   "id": "USN-9072-1",
+   "title": "IMAPFilter vulnerability",
+   "summary": "IMAPFilter could be made to expose sensitive information over the network.",
+   "published": "2026-11-12T20:51:12.294174",
+   "is_hidden": false,
+   "type": "USN",
+   "cves_ids": [
+    "CVE-2016-10937"
+   ],
+   "releases": [
+    {
+     "codename": "bionic",
+     "version": "18.04",
+     "support_tag": "ESM"
+    },
+    {
+     "codename": "xenial",
+     "version": "16.04",
+     "support_tag": "ESM"
+    }
+   ]
+  }
+ ],
+ "offset": 0,
+ "limit": 20,
+ "total_results": 11632
+}

@@ -1,6 +1,6 @@
 # Vigie — collecteur
 
-Vigie suit les mises à jour des équipements et logiciels d'infrastructure : firewalls, switchs,
+Vigie suit les mises à jour des équipements et logiciels d'infrastructure : firewalls, switchs, serveurs,
 systèmes serveurs et services. Pour chaque produit, il dit quelles branches de version sont
 encore supportées, quelle est la dernière version de chacune et quels avis de sécurité les
 éditeurs ont publiés.
@@ -37,7 +37,10 @@ vers la page officielle.
 | PAN-OS | firewall | endoflife.date |
 | Stormshield SNS | firewall | endoflife.date |
 | Cisco IOS XE | switch | endoflife.date |
-| Debian, RHEL, Rocky Linux, Windows Server, Proxmox VE | os | endoflife.date |
+| Debian, Ubuntu, RHEL, Rocky Linux, Windows Server, Proxmox VE, VMware ESXi | os | endoflife.date |
+| VMware vCenter Server | service | endoflife.date |
+| Dell iDRAC | server | catalogue de firmware Dell (une branche par série : 7.30, 7.00…) |
+| HPE iLO | server | index des dépôts de firmware HPE (iLO 4 à 7) |
 | nginx | service | endoflife.date + fichiers CHANGES de nginx.org |
 | Apache HTTP Server | service | endoflife.date + tags officiels et CHANGES_2.4 |
 | OpenSSH | service | tags du miroir officiel openssh-portable |
@@ -50,12 +53,19 @@ vers la page officielle.
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
 | Red Hat | API Security Data : RHSA **critiques** touchant RHEL (branches d'après les paquets) |
-| Rocky Linux | API errata Apollo : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
+| Rocky Linux | API errata (v2) : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
 | Microsoft | API CVRF du MSRC : un avis **par mois** pour Windows Server (CVE critiques ou exploitées, versions touchées) |
 | Stormshield | flux RSS des avis de l'éditeur (titre, date, produit) |
+| Ubuntu | API notices.json : USN (CVE, versions corrigées) |
+| VMware (Broadcom) | liste des VMSA du portail de support Broadcom (sévérité, CVE) |
+| HPE | flux RSS officiel des bulletins (tous produits ; générations d'iLO touchées) |
 
 Toutes les sources sont publiques et sans authentification. Les avis Cisco portent la mention de
 source exigée par Cisco ; leur usage doit rester non commercial.
+
+Dell et HPE ne publient pas de dates de fin de support exploitables pour iDRAC et iLO : leurs
+branches restent `active` tant que `overrides.yaml` ne fixe pas de date. Les avis de sécurité Dell
+ne sont pas repris : leur portail refuse les clients automatiques ; le CERT-FR les couvre.
 
 Red Hat et Rocky publient chacun plusieurs milliers d'avis par an : seuls les avis de sévérité
 critique sont repris (environ 175 et 55 par an). Les autres restent couverts par les synthèses

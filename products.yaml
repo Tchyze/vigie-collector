@@ -1,7 +1,7 @@
 # Catalogue des produits suivis par Vigie.
 #
 # Pour chaque produit :
-#   label, vendor, category (firewall | switch | os | service)
+#   label, vendor, category (firewall | switch | os | service | server)
 #   endoflife     : identifiant endoflife.date (absent si le produit n'y est pas)
 #   eol_fields    : correspondance entre les dates endoflife.date et les dates Vigie.
 #                   Par défaut : eoas -> end_of_active_support, eol -> end_of_life,
@@ -52,6 +52,24 @@ products:
       eol: end_of_security_support    # « Security Support »
       eoes: end_of_extended_support   # « Extended Security Updates »
 
+  ubuntu:
+    label: Ubuntu
+    vendor: Canonical
+    category: os
+    endoflife: ubuntu
+    eol_fields:
+      eoas: end_of_active_support     # « Hardware & Maintenance »
+      eol: end_of_security_support    # « Maintenance & Security Support »
+      eoes: end_of_extended_support   # « Expanded Security Maintenance » (Ubuntu Pro)
+
+  vmware-esxi:
+    label: VMware ESXi
+    vendor: Broadcom (VMware)
+    category: os
+    endoflife: esxi
+    eol_fields:
+      eol: end_of_security_support    # « General Support » (correctifs ; ensuite Technical Guidance)
+
   proxmox-ve:
     label: Proxmox VE
     vendor: Proxmox
@@ -86,6 +104,24 @@ products:
     eol_fields:
       eoas: end_of_active_support     # « Maintenance Support »
       eol: end_of_security_support    # « Security Support »
+
+  vmware-vcenter:
+    label: VMware vCenter Server
+    vendor: Broadcom (VMware)
+    category: service
+    endoflife: vcenter
+    eol_fields:
+      eol: end_of_security_support    # « General Support »
+
+  dell-idrac:
+    label: Dell iDRAC
+    vendor: Dell
+    category: server                  # pas sur endoflife.date : versions du catalogue Dell
+
+  hpe-ilo:
+    label: HPE iLO
+    vendor: HPE
+    category: server                  # pas sur endoflife.date : versions du dépôt de firmware HPE
 
   nginx:
     label: nginx
