@@ -1,0 +1,972 @@
+# Catalogue des sources de Vigie — étude du 2026-11-13 (voir SOURCES.md).
+#
+# Une entrée par source. Champs :
+#   id            identifiant stable (référencé par products.yaml une fois réorganisé)
+#   editeur       qui publie la donnée
+#   confiance     editeur | reference | communautaire
+#   depend_de     pour une source communautaire : la source éditeur qu'elle reprend
+#   produits      identifiants products.yaml couverts ("*" : tous)
+#   donnees       A (fins de support) | B (dernière version) | C (avis) | D (security_fix)
+#   url           URL (ou modèle d'URL) interrogée ; url_humaine : page consultable par un humain
+#   methode       GET | POST
+#   format        JSON, RSS, CSAF, CVRF, OSV, OVAL, CSV, texte, XML…
+#   auth          aucune | cle-facultative | oauth
+#   documentee    oui | non | partiel
+#   acces         code HTTP constaté depuis la session (session) et un runner GitHub Actions (github)
+#   volume        taille constatée par passage
+#   fraicheur     dernière entrée constatée ; historique : profondeur disponible
+#   conditions    conditions d'utilisation, mentions imposées
+#   verifie_le    date du test
+#   statut        recommandee | secours | actuelle | a-remplacer | ecartee
+#   collecteur    collecteur existant qui l'utilise déjà (le cas échéant)
+
+sources:
+
+  # ---------------------------------------------------------------- transverses
+  - id: endoflife-date
+    editeur: endoflife.date (communauté)
+    confiance: communautaire
+    depend_de: pages éditeur (analyse automatique) ou saisie manuelle selon le produit
+    produits: [fortios, panos, stormshield-sns, cisco-ios-xe, debian, ubuntu, rhel, rocky-linux, windows-server, vmware-esxi, vmware-vcenter, proxmox-ve, nginx, apache-httpd]
+    donnees: [A, B]
+    url: https://endoflife.date/api/v1/products/{slug}
+    url_humaine: https://endoflife.date/{slug}
+    methode: GET
+    format: JSON
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 2 à 10 Ko par produit
+    fraicheur: mise à jour quotidienne ; latest absent pour fortios, cisco-ios-xe, sns-firmware
+    conditions: données sous licence MIT ; contributions par pull request
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: endoflife
+
+  - id: cisa-kev
+    editeur: CISA
+    confiance: reference
+    produits: ["*"]
+    donnees: [C]
+    url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+    miroir: https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json
+    url_humaine: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+    methode: GET
+    format: JSON
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 1,8 Mo
+    fraicheur: catalogue 2026.11.10 ; 1 779 entrées depuis 2021-11-03
+    conditions: domaine public (CC0)
+    verifie_le: 2026-11-13
+    statut: recommandee
+    usage: marquer les CVE exploitées (nouveau champ facultatif)
+
+  - id: nvd-api
+    editeur: NIST NVD
+    confiance: reference
+    produits: [fortios, stormshield-sns, vmware-esxi, vmware-vcenter, dell-idrac, hpe-ilo, openssh, proxmox-ve]
+    donnees: [C]
+    url: https://services.nvd.nist.gov/rest/json/cves/2.0?sourceIdentifier={cna}&lastModStartDate={debut}&lastModEndDate={fin}
+    url_humaine: https://nvd.nist.gov/vuln/detail/{cve}
+    methode: GET
+    format: JSON
+    auth: cle-facultative
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 20 à 300 Ko par requête ; 12 à 15 s par requête ; 503 ponctuels
+    fraicheur: CVE du jour ; enrichissement NVD souvent absent (« Awaiting Analysis », « Deferred »)
+    conditions: >-
+      sans clé 5 requêtes / 30 s, avec clé gratuite 50 / 30 s ; fenêtre de dates ≤ 120 jours ;
+      mention « This product uses the NVD API but is not endorsed or certified by the NVD »
+    verifie_le: 2026-11-13
+    statut: recommandee
+    usage: découverte des CVE par CNA (cert@airbus.com, security_alert@emc.com, security-alert@hpe.com, security@vmware.com, psirt@fortinet.com) ou mot-clé (iDRAC)
+    decision: clé API facultative, à stocker en secret GitHub (NVD_API_KEY)
+
+  - id: cve-org
+    editeur: CVE Program (MITRE) — contenu publié par le CNA de l'éditeur
+    confiance: reference
+    produits: [fortios, panos, stormshield-sns, vmware-esxi, vmware-vcenter, dell-idrac, hpe-ilo, apache-httpd, nginx, openssh]
+    donnees: [C, D]
+    url: https://cveawg.mitre.org/api/cve/{cve}
+    url_humaine: https://www.cve.org/CVERecord?id={cve}
+    methode: GET
+    format: JSON CVE 5
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 5 à 25 Ko par CVE
+    fraicheur: publication du CNA, sans délai NVD
+    conditions: conditions d'utilisation CVE (reproduction libre, mention du programme CVE)
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: "pas de recherche ; découverte par nvd-api. Champ affected[].versions (lessThan peut contenir du texte : « 7.30.10.50 or later »)"
+
+  - id: osv-bucket
+    editeur: OSV (Google) — données Debian, Canonical, RESF
+    confiance: reference
+    produits: [debian, ubuntu, rocky-linux]
+    donnees: [C]
+    url: https://osv-vulnerabilities.storage.googleapis.com/{ecosysteme}/modified_id.csv
+    url_detail: https://osv-vulnerabilities.storage.googleapis.com/{ecosysteme}/{id}.json
+    url_humaine: https://osv.dev/vulnerability/{id}
+    methode: GET
+    format: CSV + OSV JSON
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: index 3,7 Mo (Debian), 3,6 Mo (Ubuntu), 0,2 Mo (Rocky) ; quelques Ko par avis
+    fraicheur: modifié le jour même pour Debian, Ubuntu, Rocky ; « Red Hat » arrêté au 2026-10-20 (écarté)
+    historique: Debian depuis 2002 (6 246 DSA), Ubuntu depuis 2010 (8 382 USN), Rocky depuis 2025-05 (4 818 RLSA)
+    conditions: licence de l'écosystème (Rocky CC BY 4.0, indiquée dans database_specific)
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: osv-api
+    editeur: OSV (Google)
+    confiance: reference
+    produits: [debian, ubuntu, rocky-linux]
+    donnees: [C]
+    url: https://api.osv.dev/v1/query
+    methode: POST
+    format: JSON
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: secours
+
+  - id: cvelist-v5
+    editeur: CVE Program
+    confiance: reference
+    produits: ["*"]
+    donnees: [C]
+    url: https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/deltaLog.json
+    format: JSON (git)
+    auth: aucune
+    acces: {session: 200, github: 200}
+    volume: 37 Mo et plus pour le seul journal des changements
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: volume
+
+  - id: certfr
+    editeur: CERT-FR (ANSSI)
+    confiance: reference
+    produits: ["*"]
+    donnees: [C]
+    url: https://www.cert.cyber.gouv.fr/{avis|alerte}/feed/
+    url_detail: https://www.cert.cyber.gouv.fr/{avis|alerte}/{id}/json/
+    url_humaine: https://www.cert.cyber.gouv.fr/avis/{id}/
+    methode: GET
+    format: RSS + JSON
+    auth: aucune
+    documentee: partiel
+    acces: {session: 200, github: 200}
+    volume: 23 à 26 Ko par flux ; 1,5 Ko par document
+    fraicheur: avis du 2026-11-12 ; flux avis = 40 entrées (4 jours) ; flux alertes depuis 2015
+    conditions: republication courte avec lien ; licence à confirmer sur le site
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: certfr
+    note: affected_systems[].product.vendor.name permet un rattachement par éditeur
+
+  # ---------------------------------------------------------------- Fortinet
+  - id: fortinet-psirt-rss
+    editeur: Fortinet
+    confiance: editeur
+    produits: [fortios]
+    donnees: [C]
+    url: https://www.fortiguard.com/rss/ir.xml
+    url_humaine: https://www.fortiguard.com/psirt/{FG-IR}
+    methode: GET
+    format: RSS (redirection 302 vers filestore.fortinet.com)
+    auth: aucune
+    documentee: partiel
+    acces: {session: 200, github: 200}
+    volume: 46 Ko
+    fraicheur: "50 avis du 2026-11-10 au 2026-11-13 (publication groupée : 3 jours d'historique)"
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: fortinet_psirt
+
+  - id: fortinet-csaf
+    editeur: Fortinet
+    confiance: editeur
+    produits: [fortios]
+    donnees: [C, D]
+    url: lien csaf:link de chaque entrée du RSS (https://filestore.fortinet.com/fortiguard/psirt/csaf_<titre>_<fg-ir>.json)
+    methode: GET
+    format: CSAF 2.0
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 5 Ko par avis
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: fortinet_psirt
+    note: pas de provider-metadata.json (404) ; URL imprévisible hors du RSS
+
+  - id: fortinet-firmware-rss
+    editeur: Fortinet
+    confiance: editeur
+    produits: [fortios]
+    donnees: [B]
+    url: https://support.fortinet.com/rss/firmware.xml
+    methode: GET
+    format: RSS
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 36 Ko
+    fraicheur: 78 images du 2026-08-13 au 2026-11-10, toutes gammes
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: fortinet_firmware
+
+  - id: fortinet-lifecycle-portal
+    editeur: Fortinet
+    confiance: editeur
+    produits: [fortios]
+    donnees: [A]
+    url: https://support.fortinet.com/Information/ProductLifeCycle.aspx
+    format: application web
+    auth: compte FortiCloud + hCaptcha
+    acces: {session: "200 (page de connexion)", github: "200 (page de connexion)"}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: connexion et captcha
+
+  # ---------------------------------------------------------------- Palo Alto Networks
+  - id: paloalto-security-json
+    editeur: Palo Alto Networks
+    confiance: editeur
+    produits: [panos]
+    donnees: [B, C, D]
+    url: https://security.paloaltonetworks.com/json/?limit=100&sort=-updated&page={n}
+    url_humaine: https://security.paloaltonetworks.com/{id}
+    methode: GET
+    format: JSON
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 1 Mo pour 100 avis
+    fraicheur: avis du 2026-11-11 ; page 1 = 6 mois ; historique depuis 2016 au moins
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: paloalto
+    note: limit > 100 renvoie une page HTML d'erreur (code 200) ; champs affected, fixed, solution
+
+  - id: paloalto-csaf-cve
+    editeur: Palo Alto Networks
+    confiance: editeur
+    produits: [panos]
+    donnees: [C, D]
+    url: https://security.paloaltonetworks.com/csaf/{cve}
+    url_cve5: https://security.paloaltonetworks.com/json/{cve}
+    methode: GET
+    format: CSAF 2.1 (VEX) ; CVE 5
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 5 Ko (CSAF), 22 Ko (CVE 5)
+    verifie_le: 2026-11-13
+    statut: secours
+    note: pas de provider-metadata.json ; PAN-SA-… → 500 « Failed to generate CSAF »
+
+  - id: paloalto-eol-page
+    editeur: Palo Alto Networks
+    confiance: editeur
+    produits: [panos]
+    donnees: [A]
+    url: https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary
+    format: HTML
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: HTML ; contient le support étendu absent d'endoflife.date (à y faire ajouter)
+
+  # ---------------------------------------------------------------- Stormshield
+  - id: stormshield-rss
+    editeur: Stormshield
+    confiance: editeur
+    produits: [stormshield-sns]
+    donnees: [C]
+    url: https://advisories.stormshield.eu/feed/
+    url_humaine: https://advisories.stormshield.eu/{annee}-{numero}
+    methode: GET
+    format: RSS (servi en text/html)
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 6 Ko
+    fraicheur: 10 avis du 2026-10-16 au 2026-10-30 ; description vide, pas de CVE
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: stormshield
+    note: signal de publication ; CVE et versions via cve-org (CNA Airbus)
+
+  - id: stormshield-lifecycle-page
+    editeur: Stormshield
+    confiance: editeur
+    produits: [stormshield-sns]
+    donnees: [A]
+    url: https://documentation.stormshield.eu/PLC/SNS/en/Content/SNS_Product_Life_Cycle/Matrices_firmwares.htm
+    format: HTML
+    acces: {session: 200, github: non testé}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: HTML (source d'endoflife.date)
+
+  # ---------------------------------------------------------------- Cisco
+  - id: cisco-csaf
+    editeur: Cisco PSIRT
+    confiance: editeur
+    produits: [cisco-ios-xe]
+    donnees: [C]
+    url: https://www.cisco.com/.well-known/csaf/changes.csv
+    url_detail: https://www.cisco.com/.well-known/csaf/{annee}/{id}.json
+    url_humaine: https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/{id}
+    methode: GET
+    format: CSAF 2.0 (csaf_trusted_provider)
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: index 178 Ko ; jusqu'à 580 Ko par avis
+    fraicheur: modifié le 2026-11-13 ; 2 892 avis depuis 2017
+    conditions: mention de source Cisco ; usage non commercial (inchangé)
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: known_affected liste les versions une à une ; aucune version corrigée
+
+  - id: cisco-rss
+    editeur: Cisco PSIRT
+    confiance: editeur
+    produits: [cisco-ios-xe]
+    donnees: [C]
+    url: https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml
+    methode: GET
+    format: RSS
+    auth: aucune
+    acces: {session: 200, github: 200}
+    volume: 142 Ko
+    fraicheur: 50 avis du 2026-09-23 au 2026-11-12
+    conditions: mention de source Cisco ; usage non commercial
+    verifie_le: 2026-11-13
+    statut: actuelle
+    collecteur: cisco
+
+  - id: cisco-openvuln
+    editeur: Cisco PSIRT
+    confiance: editeur
+    produits: [cisco-ios-xe]
+    donnees: [B, C, D]
+    url: https://apix.cisco.com/security/advisories/v2/...
+    jeton: https://id.cisco.com/oauth2/default/v1/token
+    methode: GET
+    format: JSON
+    auth: oauth
+    documentee: oui
+    acces: {session: 403 sans jeton, github: 403 sans jeton}
+    verifie_le: 2026-11-13
+    statut: secours
+    decision: compte Cisco + client OAuth ; identifiants en secrets GitHub
+
+  # ---------------------------------------------------------------- Debian et Ubuntu
+  - id: distro-info-data
+    editeur: Debian (paquet distro-info-data, utilisé aussi par Ubuntu)
+    confiance: editeur
+    produits: [debian, ubuntu]
+    donnees: [A]
+    url: https://salsa.debian.org/debian/distro-info-data/-/raw/main/{debian|ubuntu}.csv
+    url_humaine: https://www.debian.org/releases/ ; https://ubuntu.com/about/release-cycle
+    methode: GET
+    format: CSV (dépôt git)
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 1 à 3 Ko
+    historique: toutes les versions depuis 1993 (Debian) et 2004 (Ubuntu)
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: debian-release-files
+    editeur: Debian
+    confiance: editeur
+    produits: [debian]
+    donnees: [B]
+    url: https://deb.debian.org/debian/dists/{suite}/Release
+    methode: GET
+    format: texte RFC 822 (signé InRelease)
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 135 à 146 Ko (lire seulement l'en-tête)
+    fraicheur: 13.7 du 2026-09-12, 12.15 du 2026-07-11
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: debian-dsa-list
+    editeur: Debian Security Team
+    confiance: editeur
+    produits: [debian]
+    donnees: [C]
+    url: https://salsa.debian.org/security-tracker-team/security-tracker/-/raw/master/data/DSA/list
+    url_humaine: https://security-tracker.debian.org/tracker/{dsa}
+    methode: GET
+    format: texte (git)
+    auth: aucune
+    acces: {session: 200, github: 200}
+    volume: 1,2 Mo
+    fraicheur: DSA-6624-1 du 2026-11-13 ; tout l'historique
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: debian_dsa
+
+  - id: debian-dsa-long
+    editeur: Debian
+    confiance: editeur
+    produits: [debian]
+    donnees: [C]
+    url: https://www.debian.org/security/dsa-long
+    format: RSS 1.0
+    acces: {session: 200, github: 200}
+    fraicheur: 30 DSA du 2026-10-29 au 2026-11-13
+    verifie_le: 2026-11-13
+    statut: actuelle
+    collecteur: debian_dsa
+
+  - id: debian-oval
+    editeur: Debian
+    confiance: editeur
+    produits: [debian]
+    donnees: [C]
+    url: https://www.debian.org/security/oval/oval-definitions-{suite}.xml.bz2
+    format: OVAL
+    acces: {session: 200, github: 200}
+    volume: 9,5 Mo (bookworm)
+    verifie_le: 2026-11-13
+    statut: secours
+
+  - id: debian-tracker-json
+    editeur: Debian
+    confiance: editeur
+    produits: [debian]
+    donnees: [C]
+    url: https://security-tracker.debian.org/tracker/data/json
+    format: JSON
+    acces: {session: 200, github: 200}
+    volume: 85 Mo
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: volume
+
+  - id: ubuntu-meta-release
+    editeur: Canonical
+    confiance: editeur
+    produits: [ubuntu]
+    donnees: [B]
+    url: https://changelogs.ubuntu.com/meta-release-lts
+    methode: GET
+    format: texte RFC 822
+    auth: aucune
+    acces: {session: 200, github: 200}
+    volume: 7 Ko (23 Ko pour meta-release)
+    fraicheur: 24.04.5, 26.04.1 ; Date = sortie de la version initiale, pas du point release
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: ubuntu-notices-api
+    editeur: Canonical
+    confiance: editeur
+    produits: [ubuntu]
+    donnees: [C]
+    url: https://ubuntu.com/security/notices.json?limit=20&offset={n}
+    format: JSON
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: a-remplacer
+    collecteur: ubuntu
+    raison: 20 avis par page, 503 et coupures en rafale ; remplacée par osv-bucket (Ubuntu)
+
+  - id: ubuntu-oval
+    editeur: Canonical
+    confiance: editeur
+    produits: [ubuntu]
+    donnees: [C]
+    url: https://security-metadata.canonical.com/oval/com.ubuntu.{serie}.usn.oval.xml.bz2
+    format: OVAL
+    acces: {session: 200, github: 200}
+    volume: 1,6 à 1,7 Mo
+    verifie_le: 2026-11-13
+    statut: secours
+
+  - id: ubuntu-security-notices-git
+    editeur: Canonical
+    confiance: editeur
+    produits: [ubuntu]
+    donnees: [C]
+    url: https://api.github.com/repos/canonical/ubuntu-security-notices/contents/osv/usn
+    format: OSV (dépôt git)
+    auth: GITHUB_TOKEN du workflow recommandé
+    acces: {session: "non testable (GitHub limité au dépôt)", github: "200"}
+    verifie_le: 2026-11-13
+    statut: secours
+
+  - id: ubuntu-osv-archive
+    editeur: Canonical
+    confiance: editeur
+    produits: [ubuntu]
+    donnees: [C]
+    url: https://security-metadata.canonical.com/osv/osv-all.tar.xz
+    acces: {session: 200, github: 200}
+    volume: 60 Mo
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: volume
+
+  # ---------------------------------------------------------------- Red Hat et Rocky
+  - id: redhat-lifecycle-api
+    editeur: Red Hat
+    confiance: editeur
+    produits: [rhel]
+    donnees: [A]
+    url: https://access.redhat.com/product-life-cycles/api/v1/products?name=Red%20Hat%20Enterprise%20Linux
+    url_humaine: https://access.redhat.com/support/policy/updates/errata
+    methode: GET
+    format: JSON
+    auth: aucune
+    documentee: partiel
+    acces: {session: 200, github: 200}
+    volume: 6 Ko
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: source d'endoflife.date ; v2 ajoute final_minor_release
+
+  - id: redhat-hydra-api
+    editeur: Red Hat
+    confiance: editeur
+    produits: [rhel]
+    donnees: [C]
+    url: https://access.redhat.com/hydra/rest/securitydata/csaf.json?after={date}&severity={s}&per_page={n}&page={p}
+    url_humaine: https://access.redhat.com/errata/{rhsa}
+    methode: GET
+    format: JSON
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    fraicheur: RHSA du 2026-11-12
+    conditions: CC BY 4.0
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: redhat
+
+  - id: redhat-oval-v2
+    editeur: Red Hat
+    confiance: editeur
+    produits: [rhel]
+    donnees: [C]
+    url: https://security.access.redhat.com/data/oval/v2/RHEL{n}/rhel-{n}.oval.xml.bz2
+    format: OVAL
+    acces: {session: "200 (RHEL 9) / 404 (RHEL 10)", github: "200 (RHEL 9)"}
+    volume: 1,5 Mo compressé, 36 Mo décompressé (RHEL 9)
+    fraicheur: dernière définition du 2026-11-12 ; 2 406 RHSA
+    conditions: CC BY 4.0
+    verifie_le: 2026-11-13
+    statut: secours
+    note: pas d'OVAL pour RHEL 10
+
+  - id: redhat-csaf
+    editeur: Red Hat
+    confiance: editeur
+    produits: [rhel]
+    donnees: [C]
+    url: https://security.access.redhat.com/data/csaf/v2/advisories/changes.csv
+    format: CSAF 2.0
+    acces: {session: 200, github: 200}
+    volume: 1,7 Mo l'index ; ~2 Mo par avis ; 31 942 avis
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: volume
+
+  - id: rocky-treeinfo
+    editeur: Rocky Enterprise Software Foundation
+    confiance: editeur
+    produits: [rocky-linux]
+    donnees: [B]
+    url: https://dl.rockylinux.org/pub/rocky/{majeure}/BaseOS/x86_64/os/.treeinfo
+    format: INI
+    auth: aucune
+    acces: {session: 200, github: 200}
+    volume: 1,4 Ko
+    fraicheur: 10.2 et 9.8
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: rocky-docs-releases
+    editeur: Rocky Enterprise Software Foundation
+    confiance: editeur
+    produits: [rocky-linux]
+    donnees: [A, B]
+    url: https://raw.githubusercontent.com/rocky-linux/documentation/main/docs/releases/index.md
+    url_humaine: https://docs.rockylinux.org/releases/
+    format: Markdown (dépôt git)
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: secours
+    note: tableau Markdown ; le wiki (wiki.rockylinux.org version.md) est en retard
+
+  - id: rocky-errata-v2
+    editeur: Rocky Enterprise Software Foundation
+    confiance: editeur
+    produits: [rocky-linux]
+    donnees: [C]
+    url: https://errata.rockylinux.org/api/v2/advisories?filters.severity=...&size=20&page={n}
+    format: JSON
+    acces: {session: 200, github: 200}
+    volume: 172 Ko pour 2 avis
+    verifie_le: 2026-11-13
+    statut: secours
+    collecteur: rocky
+
+  - id: rocky-apollo-v3
+    editeur: Rocky Enterprise Software Foundation
+    confiance: editeur
+    produits: [rocky-linux]
+    donnees: [C]
+    url: https://apollo.build.resf.org/api/v3/advisories/
+    format: JSON
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: secours
+    note: délais et 500 constatés auparavant depuis GitHub ; 0,3 s ce jour
+
+  # ---------------------------------------------------------------- Microsoft
+  - id: msrc-cvrf
+    editeur: Microsoft Security Response Center
+    confiance: editeur
+    produits: [windows-server]
+    donnees: [B, C, D]
+    url: https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/{AAAA-Mmm}
+    url_humaine: https://msrc.microsoft.com/update-guide/releaseNote/{AAAA-Mmm}
+    methode: GET
+    format: CVRF (JSON)
+    auth: aucune
+    documentee: oui
+    acces: {session: 200, github: 200}
+    volume: 18 à 27 Mo par mois
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: microsoft
+
+  - id: msrc-csaf
+    editeur: Microsoft Security Response Center
+    confiance: editeur
+    produits: [windows-server]
+    donnees: [B, C, D]
+    url: https://msrc.microsoft.com/csaf/advisories/changes.csv
+    url_detail: https://msrc.microsoft.com/csaf/advisories/{annee}/msrc_cve-{id}.json
+    url_humaine: https://msrc.microsoft.com/update-guide/vulnerability/{cve}
+    methode: GET
+    format: CSAF 2.0
+    auth: aucune
+    documentee: oui
+    acces: {session: "200 (un 502 ponctuel)", github: "200"}
+    volume: index 546 Ko ; 23 à 40 Ko par CVE ; ~1 180 documents modifiés au Patch Tuesday
+    historique: 10 145 documents depuis 2019
+    verifie_le: 2026-11-13
+    statut: secours
+    note: une CVE par document ; « Windows Server 2022 < 10.0.20348.2700 », KB, état d'exploitation
+
+  - id: microsoft-lifecycle-pages
+    editeur: Microsoft
+    confiance: editeur
+    produits: [windows-server]
+    donnees: [A]
+    url: https://learn.microsoft.com/en-us/lifecycle/products/windows-server-{version}
+    format: HTML
+    acces: {session: 200, github: 200}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: HTML, aucune API (/api/lifecycle → 404)
+
+  # ---------------------------------------------------------------- VMware (Broadcom)
+  - id: broadcom-vmsa-portal
+    editeur: Broadcom
+    confiance: editeur
+    produits: [vmware-esxi, vmware-vcenter]
+    donnees: [C]
+    url: https://support.broadcom.com/web/ecx/security-advisory/-/securityadvisory/getSecurityAdvisoryList
+    url_humaine: https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/{id}
+    methode: POST
+    format: JSON
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 342 avis en une page
+    fraicheur: VMSA du 2026-10-28
+    verifie_le: 2026-11-13
+    statut: actuelle
+    collecteur: vmware
+    decision: API non documentée du portail ; secours cve-org (CNA VMware)
+
+  - id: broadcom-lifecycle-portal
+    editeur: Broadcom
+    confiance: editeur
+    produits: [vmware-esxi, vmware-vcenter]
+    donnees: [A]
+    url: https://support.broadcom.com/web/ecx/productlifecycle
+    acces: {session: 403, github: 403}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: protection anti-robots (Cloudflare « Just a moment… »)
+
+  - id: vmware-update-depots
+    editeur: Broadcom
+    confiance: editeur
+    produits: [vmware-esxi, vmware-vcenter]
+    donnees: [B]
+    url: https://dl.broadcom.com/PROD/COMP/ESX_HOST/main/vmw-depot-index.xml
+    acces: {session: 403 « Invalid token provided », github: 403}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: jeton de téléchargement nominatif ; anciens hôtes hostupdate.vmware.com et vapp-updates.vmware.com supprimés (DNS)
+
+  # ---------------------------------------------------------------- Proxmox
+  - id: proxmox-pve-docs
+    editeur: Proxmox Server Solutions
+    confiance: editeur
+    produits: [proxmox-ve]
+    donnees: [A]
+    url: https://git.proxmox.com/?p=pve-docs.git;a=blob_plain;f=pve-faq.adoc;hb=HEAD
+    url_humaine: https://pve.proxmox.com/wiki/FAQ
+    format: AsciiDoc (tableau, dépôt git)
+    auth: aucune
+    acces: {session: 200, github: voir RESULTATS.md}
+    volume: 8 Ko
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: dates au mois (2026-08) ; « tba » pour la version courante
+
+  - id: proxmox-pve-manager-changelog
+    editeur: Proxmox Server Solutions
+    confiance: editeur
+    produits: [proxmox-ve]
+    donnees: [B]
+    url: https://git.proxmox.com/?p=pve-manager.git;a=blob_plain;f=debian/changelog;hb={HEAD|refs/heads/stable-8}
+    format: changelog Debian
+    acces: {session: 200, github: 200}
+    volume: 339 Ko
+    fraicheur: 9.2.27 du 2026-11-10
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: version du paquet pve-manager ; majeure.mineure = point release
+
+  - id: proxmox-apt-packages
+    editeur: Proxmox Server Solutions
+    confiance: editeur
+    produits: [proxmox-ve]
+    donnees: [B]
+    url: http://download.proxmox.com/debian/pve/dists/{suite}/pve-no-subscription/binary-amd64/Packages
+    format: index APT
+    acces: {session: HTTPS certificat invalide, github: 200 en HTTP}
+    volume: 2,3 Mo
+    verifie_le: 2026-11-13
+    statut: secours
+    note: HTTP seulement ; vérifier la signature GPG du fichier Release
+
+  - id: proxmox-forum-rss
+    editeur: Proxmox Server Solutions
+    confiance: editeur
+    produits: [proxmox-ve]
+    donnees: [C]
+    url: https://forum.proxmox.com/forums/security-advisories.26/index.rss
+    format: RSS
+    acces: {session: 200, github: voir RESULTATS.md}
+    fraicheur: dernier message du 2026-11-12
+    verifie_le: 2026-11-13
+    statut: secours
+    note: un fil par produit ; seulement la date du dernier message (signal) ; détail en HTML
+
+  # ---------------------------------------------------------------- nginx
+  - id: nginx-changes
+    editeur: F5 / nginx
+    confiance: editeur
+    produits: [nginx]
+    donnees: [B, D]
+    url: https://nginx.org/en/CHANGES ; https://nginx.org/en/CHANGES-{branche}
+    format: texte
+    acces: {session: 200, github: 200}
+    volume: 347 Ko
+    fraicheur: 1.31.8 du 2026-10-21
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: nginx
+
+  - id: nginx-org-xml
+    editeur: F5 / nginx
+    confiance: editeur
+    produits: [nginx]
+    donnees: [B, C]
+    url: https://raw.githubusercontent.com/nginx/nginx.org/main/xml/en/security_advisories.xml
+    url_versions: https://raw.githubusercontent.com/nginx/nginx.org/main/xml/versions.xml
+    url_humaine: https://nginx.org/en/security_advisories.html
+    format: XML (dépôt git du site)
+    auth: aucune
+    documentee: non
+    acces: {session: 200, github: 200}
+    volume: 18 Ko
+    fraicheur: "68 avis ; dernier : 1.31.7+/1.30.6+"
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: sans date par avis (date par l'historique git ou CHANGES) ; lien my.f5.com
+
+  # ---------------------------------------------------------------- Apache httpd
+  - id: httpd-changes
+    editeur: Apache Software Foundation
+    confiance: editeur
+    produits: [apache-httpd]
+    donnees: [B, D]
+    url: https://downloads.apache.org/httpd/CHANGES_2.4
+    format: texte
+    acces: {session: 200, github: 200}
+    volume: 407 Ko
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: httpd
+
+  - id: httpd-github-tags
+    editeur: Apache Software Foundation
+    confiance: editeur
+    produits: [apache-httpd]
+    donnees: [B]
+    url: https://github.com/apache/httpd/tags.atom
+    format: Atom
+    acces: {session: non testable, github: 200}
+    verifie_le: 2026-11-13
+    statut: actuelle
+    collecteur: httpd
+
+  - id: apache-projects-releases
+    editeur: Apache Software Foundation
+    confiance: editeur
+    produits: [apache-httpd]
+    donnees: [B]
+    url: https://projects.apache.org/json/foundation/releases.json
+    format: JSON
+    acces: {session: 200, github: 200}
+    volume: 883 Ko (tous projets)
+    fraicheur: "2.4.71 du 2026-11-11 (endoflife.date : 2.4.70)"
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  - id: httpd-security-json
+    editeur: Apache Software Foundation (CNA)
+    confiance: editeur
+    produits: [apache-httpd]
+    donnees: [C]
+    url: https://httpd.apache.org/security/json/{cve}.json
+    index: https://httpd.apache.org/security/json/ (listing Apache) ou https://api.github.com/repos/apache/httpd-site/contents/content/security/json
+    url_humaine: https://httpd.apache.org/security/vulnerabilities_24.html
+    format: CVE 5
+    acces: {session: 200, github: 200}
+    volume: 4 Ko par CVE ; 291 fichiers
+    verifie_le: 2026-11-13
+    statut: recommandee
+
+  # ---------------------------------------------------------------- OpenSSH
+  - id: openssh-github-tags
+    editeur: OpenBSD (miroir officiel openssh-portable)
+    confiance: editeur
+    produits: [openssh]
+    donnees: [B]
+    url: https://github.com/openssh/openssh-portable/tags.atom
+    url_complet: https://api.github.com/repos/openssh/openssh-portable/git/refs/tags
+    format: Atom ; JSON
+    acces: {session: non testable, github: 200}
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: openssh
+
+  - id: openssh-release-notes
+    editeur: OpenBSD
+    confiance: editeur
+    produits: [openssh]
+    donnees: [B, C, D]
+    url: https://www.openssh.org/txt/release-{version}
+    url_humaine: https://www.openssh.com/releasenotes.html
+    format: texte
+    acces: {session: 200, github: 200}
+    volume: 3 Ko
+    fraicheur: 10.6p2 du 2026-11-05
+    verifie_le: 2026-11-13
+    statut: recommandee
+    note: « … was released on AAAA-MM-JJ » en 1re ligne ; section « Security » → security_fix
+
+  # ---------------------------------------------------------------- Dell
+  - id: dell-catalog
+    editeur: Dell
+    confiance: editeur
+    produits: [dell-idrac]
+    donnees: [B]
+    url: https://downloads.dell.com/catalog/Catalog.xml.gz
+    format: XML gzip
+    acces: {session: 200, github: 200}
+    volume: 1,4 Mo
+    fraicheur: modifié le 2026-11-06
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: dell_idrac
+
+  - id: dell-support-portal
+    editeur: Dell
+    confiance: editeur
+    produits: [dell-idrac]
+    donnees: [A, C]
+    url: https://www.dell.com/support/security/en-us ; https://www.dell.com/support/kbdoc/...
+    acces: {session: 403, github: 403}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: protection anti-robots ; pas de CSAF (/.well-known/csaf redirige vers l'accueil)
+
+  # ---------------------------------------------------------------- HPE
+  - id: hpe-sdr-fwrepo
+    editeur: HPE
+    confiance: editeur
+    produits: [hpe-ilo]
+    donnees: [B]
+    url: https://downloads.linux.hpe.com/SDR/repo/{fwpp-gen10|fwpp-gen11|fwpp-gen12}/current/fwrepodata/fwrepo.json
+    format: JSON
+    acces: {session: 200, github: 200}
+    volume: 1 Mo par dépôt
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: hpe_ilo
+
+  - id: hpe-bulletins-rss
+    editeur: HPE
+    confiance: editeur
+    produits: [hpe-ilo]
+    donnees: [C]
+    url: https://support.hpe.com/hpesc/public/api/document/sec_bull_rss_feed
+    format: RSS
+    acces: {session: 200, github: 200}
+    volume: 33 Ko
+    fraicheur: 50 bulletins du 2026-09-04 au 2026-11-11, tous produits
+    verifie_le: 2026-11-13
+    statut: recommandee
+    collecteur: hpe_bulletins
+
+  - id: hpe-aruba-csaf
+    editeur: HPE Aruba Networking
+    confiance: editeur
+    produits: []
+    donnees: [C]
+    url: https://csaf.arubanetworking.hpe.com/changes.csv
+    format: CSAF
+    acces: {session: 200, github: voir RESULTATS.md}
+    verifie_le: 2026-11-13
+    statut: ecartee
+    raison: hors périmètre (produits réseau Aruba) ; pas de provider-metadata.json

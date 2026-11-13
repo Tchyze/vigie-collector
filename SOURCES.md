@@ -43,7 +43,8 @@ session (S) et depuis un runner GitHub Actions (GH). « ✔ » = 200 et contenu 
    (portail protégé par Cloudflare), Stormshield, Rocky.
 4. **OVAL** reste la façon la plus compacte d'avoir *tous* les avis d'une version d'OS : RHEL 9
    (1,5 Mo compressé, 2 406 RHSA avec sévérité, CVE, date), Ubuntu 24.04 (1,6 Mo), Debian 12
-   (9,5 Mo).
+   (9,5 Mo). Mais Red Hat **ne publie pas d'OVAL v2 pour RHEL 10** (répertoires RHEL5 à RHEL9
+   seulement) : l'OVAL n'est qu'un secours pour RHEL.
 5. **CISA KEV** (1 779 failles exploitées, mis à jour le 2026-11-10, domaine public) permet de
    marquer les CVE activement exploitées, tous éditeurs confondus — information absente
    aujourd'hui.
@@ -69,7 +70,7 @@ session (S) et depuis un runner GitHub Actions (GH). « ✔ » = 200 et contenu 
 | Cisco IOS XE | endoflife.date (bulletins EoL ; projections pour les branches sans bulletin) | **aucune source sans clé** (openVuln, OAuth) | **CSAF Cisco** (`changes.csv`) ✔ ; RSS en signal | **aucune source sans clé** (versions corrigées : openVuln) |
 | Debian | **distro-info-data** (Debian) ✔ | fichiers `Release` des suites ✔ | liste DSA (salsa) ✔ ; secours OSV, OVAL | aucune (non pertinent) |
 | Ubuntu | **distro-info-data** (ubuntu.csv) ✔ | `meta-release-lts` (version) ✔ — date du point release absente | **OSV (USN) incrémental** ✔ ; secours OVAL, notices.json | aucune (non pertinent) |
-| RHEL | **API Product Life Cycles** Red Hat ✔ | endoflife.date (version mineure) — pas de source éditeur structurée | **OVAL v2** (toutes sévérités) ✔ ; secours API hydra | aucune (non pertinent) |
+| RHEL | **API Product Life Cycles** Red Hat ✔ | endoflife.date (version mineure) — pas de source éditeur structurée | **API Security Data (hydra)** ✔ ; secours OVAL v2 (RHEL 8 et 9 seulement) | aucune (non pertinent) |
 | Rocky Linux | endoflife.date ; source éditeur : tableau Markdown du dépôt `rocky-linux/documentation` | `.treeinfo` du dépôt officiel ✔ + date (documentation) | **OSV (RLSA) incrémental** ✔ ; secours API errata v2 | aucune (non pertinent) |
 | Windows Server | endoflife.date (saisie manuelle d'après Microsoft Learn, page HTML seulement) | **CVRF/CSAF MSRC** : build corrigé de chaque version ✔ | CVRF MSRC ✔ ; complément CSAF MSRC par CVE | CVRF/CSAF ✔ |
 | VMware ESXi / vCenter | endoflife.date (saisie manuelle ; portail Broadcom protégé) | endoflife.date ; partiel : builds corrigés des enregistrements CVE | API POST non documentée Broadcom ; **secours CVE.org** (CNA VMware : builds corrigés) ✔ | CVE.org partiel |
@@ -171,8 +172,8 @@ commercial : inchangés.
 |---|---|---|---|---|---|---|
 | A — R | API Product Life Cycles | `https://access.redhat.com/product-life-cycles/api/v1/products?name=Red%20Hat%20Enterprise%20Linux` | JSON | ✔ / ✔ | GA, Full support, Maintenance, ELS par version majeure ; v2 ajoute `final_minor_release` | éditeur ; c'est la source d'endoflife.date ; concorde (8, 9, 10) |
 | B — R | endoflife.date (`latest` : 10.3, 9.9 du 2026-11-11) | `.../products/rhel` | JSON | ✔ | — | communautaire ; **pas de source éditeur structurée** pour les versions mineures |
-| C — R | OVAL v2 par version majeure | `https://security.access.redhat.com/data/oval/v2/RHEL9/rhel-9.oval.xml.bz2` | OVAL | ✔ / ✔ | 1,5 Mo (36 Mo décompressé) ; 2 406 RHSA, sévérité, CVE, date ; à jour de la veille | éditeur, CC BY 4.0 |
-| C — S | API Security Data (hydra) | `https://access.redhat.com/hydra/rest/securitydata/csaf.json?severity=critical&after=…` | JSON | ✔ / ✔ | filtrable par sévérité | éditeur, documentée |
+| C — R | API Security Data (hydra, actuelle) | `https://access.redhat.com/hydra/rest/securitydata/csaf.json?severity=critical&after=…` | JSON | ✔ / ✔ | filtrable par sévérité et date ; RHSA-2026:99950 du 2026-11-12 | éditeur, documentée |
+| C — S | OVAL v2 par version majeure | `https://security.access.redhat.com/data/oval/v2/RHEL9/rhel-9.oval.xml.bz2` | OVAL | ✔ / ✔ | 1,5 Mo (36 Mo décompressé) ; 2 406 RHSA, sévérité, CVE, date ; à jour de la veille ; **pas de RHEL 10** (404) | éditeur, CC BY 4.0 |
 | ✗ | CSAF par avis | `https://security.access.redhat.com/data/csaf/v2/advisories/changes.csv` | CSAF | ✔ | 31 942 avis, ~2 Mo chacun | trop volumineux |
 | ✗ | OSV « Red Hat » | bucket OSV | OSV | ✔ | **dernière modification 2026-10-20** | en retard |
 
@@ -193,7 +194,7 @@ commercial : inchangés.
 |---|---|---|---|---|---|---|
 | A — R | endoflife.date | `.../products/windows-server` | JSON | ✔ / ✔ | concorde avec Microsoft Learn sauf ESU 2016 (voir recoupement) | communautaire ; saisie manuelle |
 | A — ✗ | Microsoft Learn Lifecycle | `https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2022` | HTML | ✔ / ✔ | aucune API (`/api/lifecycle` : 404) | éditeur, HTML |
-| B — R | CVRF MSRC (build corrigé par version et KB) | `https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/<AAAA-Mmm>` | CVRF JSON | ✔ / ✔ | 18 Mo par mois | éditeur, documentée |
+| B — R | CVRF MSRC (build corrigé par version et KB) | `https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/<AAAA-Mmm>` | CVRF JSON | ✔ / ✔ | 18 à 27 Mo par mois (novembre 2026 : 27 Mo) | éditeur, documentée |
 | C — R | CVRF MSRC | idem | CVRF | ✔ / ✔ | depuis 2016 | éditeur |
 | C — S | CSAF MSRC par CVE | `https://msrc.microsoft.com/csaf/advisories/changes.csv` + `/<année>/msrc_cve-<id>.json` | CSAF 2.0 | ✔ / ✔ (un 502 ponctuel) | 10 145 documents depuis 2019 ; 23 à 40 Ko chacun ; ~1 180 modifiés au Patch Tuesday | éditeur ; versions « Windows Server 2022 < 10.0.20348.2700 », KB, exploitation |
 | D — R | `vendor_fix` (build + KB) | CVRF ou CSAF | — | — | — | éditeur |
@@ -341,3 +342,42 @@ page officielle de l'éditeur (lue par un humain). « = » : identique.
 | OpenSSH | C | aucun flux d'avis (notes de version + CVE.org) |
 | Dell iDRAC | A | aucune source automatisable : saisie manuelle |
 | HPE iLO | A, D | aucune date de fin publiée ; pas de version corrigée dans les CVE HPE |
+
+## Décisions à prendre
+
+### Sources à clé
+
+| Source | Ce qu'elle apporte | Clé | Où la mettre |
+|---|---|---|---|
+| API NVD 2.0 | découverte des CVE par CNA (Stormshield, Dell, HPE, VMware, Fortinet) | **facultative**, gratuite (formulaire NIST) : 5 → 50 requêtes / 30 s | secret `NVD_API_KEY` ; sans clé, prévoir 6 s entre requêtes |
+| Cisco openVuln | dernière version et versions corrigées IOS XE (B, D) | **obligatoire** : compte Cisco + client OAuth (client credentials), gratuit | secrets `CISCO_CLIENT_ID`, `CISCO_CLIENT_SECRET` ; conditions Cisco à relire (usage non commercial) |
+| API GitHub | tags OpenSSH/httpd/nginx, dépôt `ubuntu-security-notices` | `GITHUB_TOKEN` fourni par le workflow | aucun secret à créer : passer le jeton du workflow (limite 60/h par IP partagée sinon) |
+
+### Sources non documentées (fonctionnent, mais peuvent changer sans préavis)
+
+| Source | Risque | Secours |
+|---|---|---|
+| Broadcom : `POST …/getSecurityAdvisoryList` | API interne du portail | CVE.org (CNA VMware) |
+| Palo Alto : `/json/?limit=100&page=N` | pas de documentation ; `limit` > 100 renvoie une page d'erreur | CSAF / CVE 5 par CVE (même site) |
+| Fortinet : URL CSAF dans le RSS (`csaf:link`) | URL imprévisible, pas de `provider-metadata.json` | CVE.org (CNA Fortinet) |
+| nginx : XML du dépôt `nginx/nginx.org` | fichier source du site, pas une API | CHANGES + CVE.org (CNA F5) |
+| Proxmox : `pve-faq.adoc` (git) et RSS du forum | tableau dans la documentation ; RSS = signal | endoflife.date |
+| Rocky : tableau Markdown de la documentation | format de page | endoflife.date |
+
+### Trous sans solution aujourd'hui
+
+- **FortiOS (A)** : dates seulement sur le portail Fortinet (connexion + captcha) → endoflife.date ou rien.
+- **Stormshield SNS (B)** : aucune dernière version publiée de façon structurée.
+- **Cisco IOS XE (B, D)** sans clé openVuln.
+- **Proxmox VE (C, D)** : aucun flux d'avis structuré.
+- **Dell iDRAC (A)** : KB Dell refusées aux robots → `overrides.yaml` (saisie humaine) ou contribution à endoflife.date.
+- **HPE iLO (A, D)** : aucune date de fin ; pas de version corrigée dans les CVE HPE.
+- **Windows Server, VMware (A)** : pages éditeur HTML ou protégées ; endoflife.date (saisie manuelle) seule source automatisable.
+
+### Autres choix
+
+1. Remplacer l'API `ubuntu.com/security/notices.json` par OSV (USN) ? (recommandé)
+2. Ajouter un champ facultatif « exploitée » (CISA KEV) aux avis ? (ajout compatible, `schema_version` inchangé)
+3. Avis Red Hat : garder les seuls critiques (hydra) ou tout reprendre (OVAL v2 pour RHEL 8/9, hydra pour 10) ?
+4. Contributions à endoflife.date (Dell iDRAC, support étendu PAN-OS, Last Date of Support Cisco, ESU Windows Server 2016) : voir `etude-sources/REORGANISATION.md`.
+5. Catégories `hypervisor` / `management` (changement d'énumération du schéma).

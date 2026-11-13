@@ -10,7 +10,7 @@ on:
     paths: [etude-sources/**, .github/workflows/etude-sources.yml]
 
 permissions:
-  contents: read
+  contents: write            # enregistrement des résultats sur la branche d'étude
 
 jobs:
   sonde:
@@ -22,7 +22,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Sonde des sources candidates
-        run: python etude-sources/probe.py --title "Accès depuis GitHub Actions ($(date -u +%Y-%m-%dT%H:%MZ))" --json resultats-github.json
+        run: |
+          python etude-sources/probe.py --title "Accès depuis GitHub Actions ($(date -u +%Y-%m-%dT%H:%MZ), run ${{ github.run_id }})" --json resultats-github.json > resultats-github.md
       - name: Tableau compact (journal)
         run: |
           python - <<'PY'
@@ -34,4 +35,18 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: resultats-acces-github
-          path: resultats-github.json
+          path: resultats-github.*
+      # Les journaux et artefacts ne sont pas lisibles partout : les résultats sont aussi
+      # enregistrés sur la branche d'étude (un push par GITHUB_TOKEN ne relance pas le workflow).
+      - name: Enregistrement des résultats sur la branche
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p etude-sources/resultats
+          cp resultats-github.json etude-sources/resultats/github.json
+          cp resultats-github.md etude-sources/resultats/github.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add etude-sources/resultats
+          git commit -m "Étude des sources : résultats du test d'accès depuis GitHub Actions (run ${{ github.run_id }})" || exit 0
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
