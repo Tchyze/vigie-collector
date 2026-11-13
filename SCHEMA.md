@@ -58,7 +58,7 @@ notion de branche n'en a qu'une (OpenSSH : branche `portable`).
 | `id` | chaîne | `<produit>-<branche>`, ex. `fortios-7.4`, `debian-12` |
 | `product` | chaîne | identifiant du produit, ex. `fortios` |
 | `vendor` | chaîne | éditeur, ex. `Fortinet` |
-| `category` | `firewall` \| `switch` \| `os` \| `service` | |
+| `category` | `firewall` \| `switch` \| `os` \| `service` \| `server` | `server` : contrôleurs de gestion des serveurs (iLO, iDRAC) |
 | `branch` | chaîne | nom de la branche, ex. `7.4` |
 | `label` | chaîne | libellé lisible, ex. `12 (Bookworm)` |
 | `lts` | booléen ou `null` | branche à support long |

@@ -8,7 +8,7 @@ import yaml
 
 from vigie.models import EOL_KEYS
 
-CATEGORIES = ("firewall", "switch", "os", "service")
+CATEGORIES = ("firewall", "switch", "os", "service", "server")
 
 # Champ endoflife.date -> date Vigie, sauf réglage contraire du produit.
 DEFAULT_EOL_FIELDS = {

@@ -7,6 +7,8 @@ from collectors import (
     endoflife,
     fortinet_firmware,
     fortinet_psirt,
+    hpe_bulletins,
+    hpe_ilo,
     httpd,
     microsoft,
     nginx,
@@ -26,6 +28,7 @@ ALL = [
     httpd.COLLECTOR,
     openssh.COLLECTOR,
     fortinet_firmware.COLLECTOR,
+    hpe_ilo.COLLECTOR,
     # avis de sécurité
     fortinet_psirt.COLLECTOR,
     paloalto.COLLECTOR,
@@ -38,4 +41,5 @@ ALL = [
     stormshield.COLLECTOR,
     ubuntu.COLLECTOR,
     vmware.COLLECTOR,
+    hpe_bulletins.COLLECTOR,
 ]

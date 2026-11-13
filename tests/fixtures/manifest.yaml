@@ -110,3 +110,14 @@
 - url: https://support.broadcom.com/web/ecx/security-advisory/-/securityadvisory/getSecurityAdvisoryList
   file: vmware/advisories.json
   post: {pageNumber: 0, pageSize: 500, searchVal: "", segment: VC, sortInfo: {column: "", order: ""}}
+- url: https://downloads.linux.hpe.com/SDR/repo/fwpp-gen10/current/fwrepodata/fwrepo.json
+  file: hpe/fwpp-gen10.json
+  trim: {json_dict_filter: {field: description, contains: Lights-Out, others: 3}}
+- url: https://downloads.linux.hpe.com/SDR/repo/fwpp-gen11/current/fwrepodata/fwrepo.json
+  file: hpe/fwpp-gen11.json
+  trim: {json_dict_filter: {field: description, contains: Lights-Out, others: 3}}
+- url: https://downloads.linux.hpe.com/SDR/repo/fwpp-gen12/current/fwrepodata/fwrepo.json
+  file: hpe/fwpp-gen12.json
+  trim: {json_dict_filter: {field: description, contains: Lights-Out, others: 3}}
+- url: https://support.hpe.com/hpesc/public/api/document/sec_bull_rss_feed
+  file: hpe/sec_bull_rss_feed.xml

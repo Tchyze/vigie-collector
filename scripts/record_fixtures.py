@@ -8,6 +8,8 @@ corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros
 - json_head: N   -> garde les N premiers éléments d'une liste JSON ;
 - json_key_head: {key: K, n: N, drop: [champs]} -> garde les N premiers éléments de la liste
   data[K], sans les champs listés dans `drop`, et les listes de `truncate` ({champ: N}) coupées ;
+- json_dict_filter: {field: F, contains: T, others: N} -> dictionnaire JSON réduit aux entrées dont
+  le champ F contient T, plus N autres ;
 - cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
   importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
 """
@@ -42,6 +44,15 @@ def trim(body: bytes, spec: dict | None) -> bytes:
             for item in data[key][:n]
         ]
         return json.dumps(data, ensure_ascii=False, indent=1).encode("utf-8")
+    if "json_dict_filter" in spec:
+        rule, data, others = spec["json_dict_filter"], json.loads(body), 0
+        kept = {}
+        for key, value in data.items():
+            if rule["contains"] in str(value.get(rule["field"]) or ""):
+                kept[key] = value
+            elif others < rule["others"]:
+                kept[key], others = value, others + 1
+        return json.dumps(kept, ensure_ascii=False, indent=1).encode("utf-8")
     if "cvrf_sample" in spec:
         return cvrf_sample(json.loads(body), spec["cvrf_sample"])
     raise ValueError(f"trim inconnu : {spec}")
