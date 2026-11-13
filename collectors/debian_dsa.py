@@ -37,7 +37,13 @@ class DebianDsa(Collector):
 
     def collect(self, ctx: Context) -> CollectResult:
         cutoff = ctx.today - dt.timedelta(days=ctx.catalog.advisory_retention_days)
-        advisories = parse_list(ctx.client.text(LIST), cutoff)
+        text = ctx.client.text(LIST)
+        if not any(HEADER.match(line) for line in text.splitlines()[:50]):
+            # Contenu inattendu (page anti-robots, erreur servie en 200…) : c'est une panne de la
+            # source, pas une liste vide. L'erreur garde les données précédentes sans bloquer
+            # la publication.
+            raise ValueError(f"liste DSA illisible : {text[:80]!r}")
+        advisories = parse_list(text, cutoff)
         summaries = self._summaries(ctx)
         for advisory in advisories:
             advisory.summary = summaries.get(advisory.id)
