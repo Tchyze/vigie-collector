@@ -6,7 +6,7 @@ Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la re
 - head_lines: N  -> garde les N premières lignes d'un texte ;
 - json_head: N   -> garde les N premiers éléments d'une liste JSON ;
 - json_key_head: {key: K, n: N, drop: [champs]} -> garde les N premiers éléments de la liste
-  data[K], sans les champs listés dans `drop` ;
+  data[K], sans les champs listés dans `drop`, et les listes de `truncate` ({champ: N}) coupées ;
 - cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
   importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
 """
@@ -35,7 +35,11 @@ def trim(body: bytes, spec: dict | None) -> bytes:
         data = json.loads(body)
         key, n = spec["json_key_head"]["key"], spec["json_key_head"]["n"]
         drop = set(spec["json_key_head"].get("drop") or [])
-        data[key] = [{k: v for k, v in item.items() if k not in drop} for item in data[key][:n]]
+        truncate = spec["json_key_head"].get("truncate") or {}
+        data[key] = [
+            {k: (v[: truncate[k]] if k in truncate else v) for k, v in item.items() if k not in drop}
+            for item in data[key][:n]
+        ]
         return json.dumps(data, ensure_ascii=False, indent=1).encode("utf-8")
     if "cvrf_sample" in spec:
         return cvrf_sample(json.loads(body), spec["cvrf_sample"])

@@ -89,3 +89,17 @@
 - url: https://errata.rockylinux.org/api/v2/advisories?filters.severity=SEVERITY_CRITICAL&filters.type=TYPE_SECURITY&size=20&page=2
   file: rocky/advisories-2.json
   trim: {json_key_head: {key: advisories, n: 20, drop: [rpms, fixes, references, description]}}
+- url: https://ubuntu.com/security/notices.json?limit=20&offset=0
+  file: ubuntu/notices-0.json
+  trim: {json_key_head: {key: notices, n: 20, drop: [description, release_packages, instructions, references, cves, related_notices], truncate: {cves_ids: 120}}}
+- url: https://ubuntu.com/security/notices.json?limit=20&offset=20
+  file: ubuntu/notices-20.json
+  trim: {json_key_head: {key: notices, n: 20, drop: [description, release_packages, instructions, references, cves, related_notices], truncate: {cves_ids: 120}}}
+- url: https://ubuntu.com/security/notices.json?limit=20&offset=40
+  file: ubuntu/notices-40.json
+  trim: {json_key_head: {key: notices, n: 20, drop: [description, release_packages, instructions, references, cves, related_notices], truncate: {cves_ids: 120}}}
+- url: https://ubuntu.com/security/notices.json?limit=20&offset=60
+  file: ubuntu/notices-60.json
+  trim: {json_key_head: {key: notices, n: 20, drop: [description, release_packages, instructions, references, cves, related_notices], truncate: {cves_ids: 120}}}
+- url: https://endoflife.date/api/v1/products/ubuntu
+  file: endoflife/ubuntu.json

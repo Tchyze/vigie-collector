@@ -52,6 +52,16 @@ products:
       eol: end_of_security_support    # « Security Support »
       eoes: end_of_extended_support   # « Extended Security Updates »
 
+  ubuntu:
+    label: Ubuntu
+    vendor: Canonical
+    category: os
+    endoflife: ubuntu
+    eol_fields:
+      eoas: end_of_active_support     # « Hardware & Maintenance »
+      eol: end_of_security_support    # « Maintenance & Security Support »
+      eoes: end_of_extended_support   # « Expanded Security Maintenance » (Ubuntu Pro)
+
   proxmox-ve:
     label: Proxmox VE
     vendor: Proxmox

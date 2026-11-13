@@ -37,6 +37,14 @@ def fixture_client(overrides=None) -> HttpClient:
     return HttpClient(min_interval=0, retries=0, github_token="", transport=FixtureTransport(overrides))
 
 
+@pytest.fixture(autouse=True)
+def recorded_pages_only(monkeypatch):
+    """Les fixtures Ubuntu couvrent quatre pages de notices."""
+    from collectors import ubuntu
+
+    monkeypatch.setattr(ubuntu, "MAX_PAGES_PER_RUN", 4)
+
+
 @pytest.fixture
 def client():
     return fixture_client()

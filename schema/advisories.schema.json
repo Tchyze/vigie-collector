@@ -23,7 +23,7 @@
       ],
       "properties": {
         "id": {"type": "string", "minLength": 1},
-        "source": {"enum": ["fortinet", "paloalto", "cisco", "certfr", "debian", "redhat", "rocky", "microsoft", "stormshield"]},
+        "source": {"enum": ["fortinet", "paloalto", "cisco", "certfr", "debian", "redhat", "rocky", "microsoft", "stormshield", "ubuntu"]},
         "vendor": {"type": "string", "minLength": 1},
         "title": {"type": "string", "minLength": 1},
         "published": {"$ref": "#/$defs/datetime"},

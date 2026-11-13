@@ -15,6 +15,7 @@ from collectors import (
     redhat,
     rocky,
     stormshield,
+    ubuntu,
 )
 
 ALL = [
@@ -34,4 +35,5 @@ ALL = [
     rocky.COLLECTOR,
     microsoft.COLLECTOR,
     stormshield.COLLECTOR,
+    ubuntu.COLLECTOR,
 ]
