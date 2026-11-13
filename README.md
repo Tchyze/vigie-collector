@@ -74,6 +74,9 @@ hebdomadaires du CERT-FR.
 
 Ce qui n'est pas encore couvert est listé dans [ROADMAP.md](ROADMAP.md).
 
+L'étude des sources (meilleure source par produit et par type de donnée, accès vérifiés depuis
+GitHub Actions, trous restants) est dans [SOURCES.md](SOURCES.md) et [sources.yaml](sources.yaml).
+
 ## Fonctionnement
 
 ```

@@ -57,7 +57,7 @@ session (S) et depuis un runner GitHub Actions (GH). « ✔ » = 200 et contenu 
    différences : `download.proxmox.com` n'a pas de certificat HTTPS valide (HTTP seulement), les
    anciens hôtes VMware (`hostupdate.vmware.com`, `vapp-updates.vmware.com`) n'existent plus en
    DNS, et la page HTML de FortiGuard renvoie 429 (non utilisée). Surtout, **l'API NVD est
-   instable depuis le runner** (2 délais dépassés et un 503 sur 7 requêtes) : elle ne peut servir
+   instable depuis le runner** (4 requêtes sur 7 réussies au 5ᵉ passage, 2 sur 7 au 6ᵉ : délais dépassés et 503) : elle ne peut servir
    qu'à la découverte, avec nouvel essai, jamais comme source bloquante. Les API GitHub non
    authentifiées sont limitées à 60 requêtes/heure **par adresse IP partagée** du runner : le
    collecteur doit passer le `GITHUB_TOKEN` du workflow (1 000/heure, sans secret à créer).
@@ -300,7 +300,7 @@ avec une branche reste du texte libre.
 |---|---|---|---|---|---|---|
 | endoflife.date API v1 | `https://endoflife.date/api/v1/products/<slug>` | JSON | ✔ / ✔ | 2 à 10 Ko par produit | A, B pour 14 produits | communautaire ; données sous licence MIT |
 | CISA KEV | `https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json` (miroir : `raw.githubusercontent.com/cisagov/kev-data/develop/...`) | JSON | ✔ / ✔ | 1,8 Mo | marquer les CVE exploitées | domaine public (CC0) |
-| NVD API 2.0 | `https://services.nvd.nist.gov/rest/json/cves/2.0?...` | JSON | ✔ / **instable** (4 sur 7 depuis GitHub) | 1 à 15 s par requête ; délais > 30 s et 503 depuis GitHub | découverte des CVE par CNA ou mot-clé | sans clé : 5 requêtes / 30 s ; **clé gratuite** : 50 / 30 s ; mention « This product uses the NVD API but is not endorsed or certified by the NVD » |
+| NVD API 2.0 | `https://services.nvd.nist.gov/rest/json/cves/2.0?...` | JSON | ✔ / **instable** (4 puis 2 sur 7 depuis GitHub) | 1 à 15 s par requête ; délais > 30 s et 503 depuis GitHub | découverte des CVE par CNA ou mot-clé | sans clé : 5 requêtes / 30 s ; **clé gratuite** : 50 / 30 s ; mention « This product uses the NVD API but is not endorsed or certified by the NVD » |
 | CVE.org (CVE Services) | `https://cveawg.mitre.org/api/cve/<id>` | JSON CVE 5 | ✔ / ✔ | 5 à 25 Ko par CVE | détail des enregistrements CNA | conditions d'utilisation CVE (reproduction libre avec mention) |
 | OSV (bucket) | `https://osv-vulnerabilities.storage.googleapis.com/<écosystème>/modified_id.csv` | CSV + OSV JSON | ✔ / ✔ | 0,2 à 3,7 Mo l'index | DSA, USN, RLSA | licence propre à chaque écosystème (Rocky : CC BY 4.0) |
 | OSV API | `https://api.osv.dev/v1/query` (POST), `/v1/vulns/<id>` | JSON | ✔ / ✔ | — | requêtes ponctuelles | — |
@@ -345,7 +345,16 @@ page officielle de l'éditeur (lue par un humain). « = » : identique.
 | Dell iDRAC | A | aucune source automatisable : saisie manuelle |
 | HPE iLO | A, D | aucune date de fin publiée ; pas de version corrigée dans les CVE HPE |
 
-## Décisions à prendre
+## Décisions
+
+Décidé le 2026-11-13 :
+
+- **Ubuntu** : remplacer `notices.json` par OSV (USN) — oui.
+- **Clé NVD** : pas maintenant. NVD ne sert qu'à la découverte, jamais en source bloquante ; pour Dell, découverte de secours par le CERT-FR (CVE citées par ses avis Dell).
+- **CISA KEV** : ajouter un champ facultatif « faille exploitée » aux avis — oui.
+- **Étude** : fusionnée dans `main` (projet en bêta).
+
+Restent à décider :
 
 ### Sources à clé
 
@@ -378,8 +387,6 @@ page officielle de l'éditeur (lue par un humain). « = » : identique.
 
 ### Autres choix
 
-1. Remplacer l'API `ubuntu.com/security/notices.json` par OSV (USN) ? (recommandé)
-2. Ajouter un champ facultatif « exploitée » (CISA KEV) aux avis ? (ajout compatible, `schema_version` inchangé)
-3. Avis Red Hat : garder les seuls critiques (hydra) ou tout reprendre (OVAL v2 pour RHEL 8/9, hydra pour 10) ?
-4. Contributions à endoflife.date (Dell iDRAC, support étendu PAN-OS, Last Date of Support Cisco, ESU Windows Server 2016) : voir `etude-sources/REORGANISATION.md`.
-5. Catégories `hypervisor` / `management` (changement d'énumération du schéma).
+1. Avis Red Hat : garder les seuls critiques (hydra) ou tout reprendre (OVAL v2 pour RHEL 8/9, hydra pour 10) ?
+2. Contributions à endoflife.date (Dell iDRAC, support étendu PAN-OS, Last Date of Support Cisco, ESU Windows Server 2016) : voir `etude-sources/REORGANISATION.md`.
+3. Catégories `hypervisor` / `management` (changement d'énumération du schéma).

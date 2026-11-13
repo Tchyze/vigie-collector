@@ -76,7 +76,7 @@ sources:
     documentee: oui
     acces: {session: 200, github: "200 (instable)"}
     volume: 20 à 300 Ko par requête ; 1 à 15 s par requête
-    fiabilite: "depuis GitHub : 4 requêtes sur 7 réussies le 2026-11-13 (2 délais dépassés à 30 s, un 503) ; prévoir 60 s, nouvel essai, jamais bloquante"
+    fiabilite: "depuis GitHub, sans clé : 4 puis 2 requêtes sur 7 réussies le 2026-11-13 (délais dépassés à 30 s, 503) ; prévoir 60 s, nouvel essai, jamais bloquante"
     fraicheur: CVE du jour ; enrichissement NVD souvent absent (« Awaiting Analysis », « Deferred »)
     conditions: >-
       sans clé 5 requêtes / 30 s, avec clé gratuite 50 / 30 s ; fenêtre de dates ≤ 120 jours ;
@@ -84,7 +84,7 @@ sources:
     verifie_le: 2026-11-13
     statut: recommandee
     usage: découverte des CVE par CNA (cert@airbus.com, security_alert@emc.com, security-alert@hpe.com, security@vmware.com, psirt@fortinet.com) ou mot-clé (iDRAC)
-    decision: clé API facultative, à stocker en secret GitHub (NVD_API_KEY)
+    decision: pas de clé pour l'instant (2026-11-13) ; plus tard, secret GitHub NVD_API_KEY
 
   - id: cve-org
     editeur: CVE Program (MITRE) — contenu publié par le CNA de l'éditeur
@@ -489,6 +489,7 @@ sources:
     acces: {session: 200, github: 200}
     verifie_le: 2026-11-13
     statut: a-remplacer
+    decision: remplacement par osv-bucket validé le 2026-11-13
     collecteur: ubuntu
     raison: 20 avis par page, 503 et coupures en rafale ; remplacée par osv-bucket (Ubuntu)
 

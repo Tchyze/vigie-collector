@@ -1,4 +1,4 @@
-## Accès depuis GitHub Actions (2026-11-13T10:03Z, run 43406085928)
+## Accès depuis GitHub Actions (2026-11-13, run 43406085928, lancement manuel)
 
 | id | méthode | URL | HTTP | type | taille | durée (s) | extrait / erreur |
 |---|---|---|---|---|---|---|---|
@@ -64,7 +64,7 @@
 | ubuntu-meta-release | GET | https://changelogs.ubuntu.com/meta-release | 200 | — | 23.2 Ko | 0.33 | Dist: warty Name: Warty Warthog Version: 04.10 Date: Wed, 20 Oct 2004 07:28:17 UTC Supported: 0 Description: This is the warty warthog release Release-File: htt |
 | ubuntu-meta-release-lts | GET | https://changelogs.ubuntu.com/meta-release-lts | 200 | — | 7.0 Ko | 0.27 | Dist: dapper Name: Dapper Drake Version: 6.06 LTS Date: Thu, 01 Jun 2006 9:00:00 UTC Supported: 0 Description: This is the Dapper Drake release Release-File: ht |
 | ubuntu-osv-index | GET | https://security-metadata.canonical.com/osv/ | 200 | text/html | 3.1 Ko | 0.36 | <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lan |
-| ubuntu-osv-all | GET | https://security-metadata.canonical.com/osv/osv-all.tar.xz | 200 | application/x-xz | ≥ 40.0 Mo (annoncé 59.8 Mo) | 1.25 | �7zXZ  �ִF !    �X������] 7��"���7:Q�Wr�-����Ƈßq�n������e��[�Y��t�:4^���]�J�͍.�^��=���\|�@xg<)S�k�����\|3�����&� e+�$ -��xcD�T�2�;*�� �i5�L��Qܤdı�ű8 |
+| ubuntu-osv-all | GET | https://security-metadata.canonical.com/osv/osv-all.tar.xz | 200 | application/x-xz | ≥ 40.0 Mo (annoncé 59.8 Mo) | 1.25 |  |
 | ubuntu-oval-noble | GET | https://security-metadata.canonical.com/oval/com.ubuntu.noble.usn.oval.xml.bz2 | 200 | application/x-bzip2 | 1.6 Mo | 0.92 |  |
 | ubuntu-vex | GET | https://security-metadata.canonical.com/vex/ | 200 | text/html | 3.1 Ko | 0.25 | <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lan |
 | ubuntu-usn-git | GET | https://api.github.com/repos/canonical/ubuntu-security-notices/commits?per_page=1 | 200 | application/json | 1.5 Ko | 0.13 | [{"sha":"1820a9703253548155e22e8d0b31facddb88cfb1","node_id":"C_kwDOKzpjG9oAKDE4MjBhOTcwMzI1MzU0ODE1NWUyMmU4ZDBiMzFmYWNkZGI4OGNmYjE","commit":{"author":{"name": |
@@ -180,4 +180,3 @@
 | ms-lifecycle-ws2016 | GET | https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2016 | 200 | text/html | 26.2 Ko | 0.12 | <!DOCTYPE html> <html class="layout layout-single lifecycle default-focus" lang="en-us" dir="ltr" data-authenticated="false" data-auth-status-determined="false" |
 
 135/176 URL en 2xx.
-
