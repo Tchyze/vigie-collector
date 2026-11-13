@@ -1,0 +1,1188 @@
+{
+ "16_29_1016-MCX515A-CCA_HPE_Ax.pldm.fwpkg": {
+  "date": "20210225",
+  "description": "Mellanox Firmware Package(FWPKG) for HPE Ethernet 100Gb 1-port QSFP28 MCX515A-CCAT PCIe3 x16 Adapter",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715900346"
+  ],
+  "version": "16.29.1016"
+ },
+ "16_31_1014-MCX515A-CCA_HPE_Ax.pldm.fwpkg": {
+  "date": "20210721",
+  "description": "Mellanox Firmware Package(FWPKG) for HPE Ethernet 100Gb 1-port QSFP28 MCX515A-CCAT PCIe3 x16 Adapter",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715900346"
+  ],
+  "version": "16.31.1014"
+ },
+ "16_31_1200-MCX512F-ACH_Ax_Bx.pldm.fwpkg": {
+  "date": "20210721",
+  "description": "Mellanox Firmware Package(FWPKG) for HPE Ethernet 10/25Gb 2-port SFP28 MCX512F-ACHT Adapter",
+  "deviceclass": "79f0c163-0c13-4662-9dea-09235fef90cb",
+  "minimum_active_version": "null",
+  "reboot_required": "yes",
+  "server_power_off": "False",
+  "target": [
+   "a6b1a447-382a-5a4f-15b3-101715b30116"
+  ],
+  "version": "16.31.1200"
+ },
+ "firmware-ilo4-2.72-1.1.i386.rpm": {
+  "date": "20191021",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 4",
+  "deviceclass": "null",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "null"
+  ],
+  "version": "2.72"
+ },
+ "firmware-ilo4-2.73-1.1.i386.rpm": {
+  "date": "20200211",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 4",
+  "deviceclass": "null",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "null"
+  ],
+  "version": "2.73"
+ },
+ "firmware-ilo4-2.74-1.1.i386.rpm": {
+  "date": "20200509",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 4",
+  "deviceclass": "null",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "null"
+  ],
+  "version": "2.74"
+ },
+ "firmware-ilo4-2.77-1.1.i386.rpm": {
+  "date": "20210223",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 4",
+  "deviceclass": "null",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "null"
+  ],
+  "version": "2.77"
+ },
+ "firmware-ilo5-1.40-1.1.x86_64.rpm": {
+  "date": "20190305",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2F317B9D-C9E3-4D76-BFF6-B9D0D085A952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764A662-B342-4FC7-9CE9-258C5D99E815"
+  ],
+  "version": "1.40"
+ },
+ "firmware-ilo5-1.45-1.1.x86_64.rpm": {
+  "date": "20190818",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.45"
+ },
+ "firmware-ilo5-1.48-1.1.x86_64.rpm": {
+  "date": "20200523",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.48"
+ },
+ "firmware-ilo5-1.48-2.1.x86_64.rpm": {
+  "date": "20240412",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.48"
+ },
+ "firmware-ilo5-1.48-3.1.x86_64.rpm": {
+  "date": "20241123",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.48"
+ },
+ "firmware-ilo5-2.10-1.1.x86_64.rpm": {
+  "date": "20191030",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.10"
+ },
+ "firmware-ilo5-2.11-1.1.x86_64.rpm": {
+  "date": "20200305",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.11"
+ },
+ "firmware-ilo5-2.14-1.1.x86_64.rpm": {
+  "date": "20200215",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.14"
+ },
+ "firmware-ilo5-2.16-1.1.x86_64.rpm": {
+  "date": "20200608",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.16"
+ },
+ "firmware-ilo5-2.18-1.1.x86_64.rpm": {
+  "date": "20200710",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.18"
+ },
+ "firmware-ilo5-2.30-1.1.x86_64.rpm": {
+  "date": "20200824",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.30"
+ },
+ "firmware-ilo5-2.35-1.1.x86_64.rpm": {
+  "date": "20210310",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.35"
+ },
+ "firmware-ilo5-2.42-1.1.x86_64.rpm": {
+  "date": "20210415",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.42"
+ },
+ "firmware-ilo5-2.55-1.1.x86_64.rpm": {
+  "date": "20211004",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.55"
+ },
+ "firmware-ilo5-2.65-1.1.x86_64.rpm": {
+  "date": "20220318",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.65"
+ },
+ "firmware-ilo5-2.70-1.1.x86_64.rpm": {
+  "date": "20220520",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.70"
+ },
+ "firmware-ilo5-2.71-1.1.x86_64.rpm": {
+  "date": "20220704",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.71"
+ },
+ "firmware-ilo5-2.72-1.1.x86_64.rpm": {
+  "date": "20220904",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.72"
+ },
+ "firmware-ilo5-2.81-1.1.x86_64.rpm": {
+  "date": "20230307",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.81"
+ },
+ "firmware-ilo5-2.96-1.1.x86_64.rpm": {
+  "date": "20230821",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.96"
+ },
+ "firmware-ilo5-2.98-1.1.x86_64.rpm": {
+  "date": "20231014",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.98"
+ },
+ "firmware-ilo5-2.99-1.1.x86_64.rpm": {
+  "date": "20231116",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.99"
+ },
+ "firmware-ilo5-3.00-1.1.x86_64.rpm": {
+  "date": "20231215",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.00"
+ },
+ "firmware-ilo5-3.01-1.1.x86_64.rpm": {
+  "date": "20240123",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.01"
+ },
+ "firmware-ilo5-3.03-1.1.x86_64.rpm": {
+  "date": "20240327",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.03"
+ },
+ "firmware-ilo5-3.04-1.1.x86_64.rpm": {
+  "date": "20240417",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.04"
+ },
+ "firmware-ilo5-3.06-1.1.x86_64.rpm": {
+  "date": "20240716",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.06"
+ },
+ "firmware-ilo5-3.08-1.1.x86_64.rpm": {
+  "date": "20240912",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.08"
+ },
+ "firmware-ilo5-3.09-1.1.x86_64.rpm": {
+  "date": "20241008",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.09"
+ },
+ "firmware-ilo5-3.10-1.1.x86_64.rpm": {
+  "date": "20241212",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.10"
+ },
+ "firmware-ilo5-3.11-1.1.x86_64.rpm": {
+  "date": "20250225",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.11"
+ },
+ "firmware-ilo5-3.13-1.1.x86_64.rpm": {
+  "date": "20250424",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.13"
+ },
+ "firmware-ilo5-3.14-1.1.x86_64.rpm": {
+  "date": "20250616",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.14"
+ },
+ "firmware-ilo5-3.15-1.1.x86_64.rpm": {
+  "date": "20250811",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.15"
+ },
+ "firmware-ilo5-3.16-1.1.x86_64.rpm": {
+  "date": "20251006",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.16"
+ },
+ "firmware-ilo5-3.17-1.1.x86_64.rpm": {
+  "date": "20251203",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.17"
+ },
+ "firmware-ilo5-3.18-1.1.x86_64.rpm": {
+  "date": "20260210",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.18"
+ },
+ "firmware-ilo5-3.19-1.1.x86_64.rpm": {
+  "date": "20260407",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.19"
+ },
+ "firmware-ilo5-3.20-1.1.x86_64.rpm": {
+  "date": "20260602",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.20"
+ },
+ "firmware-ilo5-3.21-1.1.x86_64.rpm": {
+  "date": "20260730",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.21"
+ },
+ "firmware-ilo5-3.22-1.1.x86_64.rpm": {
+  "date": "20260921",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.22"
+ },
+ "firmware-ilo5-sha512-2.10-1.1.x86_64.rpm": {
+  "date": "20191122",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.10"
+ },
+ "firmware-ilo5-sha512-2.11-1.1.x86_64.rpm": {
+  "date": "20191219",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.11"
+ },
+ "firmware-ilo5-sha512-2.14-1.1.x86_64.rpm": {
+  "date": "20200226",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.14"
+ },
+ "firmware-ilo5-sha512-2.30-1.1.x86_64.rpm": {
+  "date": "20200824",
+  "description": "Online ROM Flash Component for Linux - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.30"
+ },
+ "ilo5_140.fwpkg": {
+  "date": "20190305",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2F317B9D-C9E3-4D76-BFF6-B9D0D085A952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764A662-B342-4FC7-9CE9-258C5D99E815"
+  ],
+  "version": "1.40"
+ },
+ "ilo5_145.fwpkg": {
+  "date": "20190726",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.45"
+ },
+ "ilo5_148.fwpkg": {
+  "date": "20200629",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "4764a662-b342-4fc7-9ce9-258c5d99e815"
+  ],
+  "version": "1.48"
+ },
+ "ilo5_210.fwpkg": {
+  "date": "20191030",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.10"
+ },
+ "ilo5_210_SHA512.fwpkg": {
+  "date": "20191122",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.10"
+ },
+ "ilo5_214.fwpkg": {
+  "date": "20200215",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.14"
+ },
+ "ilo5_214_SHA512.fwpkg": {
+  "date": "20200226",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.14"
+ },
+ "ilo5_216.fwpkg": {
+  "date": "20200608",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.16"
+ },
+ "ilo5_218.fwpkg": {
+  "date": "20200710",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.18"
+ },
+ "ilo5_230.fwpkg": {
+  "date": "20200824",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.30"
+ },
+ "ilo5_230_SHA512.fwpkg": {
+  "date": "20200824",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.30"
+ },
+ "ilo5_235.fwpkg": {
+  "date": "20210323",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.35"
+ },
+ "ilo5_242.fwpkg": {
+  "date": "20210415",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.42"
+ },
+ "ilo5_255.fwpkg": {
+  "date": "20211004",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.55"
+ },
+ "ilo5_265.fwpkg": {
+  "date": "20220318",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.65"
+ },
+ "ilo5_271.fwpkg": {
+  "date": "20220704",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.71"
+ },
+ "ilo5_272.fwpkg": {
+  "date": "20220904",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.72"
+ },
+ "ilo5_281.fwpkg": {
+  "date": "20230307",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.81"
+ },
+ "ilo5_296.fwpkg": {
+  "date": "20230821",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.96"
+ },
+ "ilo5_298.fwpkg": {
+  "date": "20231014",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.98"
+ },
+ "ilo5_299.fwpkg": {
+  "date": "20231116",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "2.99"
+ },
+ "ilo5_300.fwpkg": {
+  "date": "20231215",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.00"
+ },
+ "ilo5_301.fwpkg": {
+  "date": "20240123",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.01"
+ },
+ "ilo5_303.fwpkg": {
+  "date": "20240327",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.03"
+ },
+ "ilo5_304.fwpkg": {
+  "date": "20240417",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.04"
+ },
+ "ilo5_306.fwpkg": {
+  "date": "20240716",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.06"
+ },
+ "ilo5_308.fwpkg": {
+  "date": "20240912",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.08"
+ },
+ "ilo5_309.fwpkg": {
+  "date": "20241008",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.09"
+ },
+ "ilo5_310.fwpkg": {
+  "date": "20241212",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.10"
+ },
+ "ilo5_311.fwpkg": {
+  "date": "20250225",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.11"
+ },
+ "ilo5_313.fwpkg": {
+  "date": "20250424",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.13"
+ },
+ "ilo5_314.fwpkg": {
+  "date": "20250616",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.14"
+ },
+ "ilo5_315.fwpkg": {
+  "date": "20250811",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.15"
+ },
+ "ilo5_316.fwpkg": {
+  "date": "20251006",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.16"
+ },
+ "ilo5_317.fwpkg": {
+  "date": "20251203",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.17"
+ },
+ "ilo5_318.fwpkg": {
+  "date": "20260210",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.18"
+ },
+ "ilo5_319.fwpkg": {
+  "date": "20260407",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.19"
+ },
+ "ilo5_320.fwpkg": {
+  "date": "20260602",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.20"
+ },
+ "ilo5_321.fwpkg": {
+  "date": "20260730",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.21"
+ },
+ "ilo5_322.fwpkg": {
+  "date": "20260921",
+  "description": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+  "deviceclass": "2f317b9d-c9e3-4d76-bff6-b9d0d085a952",
+  "minimum_active_version": "null",
+  "reboot_required": "no",
+  "server_power_off": "False",
+  "target": [
+   "9c057a7a-0d48-4260-b033-558f22ef7c6a",
+   "c5b14abd-6d2f-41d7-b665-0447dfdac3a7",
+   "c0bcf2b9-1141-49af-aab8-c73791f0349c"
+  ],
+  "version": "3.22"
+ }
+}

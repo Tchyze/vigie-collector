@@ -1,0 +1,1291 @@
+{
+ "resultsPerPage": 10,
+ "startIndex": 0,
+ "totalResults": 10,
+ "format": "NVD_CVE",
+ "version": "2.0",
+ "timestamp": "2026-11-13T13:35:00.800",
+ "vulnerabilities": [
+  {
+   "cve": {
+    "id": "CVE-2026-23856",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-02-12T03:15:46.833",
+    "lastModified": "2026-06-17T10:22:12.680",
+    "vulnStatus": "Deferred",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC Service Module (iSM) for Windows, versions prior to 6.0.3.1, and Dell iDRAC Service Module (iSM) for Linux, versions prior to 5.4.1.1, contain an Improper Access Control vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges."
+     },
+     {
+      "lang": "es",
+      "value": "Dell iDRAC Service Module (iSM) para Windows, versiones anteriores a la 6.0.3.1, y Dell iDRAC Service Module (iSM) para Linux, versiones anteriores a la 5.4.1.1, contienen una vulnerabilidad de control de acceso inadecuado. Un atacante con privilegios bajos con acceso local podría potencialmente explotar esta vulnerabilidad, lo que llevaría a una elevación de privilegios."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Service Module",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "N/A",
+          "lessThan": "5.4.1.1",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "N/A",
+          "lessThan": "6.0.3.1",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       },
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Service Module for Linux",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "N/A",
+          "lessThan": "5.4.1.1",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "baseScore": 7.8,
+        "baseSeverity": "HIGH",
+        "attackVector": "LOCAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "HIGH"
+       },
+       "exploitabilityScore": 1.8,
+       "impactScore": 5.9
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-02-13T04:56:37.906427Z",
+        "id": "CVE-2026-23856",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "total"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-284"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000426282/dsa-2026-077-security-update-for-dell-idrac-service-module-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-35155",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-04-29T05:16:04.523",
+    "lastModified": "2026-10-26T20:10:00.160",
+    "vulnStatus": "Analyzed",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race condition vulnerability exists that could allow an authenticated low‑privileged attacker to gain elevated access."
+     },
+     {
+      "lang": "es",
+      "value": "Dell iDRAC10, versiones 1.20.70.50 y 1.30.05.10, contiene una vulnerabilidad de credenciales insuficientemente protegidas. Existe una vulnerabilidad de condición de carrera que podría permitir a un atacante autenticado con bajos privilegios obtener acceso elevado."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC10",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "1.30.10.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+        "baseScore": 7.1,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "userInteraction": "REQUIRED",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "HIGH"
+       },
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-04-29T00:00:00+00:00",
+        "id": "CVE-2026-35155",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "total"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-522"
+       }
+      ]
+     }
+    ],
+    "configurations": [
+     {
+      "operator": "AND",
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:o:dell:idrac10_firmware:*:*:*:*:*:*:*:*",
+          "versionEndExcluding": "1.30.10.50",
+          "matchCriteriaId": "233EC5F2-043A-4999-BD05-3A78E0845407"
+         }
+        ]
+       },
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": false,
+          "criteria": "cpe:2.3:h:dell:idrac10:-:*:*:*:*:*:*:*",
+          "matchCriteriaId": "5BFCEF7B-7BE5-49C4-9206-C8417174E313"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000452298/dsa-2026-187-security-update-for-dell-idrac10-vulnerability",
+      "source": "security_alert@emc.com",
+      "tags": [
+       "Vendor Advisory"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-42997",
+    "sourceIdentifier": "cve@mitre.org",
+    "published": "2026-05-05T19:16:22.817",
+    "lastModified": "2026-07-24T20:10:00.147",
+    "vulnStatus": "Modified",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During import, a user invoking molds can request authorization to be sent to a remote endpoint. The credential forwarded is a time-limited Keystone token (which provides access to all OpenStack services Ironic is authorized for); or basic credentials configured for molds storage. The fixed versions are 26.1.6, 29.0.5, 32.0.1, and 35.0.1."
+     },
+     {
+      "lang": "es",
+      "value": "Se descubrió un problema en idrac en OpenStack Ironic antes de 35.0.1. Durante la importación, un usuario que invoca moldes puede solicitar que se envíe autorización a un punto final remoto. La credencial reenviada es un token de Keystone con límite de tiempo (que proporciona acceso a todos los servicios de OpenStack para los que Ironic está autorizado); o credenciales básicas configuradas para el almacenamiento de moldes. Las versiones corregidas son 26.1.6, 29.0.5, 32.0.1 y 35.0.1."
+     }
+    ],
+    "affected": [
+     {
+      "source": "cve@mitre.org",
+      "affectedData": [
+       {
+        "vendor": "OpenStack",
+        "product": "Ironic",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "17.0.0",
+          "lessThan": "26.1.6",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "27.0.0",
+          "lessThan": "29.0.5",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "30.0.0",
+          "lessThan": "32.0.1",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "33.0.0",
+          "lessThan": "35.0.1",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
+      "affectedData": [
+       {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenShift Container Platform 4",
+        "defaultStatus": "affected",
+        "collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+        "packageName": "openstack-ironic",
+        "cpes": [
+         "cpe:/a:redhat:openshift:4"
+        ]
+       },
+       {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenStack Platform 16.2",
+        "defaultStatus": "unaffected",
+        "collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+        "packageName": "openstack-ironic",
+        "cpes": [
+         "cpe:/a:redhat:openstack:16.2"
+        ]
+       },
+       {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenStack Platform 17.1",
+        "defaultStatus": "affected",
+        "collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+        "packageName": "openstack-ironic",
+        "cpes": [
+         "cpe:/a:redhat:openstack:17.1"
+        ]
+       },
+       {
+        "vendor": "Red Hat",
+        "product": "Red Hat OpenStack Platform 18.0",
+        "defaultStatus": "affected",
+        "collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+        "packageName": "openstack-ironic",
+        "cpes": [
+         "cpe:/a:redhat:openstack:18.0"
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "cve@mitre.org",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+        "baseScore": 7.7,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "userInteraction": "NONE",
+        "scope": "CHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "NONE",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 3.1,
+       "impactScore": 4.0
+      },
+      {
+       "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+        "baseScore": 7.7,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "userInteraction": "NONE",
+        "scope": "CHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "NONE",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 3.1,
+       "impactScore": 4.0
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-05-05T18:38:38.789483Z",
+        "id": "CVE-2026-42997",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "partial"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "cve@mitre.org",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-669"
+       }
+      ]
+     },
+     {
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-201"
+       }
+      ]
+     }
+    ],
+    "configurations": [
+     {
+      "nodes": [
+       {
+        "operator": "OR",
+        "negate": false,
+        "cpeMatch": [
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:openstack:ironic:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "17.0.0",
+          "versionEndExcluding": "26.1.6",
+          "matchCriteriaId": "175C310D-6E5A-49AE-94DA-7B0FCD5DA2E2"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:openstack:ironic:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "27.0.0",
+          "versionEndExcluding": "29.0.5",
+          "matchCriteriaId": "4F948886-9748-40E0-A3C2-2C95CCB2D498"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:openstack:ironic:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "30.0.0",
+          "versionEndExcluding": "32.0.1",
+          "matchCriteriaId": "23B410FC-0DC1-4BB8-98C2-6EB01DF839CD"
+         },
+         {
+          "vulnerable": true,
+          "criteria": "cpe:2.3:a:openstack:ironic:*:*:*:*:*:*:*:*",
+          "versionStartIncluding": "33.0.0",
+          "versionEndExcluding": "35.0.1",
+          "matchCriteriaId": "40C73777-6AE0-4FAE-BBE6-C499CD51A3C0"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://security.openstack.org/ossa/OSSA-2026-010.html",
+      "source": "cve@mitre.org",
+      "tags": [
+       "Patch",
+       "Vendor Advisory"
+      ]
+     },
+     {
+      "url": "https://www.openwall.com/lists/oss-security/2026/05/05/10",
+      "source": "cve@mitre.org",
+      "tags": [
+       "Mailing List",
+       "Patch",
+       "Third Party Advisory"
+      ]
+     },
+     {
+      "url": "http://www.openwall.com/lists/oss-security/2026/05/05/10",
+      "source": "af854a3a-2127-422b-91ae-364da2661108",
+      "tags": [
+       "Mailing List",
+       "Patch",
+       "Third Party Advisory"
+      ]
+     },
+     {
+      "url": "https://access.redhat.com/errata/RHSA-2026:39811",
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c"
+     },
+     {
+      "url": "https://access.redhat.com/security/cve/CVE-2026-42997",
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c"
+     },
+     {
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2466844",
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c"
+     },
+     {
+      "url": "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-42997.json",
+      "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-28262",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-06-09T09:16:29.037",
+    "lastModified": "2026-07-23T08:10:00.137",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC Tools, versions prior to 11.4.1.0, contains an Improper Link Resolution Before File Access ('Link Following') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information tampering."
+     },
+     {
+      "lang": "es",
+      "value": "Dell iDRAC Tools, versiones anteriores a la 11.4.1.0, contiene una vulnerabilidad de resolución de enlaces inadecuada antes del acceso a archivos ('Link Following'). Un atacante con privilegios bajos y acceso local podría potencialmente explotar esta vulnerabilidad, lo que podría llevar a la manipulación de información."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Tools",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "11.4.1.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:H",
+        "baseScore": 6.0,
+        "baseSeverity": "MEDIUM",
+        "attackVector": "LOCAL",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "LOW",
+        "userInteraction": "REQUIRED",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "NONE",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "HIGH"
+       },
+       "exploitabilityScore": 0.8,
+       "impactScore": 5.2
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-06-09T12:55:27.942234Z",
+        "id": "CVE-2026-28262",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "partial"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-59"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000474864/dsa-2026-239-security-update-for-dell-idrac-tools-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-70412",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-08-17T13:16:52.737",
+    "lastModified": "2026-08-18T14:57:42.287",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC9, versions prior to 7.20.30.50, and Dell iDRAC10, version prior to 1.20.60.50, contain a Remanent Data Readable after Memory Erase vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Information disclosure."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC9",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "7.20.30.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       },
+       {
+        "vendor": "Dell",
+        "product": "iDRAC10",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "1.20.60.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N",
+        "baseScore": 3.5,
+        "baseSeverity": "LOW",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "LOW",
+        "userInteraction": "REQUIRED",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "LOW",
+        "integrityImpact": "NONE",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 2.1,
+       "impactScore": 1.4
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-08-17T14:30:51.665942Z",
+        "id": "CVE-2026-70412",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "partial"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-1330"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000497902/dsa-2026-348-security-update-for-dell-idrac9-and-idrac10-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-79940",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-08-26T19:17:19.213",
+    "lastModified": "2026-08-28T15:29:44.967",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC9, 14G versions prior to 7.00.00.182 and 15G/16G versions prior to 7.20.30.50, contains an Improper Access Control vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to gaining access to unauthorized data."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC9",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "7.20.30.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "0",
+          "lessThan": "7.00.00.182 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+        "baseScore": 5.9,
+        "baseSeverity": "MEDIUM",
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "NONE",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 2.2,
+       "impactScore": 3.6
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-08-26T19:32:50.836419Z",
+        "id": "CVE-2026-79940",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "partial"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-284"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000502514/dsa-2026-374-security-update-for-dell-idrac9-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-23855",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-09-09T17:17:19.837",
+    "lastModified": "2026-09-11T04:17:40.123",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC9, 14G versions prior to 7.00.00.184, 15G/16G versions prior to 7.30.10.50, and Dell iDRAC10, 17G versions prior to 1.30.30.50, contain an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to command injection."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC9",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "7.30.10.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         },
+         {
+          "version": "0",
+          "lessThan": "7.00.00.184 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       },
+       {
+        "vendor": "Dell",
+        "product": "iDRAC10",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "1.30.30.50 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "baseScore": 7.2,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "HIGH"
+       },
+       "exploitabilityScore": 1.2,
+       "impactScore": 5.9
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-09-10T00:00:00+00:00",
+        "id": "CVE-2026-23855",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "total"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-78"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000504998/dsa-2026-392-security-update-for-dell-idrac9-and-idrac10-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-81472",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-10-28T12:17:42.417",
+    "lastModified": "2026-10-29T11:17:34.780",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell iDRAC Service Module (iSM) for Windows, Dell iDRAC Service Module (iSM) for Linux, and Dell iDRAC Service Module (iSM) for ESXi, versions prior to 6.1.1.0, contains an Improper Control of Generation of Code ('Code Injection') vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Service Module for Windows",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "6.1.1.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       },
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Service Module for Linux",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "6.1.1.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       },
+       {
+        "vendor": "Dell",
+        "product": "iDRAC Service Module for ESXi",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "6.1.1.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L",
+        "baseScore": 4.2,
+        "baseSeverity": "MEDIUM",
+        "attackVector": "LOCAL",
+        "attackComplexity": "LOW",
+        "privilegesRequired": "HIGH",
+        "userInteraction": "NONE",
+        "scope": "UNCHANGED",
+        "confidentialityImpact": "LOW",
+        "integrityImpact": "LOW",
+        "availabilityImpact": "LOW"
+       },
+       "exploitabilityScore": 0.8,
+       "impactScore": 3.4
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-10-29T03:57:05.070583Z",
+        "id": "CVE-2026-81472",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "total"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-94"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-us/000523111/dsa-2026-458-security-update-for-dell-idrac-service-module-vulnerability",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-91873",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-11-11T19:17:47.230",
+    "lastModified": "2026-11-12T18:44:24.920",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell OpenManage Ansible Modules, versions 2.1.2 through 10.0.3, contains an Improper Certificate Validation vulnerability in the iDRACRedfishAPI component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "OpenManage Ansible Modules",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "11.0.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+        "baseScore": 8.7,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "CHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.8
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Primary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-295"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-in/000515420/dsa-2026-432-security-update-for-dell-ansible-server-vulnerabilities",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  },
+  {
+   "cve": {
+    "id": "CVE-2026-91874",
+    "sourceIdentifier": "security_alert@emc.com",
+    "published": "2026-11-11T19:17:47.373",
+    "lastModified": "2026-11-12T20:18:53.463",
+    "vulnStatus": "Awaiting Analysis",
+    "cveTags": [],
+    "descriptions": [
+     {
+      "lang": "en",
+      "value": "Dell OpenManage Ansible Modules, versions 5.0.0 through 10.0.3, contains an Improper Certificate Validation vulnerability in the iDRACConnection component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access."
+     }
+    ],
+    "affected": [
+     {
+      "source": "security_alert@emc.com",
+      "affectedData": [
+       {
+        "vendor": "Dell",
+        "product": "OpenManage Ansible Modules",
+        "defaultStatus": "unaffected",
+        "versions": [
+         {
+          "version": "0",
+          "lessThan": "11.0.0 or later",
+          "versionType": "semver",
+          "status": "affected"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "metrics": {
+     "cvssMetricV31": [
+      {
+       "source": "security_alert@emc.com",
+       "type": "Secondary",
+       "cvssData": {
+        "version": "3.1",
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+        "baseScore": 8.7,
+        "baseSeverity": "HIGH",
+        "attackVector": "NETWORK",
+        "attackComplexity": "HIGH",
+        "privilegesRequired": "NONE",
+        "userInteraction": "NONE",
+        "scope": "CHANGED",
+        "confidentialityImpact": "HIGH",
+        "integrityImpact": "HIGH",
+        "availabilityImpact": "NONE"
+       },
+       "exploitabilityScore": 2.2,
+       "impactScore": 5.8
+      }
+     ],
+     "ssvcV203": [
+      {
+       "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+       "ssvcData": {
+        "timestamp": "2026-11-12T19:40:27.438177Z",
+        "id": "CVE-2026-91874",
+        "options": [
+         {
+          "exploitation": "none"
+         },
+         {
+          "automatable": "no"
+         },
+         {
+          "technicalImpact": "total"
+         }
+        ],
+        "role": "CISA Coordinator",
+        "version": "2.0.3"
+       }
+      }
+     ]
+    },
+    "weaknesses": [
+     {
+      "source": "security_alert@emc.com",
+      "type": "Secondary",
+      "description": [
+       {
+        "lang": "en",
+        "value": "CWE-295"
+       }
+      ]
+     }
+    ],
+    "references": [
+     {
+      "url": "https://www.dell.com/support/kbdoc/en-in/000515420/dsa-2026-432-security-update-for-dell-ansible-server-vulnerabilities",
+      "source": "security_alert@emc.com"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -3,10 +3,15 @@
 from collectors import (
     certfr,
     cisco,
+    cisco_openvuln,
     debian_dsa,
+    dell_advisories,
+    dell_idrac,
     endoflife,
     fortinet_firmware,
     fortinet_psirt,
+    hpe_bulletins,
+    hpe_ilo,
     httpd,
     microsoft,
     nginx,
@@ -15,6 +20,8 @@ from collectors import (
     redhat,
     rocky,
     stormshield,
+    ubuntu,
+    vmware,
 )
 
 ALL = [
@@ -24,6 +31,9 @@ ALL = [
     httpd.COLLECTOR,
     openssh.COLLECTOR,
     fortinet_firmware.COLLECTOR,
+    cisco_openvuln.COLLECTOR,
+    hpe_ilo.COLLECTOR,
+    dell_idrac.COLLECTOR,
     # avis de sécurité
     fortinet_psirt.COLLECTOR,
     paloalto.COLLECTOR,
@@ -34,4 +44,8 @@ ALL = [
     rocky.COLLECTOR,
     microsoft.COLLECTOR,
     stormshield.COLLECTOR,
+    ubuntu.COLLECTOR,
+    vmware.COLLECTOR,
+    hpe_bulletins.COLLECTOR,
+    dell_advisories.COLLECTOR,
 ]

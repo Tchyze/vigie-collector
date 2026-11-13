@@ -20,7 +20,7 @@
           "id": {"type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
           "label": {"type": "string"},
           "vendor": {"type": "string"},
-          "category": {"enum": ["firewall", "switch", "os", "service"]},
+          "category": {"enum": ["firewall", "switch", "os", "service", "server"]},
           "file": {"type": "string", "pattern": "^products/[a-z0-9.-]+\\.json$"},
           "branch_count": {"type": "integer", "minimum": 0},
           "status_counts": {
@@ -54,7 +54,7 @@
         "properties": {
           "name": {"type": "string"},
           "label": {"type": "string"},
-          "kind": {"enum": ["versions", "advisories"]},
+          "kind": {"enum": ["versions", "advisories", "enrichment"]},
           "status": {"enum": ["ok", "error"]},
           "count": {"type": "integer", "minimum": 0},
           "last_attempt": {"$ref": "#/$defs/datetime"},

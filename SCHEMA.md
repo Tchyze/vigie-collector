@@ -48,6 +48,10 @@ Conventions :
 `sources[].status` vaut `error` quand la dernière collecte a échoué. Les données de cette source
 sont alors celles de son dernier succès (`last_success`), et `error` décrit l'échec.
 
+`sources[].kind` vaut `versions`, `advisories` ou `enrichment`. La source `cisa_kev`
+(`enrichment`) ne publie pas d'avis : elle renseigne le champ `exploited` de tous les avis.
+Si elle échoue, le dernier catalogue lu reste appliqué.
+
 ## Objet `branch`
 
 Une branche de version d'un produit : FortiOS 7.4, Debian 12, nginx 1.30… Un produit sans
@@ -58,7 +62,7 @@ notion de branche n'en a qu'une (OpenSSH : branche `portable`).
 | `id` | chaîne | `<produit>-<branche>`, ex. `fortios-7.4`, `debian-12` |
 | `product` | chaîne | identifiant du produit, ex. `fortios` |
 | `vendor` | chaîne | éditeur, ex. `Fortinet` |
-| `category` | `firewall` \| `switch` \| `os` \| `service` | |
+| `category` | `firewall` \| `switch` \| `os` \| `service` \| `server` | `server` : contrôleurs de gestion des serveurs (iLO, iDRAC) |
 | `branch` | chaîne | nom de la branche, ex. `7.4` |
 | `label` | chaîne | libellé lisible, ex. `12 (Bookworm)` |
 | `lts` | booléen ou `null` | branche à support long |
@@ -113,7 +117,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | Champ | Type | Description |
 |---|---|---|
 | `id` | chaîne | identifiant d'origine : `FG-IR-26-187`, `CVE-2026-0308`, `PAN-SA-2026-0006`, `cisco-sa-…`, `CERTFR-2026-AVI-1381`, `DSA-6592-1` |
-| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
+| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` \| `ubuntu` \| `vmware` \| `hpe` \| `dell` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
 | `vendor` | chaîne | éditeur de l'avis (`CERT-FR` pour le CERT-FR) |
 | `title` | chaîne | titre de l'avis |
 | `published` | horodatage | première publication |
@@ -124,6 +128,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | `url` | URL | avis officiel complet |
 | `summary` | chaîne (≤ 300 car.) ou `null` | résumé court |
 | `affected` | liste d'`id` de branches | branches concernées **quand c'est déductible de façon fiable**, sinon vide |
+| `exploited` | booléen ou `null` (facultatif) | `true` si une CVE de l'avis figure au catalogue CISA KEV (exploitation avérée), `false` si l'avis cite des CVE dont aucune n'y figure, `null` si l'avis ne cite aucune CVE ou si le catalogue n'a jamais pu être lu |
 | `attribution` | chaîne ou `null` | mention de source obligatoire (Cisco) |
 
 Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le build le vérifie.
@@ -133,11 +138,15 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
 - Fortinet : plages de versions FortiOS en `known_affected` dans le document CSAF de l'avis
   (`FortiOS >=7.6.0|<=7.6.6` → `fortios-7.6`) ; une plage qui couvre plusieurs branches est ignorée ;
 - Palo Alto : versions PAN-OS marquées comme touchées dans l'API de l'éditeur ;
+- Cisco : branches IOS XE (`product_version` de la famille « Cisco IOS XE Software ») en `known_affected` dans le document CSAF de l'avis (`cisco-ios-xe-17.9`) ;
 - Debian : suites corrigées par le DSA (`[trixie]` → `debian-13`) ;
 - Red Hat : version des paquets sources (`570.el9_6` → `rhel-9`), seulement si tous sont des paquets
   RHEL (un paquet OpenShift, Satellite, JBoss… écarte l'avis) ;
 - Rocky Linux : versions majeures touchées données par l'API (`rocky-linux-9`) ;
-- Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`).
+- Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`) ;
+- Ubuntu : versions corrigées par l'USN, Ubuntu Pro compris (`ubuntu-24.04`) ;
+- HPE : générations d'iLO citées dans le titre du bulletin (`hpe-ilo-6`) ;
+- Dell : séries iDRAC des versions corrigées dans les enregistrements CVE de Dell (`7.30.10.50` → `dell-idrac-7.30`).
 
 Un avis Microsoft (`MSRC-2026-Nov`) couvre un mois entier pour Windows Server : `cves` n'y liste que
 les CVE critiques ou déjà exploitées, et `summary` donne le nombre total de vulnérabilités.

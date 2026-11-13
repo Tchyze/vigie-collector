@@ -1,0 +1,116 @@
+{
+ "advisories": [
+  {
+   "advisoryId": "cisco-sa-hardening-iosxe-V8NMuMZJ",
+   "advisoryTitle": "cisco-sa-hardening-iosxe-V8NMuMZJ",
+   "sir": "Critical",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-ios-xmcp-thbAr34t",
+   "advisoryTitle": "cisco-sa-ios-xmcp-thbAr34t",
+   "sir": "High",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.12.8"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-iosxe-snmp-dos-ZAqNm4MD",
+   "advisoryTitle": "cisco-sa-iosxe-snmp-dos-ZAqNm4MD",
+   "sir": "High",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.12.7"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-iosxe-mntc-dos-LZweQcyq",
+   "advisoryTitle": "cisco-sa-iosxe-mntc-dos-LZweQcyq",
+   "sir": "Medium",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.12.7",
+    "17.12.1z5"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-bootp-WuBhNBxA",
+   "advisoryTitle": "cisco-sa-bootp-WuBhNBxA",
+   "sir": "High",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.12.1a",
+    "17.12.2a",
+    "17.12.3a",
+    "17.12.4a",
+    "17.12.5a",
+    "17.12.6"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-http-code-exec-WmfP3h3O",
+   "advisoryTitle": "cisco-sa-http-code-exec-WmfP3h3O",
+   "sir": "Critical",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.12.6",
+    "17.12.5b",
+    "17.12.1z5"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  },
+  {
+   "advisoryId": "cisco-sa-snmpv3-qKEYvzsy",
+   "advisoryTitle": "cisco-sa-snmpv3-qKEYvzsy",
+   "sir": "Medium",
+   "iosRelease": [
+    "17.12.1"
+   ],
+   "firstFixed": [
+    "17.15.1z",
+    "17.15.3"
+   ],
+   "cves": [
+    "NA"
+   ],
+   "smu": "NA"
+  }
+ ]
+}

@@ -23,4 +23,20 @@
 #         url: https://docs.fortinet.com/...
 #
 # Une branche absente des sources peut être créée ici si son produit est dans products.yaml.
-{}
+
+# Dell iDRAC : dates du support Dell (KB 000178044 pour l'iDRAC8, KB 000178016 pour l'iDRAC9).
+# Le portail Dell refuse les clients automatiques : dates relevées à la main, à revérifier.
+# Dell ne donne que le mois pour l'iDRAC8 : premier jour du mois retenu.
+dell-idrac:
+  "2.86":                                    # iDRAC8 (PowerEdge 13G), dernière version 2.86.86.86
+    eol:
+      end_of_security_support: 2024-02-01    # « End of Software Maintenance » : février 2024
+      trigger: end_of_security_support
+      declared_eol: true
+      source_url: https://www.dell.com/support/kbdoc/en-us/000178044/support-for-integrated-dell-remote-access-controller-8-idrac8
+  "7.00":                                    # iDRAC9 sur PowerEdge 14G
+    eol:
+      end_of_active_support: 2023-06-30      # fin des évolutions ; ensuite correctifs Sev1 au cas par cas
+      end_of_security_support: 2027-02-01    # fin de la maintenance logicielle
+      trigger: end_of_security_support
+      source_url: https://www.dell.com/support/kbdoc/en-us/000178016/support-for-integrated-dell-remote-access-controller-9-idrac9

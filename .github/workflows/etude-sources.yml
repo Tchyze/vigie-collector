@@ -1,0 +1,27 @@
+name: Étude des sources — test d'accès
+
+# Interroge chaque URL candidate (etude-sources/candidats.tsv) depuis un runner GitHub Actions et
+# écrit dans le résumé du job un tableau URL / code HTTP / taille / durée (voir SOURCES.md).
+# Lancement manuel uniquement. Aucun secret, aucune authentification : un 401/403 est consigné
+# tel quel. Le workflow n'écrit rien dans le dépôt.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Sonde des sources candidates
+        run: python etude-sources/probe.py --title "Accès depuis GitHub Actions ($(date -u +%Y-%m-%dT%H:%MZ))" --json resultats-github.json > /dev/null
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-acces-github
+          path: resultats-github.json

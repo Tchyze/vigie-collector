@@ -1,0 +1,85 @@
+name: Cisco openVuln — essai d'accès
+
+# Lancement manuel uniquement. Vérifie que les secrets CISCO_CLIENT_ID / CISCO_CLIENT_SECRET de
+# l'environnement « main » donnent accès à l'API openVuln et affiche la structure des réponses
+# (données publiques de Cisco) pour écrire le collecteur. Le jeton et les clés ne sont jamais
+# affichés ; le workflow n'écrit rien dans le dépôt.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    environment: main
+    timeout-minutes: 5
+    steps:
+      - name: Essai openVuln
+        env:
+          CISCO_CLIENT_ID: ${{ secrets.CISCO_CLIENT_ID }}
+          CISCO_CLIENT_SECRET: ${{ secrets.CISCO_CLIENT_SECRET }}
+        shell: python
+        run: |
+          import json, os, sys, time, urllib.error, urllib.parse, urllib.request
+
+          cid, secret = os.environ.get("CISCO_CLIENT_ID", ""), os.environ.get("CISCO_CLIENT_SECRET", "")
+          print(f"CISCO_CLIENT_ID présent : {bool(cid)} ; CISCO_CLIENT_SECRET présent : {bool(secret)}")
+          if not (cid and secret):
+              sys.exit("secrets absents : vérifier l'environnement « main » et les noms des secrets")
+
+          def call(req):
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status, r.read().decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode("utf-8", "replace")
+
+          body = urllib.parse.urlencode({"grant_type": "client_credentials",
+                                         "client_id": cid, "client_secret": secret}).encode()
+          status, text = call(urllib.request.Request("https://id.cisco.com/oauth2/default/v1/token", data=body,
+                                                     headers={"Content-Type": "application/x-www-form-urlencoded"}))
+          print(f"jeton : HTTP {status}")
+          if status != 200:
+              print(text[:500])
+              sys.exit(1)
+          token = json.loads(text)["access_token"]
+          print(f"::add-mask::{token}")
+          print("expires_in :", json.loads(text).get("expires_in"))
+
+          base = "https://apix.cisco.com/security/advisories/v2/"
+          def get(path):
+              time.sleep(1.5)
+              status, text = call(urllib.request.Request(base + path, headers={
+                  "Authorization": f"Bearer {token}", "Accept": "application/json",
+                  "User-Agent": "Vigie-collector (+https://github.com/Tchyze/vigie-collector)"}))
+              print(f"\n===== {path} : HTTP {status}, {len(text)} octets")
+              return json.loads(text) if status == 200 else None
+
+          # Toutes les versions IOS XE connues, groupées par branche (deux premiers nombres).
+          versions = [v["nos_version"] for v in get("OS_version/OS_data?OSType=iosxe") or []]
+          branches = {}
+          for v in versions:
+              branches.setdefault(".".join(v.split(".")[:2]), []).append(v)
+          for b, vs in branches.items():
+              print(f"{b}: {' '.join(vs)}")
+
+          # Avis touchant une version : identifiant, versions demandées, premières versions corrigées.
+          for version in ("17.12.1", "17.12.6", "17.9.10", "26.1.1"):
+              data = get(f"OSType/iosxe?version={version}")
+              if data is None:
+                  continue
+              advisories = data.get("advisories") or []
+              print(f"{len(advisories)} avis ; clés hors avis : {[k for k in data if k != 'advisories']}")
+              for a in advisories:
+                  print(f"  {a['advisoryId']} | {a.get('sir')} | release={a.get('iosRelease')} | firstFixed={a.get('firstFixed')} | smu={a.get('smu')}")
+
+          # Derniers avis : score CVSS, dates, produits IOS XE (pour les avis du flux RSS).
+          data = get("latest/60") or {}
+          for a in data.get("advisories") or []:
+              names = a.get("productNames") or []
+              xe = [n for n in names if n.startswith("Cisco IOS XE Software ")]
+              print(f"  {a['advisoryId']} | cvss={a.get('cvssBaseScore')} | sir={a.get('sir')} | "
+                    f"pub={a.get('firstPublished')} | maj={a.get('lastUpdated')} | produits={len(names)} | "
+                    f"iosxe={len(xe)} {xe[:2]} | autres={[n for n in names if n not in xe][:2]}")

@@ -15,11 +15,13 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: main          # secrets CISCO_CLIENT_ID / CISCO_CLIENT_SECRET (API openVuln)
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v5
+      # Actions épinglées par SHA (un tag peut être déplacé) : ce job a accès aux secrets.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09   # v5
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1   # v6
         with:
           python-version: "3.12"
           cache: pip
@@ -41,11 +43,15 @@ jobs:
 
       # Échoue (et ne publie pas) si la validation du schéma échoue ou si une source
       # tombe à 0 résultat alors qu'elle en renvoyait avant.
+      # Les secrets ne sont donnés qu'à cette étape, pas aux actions tierces du job.
       - name: Collecte
         run: python build.py --output output --previous previous
+        env:
+          CISCO_CLIENT_ID: ${{ secrets.CISCO_CLIENT_ID }}
+          CISCO_CLIENT_SECRET: ${{ secrets.CISCO_CLIENT_SECRET }}
 
       - name: Publication sur gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453   # v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages

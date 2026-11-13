@@ -1,6 +1,6 @@
 # Vigie — collecteur
 
-Vigie suit les mises à jour des équipements et logiciels d'infrastructure : firewalls, switchs,
+Vigie suit les mises à jour des équipements et logiciels d'infrastructure : firewalls, switchs, serveurs,
 systèmes serveurs et services. Pour chaque produit, il dit quelles branches de version sont
 encore supportées, quelle est la dernière version de chacune et quels avis de sécurité les
 éditeurs ont publiés.
@@ -37,7 +37,10 @@ vers la page officielle.
 | PAN-OS | firewall | endoflife.date |
 | Stormshield SNS | firewall | endoflife.date |
 | Cisco IOS XE | switch | endoflife.date |
-| Debian, RHEL, Rocky Linux, Windows Server, Proxmox VE | os | endoflife.date |
+| Debian, Ubuntu, RHEL, Rocky Linux, Windows Server, Proxmox VE, VMware ESXi | os | endoflife.date |
+| VMware vCenter Server | service | endoflife.date |
+| Dell iDRAC | server | catalogue de firmware Dell (une branche par série : 7.30, 7.00…) |
+| HPE iLO | server | index des dépôts de firmware HPE (iLO 4 à 7) |
 | nginx | service | endoflife.date + fichiers CHANGES de nginx.org |
 | Apache HTTP Server | service | endoflife.date + tags officiels et CHANGES_2.4 |
 | OpenSSH | service | tags du miroir officiel openssh-portable |
@@ -46,22 +49,37 @@ vers la page officielle.
 |---|---|
 | Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées, versions corrigées) |
 | Palo Alto Networks | API JSON du portail sécurité (branches PAN-OS touchées) |
-| Cisco | flux RSS des Cisco Security Advisories |
+| Cisco | flux RSS des Cisco Security Advisories ; pour les avis IOS XE, document CSAF de Cisco (branches IOS XE touchées) |
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
+| CISA KEV | catalogue des failles activement exploitées : renseigne le champ `exploited` de **tous** les avis |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
 | Red Hat | API Security Data : RHSA **critiques** touchant RHEL (branches d'après les paquets) |
-| Rocky Linux | API errata Apollo : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
+| Rocky Linux | API errata (v2) : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
 | Microsoft | API CVRF du MSRC : un avis **par mois** pour Windows Server (CVE critiques ou exploitées, versions touchées) |
 | Stormshield | flux RSS des avis de l'éditeur (titre, date, produit) |
+| Ubuntu | USN publiés par Canonical dans OSV (index `modified_id.csv` et un JSON par avis : CVE, versions corrigées, Ubuntu Pro compris) |
+| VMware (Broadcom) | liste des VMSA du portail de support Broadcom (sévérité, CVE) |
+| HPE | flux RSS officiel des bulletins (tous produits ; générations d'iLO touchées) |
+| Dell | avis DSA de l'iDRAC, reconstitués à partir des enregistrements CVE publiés par Dell sur CVE.org (CVSS, versions corrigées, lien DSA) ; découverte par l'API NVD |
 
 Toutes les sources sont publiques et sans authentification. Les avis Cisco portent la mention de
 source exigée par Cisco ; leur usage doit rester non commercial.
+
+Dell et HPE ne publient pas de dates de fin de support exploitables par un programme pour iDRAC
+et iLO. `overrides.yaml` fixe celles que Dell annonce (iDRAC8, iDRAC9 des PowerEdge 14G) ; HPE n'en
+publie pas pour iLO, dont les branches restent `active`. Le portail sécurité de Dell refuse les
+clients automatiques : les avis DSA de l'iDRAC sont reconstitués à partir des enregistrements CVE
+que Dell publie lui-même sur CVE.org. L'API NVD, utilisée pour les trouver, est lente et parfois
+indisponible : en cas d'échec, les avis déjà connus sont gardés.
 
 Red Hat et Rocky publient chacun plusieurs milliers d'avis par an : seuls les avis de sévérité
 critique sont repris (environ 175 et 55 par an). Les autres restent couverts par les synthèses
 hebdomadaires du CERT-FR.
 
 Ce qui n'est pas encore couvert est listé dans [ROADMAP.md](ROADMAP.md).
+
+L'étude des sources (meilleure source par produit et par type de donnée, accès vérifiés depuis
+GitHub Actions, trous restants) est dans [SOURCES.md](SOURCES.md) et [sources.yaml](sources.yaml).
 
 ## Fonctionnement
 
@@ -97,6 +115,13 @@ Le CERT-FR ne retélécharge que les documents nouveaux ou modifiés.
   branche `gh-pages`. Celle-ci ne contient qu'un seul commit : les données ne polluent ni `main`
   ni l'historique.
 - `.github/workflows/tests.yml` : lance les tests à chaque push, sans accès réseau.
+- `.github/workflows/cisco-openvuln-probe.yml` : à la demande, vérifie l'accès à l'API Cisco
+  openVuln et affiche la structure de ses réponses.
+
+Le collecteur `cisco_openvuln` lit les secrets `CISCO_CLIENT_ID` et `CISCO_CLIENT_SECRET` de
+l'environnement GitHub `main` (*Settings → Environments*), donnés à la seule étape de collecte.
+Sans eux, la source est marquée en erreur et Vigie garde sa dernière publication. En local,
+exportez ces deux variables pour l'activer.
 
 GitHub Pages doit servir la branche `gh-pages`, à la racine
 (*Settings → Pages → Deploy from a branch*).

@@ -36,6 +36,7 @@ def test_add_months_clamps_day():
     (["12.2.4", "12.2.4-h1", "12.2.3-h9"], ["12.2.4-h1", "12.2.4", "12.2.3-h9"]),
     (["9.9p2", "10.0p1", "10.10p1"], ["10.10p1", "10.0p1", "9.9p2"]),
     (["2016", "2025", "2012-r2", "2012"], ["2025", "2016", "2012-r2", "2012"]),
+    (["17.6.8", "17.6.8a", "17.6.7"], ["17.6.8a", "17.6.8", "17.6.7"]),  # Cisco : reconstruction
 ])
 def test_sort_versions(versions, expected):
     assert sort_versions(versions) == expected
