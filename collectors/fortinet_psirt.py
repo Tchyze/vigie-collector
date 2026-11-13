@@ -7,6 +7,9 @@
 
 `affected` ne retient que les produits suivis par Vigie (FortiOS) et seulement les plages de
 versions que l'on sait ramener sans ambiguïté à une branche (`fortios-7.4`).
+
+Les versions corrigées (`known_not_affected` : « FortiOS-7.6.7 ») sont rendues comme des versions
+de branche avec `security_fix: true`. L'état conserve celles des avis déjà traités.
 """
 
 import logging
@@ -16,7 +19,7 @@ import feedparser
 
 from collectors._text import cves, severity_from_cvss, short_summary, strip_html, utc_from_struct
 from collectors.base import Collector, Context
-from vigie.models import Advisory, CollectResult, branch_id
+from vigie.models import Advisory, BranchData, CollectResult, Release, branch_id
 
 FEED = "https://www.fortiguard.com/rss/ir.xml"
 CVSS = re.compile(r"CVSSv3 Score:\s*(\d+(?:\.\d+)?)", re.I)
@@ -34,6 +37,7 @@ RANGE = re.compile(rf"^>=\s*({_VERSION})\s*(?:\||and)\s*<=\s*({_VERSION})$")
 ALL_VERSIONS = re.compile(rf"^({_VERSION}) all versions$")
 SINGLE = re.compile(rf"^({_VERSION})$")
 BRANCH = re.compile(r"^(\d+\.\d+)(?:\.|$)")
+FIXED_VERSION = re.compile(r"^(\d+\.\d+)\.\d+$")  # « FortiOS-7.6.7 » ; pas « FortiOS-upcoming 7.6.9 »
 
 log = logging.getLogger(__name__)
 
@@ -49,26 +53,33 @@ class FortinetPsirt(Collector):
         if feed.bozo and not feed.entries:
             raise ValueError(f"flux RSS illisible : {feed.bozo_exception}")
         previous = {a.id: a for a in (ctx.previous.advisories if ctx.previous else [])}
-        advisories, budget = [], MAX_CSAF_PER_RUN
+        # État antérieur aux versions corrigées : relire une fois les CSAF des avis déjà connus.
+        backfill = bool(ctx.previous) and not ctx.previous.branches
+        advisories, fixes, budget = [], {}, MAX_CSAF_PER_RUN
         for entry in feed.entries:
             advisory = parse_entry(entry)
             if advisory is None:
                 continue
             known = previous.get(advisory.id)
             csaf_link = entry.get("csaf_link")
-            if known and known.updated == advisory.updated and known.cves:
+            if known and known.updated == advisory.updated and known.cves and not backfill:
                 # Avis déjà enrichi et non révisé depuis : inutile de retélécharger le CSAF.
                 advisory.cves, advisory.affected = known.cves, known.affected
             elif csaf_link and budget > 0:
                 budget -= 1
-                self._enrich(ctx, advisory, csaf_link)
+                self._enrich(ctx, advisory, csaf_link, fixes)
             elif known:
                 advisory.cves = known.cves or advisory.cves
                 advisory.affected = known.affected
             advisories.append(advisory)
-        return CollectResult(advisories=advisories)
+        branches = [
+            BranchData(product=product, branch=branch,
+                       releases=[Release(version=v, security_fix=True) for v in sorted(versions)])
+            for (product, branch), versions in sorted(fixes.items())
+        ]
+        return CollectResult(branches=branches, advisories=advisories)
 
-    def _enrich(self, ctx: Context, advisory: Advisory, link: str) -> None:
+    def _enrich(self, ctx: Context, advisory: Advisory, link: str, fixes: dict) -> None:
         """CVE, branches touchées et, à défaut, score CVSS ; un échec n'est pas bloquant."""
         try:
             document = ctx.client.json(link)
@@ -78,6 +89,8 @@ class FortinetPsirt(Collector):
         parsed = parse_csaf(document)
         advisory.cves = list(dict.fromkeys(parsed["cves"] + advisory.cves))
         advisory.affected = parsed["affected"]
+        for product, branch, version in parsed["fixed"]:
+            fixes.setdefault((product, branch), set()).add(version)
         if advisory.cvss is None and parsed["cvss"] is not None:
             advisory.cvss = parsed["cvss"]
             advisory.severity = severity_from_cvss(parsed["cvss"])
@@ -110,13 +123,16 @@ def parse_entry(entry) -> Advisory | None:
 def parse_csaf(document: dict) -> dict:
     """CVE, branches Vigie touchées et score CVSS le plus élevé d'un document CSAF Fortinet."""
     names = product_names(document.get("product_tree") or {})
-    found_cves, affected, scores = [], [], []
+    found_cves, affected, fixed, scores = [], [], [], []
     for vuln in document.get("vulnerabilities") or []:
         found_cves += cves(vuln.get("cve"))
         for product_id in (vuln.get("product_status") or {}).get("known_affected") or []:
             branch = affected_branch(product_id, names.get(product_id))
             if branch:
                 affected.append(branch)
+        for product_id in (vuln.get("product_status") or {}).get("known_not_affected") or []:
+            if version := fixed_version(product_id):
+                fixed.append(version)
         for score in vuln.get("scores") or []:
             base = (score.get("cvss_v3") or {}).get("baseScore")
             if isinstance(base, (int, float)):
@@ -125,6 +141,7 @@ def parse_csaf(document: dict) -> dict:
         "cves": list(dict.fromkeys(found_cves)),
         "affected": list(dict.fromkeys(affected)),
         "cvss": max(scores) if scores else None,
+        "fixed": list(dict.fromkeys(fixed)),
     }
 
 
@@ -166,6 +183,16 @@ def affected_branch(product_id: str, name: str | None) -> str | None:
         return None
     branch = BRANCH.match(version)
     return branch_id(product, branch.group(1)) if branch else None
+
+
+def fixed_version(product_id: str) -> tuple[str, str, str] | None:
+    """(produit, branche, version) d'une version corrigée « FortiOS-7.6.7 », sinon None."""
+    for name, product in CSAF_PRODUCTS.items():
+        if product_id.startswith(f"{name}-"):
+            version = product_id[len(name) + 1:]
+            if match := FIXED_VERSION.match(version):
+                return product, match.group(1), version
+    return None
 
 
 COLLECTOR = FortinetPsirt()

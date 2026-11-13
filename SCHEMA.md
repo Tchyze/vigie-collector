@@ -104,7 +104,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 |---|---|---|
 | `version` | chaîne | ex. `7.4.13`, `12.2.4-h1`, `10.6p1` |
 | `date` | date ou `null` | date de publication |
-| `security_fix` | booléen ou `null` | contient des correctifs de sécurité ; `null` si la source ne le dit pas |
+| `security_fix` | booléen ou `null` | contient des correctifs de sécurité ; `null` si la source ne le dit pas. FortiOS : `true` pour les versions données comme corrigées par un avis FortiGuard (CSAF) |
 | `summary` | chaîne (≤ 300 car.) ou `null` | résumé court, jamais la note de version recopiée |
 | `url` | URL ou `null` | note de version ou page officielle |
 

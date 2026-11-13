@@ -44,7 +44,7 @@ vers la page officielle.
 
 | Avis de sécurité | Source |
 |---|---|
-| Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées) |
+| Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées, versions corrigées) |
 | Palo Alto Networks | API JSON du portail sécurité (branches PAN-OS touchées) |
 | Cisco | flux RSS des Cisco Security Advisories |
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |

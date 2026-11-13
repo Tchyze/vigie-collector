@@ -5,7 +5,7 @@ import pytest
 import collectors.fortinet_psirt as fortinet
 from collectors.base import Context
 from tests.conftest import FIXTURES, TODAY, fixture_client
-from vigie.models import Advisory, CollectResult
+from vigie.models import Advisory, BranchData, CollectResult, Release
 
 CSAF_267 = ("https://filestore.fortinet.com/fortiguard/psirt/"
             "csaf_authentication-bypass-by-primary-weakness_fg-ir-26-267.json")
@@ -40,7 +40,8 @@ def test_advisories(ctx):
 def test_csaf_only_affected_branches_are_kept():
     # 8.0, 7.4 et 7.2 sont en « known_not_affected » (« FortiOS/ 7.4 all versions ») : à ignorer
     parsed = fortinet.parse_csaf(csaf("FG-IR-26-195"))
-    assert parsed == {"cves": ["CVE-2026-121530"], "affected": ["fortios-7.6"], "cvss": 5.9}
+    assert parsed == {"cves": ["CVE-2026-121530"], "affected": ["fortios-7.6"], "cvss": 5.9,
+                      "fixed": [("fortios", "7.6", "7.6.7")]}
 
 
 def test_csaf_several_products():
@@ -53,7 +54,7 @@ def test_csaf_several_products():
 def test_csaf_alternative_range_syntax():
     # FortiMail « >= 8.0.0 and <= 8.0.1 » : format reconnu, produit non suivi
     parsed = fortinet.parse_csaf(csaf("FG-IR-26-212"))
-    assert parsed == {"cves": ["CVE-2026-126160"], "affected": [], "cvss": 8.2}
+    assert parsed == {"cves": ["CVE-2026-126160"], "affected": [], "cvss": 8.2, "fixed": []}
 
 
 @pytest.mark.parametrize(("product_id", "name", "expected"), [
@@ -72,14 +73,35 @@ def test_affected_branch(product_id, name, expected):
     assert fortinet.affected_branch(product_id, name) == expected
 
 
-def previous_267(**changes) -> CollectResult:
+def test_fixed_versions_become_security_fixes(ctx):
+    branches = {b.id: b for b in fortinet.COLLECTOR.collect(ctx).branches}
+    assert set(branches) == {"fortios-8.0", "fortios-7.6", "fortios-7.4", "fortios-7.2"}
+    assert [(r.version, r.security_fix) for r in branches["fortios-7.6"].releases] == [
+        ("7.6.7", True), ("7.6.8", True),
+    ]
+    assert all(r.date is None and r.url is None for b in branches.values() for r in b.releases)
+
+
+@pytest.mark.parametrize(("product_id", "expected"), [
+    ("FortiOS-7.6.7", ("fortios", "7.6", "7.6.7")),
+    ("FortiOS-upcoming 7.6.9", None),
+    ("FortiOS/ 7.4 all versions", None),
+    ("FortiOS-7.6", None),
+    ("FortiManager-7.6.5", None),
+])
+def test_fixed_version(product_id, expected):
+    assert fortinet.fixed_version(product_id) == expected
+
+
+def previous_267(*, branches=True, **changes) -> CollectResult:
     fields = dict(
         id="FG-IR-26-267", source="fortinet", vendor="Fortinet", title="Authentication bypass",
         published="2026-11-10T08:00:00Z", updated="2026-11-10T00:00:00Z", url="https://x/",
         cves=["CVE-2026-000001"], affected=["fortios-7.4"],
     )
     fields.update(changes)
-    return CollectResult(advisories=[Advisory(**fields)])
+    known = [BranchData(product="fortios", branch="7.4", releases=[Release("7.4.13", security_fix=True)])]
+    return CollectResult(branches=known if branches else [], advisories=[Advisory(**fields)])
 
 
 def collect(previous):
@@ -105,6 +127,13 @@ def test_advisory_without_cve_is_enriched():
     requested, advisory = collect(previous_267(cves=[], affected=[]))
     assert CSAF_267 in requested
     assert advisory.affected == ["fortios-8.0", "fortios-7.6", "fortios-7.4", "fortios-7.2"]
+
+
+def test_state_without_fixes_is_backfilled_once():
+    # état publié avant l'ajout des versions corrigées : aucune branche
+    requested, advisory = collect(previous_267(branches=False))
+    assert CSAF_267 in requested
+    assert advisory.cves == ["CVE-2026-126253"]
 
 
 def test_budget_keeps_previous_data(monkeypatch):
