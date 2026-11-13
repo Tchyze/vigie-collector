@@ -74,3 +74,12 @@ jobs:
               print(f"{len(advisories)} avis ; clés hors avis : {[k for k in data if k != 'advisories']}")
               for a in advisories:
                   print(f"  {a['advisoryId']} | {a.get('sir')} | release={a.get('iosRelease')} | firstFixed={a.get('firstFixed')} | smu={a.get('smu')}")
+
+          # Derniers avis : score CVSS, dates, produits IOS XE (pour les avis du flux RSS).
+          data = get("latest/60") or {}
+          for a in data.get("advisories") or []:
+              names = a.get("productNames") or []
+              xe = [n for n in names if n.startswith("Cisco IOS XE Software ")]
+              print(f"  {a['advisoryId']} | cvss={a.get('cvssBaseScore')} | sir={a.get('sir')} | "
+                    f"pub={a.get('firstPublished')} | maj={a.get('lastUpdated')} | produits={len(names)} | "
+                    f"iosxe={len(xe)} {xe[:2]} | autres={[n for n in names if n not in xe][:2]}")
