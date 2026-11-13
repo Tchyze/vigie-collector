@@ -143,3 +143,9 @@
 - url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
   file: cisa/known_exploited_vulnerabilities.json
   trim: {json_key_filter: {key: vulnerabilities, field: cveID, values: [CVE-2026-0322, CVE-2026-76418, CVE-2026-109618, CVE-2026-111497], others: 3}}
+- url: https://www.cisco.com/.well-known/csaf/changes.csv
+  file: cisco/csaf-changes.csv
+  trim: {lines_matching: {pattern: "cisco-sa-hardening-iosxe-v8nmumzj", others: 3}}
+- url: https://www.cisco.com/.well-known/csaf/2026/cisco-sa-hardening-iosxe-v8nmumzj.json
+  file: cisco/csaf/cisco-sa-hardening-iosxe-v8nmumzj.json
+  trim: {csaf_compact: true}

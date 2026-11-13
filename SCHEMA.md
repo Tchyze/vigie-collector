@@ -138,6 +138,7 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
 - Fortinet : plages de versions FortiOS en `known_affected` dans le document CSAF de l'avis
   (`FortiOS >=7.6.0|<=7.6.6` → `fortios-7.6`) ; une plage qui couvre plusieurs branches est ignorée ;
 - Palo Alto : versions PAN-OS marquées comme touchées dans l'API de l'éditeur ;
+- Cisco : branches IOS XE (`product_version` de la famille « Cisco IOS XE Software ») en `known_affected` dans le document CSAF de l'avis (`cisco-ios-xe-17.9`) ;
 - Debian : suites corrigées par le DSA (`[trixie]` → `debian-13`) ;
 - Red Hat : version des paquets sources (`570.el9_6` → `rhel-9`), seulement si tous sont des paquets
   RHEL (un paquet OpenShift, Satellite, JBoss… écarte l'avis) ;

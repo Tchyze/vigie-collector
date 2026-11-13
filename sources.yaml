@@ -344,6 +344,7 @@ sources:
     verifie_le: 2026-11-13
     statut: recommandee
     note: known_affected liste les versions une à une ; aucune version corrigée
+    collecteur: cisco (avis IOS XE seulement, 10 documents au plus par passage)
 
   - id: cisco-rss
     editeur: Cisco PSIRT

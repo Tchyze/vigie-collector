@@ -16,6 +16,7 @@ corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros
   autres composants ;
 - json_key_filter: {key: K, field: F, values: [V…], others: N} -> liste data[K] réduite aux éléments
   dont le champ F vaut l'une des valeurs V, plus les N premiers autres ;
+- csaf_compact: true -> document CSAF sans notes, remédiations ni scores, en JSON compact ;
 - nvd_recent: N -> réponse de l'API NVD réduite à ses N CVE les plus récentes (`published`) ;
 - cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
   importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
@@ -84,6 +85,13 @@ def trim(body: bytes, spec: dict | None) -> bytes:
                 others -= 1
         data[rule["key"]] = kept
         return json.dumps(data, ensure_ascii=False, indent=1).encode("utf-8")
+    if spec.get("csaf_compact"):
+        data = json.loads(body)
+        data["document"].pop("notes", None)
+        for vuln in data.get("vulnerabilities") or []:
+            for key in ("notes", "remediations", "scores"):
+                vuln.pop(key, None)
+        return json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     if "nvd_recent" in spec:
         data = json.loads(body)
         items = sorted(data["vulnerabilities"], key=lambda v: v["cve"]["published"])[-spec["nvd_recent"]:]

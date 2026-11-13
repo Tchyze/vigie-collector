@@ -49,7 +49,7 @@ vers la page officielle.
 |---|---|
 | Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées, versions corrigées) |
 | Palo Alto Networks | API JSON du portail sécurité (branches PAN-OS touchées) |
-| Cisco | flux RSS des Cisco Security Advisories |
+| Cisco | flux RSS des Cisco Security Advisories ; pour les avis IOS XE, document CSAF de Cisco (branches IOS XE touchées) |
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
 | CISA KEV | catalogue des failles activement exploitées : renseigne le champ `exploited` de **tous** les avis |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
