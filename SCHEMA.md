@@ -130,6 +130,8 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
 
 `affected` ne contient que des `id` de branches publiées. Il est rempli aujourd'hui pour :
 
+- Fortinet : plages de versions FortiOS en `known_affected` dans le document CSAF de l'avis
+  (`FortiOS >=7.6.0|<=7.6.6` → `fortios-7.6`) ; une plage qui couvre plusieurs branches est ignorée ;
 - Palo Alto : versions PAN-OS marquées comme touchées dans l'API de l'éditeur ;
 - Debian : suites corrigées par le DSA (`[trixie]` → `debian-13`).
 

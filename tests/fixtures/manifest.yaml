@@ -38,6 +38,16 @@
   file: fortinet/firmware.xml
 - url: https://www.fortiguard.com/rss/ir.xml
   file: fortinet/ir.xml
+- url: https://filestore.fortinet.com/fortiguard/psirt/csaf_authentication-bypass-by-primary-weakness_fg-ir-26-267.json
+  file: fortinet/csaf/FG-IR-26-267.json
+- url: https://filestore.fortinet.com/fortiguard/psirt/csaf_broken-access-control-in-two-factor-authentication_fg-ir-26-195.json
+  file: fortinet/csaf/FG-IR-26-195.json
+- url: https://filestore.fortinet.com/fortiguard/psirt/csaf_improper-neutralization-of-special-elements-in-output-used-by-a-downstream-component-in-sshd_fg-ir-26-269.json
+  file: fortinet/csaf/FG-IR-26-269.json
+- url: https://filestore.fortinet.com/fortiguard/psirt/csaf_allocation-of-resources-without-limits-or-throttling-in-fastapi_fg-ir-26-258.json
+  file: fortinet/csaf/FG-IR-26-258.json
+- url: https://filestore.fortinet.com/fortiguard/psirt/csaf_improper-authentication-in-releasecontrol_fg-ir-26-212.json
+  file: fortinet/csaf/FG-IR-26-212.json
 - url: https://security.paloaltonetworks.com/json/?limit=100&sort=-updated
   file: paloalto/advisories.json
   trim: {json_head: 30}

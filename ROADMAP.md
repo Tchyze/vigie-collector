@@ -18,15 +18,14 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 
 ## Améliorations identifiées
 
-- **Fortinet : CVE et `affected` depuis le CSAF.** Le flux RSS ne cite la CVE que pour 4 avis
-  sur 50. Chaque entrée renvoie vers un document CSAF officiel (`csaf_link`), qui contient les
-  CVE et les produits et versions touchés. Le télécharger pour les seuls avis nouveaux, comme
-  le fait le CERT-FR.
 - **OpenSSH : `security_fix`.** Les tags ne disent pas si une version corrige une faille. La
   page `security.html` d'OpenSSH le dit, mais c'est du HTML : à évaluer selon la règle « pas de
   scraping ».
-- **FortiOS : `security_fix`.** Le croiser avec les avis FortiGuard une fois les versions
-  corrigées connues (CSAF).
+- **FortiOS : `security_fix`.** Les CSAF Fortinet listent les versions corrigées en
+  `known_not_affected` (`FortiOS-7.6.7`) : les conserver pour marquer ces versions.
+- **Fortinet : avis sortis du flux.** Le CSAF n'est lu que pour les avis encore présents dans
+  le flux RSS (50 derniers). Les avis plus anciens gardés dans l'historique n'ont pas de CVE ;
+  leur URL CSAF n'est pas prévisible (elle contient le titre).
 - **Cisco IOS XE et Stormshield : dernière version.** endoflife.date ne la donne pas ; chercher
   une source éditeur structurée.
 - **CERT-FR : `affected`.** Les systèmes touchés sont du texte libre (« FortiOS versions 7.4.x
