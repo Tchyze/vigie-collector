@@ -2,9 +2,13 @@
 
 Usage : python scripts/record_fixtures.py [motif]
 
-Les URL viennent de tests/fixtures/manifest.yaml. `trim` réduit les gros fichiers :
+Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la requête, facultatif). `trim` réduit les gros fichiers :
 - head_lines: N  -> garde les N premières lignes d'un texte ;
-- json_head: N   -> garde les N premiers éléments d'une liste JSON.
+- json_head: N   -> garde les N premiers éléments d'une liste JSON ;
+- json_key_head: {key: K, n: N, drop: [champs]} -> garde les N premiers éléments de la liste
+  data[K], sans les champs listés dans `drop` ;
+- cvrf_sample: N -> document CVRF Microsoft réduit à N vulnérabilités de chaque sorte (critique,
+  importante, exploitée, hors Windows Server), l'arbre des produits restant complet.
 """
 
 import json
@@ -27,7 +31,30 @@ def trim(body: bytes, spec: dict | None) -> bytes:
         return "".join(lines[: spec["head_lines"]]).encode("utf-8")
     if "json_head" in spec:
         return json.dumps(json.loads(body)[: spec["json_head"]], ensure_ascii=False, indent=1).encode("utf-8")
+    if "json_key_head" in spec:
+        data = json.loads(body)
+        key, n = spec["json_key_head"]["key"], spec["json_key_head"]["n"]
+        drop = set(spec["json_key_head"].get("drop") or [])
+        data[key] = [{k: v for k, v in item.items() if k not in drop} for item in data[key][:n]]
+        return json.dumps(data, ensure_ascii=False, indent=1).encode("utf-8")
+    if "cvrf_sample" in spec:
+        return cvrf_sample(json.loads(body), spec["cvrf_sample"])
     raise ValueError(f"trim inconnu : {spec}")
+
+
+def cvrf_sample(data: dict, n: int) -> bytes:
+    servers = {p["ProductID"] for p in data["ProductTree"]["FullProductName"] if p["Value"].startswith("Windows Server")}
+    buckets: dict[str, list] = {"critical": [], "important": [], "exploited": [], "other": []}
+    for vuln in data["Vulnerability"]:
+        affected = {p for s in vuln["ProductStatuses"] if s["Type"] == 3 for p in s["ProductID"]}
+        threats = " ".join(t["Description"]["Value"] for t in vuln["Threats"] if affected & servers & set(t.get("ProductID") or []))
+        exploited = any("Exploited:Yes" in t["Description"]["Value"] for t in vuln["Threats"] if t["Type"] == 1)
+        kind = ("exploited" if exploited else "critical" if "Critical" in threats
+                else "important" if affected & servers else "other")
+        if len(buckets[kind]) < n:
+            buckets[kind].append(vuln)
+    data["Vulnerability"] = [v for bucket in buckets.values() for v in bucket]
+    return json.dumps(data, ensure_ascii=False).encode("utf-8")
 
 
 def main() -> None:
@@ -37,7 +64,7 @@ def main() -> None:
     for entry in manifest:
         if pattern not in entry["file"] and pattern not in entry["url"]:
             continue
-        response = client.get(entry["url"])
+        response = client.get(entry["url"], headers=entry.get("headers"))
         target = FIXTURES / entry["file"]
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(trim(response.content, entry.get("trim")))

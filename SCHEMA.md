@@ -104,7 +104,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 |---|---|---|
 | `version` | chaîne | ex. `7.4.13`, `12.2.4-h1`, `10.6p1` |
 | `date` | date ou `null` | date de publication |
-| `security_fix` | booléen ou `null` | contient des correctifs de sécurité ; `null` si la source ne le dit pas |
+| `security_fix` | booléen ou `null` | contient des correctifs de sécurité ; `null` si la source ne le dit pas. FortiOS : `true` pour les versions données comme corrigées par un avis FortiGuard (CSAF) |
 | `summary` | chaîne (≤ 300 car.) ou `null` | résumé court, jamais la note de version recopiée |
 | `url` | URL ou `null` | note de version ou page officielle |
 
@@ -113,7 +113,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | Champ | Type | Description |
 |---|---|---|
 | `id` | chaîne | identifiant d'origine : `FG-IR-26-187`, `CVE-2026-0308`, `PAN-SA-2026-0006`, `cisco-sa-…`, `CERTFR-2026-AVI-1381`, `DSA-6592-1` |
-| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` | flux d'origine |
+| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
 | `vendor` | chaîne | éditeur de l'avis (`CERT-FR` pour le CERT-FR) |
 | `title` | chaîne | titre de l'avis |
 | `published` | horodatage | première publication |
@@ -133,7 +133,14 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
 - Fortinet : plages de versions FortiOS en `known_affected` dans le document CSAF de l'avis
   (`FortiOS >=7.6.0|<=7.6.6` → `fortios-7.6`) ; une plage qui couvre plusieurs branches est ignorée ;
 - Palo Alto : versions PAN-OS marquées comme touchées dans l'API de l'éditeur ;
-- Debian : suites corrigées par le DSA (`[trixie]` → `debian-13`).
+- Debian : suites corrigées par le DSA (`[trixie]` → `debian-13`) ;
+- Red Hat : version des paquets sources (`570.el9_6` → `rhel-9`), seulement si tous sont des paquets
+  RHEL (un paquet OpenShift, Satellite, JBoss… écarte l'avis) ;
+- Rocky Linux : versions majeures touchées données par l'API (`rocky-linux-9`) ;
+- Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`).
+
+Un avis Microsoft (`MSRC-2026-Nov`) couvre un mois entier pour Windows Server : `cves` n'y liste que
+les CVE critiques ou déjà exploitées, et `summary` donne le nombre total de vulnérabilités.
 
 ## Fusion et surcharges
 

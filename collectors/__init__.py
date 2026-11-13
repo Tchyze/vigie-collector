@@ -8,9 +8,13 @@ from collectors import (
     fortinet_firmware,
     fortinet_psirt,
     httpd,
+    microsoft,
     nginx,
     openssh,
     paloalto,
+    redhat,
+    rocky,
+    stormshield,
 )
 
 ALL = [
@@ -26,4 +30,8 @@ ALL = [
     cisco.COLLECTOR,
     certfr.COLLECTOR,
     debian_dsa.COLLECTOR,
+    redhat.COLLECTOR,
+    rocky.COLLECTOR,
+    microsoft.COLLECTOR,
+    stormshield.COLLECTOR,
 ]

@@ -1,6 +1,11 @@
 import datetime as dt
 
-from collectors.debian_dsa import COLLECTOR, parse_list
+import httpx
+import pytest
+
+from collectors.base import Context
+from collectors.debian_dsa import COLLECTOR, LIST, parse_list
+from tests.conftest import TODAY, fixture_client
 
 
 def test_advisories(ctx):
@@ -37,3 +42,9 @@ def test_parse_list_suites_and_cutoff():
     assert recent.cves == ["CVE-2026-0001", "CVE-2026-0002"]
     assert recent.affected == ["debian-13"]  # « <not-affected> » n'est pas un correctif
     assert older.affected == ["debian-12", "debian-13"]
+
+
+def test_unexpected_content_is_an_error(catalog):
+    client = fixture_client({LIST: httpx.Response(200, text="<html>Making sure you're not a bot!</html>")})
+    with pytest.raises(ValueError, match="liste DSA illisible"):
+        COLLECTOR.collect(Context(client=client, catalog=catalog, today=TODAY))

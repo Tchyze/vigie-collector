@@ -44,14 +44,22 @@ vers la page officielle.
 
 | Avis de sécurité | Source |
 |---|---|
-| Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées) |
+| Fortinet | flux RSS FortiGuard PSIRT et document CSAF de chaque avis (CVE, branches FortiOS touchées, versions corrigées) |
 | Palo Alto Networks | API JSON du portail sécurité (branches PAN-OS touchées) |
 | Cisco | flux RSS des Cisco Security Advisories |
 | CERT-FR | flux RSS des avis et alertes, JSON de chaque document |
 | Debian | liste DSA du security tracker (branches corrigées) et flux dsa-long |
+| Red Hat | API Security Data : RHSA **critiques** touchant RHEL (branches d'après les paquets) |
+| Rocky Linux | API errata Apollo : RLSA **critiques** (titre, CVE, CVSS, versions touchées) |
+| Microsoft | API CVRF du MSRC : un avis **par mois** pour Windows Server (CVE critiques ou exploitées, versions touchées) |
+| Stormshield | flux RSS des avis de l'éditeur (titre, date, produit) |
 
 Toutes les sources sont publiques et sans authentification. Les avis Cisco portent la mention de
 source exigée par Cisco ; leur usage doit rester non commercial.
+
+Red Hat et Rocky publient chacun plusieurs milliers d'avis par an : seuls les avis de sévérité
+critique sont repris (environ 175 et 55 par an). Les autres restent couverts par les synthèses
+hebdomadaires du CERT-FR.
 
 Ce qui n'est pas encore couvert est listé dans [ROADMAP.md](ROADMAP.md).
 

@@ -1,0 +1,3273 @@
+{
+ "advisories": [
+  {
+   "id": 10382,
+   "created_at": "2026-11-10T12:14:52.127964+00:00",
+   "updated_at": "2026-11-13T03:26:23.084521+00:00",
+   "published_at": "2026-11-10T12:09:45.660151+00:00",
+   "name": "RLSA-2026:96240",
+   "synopsis": "Critical: edk2 security update",
+   "description": "EDK (Embedded Development Kit) is a project to enable UEFI support for Virtual Machines. This package contains a sample 64-bit UEFI firmware for QEMU and KVM. \n\nSecurity Fix(es):\n\n* edk2: Pre-boot RCE in EDK II PXE driver (CVE-2026-97631)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for edk2.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33829,
+   "affected_products": [
+    {
+     "id": 68351,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 68352,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 68353,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 68354,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 68355,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 30549,
+     "cve": "CVE-2026-97631",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-787"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:96240",
+    "url": "https://access.redhat.com/errata/RHSA-2026:96240",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10339,
+   "created_at": "2026-11-04T09:16:04.479165+00:00",
+   "updated_at": "2026-11-13T03:26:22.494775+00:00",
+   "published_at": "2026-11-04T09:10:56.529723+00:00",
+   "name": "RLSA-2026:94501",
+   "synopsis": "Critical: fence-agents security update",
+   "description": "The fence-agents packages provide a collection of scripts for handling remote power management for cluster devices. They allow failed or unreachable nodes to be forcibly restarted and removed from the cluster. \n\nSecurity Fix(es):\n\n* pyjwt: pyjwt: Authentication bypass via empty HMAC key acceptance (CVE-2026-102266)\n\n* pyjwt: PyJWT: Authentication bypass via improper public key validation (CVE-2026-102268)\n\n* pyjwt: PyJWT: Authentication bypass via acceptance of DER public keys as HMAC secrets (CVE-2026-102271)\n\n* pyjwt: pyjwt: Verification key substitution via unvalidated JWKS redirects (CVE-2026-102267)\n\n* pyjwt: pyjwt: Token forgery via improper Unicode byte-order mark handling (CVE-2026-102272)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for fence-agents.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33701,
+   "affected_products": [
+    {
+     "id": 68204,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 68205,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 68206,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 68207,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 68208,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 30316,
+     "cve": "CVE-2026-102266",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30317,
+     "cve": "CVE-2026-102267",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-346"
+    },
+    {
+     "id": 30318,
+     "cve": "CVE-2026-102268",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30319,
+     "cve": "CVE-2026-102271",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30320,
+     "cve": "CVE-2026-102272",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:94501",
+    "url": "https://access.redhat.com/errata/RHSA-2026:94501",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10335,
+   "created_at": "2026-11-04T09:15:59.893957+00:00",
+   "updated_at": "2026-11-13T03:22:23.444446+00:00",
+   "published_at": "2026-11-04T09:06:07.045237+00:00",
+   "name": "RLSA-2026:94500",
+   "synopsis": "Critical: fence-agents security update",
+   "description": "The fence-agents packages provide a collection of scripts for handling remote power management for cluster devices. They allow failed or unreachable nodes to be forcibly restarted and removed from the cluster. \n\nSecurity Fix(es):\n\n* pyjwt: pyjwt: Authentication bypass via empty HMAC key acceptance (CVE-2026-102266)\n\n* pyjwt: PyJWT: Authentication bypass via improper public key validation (CVE-2026-102268)\n\n* pyjwt: PyJWT: Authentication bypass via acceptance of DER public keys as HMAC secrets (CVE-2026-102271)\n\n* pyjwt: pyjwt: Verification key substitution via unvalidated JWKS redirects (CVE-2026-102267)\n\n* pyjwt: pyjwt: Token forgery via improper Unicode byte-order mark handling (CVE-2026-102272)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for fence-agents.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33699,
+   "affected_products": [
+    {
+     "id": 68188,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 68190,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 68189,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 68187,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 30293,
+     "cve": "CVE-2026-102266",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30294,
+     "cve": "CVE-2026-102267",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-346"
+    },
+    {
+     "id": 30295,
+     "cve": "CVE-2026-102268",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30296,
+     "cve": "CVE-2026-102271",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 30297,
+     "cve": "CVE-2026-102272",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-347"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:94500",
+    "url": "https://access.redhat.com/errata/RHSA-2026:94500",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10308,
+   "created_at": "2026-11-03T12:14:32.248084+00:00",
+   "updated_at": "2026-11-13T06:04:53.300525+00:00",
+   "published_at": "2026-11-03T12:01:07.151192+00:00",
+   "name": "RLSA-2026:93414",
+   "synopsis": "Critical: kernel security update",
+   "description": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: ipv4: free inet_opt and ireq_opt after an RCU grace period (CVE-2026-98432)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for kernel.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33661,
+   "affected_products": [
+    {
+     "id": 68100,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 68099,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 30115,
+     "cve": "CVE-2026-98432",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "9.8",
+     "cwe": "CWE-825"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:93414",
+    "url": "https://access.redhat.com/errata/RHSA-2026:93414",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10304,
+   "created_at": "2026-11-01T12:12:05.159697+00:00",
+   "updated_at": "2026-11-13T06:04:55.450798+00:00",
+   "published_at": "2026-11-01T12:01:16.211301+00:00",
+   "name": "RLSA-2026:93077",
+   "synopsis": "Critical: python-pillow security update",
+   "description": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems.\n\nSecurity Fix(es):\n\n* pillow: Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO (CVE-2026-112393)\n\n* pillow: Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution (CVE-2026-112398)\n\n* pillow: Pillow: Argument Injection in Ghostscript call, potentially leading into RCE (CVE-2026-112900)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for python-pillow.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33655,
+   "affected_products": [
+    {
+     "id": 68087,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 68086,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 30105,
+     "cve": "CVE-2026-112393",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 30106,
+     "cve": "CVE-2026-112398",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 30107,
+     "cve": "CVE-2026-112900",
+     "cvss3_scoring_vector": null,
+     "cvss3_base_score": null,
+     "cwe": "CWE-88"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:93077",
+    "url": "https://access.redhat.com/errata/RHSA-2026:93077",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10269,
+   "created_at": "2026-10-30T12:13:19.435613+00:00",
+   "updated_at": "2026-11-13T03:22:22.077036+00:00",
+   "published_at": "2026-10-30T12:04:27.805649+00:00",
+   "name": "RLSA-2026:92145",
+   "synopsis": "Critical: cjose security update",
+   "description": "CJose is C library implementing the Javascript Object Signing and Encryption (JOSE).\n\nSecurity Fix(es):\n\n* cjose: OpenIDC/cjose uses all-zero Content Encryption Key for AES-CBC-HMAC JWE encryption (CVE-2026-53939)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for cjose.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33617,
+   "affected_products": [
+    {
+     "id": 67961,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67963,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67962,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67960,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29860,
+     "cve": "CVE-2026-53939",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-331"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:92145",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92145",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10258,
+   "created_at": "2026-10-30T00:14:19.034883+00:00",
+   "updated_at": "2026-11-12T12:13:40.516359+00:00",
+   "published_at": "2026-10-30T00:01:28.043412+00:00",
+   "name": "RLSA-2026:92157",
+   "synopsis": "Critical: mod_auth_openidc:2.3 security update",
+   "description": "The mod_auth_openidc is an OpenID Connect authentication module for Apache HTTP Server. It enables an Apache HTTP Server to operate as an OpenID Connect Relying Party and/or OAuth 2.0 Resource Server. \n\nSecurity Fix(es):\n\n* cjose: OpenIDC/cjose uses all-zero Content Encryption Key for AES-CBC-HMAC JWE encryption (CVE-2026-53939)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for cjose, mod_auth_openidc, module.cjose, module.mod_auth_openidc.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33620,
+   "affected_products": [
+    {
+     "id": 67931,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67930,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29809,
+     "cve": "CVE-2026-53939",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-331"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:92157",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92157",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10212,
+   "created_at": "2026-10-27T12:13:15.159844+00:00",
+   "updated_at": "2026-11-10T12:14:44.037424+00:00",
+   "published_at": "2026-10-27T12:04:29.081572+00:00",
+   "name": "RLSA-2026:89744",
+   "synopsis": "Critical: grafana security update",
+   "description": "Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, InfluxDB & OpenTSDB. \n\nSecurity Fix(es):\n\n* grafana: Grafana: Information disclosure vulnerability in Unified Alerting (CVE-2026-17183)\n\n* net/http: golang: golang: Denial of Service via crafted HTTP Range headers (CVE-2026-78667)\n\n* crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references (CVE-2026-97031)\n\n* net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames (CVE-2026-78669)\n\n* crypto/x509: golang: crypto/x509: Man-in-the-middle attacks via untrusted intermediate certificates (CVE-2026-111943)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for grafana.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33552,
+   "affected_products": [
+    {
+     "id": 67753,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67755,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67754,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67752,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29564,
+     "cve": "CVE-2026-111943",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "6.8",
+     "cwe": "CWE-295"
+    },
+    {
+     "id": 29565,
+     "cve": "CVE-2026-17183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+     "cvss3_base_score": "7.1",
+     "cwe": "CWE-551"
+    },
+    {
+     "id": 29566,
+     "cve": "CVE-2026-78667",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29567,
+     "cve": "CVE-2026-78669",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29568,
+     "cve": "CVE-2026-97031",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:89744",
+    "url": "https://access.redhat.com/errata/RHSA-2026:89744",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10193,
+   "created_at": "2026-10-24T00:12:14.984338+00:00",
+   "updated_at": "2026-11-07T00:12:21.151978+00:00",
+   "published_at": "2026-10-24T00:00:58.624421+00:00",
+   "name": "RLSA-2026:88550",
+   "synopsis": "Critical: ca-certificates security update",
+   "description": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).\n\nSecurity Fix(es):\n\n* ca-certificates: Distrust eMudhra intermediate CA certificates due to security concerns (CVE-2026-114406)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for ca-certificates.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33529,
+   "affected_products": [
+    {
+     "id": 67698,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67697,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29269,
+     "cve": "CVE-2026-114406",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "6.8",
+     "cwe": "CWE-295"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:88550",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88550",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10192,
+   "created_at": "2026-10-23T12:16:19.741034+00:00",
+   "updated_at": "2026-11-06T12:14:30.960369+00:00",
+   "published_at": "2026-10-23T12:12:00.486754+00:00",
+   "name": "RLSA-2026:88455",
+   "synopsis": "Critical: ca-certificates security update",
+   "description": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).\n\nSecurity Fix(es):\n\n* ca-certificates: Distrust eMudhra intermediate CA certificates due to security concerns (CVE-2026-114406)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for ca-certificates.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33525,
+   "affected_products": [
+    {
+     "id": 67692,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67693,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67694,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 67695,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 67696,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29268,
+     "cve": "CVE-2026-114406",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "6.8",
+     "cwe": "CWE-295"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:88455",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88455",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10183,
+   "created_at": "2026-10-23T06:53:25.948422+00:00",
+   "updated_at": "2026-11-06T00:14:49.387257+00:00",
+   "published_at": "2026-10-23T06:45:57.706125+00:00",
+   "name": "RLSA-2026:88459",
+   "synopsis": "Critical: ca-certificates security update",
+   "description": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).\n\nSecurity Fix(es):\n\n* ca-certificates: Distrust eMudhra intermediate CA certificates due to security concerns (CVE-2026-114406)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for ca-certificates.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33524,
+   "affected_products": [
+    {
+     "id": 67649,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67651,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67650,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67648,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29237,
+     "cve": "CVE-2026-114406",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "6.8",
+     "cwe": "CWE-295"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:88459",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88459",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10181,
+   "created_at": "2026-10-23T06:53:25.723425+00:00",
+   "updated_at": "2026-11-06T00:14:46.946392+00:00",
+   "published_at": "2026-10-23T06:45:29.064378+00:00",
+   "name": "RLSA-2026:88354",
+   "synopsis": "Critical: grafana-pcp security update",
+   "description": "The Grafana plugin for Performance Co-Pilot includes datasources for scalable time series from pmseries and Redis, live PCP metrics and bpftrace scripts from pmdabpftrace, as well as several dashboards.\n\nSecurity Fix(es):\n\n* crypto/tls: golang: crypto/tls: Denial of Service via multiple ECH outer extension references (CVE-2026-97031)\n\n* net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames (CVE-2026-78669)\n\n* crypto/x509: golang: crypto/x509: Man-in-the-middle attacks via untrusted intermediate certificates (CVE-2026-111943)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for grafana-pcp.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33516,
+   "affected_products": [
+    {
+     "id": 67641,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67643,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67642,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67640,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29233,
+     "cve": "CVE-2026-111943",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "6.8",
+     "cwe": "CWE-295"
+    },
+    {
+     "id": 29234,
+     "cve": "CVE-2026-78669",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29235,
+     "cve": "CVE-2026-97031",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:88354",
+    "url": "https://access.redhat.com/errata/RHSA-2026:88354",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10163,
+   "created_at": "2026-10-22T00:12:15.750011+00:00",
+   "updated_at": "2026-11-05T00:12:48.128057+00:00",
+   "published_at": "2026-10-22T00:08:23.571327+00:00",
+   "name": "RLSA-2026:86168",
+   "synopsis": "Critical: .NET 8.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 8.0.132\nRuntime version: 8.0.32\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet8.0: Active Directory Federation Services (AD FS) Spoofing Vulnerability (CVE-2026-96222)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 8.0 to SDK 8.0.132 and Runtime 8.0.32 [rhel-10.2.z] (JIRA:Rocky Linux-277794)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet8.0.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33479,
+   "affected_products": [
+    {
+     "id": 67576,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67577,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67578,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 67579,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 67580,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29088,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29089,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 29090,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29091,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29092,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 29093,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 29094,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29095,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29096,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29097,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29098,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29933,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29099,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29100,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29101,
+     "cve": "CVE-2026-96222",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-295"
+    },
+    {
+     "id": 29102,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29103,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29104,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29105,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29106,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29107,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29108,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29934,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29935,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29936,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86168",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86168",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10164,
+   "created_at": "2026-10-22T00:12:15.832317+00:00",
+   "updated_at": "2026-11-05T00:12:48.191873+00:00",
+   "published_at": "2026-10-22T00:08:23.571327+00:00",
+   "name": "RLSA-2026:86195",
+   "synopsis": "Critical: .NET 10.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 10.0.113\nRuntime version: 10.0.13\n\nSecurity Fix(es):\n\n* dotnet: dotnet10.0: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-102870)\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\n* dotnet10.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96957)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 10.0 to SDK 10.0.113 and Runtime 10.0.13 [rhel-10.2.z] (JIRA:Rocky Linux-277809)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet10.0.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33478,
+   "affected_products": [
+    {
+     "id": 67581,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67582,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67583,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 67584,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 67585,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29109,
+     "cve": "CVE-2026-102870",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-94"
+    },
+    {
+     "id": 29110,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29111,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 29112,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29113,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29114,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 29115,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 29116,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29117,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29118,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29119,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29120,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29121,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29122,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29123,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29124,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29125,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29126,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29127,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29128,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29129,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29130,
+     "cve": "CVE-2026-96957",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 29931,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29932,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86195",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86195",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10165,
+   "created_at": "2026-10-22T00:12:15.924717+00:00",
+   "updated_at": "2026-11-05T00:12:48.253620+00:00",
+   "published_at": "2026-10-22T00:08:23.571327+00:00",
+   "name": "RLSA-2026:86172",
+   "synopsis": "Critical: .NET 9.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 9.0.122\nRuntime version: 9.0.21\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 9.0 to SDK 9.0.122 and Runtime 9.0.21 [rhel-10.2.z] (JIRA:Rocky Linux-277801)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet9.0.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33477,
+   "affected_products": [
+    {
+     "id": 67586,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67587,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67588,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 67589,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 67590,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29131,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29132,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 29133,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29134,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29135,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 29136,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 29137,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29138,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29139,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29140,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29141,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29937,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29142,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29143,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29144,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29145,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29146,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29147,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29148,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29149,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29150,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29938,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29939,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29940,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86172",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86172",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10149,
+   "created_at": "2026-10-22T00:12:11.775272+00:00",
+   "updated_at": "2026-11-05T00:12:40.808697+00:00",
+   "published_at": "2026-10-22T00:04:07.745746+00:00",
+   "name": "RLSA-2026:86171",
+   "synopsis": "Critical: .NET 9.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 9.0.122\nRuntime version: 9.0.21\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 9.0 to SDK 9.0.122 and Runtime 9.0.21 [rhel-9.8.z] (JIRA:Rocky Linux-277800)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet9.0.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33472,
+   "affected_products": [
+    {
+     "id": 67519,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67521,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67520,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67518,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29014,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29015,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 29016,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29017,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29018,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 29019,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 29020,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29021,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29022,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29023,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29024,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29924,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29025,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29026,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29027,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29028,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29029,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29030,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29031,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29032,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29033,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29925,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29926,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29927,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86171",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86171",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10148,
+   "created_at": "2026-10-22T00:12:11.683048+00:00",
+   "updated_at": "2026-11-05T00:12:40.726805+00:00",
+   "published_at": "2026-10-22T00:04:07.745746+00:00",
+   "name": "RLSA-2026:86169",
+   "synopsis": "Critical: .NET 8.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 8.0.132\nRuntime version: 8.0.32\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet8.0: Active Directory Federation Services (AD FS) Spoofing Vulnerability (CVE-2026-96222)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 8.0 to SDK 8.0.132 and Runtime 8.0.32 [rhel-9.8.z] (JIRA:Rocky Linux-277793)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet8.0.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33473,
+   "affected_products": [
+    {
+     "id": 67515,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67517,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67516,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67514,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28993,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28994,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 28995,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28996,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28997,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 28998,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 28999,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29000,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29001,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29002,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29003,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29920,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29004,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29005,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29006,
+     "cve": "CVE-2026-96222",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-295"
+    },
+    {
+     "id": 29007,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29008,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29009,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29010,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29011,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29012,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29013,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29921,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29922,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29923,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86169",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86169",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10151,
+   "created_at": "2026-10-22T00:12:11.938071+00:00",
+   "updated_at": "2026-11-05T00:12:40.961746+00:00",
+   "published_at": "2026-10-22T00:04:07.745746+00:00",
+   "name": "RLSA-2026:86193",
+   "synopsis": "Critical: .NET 10.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 10.0.113\nRuntime version: 10.0.13\n\nSecurity Fix(es):\n\n* dotnet: dotnet10.0: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-102870)\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\n* dotnet10.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96957)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 10.0 to SDK 10.0.113 and Runtime 10.0.13 [rhel-9.8.z] (JIRA:Rocky Linux-277808)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet10.0.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33483,
+   "affected_products": [
+    {
+     "id": 67527,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67529,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67528,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67526,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 29038,
+     "cve": "CVE-2026-102870",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-94"
+    },
+    {
+     "id": 29039,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29040,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 29041,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 29042,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29043,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 29044,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 29045,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29046,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 29047,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 29048,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 29049,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29050,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 29051,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29052,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29053,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 29054,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 29055,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 29056,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29057,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29058,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29059,
+     "cve": "CVE-2026-96957",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 29928,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29929,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86193",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86193",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10140,
+   "created_at": "2026-10-22T00:12:06.532050+00:00",
+   "updated_at": "2026-11-05T00:12:17.053255+00:00",
+   "published_at": "2026-10-22T00:01:17.335044+00:00",
+   "name": "RLSA-2026:86594",
+   "synopsis": "Critical: .NET 8.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 8.0.132\nRuntime version: 8.0.32\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet8.0: Active Directory Federation Services (AD FS) Spoofing Vulnerability (CVE-2026-96222)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 8.0 to SDK 8.0.132 and Runtime 8.0.32 (JIRA:Rocky Linux-277790)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet8.0.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33482,
+   "affected_products": [
+    {
+     "id": 67493,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67492,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28930,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28931,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 28932,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28933,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28934,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 28935,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 28936,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28937,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 28938,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 28939,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 28940,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29906,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 28941,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 28942,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28943,
+     "cve": "CVE-2026-96222",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-295"
+    },
+    {
+     "id": 28944,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28945,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 28946,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28947,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28948,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28949,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 28950,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29907,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29908,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29909,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86594",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86594",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10138,
+   "created_at": "2026-10-22T00:12:06.202704+00:00",
+   "updated_at": "2026-11-05T00:12:16.889873+00:00",
+   "published_at": "2026-10-22T00:01:17.335044+00:00",
+   "name": "RLSA-2026:86170",
+   "synopsis": "Critical: .NET 9.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 9.0.122\nRuntime version: 9.0.21\n\nSecurity Fix(es):\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 9.0 to SDK 9.0.122 and Runtime 9.0.21 (JIRA:Rocky Linux-277797)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet9.0.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33476,
+   "affected_products": [
+    {
+     "id": 67489,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67488,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28888,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28889,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 28890,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28891,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28892,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 28893,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 28894,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28895,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 28896,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 28897,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 28898,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29900,
+     "cve": "CVE-2026-84008",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 28899,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 28900,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28901,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28902,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 28903,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28904,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28905,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28906,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 28907,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 29901,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29902,
+     "cve": "CVE-2026-96959",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 29903,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86170",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86170",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10139,
+   "created_at": "2026-10-22T00:12:06.463112+00:00",
+   "updated_at": "2026-11-05T00:12:16.972457+00:00",
+   "published_at": "2026-10-22T00:01:17.335044+00:00",
+   "name": "RLSA-2026:86192",
+   "synopsis": "Critical: .NET 10.0 security, bug fix, and enhancement update",
+   "description": ".NET is a fast, lightweight and modular platform for creating cross platform applications that work on Linux, macOS and Windows.  It particularly focuses on creating console applications, web applications and micro-services.  .NET contains a runtime conforming to .NET Standards a set of framework libraries, an SDK containing compilers and a 'dotnet' application to drive everything.\n\nSDK version: 10.0.113\nRuntime version: 10.0.13\n\nSecurity Fix(es):\n\n* dotnet: dotnet10.0: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-102870)\n\n* dotnet10.0: dotnet9.0: dotnet: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-58280)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: .NET Information Disclosure Vulnerability (CVE-2026-66822)\n\n* dotnet9.0: dotnet: dotnet10.0: dotnet8.0: .NET Denial of Service Vulnerability (CVE-2026-69651)\n\n* dotnet8.0: dotnet10.0: dotnet: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70159)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70175)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70179)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70181)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Elevation of Privilege Vulnerability (CVE-2026-70183)\n\n* dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70186)\n\n* dotnet: ASP.NET Core Security Feature Bypass Vulnerability (CVE-2026-70188)\n\n* dotnet9.0: dotnet8.0: dotnet10.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-70196)\n\n* dotnet: ASP.NET Core Tampering Vulnerability (CVE-2026-88092)\n\n* dotnet10.0: dotnet8.0: dotnet9.0: dotnet: MessagePack: Nested arrays can blow past buffer length limits (CVE-2026-92707)\n\n* dotnet: dotnet8.0: dotnet9.0: dotnet10.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96225)\n\n* dotnet9.0: dotnet10.0: dotnet8.0: dotnet: ASP.NET Core Remote Code Execution Vulnerability (CVE-2026-96230)\n\n* dotnet: dotnet9.0: dotnet10.0: dotnet8.0: .NET Elevation of Privilege Vulnerability (CVE-2026-96231)\n\n* dotnet10.0: dotnet: dotnet8.0: dotnet9.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96233)\n\n* dotnet: dotnet10.0: dotnet9.0: dotnet8.0: ASP.NET Core Denial of Service Vulnerability (CVE-2026-96236)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: .NET Remote Code Execution Vulnerability (CVE-2026-96237)\n\n* dotnet8.0: dotnet10.0: dotnet9.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96238)\n\n* dotnet10.0: dotnet: .NET Security Feature Bypass Vulnerability (CVE-2026-96957)\n\nBug Fix(es) and Enhancement(s):\n\n* Update .NET 10.0 to SDK 10.0.113 and Runtime 10.0.13 (JIRA:Rocky Linux-277805)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for dotnet10.0.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33474,
+   "affected_products": [
+    {
+     "id": 67491,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67490,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28908,
+     "cve": "CVE-2026-102870",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-94"
+    },
+    {
+     "id": 28909,
+     "cve": "CVE-2026-58280",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28910,
+     "cve": "CVE-2026-66822",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-201"
+    },
+    {
+     "id": 28911,
+     "cve": "CVE-2026-69651",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-776"
+    },
+    {
+     "id": 28912,
+     "cve": "CVE-2026-70159",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28913,
+     "cve": "CVE-2026-70175",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-640"
+    },
+    {
+     "id": 28914,
+     "cve": "CVE-2026-70179",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-290"
+    },
+    {
+     "id": 28915,
+     "cve": "CVE-2026-70181",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28916,
+     "cve": "CVE-2026-70183",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 28917,
+     "cve": "CVE-2026-70186",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-833"
+    },
+    {
+     "id": 28918,
+     "cve": "CVE-2026-70188",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-93"
+    },
+    {
+     "id": 28919,
+     "cve": "CVE-2026-70196",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "5.9",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28920,
+     "cve": "CVE-2026-88092",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+     "cvss3_base_score": "9.4",
+     "cwe": "CWE-444"
+    },
+    {
+     "id": 28921,
+     "cve": "CVE-2026-92707",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+     "cvss3_base_score": "5.3",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28922,
+     "cve": "CVE-2026-96225",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28923,
+     "cve": "CVE-2026-96230",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 28924,
+     "cve": "CVE-2026-96231",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.8",
+     "cwe": "CWE-59"
+    },
+    {
+     "id": 28925,
+     "cve": "CVE-2026-96233",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28926,
+     "cve": "CVE-2026-96236",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28927,
+     "cve": "CVE-2026-96237",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 28928,
+     "cve": "CVE-2026-96238",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+     "cvss3_base_score": "6.5",
+     "cwe": "CWE-427"
+    },
+    {
+     "id": 28929,
+     "cve": "CVE-2026-96957",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "8.8",
+     "cwe": "CWE-347"
+    },
+    {
+     "id": 29904,
+     "cve": "CVE-2026-96958",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-1333"
+    },
+    {
+     "id": 29905,
+     "cve": "CVE-2026-96960",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-408"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:86192",
+    "url": "https://access.redhat.com/errata/RHSA-2026:86192",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10108,
+   "created_at": "2026-10-20T12:14:57.221511+00:00",
+   "updated_at": "2026-11-03T12:14:59.229081+00:00",
+   "published_at": "2026-10-20T12:05:07.452289+00:00",
+   "name": "RLSA-2026:84583",
+   "synopsis": "Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "description": "WebKitGTK is the port of the portable web rendering engine WebKit to the GTK platform.\n\nSecurity Fix(es):\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via out-of-bounds read (CVE-2026-87596)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Arbitrary code execution via crafted HTML page (CVE-2026-87500)\n\n* chromium-browser: angle: Chromium: Arbitrary code execution via buffer overflow in ANGLE (CVE-2026-87654)\n\n* chromium-browser: angle: Google Chrome (ANGLE): Arbitrary Code Execution vulnerability (CVE-2026-87621)\n\n* chromium-browser: angle: Chromium-browser: Arbitrary code execution via use-after-free vulnerability in ANGLE (CVE-2026-87512)\n\n* chromium-browser: angle: ANGLE: Arbitrary code execution in Google Chrome due to use-after-free (CVE-2026-87648)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via crafted HTML page (CVE-2026-87602)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via crafted HTML page (CVE-2026-87586)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Arbitrary code execution via out-of-bounds read (CVE-2026-87604)\n\n* chromium-browser: angle: chromium-browser: Improper input validation in ANGLE (CVE-2026-91738)\n\n* chromium-browser: angle: chromium-browser: Uninitialized resource in ANGLE (CVE-2026-91720)\n\nBug Fix(es) and Enhancement(s):\n\n* webkit2gtk3 2.54.0 regression breaks Eclipse IDE WebKit-based views on CentOS Stream 9 [rhel-9.8.z] (JIRA:Rocky Linux-274394)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for webkit2gtk3.\nThis update affects Rocky Linux 9.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33435,
+   "affected_products": [
+    {
+     "id": 67368,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 aarch64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67370,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 ppc64le",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67369,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 s390x",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "s390x"
+    },
+    {
+     "id": 67367,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 9 x86_64",
+     "major_version": 9,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28772,
+     "cve": "CVE-2026-87500",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 28773,
+     "cve": "CVE-2026-87512",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-825"
+    },
+    {
+     "id": 28774,
+     "cve": "CVE-2026-87586",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28775,
+     "cve": "CVE-2026-87596",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28776,
+     "cve": "CVE-2026-87602",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+     "cvss3_base_score": "4.3",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28777,
+     "cve": "CVE-2026-87604",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.0",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28778,
+     "cve": "CVE-2026-87621",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 28779,
+     "cve": "CVE-2026-87648",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.0",
+     "cwe": "CWE-825"
+    },
+    {
+     "id": 28780,
+     "cve": "CVE-2026-87654",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-120"
+    },
+    {
+     "id": 28781,
+     "cve": "CVE-2026-91720",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-824"
+    },
+    {
+     "id": 28782,
+     "cve": "CVE-2026-91738",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-1286"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:84583",
+    "url": "https://access.redhat.com/errata/RHSA-2026:84583",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10102,
+   "created_at": "2026-10-20T12:14:54.175619+00:00",
+   "updated_at": "2026-11-03T12:14:32.678439+00:00",
+   "published_at": "2026-10-20T12:01:34.094814+00:00",
+   "name": "RLSA-2026:84584",
+   "synopsis": "Critical: webkit2gtk3 security, bug fix, and enhancement update",
+   "description": "WebKitGTK is the port of the portable web rendering engine WebKit to the GTK platform.\n\nSecurity Fix(es):\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via out-of-bounds read (CVE-2026-87596)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Arbitrary code execution via crafted HTML page (CVE-2026-87500)\n\n* chromium-browser: angle: Chromium: Arbitrary code execution via buffer overflow in ANGLE (CVE-2026-87654)\n\n* chromium-browser: angle: Google Chrome (ANGLE): Arbitrary Code Execution vulnerability (CVE-2026-87621)\n\n* chromium-browser: angle: Chromium-browser: Arbitrary code execution via use-after-free vulnerability in ANGLE (CVE-2026-87512)\n\n* chromium-browser: angle: ANGLE: Arbitrary code execution in Google Chrome due to use-after-free (CVE-2026-87648)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via crafted HTML page (CVE-2026-87602)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Information disclosure via crafted HTML page (CVE-2026-87586)\n\n* chromium-browser: angle: ANGLE in Google Chrome: Arbitrary code execution via out-of-bounds read (CVE-2026-87604)\n\n* chromium-browser: angle: chromium-browser: Improper input validation in ANGLE (CVE-2026-91738)\n\n* chromium-browser: angle: chromium-browser: Uninitialized resource in ANGLE (CVE-2026-91720)\n\nBug Fix(es) and Enhancement(s):\n\n* webkit2gtk3 2.54.0 regression breaks Eclipse IDE WebKit-based views on CentOS Stream 9 [rhel-8.10.z] (JIRA:Rocky Linux-274406)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for webkit2gtk3.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33430,
+   "affected_products": [
+    {
+     "id": 67348,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67347,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28749,
+     "cve": "CVE-2026-87500",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 28750,
+     "cve": "CVE-2026-87512",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-825"
+    },
+    {
+     "id": 28751,
+     "cve": "CVE-2026-87586",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28752,
+     "cve": "CVE-2026-87596",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28753,
+     "cve": "CVE-2026-87602",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+     "cvss3_base_score": "4.3",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28754,
+     "cve": "CVE-2026-87604",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.0",
+     "cwe": "CWE-125"
+    },
+    {
+     "id": 28755,
+     "cve": "CVE-2026-87621",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-787"
+    },
+    {
+     "id": 28756,
+     "cve": "CVE-2026-87648",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.0",
+     "cwe": "CWE-825"
+    },
+    {
+     "id": 28757,
+     "cve": "CVE-2026-87654",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-120"
+    },
+    {
+     "id": 28758,
+     "cve": "CVE-2026-91720",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+     "cvss3_base_score": "7.4",
+     "cwe": "CWE-824"
+    },
+    {
+     "id": 28759,
+     "cve": "CVE-2026-91738",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-1286"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:84584",
+    "url": "https://access.redhat.com/errata/RHSA-2026:84584",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10078,
+   "created_at": "2026-10-15T06:40:02.340190+00:00",
+   "updated_at": "2026-10-29T00:12:37.432148+00:00",
+   "published_at": "2026-10-15T06:29:02.048659+00:00",
+   "name": "RLSA-2026:83460",
+   "synopsis": "Critical: idm:DL1 security, bug fix, and enhancement update",
+   "description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments. \n\nSecurity Fix(es):\n\n* ipa: FreeIPA: Unauthenticated DoS in `/ipa/i18n_messages` via Unbounded Request Body Read (CVE-2026-73198)\n\n* ipa: FreeIPA: Unauthenticated DoS in `/ipa/migration/migration.py` via Unbounded Request Body Read (CVE-2026-73197)\n\n* FreeIPA: idm: ipa: FreeIPA: Obtaining TGS with impersonating cname through trust relationships (CVE-2026-11861)\n\n* freeipa: ipa: FreeIPA/IdM: Cross-Site Scripting vulnerability allows arbitrary code execution via crafted URL (CVE-2026-18147)\n\n* freeipa: ipa: FreeIPA: trust-fetch-domains uses trust-read ACI to gate a privileged AD trust refresh, allowing unauthorized LDAP writes (CVE-2026-19550)\n\n* ipa: Privilege escalation via krbCanonicalName manipulation due to realm-unaware uniqueness enforcement in FreeIPA LDAP datastore (CVE-2026-13097)\n\n* ipa: freeipa: FreeIPA: unauthenticated LDAP client can obtain administrator credentials via the self-managed-token ACI (CVE-2026-76578)\n\n* freeIPA: idm: freeipa: idp-add eval() reachable before authorization check allows environment disclosure and denial of service (CVE-2026-79678)\n\nBug Fix(es) and Enhancement(s):\n\n* Fix ipatests for kdcproxy after CVE-2025-59088 fix [rhel-8.10.z] (JIRA:Rocky Linux-129966)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for custodia, bind-dyndb-ldap, pyusb, opendnssec, ipa, module.slapi-nis, slapi-nis, module.pyusb, python-jwcrypto, module.custodia, module.python-jwcrypto, module.ipa, python-qrcode, module.softhsm, python-kdcproxy, ipa-healthcheck, module.python-yubico, module.python-qrcode, module.opendnssec, softhsm, module.ipa-healthcheck, module.bind-dyndb-ldap, module.python-kdcproxy, python-yubico.\nThis update affects Rocky Linux 8.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33409,
+   "affected_products": [
+    {
+     "id": 67278,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 aarch64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67277,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 8 x86_64",
+     "major_version": 8,
+     "minor_version": null,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28610,
+     "cve": "CVE-2026-11861",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+     "cvss3_base_score": "9.6",
+     "cwe": "CWE-266"
+    },
+    {
+     "id": 28611,
+     "cve": "CVE-2026-13097",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+     "cvss3_base_score": "8.7",
+     "cwe": "CWE-706"
+    },
+    {
+     "id": 28612,
+     "cve": "CVE-2026-18147",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-79"
+    },
+    {
+     "id": 28613,
+     "cve": "CVE-2026-19550",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+     "cvss3_base_score": "8.2",
+     "cwe": "CWE-863"
+    },
+    {
+     "id": 28614,
+     "cve": "CVE-2026-73197",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28615,
+     "cve": "CVE-2026-73198",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+     "cvss3_base_score": "7.5",
+     "cwe": "CWE-770"
+    },
+    {
+     "id": 28616,
+     "cve": "CVE-2026-76578",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+     "cvss3_base_score": "9.8",
+     "cwe": "CWE-306"
+    },
+    {
+     "id": 28617,
+     "cve": "CVE-2026-79678",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+     "cvss3_base_score": "8.1",
+     "cwe": "CWE-95"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:83460",
+    "url": "https://access.redhat.com/errata/RHSA-2026:83460",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  },
+  {
+   "id": 10057,
+   "created_at": "2026-10-13T12:12:51.765571+00:00",
+   "updated_at": "2026-10-27T12:13:16.034311+00:00",
+   "published_at": "2026-10-13T12:08:58.021554+00:00",
+   "name": "RLSA-2026:80605",
+   "synopsis": "Critical: cjose security update",
+   "description": "CJose is C library implementing the Javascript Object Signing and Encryption (JOSE).\n\nSecurity Fix(es):\n\n* cjose: OpenIDC/cjose uses all-zero Content Encryption Key for AES-CBC-HMAC JWE encryption (CVE-2026-53939)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+   "kind": "Security",
+   "severity": "Critical",
+   "topic": "An update is available for cjose.\nThis update affects Rocky Linux 10.\nA Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE list",
+   "red_hat_advisory_id": 33365,
+   "affected_products": [
+    {
+     "id": 67198,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 aarch64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "aarch64"
+    },
+    {
+     "id": 67199,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 ppc64le",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "ppc64le"
+    },
+    {
+     "id": 67200,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 riscv64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    },
+    {
+     "id": 67201,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 s390x",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "s390x"
+    },
+    {
+     "id": 67202,
+     "variant": "Rocky Linux",
+     "name": "Rocky Linux 10 x86_64",
+     "major_version": 10,
+     "minor_version": 2,
+     "arch": "x86_64"
+    }
+   ],
+   "cves": [
+    {
+     "id": 28528,
+     "cve": "CVE-2026-53939",
+     "cvss3_scoring_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+     "cvss3_base_score": "9.1",
+     "cwe": "CWE-331"
+    }
+   ],
+   "source": {
+    "name": "RHSA-2026:80605",
+    "url": "https://access.redhat.com/errata/RHSA-2026:80605",
+    "vendor": "Red Hat",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  }
+ ],
+ "total": 67,
+ "page": 1,
+ "size": 100,
+ "links": {
+  "first": "/api/v3/advisories/?severity=Critical&kind=Security&size=100&page=1",
+  "last": "/api/v3/advisories/?severity=Critical&kind=Security&size=100&page=1",
+  "self": "/api/v3/advisories/?severity=Critical&kind=Security&size=100&page=1",
+  "next": null,
+  "prev": null
+ },
+ "last_updated_at": "2026-11-13T07:18:22Z"
+}

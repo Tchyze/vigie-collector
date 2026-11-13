@@ -68,3 +68,18 @@
   trim: {head_lines: 400}
 - url: https://www.debian.org/security/dsa-long
   file: debian/dsa-long.rdf
+- url: https://access.redhat.com/hydra/rest/securitydata/csaf.json?after=2025-10-29&severity=critical&per_page=1000&page=1
+  file: redhat/csaf.json
+  trim: {json_head: 80}
+- url: https://apollo.build.resf.org/api/v3/advisories/?severity=Critical&kind=Security&size=100&page=1
+  file: rocky/advisories.json
+  trim: {json_key_head: {key: advisories, n: 25, drop: [packages, fixes]}}
+- url: https://api.msrc.microsoft.com/cvrf/v3.0/updates
+  file: microsoft/updates.json
+  headers: {Accept: application/json}
+- url: https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Nov
+  file: microsoft/2026-Nov.json
+  headers: {Accept: application/json}
+  trim: {cvrf_sample: 4}
+- url: https://advisories.stormshield.eu/feed/
+  file: stormshield/feed.xml
