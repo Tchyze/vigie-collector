@@ -72,8 +72,10 @@ def probe(row: dict) -> dict:
     result["seconds"] = round(time.monotonic() - start, 2)
     result["truncated"] = len(body) > MAX_BYTES
     result["bytes"] = min(len(body), MAX_BYTES)
-    if not (result["content_type"] or "").startswith(("application/zip", "application/x-bzip", "application/gzip", "application/octet-stream", "application/x-gzip")):
-        text = body[:SNIPPET * 2].decode("utf-8", "replace")
+    head = body[:SNIPPET * 2]
+    # Pas d'extrait pour un contenu binaire (archive, image) : il polluerait le tableau.
+    if b"\x00" not in head and not head.startswith((b"\x1f\x8b", b"BZh", b"\xfd7zXZ", b"PK\x03\x04")):
+        text = head.decode("utf-8", "replace")
         result["snippet"] = " ".join(text.split())[:SNIPPET]
     return result
 
