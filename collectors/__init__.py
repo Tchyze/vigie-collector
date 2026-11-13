@@ -4,6 +4,7 @@ from collectors import (
     certfr,
     cisco,
     debian_dsa,
+    dell_advisories,
     dell_idrac,
     endoflife,
     fortinet_firmware,
@@ -44,4 +45,5 @@ ALL = [
     ubuntu.COLLECTOR,
     vmware.COLLECTOR,
     hpe_bulletins.COLLECTOR,
+    dell_advisories.COLLECTOR,
 ]

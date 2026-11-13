@@ -129,3 +129,14 @@
 - url: https://downloads.dell.com/catalog/Catalog.xml.gz
   file: dell/Catalog.xml.gz
   trim: {dell_catalog: 3}
+- url: https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=iDRAC
+  file: dell/nvd-idrac.json
+  trim: {nvd_recent: 10}
+- url: https://cveawg.mitre.org/api/cve/CVE-2026-35155
+  file: dell/CVE-2026-35155.json
+- url: https://cveawg.mitre.org/api/cve/CVE-2026-70412
+  file: dell/CVE-2026-70412.json
+- url: https://cveawg.mitre.org/api/cve/CVE-2026-79940
+  file: dell/CVE-2026-79940.json
+- url: https://cveawg.mitre.org/api/cve/CVE-2026-23855
+  file: dell/CVE-2026-23855.json

@@ -81,8 +81,8 @@ class Ubuntu(Collector):
                 raise
             log.warning("Ubuntu : collecte interrompue après %d avis (%s)", len(found), exc)
             raise CollectError(f"collecte interrompue : {exc}", result(previous, found)) from exc
-        if len(todo) > MAX_FETCH_PER_RUN:
-            log.info("Ubuntu : %d avis restent à lire aux prochains passages", len(todo) - MAX_FETCH_PER_RUN)
+        if len(todo) > MAX_FETCH_PER_RUN and floor is None:
+            log.info("Ubuntu : plafond de %d avis atteint, l'historique se complète au prochain passage", MAX_FETCH_PER_RUN)
         return result(previous, found)
 
 

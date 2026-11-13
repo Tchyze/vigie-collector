@@ -8,7 +8,6 @@ ci-dessous viendront plus tard, ou attendent une source exploitable.
 | Sujet | Raison | Piste |
 |---|---|---|
 | HPE Aruba (CSAF) | les bulletins réseau HPE sont repris du flux RSS HPE, sans versions | csaf.arubanetworking.hpe.com publie des CSAF (index `changes.csv`) : versions AOS touchées |
-| Dell : avis de sécurité (DSA) | dell.com/support/security répond 403 aux clients automatiques | le CERT-FR reprend les avis Dell |
 | Dell et HPE : fins de support | dates Dell saisies dans overrides.yaml (iDRAC8, iDRAC9 14G) ; aucune date officielle HPE pour iLO | ajouter iDRAC9 15G/16G et iLO quand l'éditeur publie des dates |
 | VMware : versions touchées | la liste Broadcom ne donne que les produits | l'avis complet est une page du portail (HTML) |
 | Stormshield : CVE et versions | le flux RSS n'a ni description ni CVE ; le détail n'est que dans la page HTML de l'avis | le CERT-FR reprend les avis Stormshield avec leurs CVE |

@@ -113,7 +113,7 @@ Avec `today` la date du build et `N` = `eol_soon_months` (6 par défaut, réglab
 | Champ | Type | Description |
 |---|---|---|
 | `id` | chaîne | identifiant d'origine : `FG-IR-26-187`, `CVE-2026-0308`, `PAN-SA-2026-0006`, `cisco-sa-…`, `CERTFR-2026-AVI-1381`, `DSA-6592-1` |
-| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` \| `ubuntu` \| `vmware` \| `hpe` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
+| `source` | `fortinet` \| `paloalto` \| `cisco` \| `certfr` \| `debian` \| `redhat` \| `rocky` \| `microsoft` \| `stormshield` \| `ubuntu` \| `vmware` \| `hpe` \| `dell` | flux d'origine ; de nouvelles valeurs peuvent apparaître sans changement de `schema_version` |
 | `vendor` | chaîne | éditeur de l'avis (`CERT-FR` pour le CERT-FR) |
 | `title` | chaîne | titre de l'avis |
 | `published` | horodatage | première publication |
@@ -138,8 +138,9 @@ Le couple (`source`, `id`) est unique ; `id` seul l'est aussi en pratique, le bu
   RHEL (un paquet OpenShift, Satellite, JBoss… écarte l'avis) ;
 - Rocky Linux : versions majeures touchées données par l'API (`rocky-linux-9`) ;
 - Microsoft : versions de Windows Server touchées dans le mois (`windows-server-2012-r2`) ;
-- Ubuntu : versions corrigées par l'USN (`ubuntu-24.04`) ;
-- HPE : générations d'iLO citées dans le titre du bulletin (`hpe-ilo-6`).
+- Ubuntu : versions corrigées par l'USN, Ubuntu Pro compris (`ubuntu-24.04`) ;
+- HPE : générations d'iLO citées dans le titre du bulletin (`hpe-ilo-6`) ;
+- Dell : séries iDRAC des versions corrigées dans les enregistrements CVE de Dell (`7.30.10.50` → `dell-idrac-7.30`).
 
 Un avis Microsoft (`MSRC-2026-Nov`) couvre un mois entier pour Windows Server : `cves` n'y liste que
 les CVE critiques ou déjà exploitées, et `summary` donne le nombre total de vulnérabilités.

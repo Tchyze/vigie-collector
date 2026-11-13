@@ -59,14 +59,17 @@ vers la page officielle.
 | Ubuntu | USN publiés par Canonical dans OSV (index `modified_id.csv` et un JSON par avis : CVE, versions corrigées, Ubuntu Pro compris) |
 | VMware (Broadcom) | liste des VMSA du portail de support Broadcom (sévérité, CVE) |
 | HPE | flux RSS officiel des bulletins (tous produits ; générations d'iLO touchées) |
+| Dell | avis DSA de l'iDRAC, reconstitués à partir des enregistrements CVE publiés par Dell sur CVE.org (CVSS, versions corrigées, lien DSA) ; découverte par l'API NVD |
 
 Toutes les sources sont publiques et sans authentification. Les avis Cisco portent la mention de
 source exigée par Cisco ; leur usage doit rester non commercial.
 
 Dell et HPE ne publient pas de dates de fin de support exploitables par un programme pour iDRAC
 et iLO. `overrides.yaml` fixe celles que Dell annonce (iDRAC8, iDRAC9 des PowerEdge 14G) ; HPE n'en
-publie pas pour iLO, dont les branches restent `active`. Les avis de sécurité Dell
-ne sont pas repris : leur portail refuse les clients automatiques ; le CERT-FR les couvre.
+publie pas pour iLO, dont les branches restent `active`. Le portail sécurité de Dell refuse les
+clients automatiques : les avis DSA de l'iDRAC sont reconstitués à partir des enregistrements CVE
+que Dell publie lui-même sur CVE.org. L'API NVD, utilisée pour les trouver, est lente et parfois
+indisponible : en cas d'échec, les avis déjà connus sont gardés.
 
 Red Hat et Rocky publient chacun plusieurs milliers d'avis par an : seuls les avis de sévérité
 critique sont repris (environ 175 et 55 par an). Les autres restent couverts par les synthèses

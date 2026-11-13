@@ -17,7 +17,7 @@
 #   fraicheur     dernière entrée constatée ; historique : profondeur disponible
 #   conditions    conditions d'utilisation, mentions imposées
 #   verifie_le    date du test
-#   statut        recommandee | secours | actuelle | a-remplacer | ecartee
+#   statut        recommandee | secours | actuelle | a-remplacer | remplacee | ecartee
 #   collecteur    collecteur existant qui l'utilise déjà (le cas échéant)
 
 sources:
@@ -83,6 +83,7 @@ sources:
       mention « This product uses the NVD API but is not endorsed or certified by the NVD »
     verifie_le: 2026-11-13
     statut: recommandee
+    collecteur: dell_advisories (keywordSearch=iDRAC)
     usage: découverte des CVE par CNA (cert@airbus.com, security_alert@emc.com, security-alert@hpe.com, security@vmware.com, psirt@fortinet.com) ou mot-clé (iDRAC)
     decision: pas de clé pour l'instant (2026-11-13) ; plus tard, secret GitHub NVD_API_KEY
 
@@ -103,6 +104,7 @@ sources:
     conditions: conditions d'utilisation CVE (reproduction libre, mention du programme CVE)
     verifie_le: 2026-11-13
     statut: recommandee
+    collecteur: dell_advisories (Dell iDRAC seulement pour l'instant)
     note: "pas de recherche ; découverte par nvd-api. Champ affected[].versions (lessThan peut contenir du texte : « 7.30.10.50 or later »)"
 
   - id: osv-bucket
@@ -124,6 +126,7 @@ sources:
     conditions: licence de l'écosystème (Rocky CC BY 4.0, indiquée dans database_specific)
     verifie_le: 2026-11-13
     statut: recommandee
+    collecteur: ubuntu (Ubuntu seulement pour l'instant)
 
   - id: osv-api
     editeur: OSV (Google)
@@ -488,9 +491,8 @@ sources:
     format: JSON
     acces: {session: 200, github: 200}
     verifie_le: 2026-11-13
-    statut: a-remplacer
-    decision: remplacement par osv-bucket validé le 2026-11-13
-    collecteur: ubuntu
+    statut: remplacee
+    decision: remplacée par osv-bucket le 2026-11-13 (collecteur ubuntu)
     raison: 20 avis par page, 503 et coupures en rafale ; remplacée par osv-bucket (Ubuntu)
 
   - id: ubuntu-oval
