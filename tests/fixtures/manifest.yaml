@@ -103,3 +103,10 @@
   trim: {json_key_head: {key: notices, n: 20, drop: [description, release_packages, instructions, references, cves, related_notices], truncate: {cves_ids: 120}}}
 - url: https://endoflife.date/api/v1/products/ubuntu
   file: endoflife/ubuntu.json
+- url: https://endoflife.date/api/v1/products/esxi
+  file: endoflife/esxi.json
+- url: https://endoflife.date/api/v1/products/vcenter
+  file: endoflife/vcenter.json
+- url: https://support.broadcom.com/web/ecx/security-advisory/-/securityadvisory/getSecurityAdvisoryList
+  file: vmware/advisories.json
+  post: {pageNumber: 0, pageSize: 500, searchVal: "", segment: VC, sortInfo: {column: "", order: ""}}

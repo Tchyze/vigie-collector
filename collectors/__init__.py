@@ -16,6 +16,7 @@ from collectors import (
     rocky,
     stormshield,
     ubuntu,
+    vmware,
 )
 
 ALL = [
@@ -36,4 +37,5 @@ ALL = [
     microsoft.COLLECTOR,
     stormshield.COLLECTOR,
     ubuntu.COLLECTOR,
+    vmware.COLLECTOR,
 ]

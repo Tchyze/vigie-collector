@@ -62,6 +62,14 @@ products:
       eol: end_of_security_support    # « Maintenance & Security Support »
       eoes: end_of_extended_support   # « Expanded Security Maintenance » (Ubuntu Pro)
 
+  vmware-esxi:
+    label: VMware ESXi
+    vendor: Broadcom (VMware)
+    category: os
+    endoflife: esxi
+    eol_fields:
+      eol: end_of_security_support    # « General Support » (correctifs ; ensuite Technical Guidance)
+
   proxmox-ve:
     label: Proxmox VE
     vendor: Proxmox
@@ -96,6 +104,14 @@ products:
     eol_fields:
       eoas: end_of_active_support     # « Maintenance Support »
       eol: end_of_security_support    # « Security Support »
+
+  vmware-vcenter:
+    label: VMware vCenter Server
+    vendor: Broadcom (VMware)
+    category: service
+    endoflife: vcenter
+    eol_fields:
+      eol: end_of_security_support    # « General Support »
 
   nginx:
     label: nginx

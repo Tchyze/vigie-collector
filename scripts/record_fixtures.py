@@ -2,7 +2,8 @@
 
 Usage : python scripts/record_fixtures.py [motif]
 
-Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la requête, facultatif). `trim` réduit les gros fichiers :
+Les URL viennent de tests/fixtures/manifest.yaml (`headers` : en-têtes de la requête ; `post` :
+corps JSON d'une requête POST ; tous deux facultatifs). `trim` réduit les gros fichiers :
 - head_lines: N  -> garde les N premières lignes d'un texte ;
 - json_head: N   -> garde les N premiers éléments d'une liste JSON ;
 - json_key_head: {key: K, n: N, drop: [champs]} -> garde les N premiers éléments de la liste
@@ -68,7 +69,10 @@ def main() -> None:
     for entry in manifest:
         if pattern not in entry["file"] and pattern not in entry["url"]:
             continue
-        response = client.get(entry["url"], headers=entry.get("headers"))
+        if "post" in entry:
+            response = client.request("POST", entry["url"], headers=entry.get("headers"), json=entry["post"])
+        else:
+            response = client.get(entry["url"], headers=entry.get("headers"))
         target = FIXTURES / entry["file"]
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(trim(response.content, entry.get("trim")))
