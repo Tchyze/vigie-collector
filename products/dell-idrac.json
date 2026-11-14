@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "product": "dell-idrac",
+  "label": "Dell iDRAC",
+  "vendor": "Dell",
+  "category": "server",
+  "branches": [
+    {
+      "id": "dell-idrac-7.30",
+      "product": "dell-idrac",
+      "vendor": "Dell",
+      "category": "server",
+      "branch": "7.30",
+      "label": "iDRAC9 7.30",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "7.30.65.51",
+      "latest_release_date": "2026-10-26",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "7.30.65.51",
+          "date": "2026-10-26",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=77JC4"
+        },
+        {
+          "version": "7.30.30.54",
+          "date": "2026-08-12",
+          "security_fix": null,
+          "summary": "Mise à jour jugée urgente par Dell.",
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P3PPC"
+        }
+      ],
+      "sources": [
+        "dell_idrac"
+      ]
+    },
+    {
+      "id": "dell-idrac-7.00",
+      "product": "dell-idrac",
+      "vendor": "Dell",
+      "category": "server",
+      "branch": "7.00",
+      "label": "iDRAC9 7.00",
+      "lts": null,
+      "release_date": null,
+      "status": "eol_soon",
+      "latest_version": "7.00.00.185",
+      "latest_release_date": "2026-08-27",
+      "eol": {
+        "end_of_active_support": "2023-06-30",
+        "end_of_security_support": "2027-02-01",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-02-01",
+        "declared_eol": false,
+        "labels": {},
+        "source_url": "https://www.dell.com/support/kbdoc/en-us/000178016/support-for-integrated-dell-remote-access-controller-9-idrac9"
+      },
+      "releases": [
+        {
+          "version": "7.00.00.185",
+          "date": "2026-08-27",
+          "security_fix": null,
+          "summary": "Mise à jour jugée urgente par Dell.",
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=K7H6Y"
+        },
+        {
+          "version": "7.00.00.184",
+          "date": "2026-04-09",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV"
+        }
+      ],
+      "sources": [
+        "overrides",
+        "dell_idrac"
+      ]
+    },
+    {
+      "id": "dell-idrac-2.86",
+      "product": "dell-idrac",
+      "vendor": "Dell",
+      "category": "server",
+      "branch": "2.86",
+      "label": "iDRAC8 2.86",
+      "lts": null,
+      "release_date": null,
+      "status": "eol",
+      "latest_version": "2.86.86.86",
+      "latest_release_date": "2024-03-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2024-02-01",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2024-02-01",
+        "declared_eol": true,
+        "labels": {},
+        "source_url": "https://www.dell.com/support/kbdoc/en-us/000178044/support-for-integrated-dell-remote-access-controller-8-idrac8"
+      },
+      "releases": [
+        {
+          "version": "2.86.86.86",
+          "date": "2024-03-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VWF72"
+        }
+      ],
+      "sources": [
+        "overrides",
+        "dell_idrac"
+      ]
+    },
+    {
+      "id": "dell-idrac-1.30",
+      "product": "dell-idrac",
+      "vendor": "Dell",
+      "category": "server",
+      "branch": "1.30",
+      "label": "iDRAC10 1.30",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "1.30.61.52",
+      "latest_release_date": "2026-10-01",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "1.30.61.52",
+          "date": "2026-10-01",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=H01NF"
+        },
+        {
+          "version": "1.30.60.52",
+          "date": "2026-10-01",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=TCYNV"
+        }
+      ],
+      "sources": [
+        "dell_idrac"
+      ]
+    }
+  ]
+}

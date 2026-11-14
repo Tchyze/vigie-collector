@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "product": "hpe-ilo",
+  "label": "HPE iLO",
+  "vendor": "HPE",
+  "category": "server",
+  "branches": [
+    {
+      "id": "hpe-ilo-7",
+      "product": "hpe-ilo",
+      "vendor": "HPE",
+      "category": "server",
+      "branch": "7",
+      "label": "iLO 7",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "1.25.02",
+      "latest_release_date": "2026-11-13",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "1.25.02",
+          "date": "2026-11-13",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.25.01",
+          "date": "2026-10-30",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.24.00",
+          "date": "2026-07-25",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.23.00",
+          "date": "2026-07-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.22.00",
+          "date": "2026-04-30",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.21.00",
+          "date": "2026-02-27",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.20.00",
+          "date": "2025-12-26",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.19.00",
+          "date": "2025-10-24",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.17.00",
+          "date": "2025-07-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.16.00",
+          "date": "2025-07-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.14.00",
+          "date": "2025-05-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.12.00",
+          "date": "2025-03-28",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "hpe_ilo"
+      ]
+    },
+    {
+      "id": "hpe-ilo-6",
+      "product": "hpe-ilo",
+      "vendor": "HPE",
+      "category": "server",
+      "branch": "6",
+      "label": "iLO 6",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "1.79",
+      "latest_release_date": "2026-08-27",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "1.79",
+          "date": "2026-08-27",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.78",
+          "date": "2026-07-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.77",
+          "date": "2026-05-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.76",
+          "date": "2026-05-06",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.75",
+          "date": "2026-02-28",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.74",
+          "date": "2026-01-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.73",
+          "date": "2025-11-23",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.72",
+          "date": "2025-11-09",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.70",
+          "date": "2025-07-25",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.69",
+          "date": "2025-04-10",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.68",
+          "date": "2025-04-05",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.67",
+          "date": "2025-01-10",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.66",
+          "date": "2024-12-14",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.65",
+          "date": "2024-11-14",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.63",
+          "date": "2024-09-13",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.61",
+          "date": "2024-07-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.59",
+          "date": "2024-04-17",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.58",
+          "date": "2024-03-25",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.56",
+          "date": "2024-01-27",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.55",
+          "date": "2023-12-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.53",
+          "date": "2023-10-14",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.51",
+          "date": "2023-08-21",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.30",
+          "date": "2023-02-28",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.20",
+          "date": "2023-01-11",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.10",
+          "date": "2022-11-28",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "hpe_ilo"
+      ]
+    },
+    {
+      "id": "hpe-ilo-5",
+      "product": "hpe-ilo",
+      "vendor": "HPE",
+      "category": "server",
+      "branch": "5",
+      "label": "iLO 5",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "3.22",
+      "latest_release_date": "2026-09-21",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "3.22",
+          "date": "2026-09-21",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.21",
+          "date": "2026-07-30",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.20",
+          "date": "2026-06-02",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.19",
+          "date": "2026-04-07",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.18",
+          "date": "2026-02-10",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.17",
+          "date": "2025-12-03",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.16",
+          "date": "2025-10-06",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.15",
+          "date": "2025-08-11",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.14",
+          "date": "2025-06-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.13",
+          "date": "2025-04-24",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.11",
+          "date": "2025-02-25",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.10",
+          "date": "2024-12-12",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.09",
+          "date": "2024-10-08",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.08",
+          "date": "2024-09-12",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.06",
+          "date": "2024-07-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.04",
+          "date": "2024-04-17",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.03",
+          "date": "2024-03-27",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.01",
+          "date": "2024-01-23",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "3.00",
+          "date": "2023-12-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.99",
+          "date": "2023-11-16",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.98",
+          "date": "2023-10-14",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.96",
+          "date": "2023-08-21",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.81",
+          "date": "2023-03-07",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.72",
+          "date": "2022-09-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.71",
+          "date": "2022-07-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.70",
+          "date": "2022-05-20",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.65",
+          "date": "2022-03-18",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.55",
+          "date": "2021-10-04",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.42",
+          "date": "2021-04-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.35",
+          "date": "2021-03-10",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.30",
+          "date": "2020-08-24",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.18",
+          "date": "2020-07-10",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.16",
+          "date": "2020-06-08",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.14",
+          "date": "2020-02-15",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.11",
+          "date": "2019-12-19",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.10",
+          "date": "2019-10-30",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.48",
+          "date": "2020-05-23",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.45",
+          "date": "2019-07-26",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "1.40",
+          "date": "2019-03-05",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "hpe_ilo"
+      ]
+    },
+    {
+      "id": "hpe-ilo-4",
+      "product": "hpe-ilo",
+      "vendor": "HPE",
+      "category": "server",
+      "branch": "4",
+      "label": "iLO 4",
+      "lts": null,
+      "release_date": null,
+      "status": "active",
+      "latest_version": "2.77",
+      "latest_release_date": "2021-02-23",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": null,
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_life",
+        "trigger_date": null,
+        "declared_eol": false,
+        "labels": {},
+        "source_url": null
+      },
+      "releases": [
+        {
+          "version": "2.77",
+          "date": "2021-02-23",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.74",
+          "date": "2020-05-09",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.73",
+          "date": "2020-02-11",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        },
+        {
+          "version": "2.72",
+          "date": "2019-10-21",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "hpe_ilo"
+      ]
+    }
+  ]
+}

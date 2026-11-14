@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "product": "vmware-vcenter",
+  "label": "VMware vCenter Server",
+  "vendor": "Broadcom (VMware)",
+  "category": "service",
+  "branches": [
+    {
+      "id": "vmware-vcenter-9.1",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "9.1",
+      "label": "9.1",
+      "lts": false,
+      "release_date": "2026-05-12",
+      "status": "active",
+      "latest_version": "9.1.1.0",
+      "latest_release_date": "2026-09-03",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2028-08-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2028-08-12",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "9.1.1.0",
+          "date": "2026-09-03",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/release-notes/vmware-cloud-foundation-9-1-1-0-release-notes/vcenter-9-1-1-0-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-9.0",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "9.0",
+      "label": "9.0",
+      "lts": false,
+      "release_date": "2025-06-17",
+      "status": "active",
+      "latest_version": "9.0.2.0100",
+      "latest_release_date": "2026-07-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2027-09-17",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-09-17",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "9.0.2.0100",
+          "date": "2026-07-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/release-notes/patch-releases-9-0-0-x/vsphere/vcenter/vcenter-9-0-2-0100-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-8.0",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "8.0",
+      "label": "8.0",
+      "lts": false,
+      "release_date": "2022-10-11",
+      "status": "active",
+      "latest_version": "8.0 U3k",
+      "latest_release_date": "2026-07-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2027-10-11",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-10-11",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "8.0 U3k",
+          "date": "2026-07-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/vcenter-server-update-and-patch-release-notes/vsphere-vcenter-server-80u3k-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-7.0",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "7.0",
+      "label": "7.0",
+      "lts": false,
+      "release_date": "2020-04-02",
+      "status": "eol",
+      "latest_version": "7.0 U3w",
+      "latest_release_date": "2025-09-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2025-10-02",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2025-10-02",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "7.0 U3w",
+          "date": "2025-09-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/vcenter-server-update-and-patch-release-notes/vsphere-vcenter-server-70u3w-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-6.7",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "6.7",
+      "label": "6.7",
+      "lts": false,
+      "release_date": "2018-04-17",
+      "status": "eol",
+      "latest_version": "6.7 U3w",
+      "latest_release_date": "2024-10-28",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-10-15",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-10-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "6.7 U3w",
+          "date": "2024-10-28",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/pdf/vmware/vsphere/vsphere/vSphere-6-7-Release-Notes/vsphere-vcenter-server-67u3w-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-6.5",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "6.5",
+      "label": "6.5",
+      "lts": false,
+      "release_date": "2016-11-15",
+      "status": "eol",
+      "latest_version": "6.5 U3w",
+      "latest_release_date": "2024-07-04",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-10-15",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-10-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "6.5 U3w",
+          "date": "2024-07-04",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/pdf/vmware/vsphere/vsphere/vSphere-6-5-Release-Notes/vsphere-vcenter-server-65u3w-release-notes.pdf"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-6.0",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "6.0",
+      "label": "6.0",
+      "lts": false,
+      "release_date": "2015-03-12",
+      "status": "eol",
+      "latest_version": "6.0 U3j",
+      "latest_release_date": "2019-09-12",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2020-03-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-03-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "6.0 U3j",
+          "date": "2019-09-12",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://web.archive.org/web/20220224150310/https://docs.vmware.com/en/VMware-vSphere/6.0/rn/vsphere-vcenter-server-60u3j-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-5.5",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "5.5",
+      "label": "5.5",
+      "lts": false,
+      "release_date": "2013-09-19",
+      "status": "eol",
+      "latest_version": "5.5 U3k",
+      "latest_release_date": "2018-09-14",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2018-09-19",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2018-09-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "5.5 U3k",
+          "date": "2018-09-14",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://web.archive.org/web/20210921075441/https://docs.vmware.com/en/VMware-vSphere/5.5/rn/vsphere-vcenter-server-55u3j-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-5.1",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "5.1",
+      "label": "5.1",
+      "lts": false,
+      "release_date": "2012-08-13",
+      "status": "eol",
+      "latest_version": "5.1 U3d",
+      "latest_release_date": "2016-05-19",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2016-08-24",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-08-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "5.1 U3d",
+          "date": "2016-05-19",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-5.0",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "5.0",
+      "label": "5.0",
+      "lts": false,
+      "release_date": "2011-08-24",
+      "status": "eol",
+      "latest_version": "5.0 U3g",
+      "latest_release_date": "2016-05-19",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2016-08-24",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-08-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "5.0 U3g",
+          "date": "2016-05-19",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-vcenter-4",
+      "product": "vmware-vcenter",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "branch": "4",
+      "label": "4",
+      "lts": false,
+      "release_date": "2009-05-21",
+      "status": "eol",
+      "latest_version": "4.1 U3a",
+      "latest_release_date": "2013-01-31",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2014-05-21",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2014-05-21",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/vcenter"
+      },
+      "releases": [
+        {
+          "version": "4.1 U3a",
+          "date": "2013-01-31",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "product": "vmware-esxi",
+  "label": "VMware ESXi",
+  "vendor": "Broadcom (VMware)",
+  "category": "os",
+  "branches": [
+    {
+      "id": "vmware-esxi-9.1",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "9.1",
+      "label": "9.1",
+      "lts": false,
+      "release_date": "2026-05-12",
+      "status": "active",
+      "latest_version": "9.1.1.0",
+      "latest_release_date": "2026-09-03",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2028-08-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2028-08-12",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "9.1.1.0",
+          "date": "2026-09-03",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/release-notes/vmware-cloud-foundation-9-1-1-0-release-notes/esx-9-1-1-0-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-9.0",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "9.0",
+      "label": "9.0",
+      "lts": false,
+      "release_date": "2025-06-17",
+      "status": "active",
+      "latest_version": "9.0.2.0100",
+      "latest_release_date": "2026-07-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2027-09-17",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-09-17",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "9.0.2.0100",
+          "date": "2026-07-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/release-notes/patch-releases-9-0-0-x/vsphere/esx/esx-9-0-2-0100-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-8.0",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "8.0",
+      "label": "8.0",
+      "lts": false,
+      "release_date": "2022-10-11",
+      "status": "active",
+      "latest_version": "8.0 Update 3k",
+      "latest_release_date": "2026-07-29",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2027-10-11",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-10-11",
+        "declared_eol": false,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "8.0 Update 3k",
+          "date": "2026-07-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/release-notes/esxi-update-and-patch-release-notes/vsphere-esxi-80u3k-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-7.0",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "7.0",
+      "label": "7.0",
+      "lts": false,
+      "release_date": "2020-04-02",
+      "status": "eol",
+      "latest_version": "7.0 Update 3w",
+      "latest_release_date": "2025-07-15",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2025-10-02",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2025-10-02",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "7.0 Update 3w",
+          "date": "2025-07-15",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/release-notes/esxi-update-and-patch-release-notes/vsphere-esxi-70u3w-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-6.7",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "6.7",
+      "label": "6.7",
+      "lts": false,
+      "release_date": "2018-04-17",
+      "status": "eol",
+      "latest_version": "6.7 Update 3w",
+      "latest_release_date": "2024-10-28",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-10-15",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-10-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "6.7 Update 3w",
+          "date": "2024-10-28",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-7/release-notes/vcenter-server-update-and-patch-releases.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-6.5",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "6.5",
+      "label": "6.5",
+      "lts": false,
+      "release_date": "2016-11-15",
+      "status": "eol",
+      "latest_version": "6.5 ESXi650-202403001",
+      "latest_release_date": "2024-03-05",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2022-10-15",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-10-15",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "6.5 ESXi650-202403001",
+          "date": "2024-03-05",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-6.0",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "6.0",
+      "label": "6.0",
+      "lts": false,
+      "release_date": "2015-03-12",
+      "status": "eol",
+      "latest_version": "6.0 EP 25",
+      "latest_release_date": "2020-02-20",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2020-03-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-03-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "6.0 EP 25",
+          "date": "2020-02-20",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://web.archive.org/web/20220710112255/https://docs.vmware.com/en/VMware-vSphere/6.0/rn/esxi600-202002001.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-5.5",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "5.5",
+      "label": "5.5",
+      "lts": false,
+      "release_date": "2013-09-19",
+      "status": "eol",
+      "latest_version": "5.5 Update 3k",
+      "latest_release_date": "2018-09-14",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2018-09-19",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2018-09-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "5.5 Update 3k",
+          "date": "2018-09-14",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://www.findbugzero.com/operational-defect-database/vendors/vmware/defects/57478"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-5.1",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "5.1",
+      "label": "5.1",
+      "lts": false,
+      "release_date": "2012-08-27",
+      "status": "eol",
+      "latest_version": "5.1 Update 3d",
+      "latest_release_date": "2016-05-24",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2016-08-24",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-08-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "5.1 Update 3d",
+          "date": "2016-05-24",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://web.archive.org/web/20190923124908/http://pubs.vmware.com/Release_Notes/en/vsphere/51/vsphere-vcenter-server-51u3d-release-notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "vmware-esxi-5.0",
+      "product": "vmware-esxi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "branch": "5.0",
+      "label": "5.0",
+      "lts": false,
+      "release_date": "2011-07-12",
+      "status": "eol",
+      "latest_version": "5.0 Update 3g",
+      "latest_release_date": "2016-06-14",
+      "eol": {
+        "end_of_active_support": null,
+        "end_of_security_support": "2016-08-24",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-08-24",
+        "declared_eol": true,
+        "labels": {
+          "end_of_security_support": "General Support"
+        },
+        "source_url": "https://endoflife.date/esxi"
+      },
+      "releases": [
+        {
+          "version": "5.0 Update 3g",
+          "date": "2016-06-14",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://web.archive.org/web/20190923125449/https://pubs.vmware.com/Release_Notes/en/vsphere/50/vsp_vc50_u3g_rel_notes.html"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

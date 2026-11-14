@@ -1,0 +1,109 @@
+{
+ "source": "dell_idrac",
+ "result": {
+  "branches": [
+   {
+    "product": "dell-idrac",
+    "branch": "7.30",
+    "label": "iDRAC9 7.30",
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "7.30.65.51",
+      "date": "2026-10-26",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=77JC4"
+     },
+     {
+      "version": "7.30.30.54",
+      "date": "2026-08-12",
+      "security_fix": null,
+      "summary": "Mise à jour jugée urgente par Dell.",
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=P3PPC"
+     }
+    ]
+   },
+   {
+    "product": "dell-idrac",
+    "branch": "7.00",
+    "label": "iDRAC9 7.00",
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "7.00.00.185",
+      "date": "2026-08-27",
+      "security_fix": null,
+      "summary": "Mise à jour jugée urgente par Dell.",
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=K7H6Y"
+     },
+     {
+      "version": "7.00.00.184",
+      "date": "2026-04-09",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=FWMWV"
+     }
+    ]
+   },
+   {
+    "product": "dell-idrac",
+    "branch": "2.86",
+    "label": "iDRAC8 2.86",
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "2.86.86.86",
+      "date": "2024-03-29",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=VWF72"
+     }
+    ]
+   },
+   {
+    "product": "dell-idrac",
+    "branch": "1.30",
+    "label": "iDRAC10 1.30",
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "1.30.61.52",
+      "date": "2026-10-01",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=H01NF"
+     },
+     {
+      "version": "1.30.60.52",
+      "date": "2026-10-01",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=TCYNV"
+     }
+    ]
+   }
+  ],
+  "advisories": []
+ }
+}

@@ -1,0 +1,1810 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "product": "ubuntu",
+  "label": "Ubuntu",
+  "vendor": "Canonical",
+  "category": "os",
+  "branches": [
+    {
+      "id": "ubuntu-26.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "26.10",
+      "label": "26.10 'Stonking Stingray'",
+      "lts": false,
+      "release_date": "2026-10-15",
+      "status": "active",
+      "latest_version": "26.10",
+      "latest_release_date": "2026-10-15",
+      "eol": {
+        "end_of_active_support": "2027-07-01",
+        "end_of_security_support": "2027-07-01",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-07-01",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "26.10",
+          "date": "2026-10-15",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/StonkingStingray/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-26.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "26.04",
+      "label": "26.04 'Resolute Raccoon' (LTS)",
+      "lts": true,
+      "release_date": "2026-04-23",
+      "status": "active",
+      "latest_version": "26.04.1",
+      "latest_release_date": "2026-08-27",
+      "eol": {
+        "end_of_active_support": "2031-05-29",
+        "end_of_security_support": "2031-05-29",
+        "end_of_life": null,
+        "end_of_extended_support": "2036-04-23",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2031-05-29",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "26.04.1",
+          "date": "2026-08-27",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/ResoluteRaccoon/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-25.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "25.10",
+      "label": "25.10 'Questing Quokka'",
+      "lts": false,
+      "release_date": "2025-10-09",
+      "status": "eol",
+      "latest_version": "25.10",
+      "latest_release_date": "2025-10-09",
+      "eol": {
+        "end_of_active_support": "2026-07-01",
+        "end_of_security_support": "2026-07-01",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2026-07-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "25.10",
+          "date": "2025-10-09",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/QuestingQuokka/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-25.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "25.04",
+      "label": "25.04 'Plucky Puffin'",
+      "lts": false,
+      "release_date": "2025-04-17",
+      "status": "eol",
+      "latest_version": "25.04",
+      "latest_release_date": "2025-04-17",
+      "eol": {
+        "end_of_active_support": "2026-01-17",
+        "end_of_security_support": "2026-01-17",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2026-01-17",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "25.04",
+          "date": "2025-04-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/PluckyPuffin/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-24.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "24.10",
+      "label": "24.10 'Oracular Oriole'",
+      "lts": false,
+      "release_date": "2024-10-10",
+      "status": "eol",
+      "latest_version": "24.10",
+      "latest_release_date": "2024-10-10",
+      "eol": {
+        "end_of_active_support": "2025-07-10",
+        "end_of_security_support": "2025-07-10",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2025-07-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "24.10",
+          "date": "2024-10-10",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/OracularOriole/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-24.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "24.04",
+      "label": "24.04 'Noble Numbat' (LTS)",
+      "lts": true,
+      "release_date": "2024-04-25",
+      "status": "active",
+      "latest_version": "24.04.5",
+      "latest_release_date": "2026-09-10",
+      "eol": {
+        "end_of_active_support": "2029-05-31",
+        "end_of_security_support": "2029-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2034-04-25",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2029-05-31",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "24.04.5",
+          "date": "2026-09-10",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/NobleNumbat/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-23.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "23.10",
+      "label": "23.10 'Mantic Minotaur'",
+      "lts": false,
+      "release_date": "2023-10-12",
+      "status": "eol",
+      "latest_version": "23.10",
+      "latest_release_date": "2023-10-12",
+      "eol": {
+        "end_of_active_support": "2024-07-12",
+        "end_of_security_support": "2024-07-12",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2024-07-12",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "23.10",
+          "date": "2023-10-12",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/ManticMinotaur/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-23.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "23.04",
+      "label": "23.04 'Lunar Lobster'",
+      "lts": false,
+      "release_date": "2023-04-20",
+      "status": "eol",
+      "latest_version": "23.04",
+      "latest_release_date": "2023-04-20",
+      "eol": {
+        "end_of_active_support": "2024-01-20",
+        "end_of_security_support": "2024-01-20",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2024-01-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "23.04",
+          "date": "2023-04-20",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/LunarLobster/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-22.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "22.10",
+      "label": "22.10 'Kinetic Kudu'",
+      "lts": false,
+      "release_date": "2022-10-20",
+      "status": "eol",
+      "latest_version": "22.10",
+      "latest_release_date": "2022-10-20",
+      "eol": {
+        "end_of_active_support": "2023-07-20",
+        "end_of_security_support": "2023-07-20",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2023-07-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "22.10",
+          "date": "2022-10-20",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/KineticKudu/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-22.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "22.04",
+      "label": "22.04 'Jammy Jellyfish' (LTS)",
+      "lts": true,
+      "release_date": "2022-04-21",
+      "status": "active",
+      "latest_version": "22.04.5",
+      "latest_release_date": "2024-09-12",
+      "eol": {
+        "end_of_active_support": "2024-09-30",
+        "end_of_security_support": "2027-06-01",
+        "end_of_life": null,
+        "end_of_extended_support": "2032-04-21",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2027-06-01",
+        "declared_eol": false,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "22.04.5",
+          "date": "2024-09-12",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/JammyJellyfish/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-21.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "21.10",
+      "label": "21.10 'Impish Indri'",
+      "lts": false,
+      "release_date": "2021-10-14",
+      "status": "eol",
+      "latest_version": "21.10",
+      "latest_release_date": "2021-10-14",
+      "eol": {
+        "end_of_active_support": "2022-07-14",
+        "end_of_security_support": "2022-07-14",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-07-14",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "21.10",
+          "date": "2021-10-14",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/ImpishIndri/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-21.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "21.04",
+      "label": "21.04 'Hirsute Hippo'",
+      "lts": false,
+      "release_date": "2021-04-22",
+      "status": "eol",
+      "latest_version": "21.04",
+      "latest_release_date": "2021-04-22",
+      "eol": {
+        "end_of_active_support": "2022-01-20",
+        "end_of_security_support": "2022-01-20",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2022-01-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "21.04",
+          "date": "2021-04-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/HirsuteHippo/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-20.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "20.10",
+      "label": "20.10 'Groovy Gorilla'",
+      "lts": false,
+      "release_date": "2020-10-22",
+      "status": "eol",
+      "latest_version": "20.10",
+      "latest_release_date": "2020-10-22",
+      "eol": {
+        "end_of_active_support": "2021-07-22",
+        "end_of_security_support": "2021-07-22",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2021-07-22",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "20.10",
+          "date": "2020-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/GroovyGorilla/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-20.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "20.04",
+      "label": "20.04 'Focal Fossa' (LTS)",
+      "lts": true,
+      "release_date": "2020-04-23",
+      "status": "eol",
+      "latest_version": "20.04.6",
+      "latest_release_date": "2023-03-23",
+      "eol": {
+        "end_of_active_support": "2022-10-01",
+        "end_of_security_support": "2025-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2030-04-23",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2025-05-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "20.04.6",
+          "date": "2023-03-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/FocalFossa/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-19.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "19.10",
+      "label": "19.10 'Eoan Ermine'",
+      "lts": false,
+      "release_date": "2019-10-17",
+      "status": "eol",
+      "latest_version": "19.10",
+      "latest_release_date": "2019-10-17",
+      "eol": {
+        "end_of_active_support": "2020-07-06",
+        "end_of_security_support": "2020-07-06",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-07-06",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "19.10",
+          "date": "2019-10-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/EoanErmine/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-19.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "19.04",
+      "label": "19.04 'Disco Dingo'",
+      "lts": false,
+      "release_date": "2019-04-18",
+      "status": "eol",
+      "latest_version": "19.04",
+      "latest_release_date": "2019-04-18",
+      "eol": {
+        "end_of_active_support": "2020-01-23",
+        "end_of_security_support": "2020-01-23",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2020-01-23",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "19.04",
+          "date": "2019-04-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/DiscoDingo/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-18.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "18.10",
+      "label": "18.10 'Cosmic Cuttlefish'",
+      "lts": false,
+      "release_date": "2018-10-18",
+      "status": "eol",
+      "latest_version": "18.10",
+      "latest_release_date": "2018-10-18",
+      "eol": {
+        "end_of_active_support": "2019-07-18",
+        "end_of_security_support": "2019-07-18",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2019-07-18",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "18.10",
+          "date": "2018-10-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/CosmicCuttlefish/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-18.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "18.04",
+      "label": "18.04 'Bionic Beaver' (LTS)",
+      "lts": true,
+      "release_date": "2018-04-26",
+      "status": "eol",
+      "latest_version": "18.04.6",
+      "latest_release_date": "2021-09-17",
+      "eol": {
+        "end_of_active_support": "2023-05-31",
+        "end_of_security_support": "2023-05-31",
+        "end_of_life": null,
+        "end_of_extended_support": "2028-04-26",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2023-05-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "18.04.6",
+          "date": "2021-09-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-17.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "17.10",
+      "label": "17.10 'Artful Aardvark'",
+      "lts": false,
+      "release_date": "2017-10-19",
+      "status": "eol",
+      "latest_version": "17.10",
+      "latest_release_date": "2017-10-19",
+      "eol": {
+        "end_of_active_support": "2018-07-19",
+        "end_of_security_support": "2018-07-19",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2018-07-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "17.10",
+          "date": "2017-10-19",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/ArtfulAardvark/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-17.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "17.04",
+      "label": "17.04 'Zesty Zapus'",
+      "lts": false,
+      "release_date": "2017-04-13",
+      "status": "eol",
+      "latest_version": "17.04",
+      "latest_release_date": "2017-04-13",
+      "eol": {
+        "end_of_active_support": "2018-01-13",
+        "end_of_security_support": "2018-01-13",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2018-01-13",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "17.04",
+          "date": "2017-04-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/ZestyZapus/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-16.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "16.10",
+      "label": "16.10 'Yakkety Yak'",
+      "lts": false,
+      "release_date": "2016-10-13",
+      "status": "eol",
+      "latest_version": "16.10",
+      "latest_release_date": "2016-10-13",
+      "eol": {
+        "end_of_active_support": "2017-07-20",
+        "end_of_security_support": "2017-07-20",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2017-07-20",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "16.10",
+          "date": "2016-10-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/YakketyYak/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-16.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "16.04",
+      "label": "16.04 'Xenial Xerus' (LTS)",
+      "lts": true,
+      "release_date": "2016-04-21",
+      "status": "eol",
+      "latest_version": "16.04.7",
+      "latest_release_date": "2020-08-13",
+      "eol": {
+        "end_of_active_support": "2021-04-02",
+        "end_of_security_support": "2021-04-02",
+        "end_of_life": null,
+        "end_of_extended_support": "2026-04-02",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2021-04-02",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "16.04.7",
+          "date": "2020-08-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/XenialXerus/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-15.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "15.10",
+      "label": "15.10 'Wily Werewolf'",
+      "lts": false,
+      "release_date": "2015-10-22",
+      "status": "eol",
+      "latest_version": "15.10",
+      "latest_release_date": "2015-10-22",
+      "eol": {
+        "end_of_active_support": "2016-07-28",
+        "end_of_security_support": "2016-07-28",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-07-28",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "15.10",
+          "date": "2015-10-22",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/WilyWerewolf/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-15.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "15.04",
+      "label": "15.04 'Vivid Vervet'",
+      "lts": false,
+      "release_date": "2015-04-23",
+      "status": "eol",
+      "latest_version": "15.04",
+      "latest_release_date": "2015-04-23",
+      "eol": {
+        "end_of_active_support": "2016-02-04",
+        "end_of_security_support": "2016-02-04",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2016-02-04",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "15.04",
+          "date": "2015-04-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/VividVervet/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-14.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "14.10",
+      "label": "14.10 'Utopic Unicorn'",
+      "lts": false,
+      "release_date": "2014-10-23",
+      "status": "eol",
+      "latest_version": "14.10",
+      "latest_release_date": "2014-10-23",
+      "eol": {
+        "end_of_active_support": "2015-07-23",
+        "end_of_security_support": "2015-07-23",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2015-07-23",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "14.10",
+          "date": "2014-10-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/UtopicUnicorn/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-14.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "14.04",
+      "label": "14.04 'Trusty Tahr' (LTS)",
+      "lts": true,
+      "release_date": "2014-04-17",
+      "status": "eol",
+      "latest_version": "14.04.6",
+      "latest_release_date": "2019-03-07",
+      "eol": {
+        "end_of_active_support": "2019-04-02",
+        "end_of_security_support": "2019-04-02",
+        "end_of_life": null,
+        "end_of_extended_support": "2024-04-02",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2019-04-02",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "14.04.6",
+          "date": "2019-03-07",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-13.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "13.10",
+      "label": "13.10 'Saucy Salamander'",
+      "lts": false,
+      "release_date": "2013-10-17",
+      "status": "eol",
+      "latest_version": "13.10",
+      "latest_release_date": "2013-10-17",
+      "eol": {
+        "end_of_active_support": "2014-07-17",
+        "end_of_security_support": "2014-07-17",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2014-07-17",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "13.10",
+          "date": "2013-10-17",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/SaucySalamander/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-13.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "13.04",
+      "label": "13.04 'Raring Ringtail'",
+      "lts": false,
+      "release_date": "2013-04-25",
+      "status": "eol",
+      "latest_version": "13.04",
+      "latest_release_date": "2013-04-25",
+      "eol": {
+        "end_of_active_support": "2014-01-27",
+        "end_of_security_support": "2014-01-27",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2014-01-27",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "13.04",
+          "date": "2013-04-25",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/RaringRingtail/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-12.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "12.10",
+      "label": "12.10 'Quantal Quetzal'",
+      "lts": false,
+      "release_date": "2012-10-18",
+      "status": "eol",
+      "latest_version": "12.10",
+      "latest_release_date": "2012-10-18",
+      "eol": {
+        "end_of_active_support": "2014-05-16",
+        "end_of_security_support": "2014-05-16",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2014-05-16",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "12.10",
+          "date": "2012-10-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/QuantalQuetzal/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-12.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "12.04",
+      "label": "12.04 'Precise Pangolin' (LTS)",
+      "lts": true,
+      "release_date": "2012-04-26",
+      "status": "eol",
+      "latest_version": "12.04.5",
+      "latest_release_date": "2014-08-07",
+      "eol": {
+        "end_of_active_support": "2017-04-28",
+        "end_of_security_support": "2017-04-28",
+        "end_of_life": null,
+        "end_of_extended_support": "2019-04-26",
+        "trigger": "end_of_security_support",
+        "trigger_date": "2017-04-28",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "12.04.5",
+          "date": "2014-08-07",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/PrecisePangolin/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-11.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "11.10",
+      "label": "11.10 'Oneiric Ocelot'",
+      "lts": false,
+      "release_date": "2011-10-13",
+      "status": "eol",
+      "latest_version": "11.10",
+      "latest_release_date": "2011-10-13",
+      "eol": {
+        "end_of_active_support": "2013-05-09",
+        "end_of_security_support": "2013-05-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2013-05-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "11.10",
+          "date": "2011-10-13",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/OneiricOcelot/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-11.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "11.04",
+      "label": "11.04 'Natty Narwhal'",
+      "lts": false,
+      "release_date": "2011-04-28",
+      "status": "eol",
+      "latest_version": "11.04",
+      "latest_release_date": "2011-04-28",
+      "eol": {
+        "end_of_active_support": "2012-10-28",
+        "end_of_security_support": "2012-10-28",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2012-10-28",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "11.04",
+          "date": "2011-04-28",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/NattyNarwhal/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-10.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "10.10",
+      "label": "10.10 'Maverick Meerkat'",
+      "lts": false,
+      "release_date": "2010-10-10",
+      "status": "eol",
+      "latest_version": "10.10",
+      "latest_release_date": "2010-10-10",
+      "eol": {
+        "end_of_active_support": "2012-04-10",
+        "end_of_security_support": "2012-04-10",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2012-04-10",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "10.10",
+          "date": "2010-10-10",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/MaverickMeerkat/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-10.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "10.04",
+      "label": "10.04 'Lucid Lynx' (LTS)",
+      "lts": true,
+      "release_date": "2010-04-29",
+      "status": "eol",
+      "latest_version": "10.04.4",
+      "latest_release_date": "2012-02-16",
+      "eol": {
+        "end_of_active_support": "2013-05-09",
+        "end_of_security_support": "2013-05-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2013-05-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "10.04.4",
+          "date": "2012-02-16",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/LucidLynx/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-9.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "9.10",
+      "label": "9.10 'Karmic Koala'",
+      "lts": false,
+      "release_date": "2009-10-29",
+      "status": "eol",
+      "latest_version": "9.10",
+      "latest_release_date": "2009-10-29",
+      "eol": {
+        "end_of_active_support": "2011-04-30",
+        "end_of_security_support": "2011-04-30",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2011-04-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "9.10",
+          "date": "2009-10-29",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/KarmicKoala/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-9.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "9.04",
+      "label": "9.04 'Jaunty Jackalope'",
+      "lts": false,
+      "release_date": "2009-04-23",
+      "status": "eol",
+      "latest_version": "9.04",
+      "latest_release_date": "2009-04-23",
+      "eol": {
+        "end_of_active_support": "2010-10-23",
+        "end_of_security_support": "2010-10-23",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2010-10-23",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "9.04",
+          "date": "2009-04-23",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/JauntyJackalope/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-8.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "8.10",
+      "label": "8.10 'Intrepid Ibex'",
+      "lts": false,
+      "release_date": "2008-10-30",
+      "status": "eol",
+      "latest_version": "8.10",
+      "latest_release_date": "2008-10-30",
+      "eol": {
+        "end_of_active_support": "2010-04-30",
+        "end_of_security_support": "2010-04-30",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2010-04-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "8.10",
+          "date": "2008-10-30",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-8.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "8.04",
+      "label": "8.04 'Hardy Heron' (LTS)",
+      "lts": true,
+      "release_date": "2008-04-24",
+      "status": "eol",
+      "latest_version": "8.04.4",
+      "latest_release_date": "2010-01-28",
+      "eol": {
+        "end_of_active_support": "2013-05-09",
+        "end_of_security_support": "2013-05-09",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2013-05-09",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "8.04.4",
+          "date": "2010-01-28",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-7.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "7.10",
+      "label": "7.10 'Gutsy Gibbon'",
+      "lts": false,
+      "release_date": "2007-10-18",
+      "status": "eol",
+      "latest_version": "7.10",
+      "latest_release_date": "2007-10-18",
+      "eol": {
+        "end_of_active_support": "2009-04-18",
+        "end_of_security_support": "2009-04-18",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2009-04-18",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "7.10",
+          "date": "2007-10-18",
+          "security_fix": null,
+          "summary": null,
+          "url": "https://wiki.ubuntu.com/GutsyGibbon/ReleaseNotes/"
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-7.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "7.04",
+      "label": "7.04 'Feisty Fawn'",
+      "lts": false,
+      "release_date": "2007-04-19",
+      "status": "eol",
+      "latest_version": "7.04",
+      "latest_release_date": "2007-04-19",
+      "eol": {
+        "end_of_active_support": "2008-10-19",
+        "end_of_security_support": "2008-10-19",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2008-10-19",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "7.04",
+          "date": "2007-04-19",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-6.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "6.10",
+      "label": "6.10 'Edgy Eft'",
+      "lts": false,
+      "release_date": "2006-10-26",
+      "status": "eol",
+      "latest_version": "6.10",
+      "latest_release_date": "2006-10-26",
+      "eol": {
+        "end_of_active_support": "2006-10-26",
+        "end_of_security_support": "2008-04-26",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2008-04-26",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "6.10",
+          "date": "2006-10-26",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-6.06",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "6.06",
+      "label": "6.06 'Dapper Drake' (LTS)",
+      "lts": true,
+      "release_date": "2006-06-01",
+      "status": "eol",
+      "latest_version": "6.06.2",
+      "latest_release_date": "2008-01-21",
+      "eol": {
+        "end_of_active_support": "2011-06-01",
+        "end_of_security_support": "2011-06-01",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2011-06-01",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "6.06.2",
+          "date": "2008-01-21",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-5.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "5.10",
+      "label": "5.10 'Breezy Badger'",
+      "lts": false,
+      "release_date": "2005-10-12",
+      "status": "eol",
+      "latest_version": "5.10",
+      "latest_release_date": "2005-10-12",
+      "eol": {
+        "end_of_active_support": "2007-04-13",
+        "end_of_security_support": "2007-04-13",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2007-04-13",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "5.10",
+          "date": "2005-10-12",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-5.04",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "5.04",
+      "label": "5.04 'Hoary Hedgehog'",
+      "lts": false,
+      "release_date": "2005-04-08",
+      "status": "eol",
+      "latest_version": "5.04",
+      "latest_release_date": "2005-04-08",
+      "eol": {
+        "end_of_active_support": "2006-10-31",
+        "end_of_security_support": "2006-10-31",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2006-10-31",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "5.04",
+          "date": "2005-04-08",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    },
+    {
+      "id": "ubuntu-4.10",
+      "product": "ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "branch": "4.10",
+      "label": "4.10 'Warty Warthog'",
+      "lts": false,
+      "release_date": "2004-10-26",
+      "status": "eol",
+      "latest_version": "4.10",
+      "latest_release_date": "2004-10-26",
+      "eol": {
+        "end_of_active_support": "2004-10-26",
+        "end_of_security_support": "2006-04-30",
+        "end_of_life": null,
+        "end_of_extended_support": null,
+        "trigger": "end_of_security_support",
+        "trigger_date": "2006-04-30",
+        "declared_eol": true,
+        "labels": {
+          "end_of_active_support": "Hardware & Maintenance",
+          "end_of_security_support": "Maintenance & Security Support",
+          "end_of_extended_support": "Expanded Security Maintenance"
+        },
+        "source_url": "https://endoflife.date/ubuntu"
+      },
+      "releases": [
+        {
+          "version": "4.10",
+          "date": "2004-10-26",
+          "security_fix": null,
+          "summary": null,
+          "url": null
+        }
+      ],
+      "sources": [
+        "endoflife"
+      ]
+    }
+  ]
+}

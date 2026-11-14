@@ -1,0 +1,88 @@
+{
+ "source": "dell_advisories",
+ "result": {
+  "branches": [],
+  "advisories": [
+   {
+    "id": "DSA-2026-392",
+    "source": "dell",
+    "vendor": "Dell",
+    "title": "Dell iDRAC9, iDRAC10 : CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "published": "2026-09-09T16:02:57Z",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000504998/dsa-2026-392-security-update-for-dell-idrac9-and-idrac10-vulnerability",
+    "updated": "2026-09-11T03:56:14Z",
+    "severity": "high",
+    "cvss": 7.2,
+    "cves": [
+     "CVE-2026-23855"
+    ],
+    "summary": "Versions corrigées : iDRAC9 7.30.10.50, 7.00.00.184 ; iDRAC10 1.30.30.50. Dell iDRAC9, 14G versions prior to 7.00.00.184, 15G/16G versions prior to 7.30.10.50, and Dell iDRAC10, 17G versions prior to 1.30.30.50, contain an Improper Neutralization of Special Elements used in an OS Command ('OS…",
+    "affected": [
+     "dell-idrac-7.30",
+     "dell-idrac-7.00",
+     "dell-idrac-1.30"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "DSA-2026-374",
+    "source": "dell",
+    "vendor": "Dell",
+    "title": "Dell iDRAC9 : CWE-284: Improper Access Control",
+    "published": "2026-08-26T18:16:42Z",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000502514/dsa-2026-374-security-update-for-dell-idrac9-vulnerability",
+    "updated": "2026-08-26T19:46:27Z",
+    "severity": "medium",
+    "cvss": 5.9,
+    "cves": [
+     "CVE-2026-79940"
+    ],
+    "summary": "Versions corrigées : iDRAC9 7.20.30.50, 7.00.00.182. Dell iDRAC9, 14G versions prior to 7.00.00.182 and 15G/16G versions prior to 7.20.30.50, contains an Improper Access Control vulnerability.",
+    "affected": [
+     "dell-idrac-7.20",
+     "dell-idrac-7.00"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "DSA-2026-348",
+    "source": "dell",
+    "vendor": "Dell",
+    "title": "Dell iDRAC9, iDRAC10 : CWE-1330: Remanent Data Readable after Memory Erase",
+    "published": "2026-08-17T13:04:52Z",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000497902/dsa-2026-348-security-update-for-dell-idrac9-and-idrac10-vulnerability",
+    "updated": "2026-08-17T14:31:28Z",
+    "severity": "low",
+    "cvss": 3.5,
+    "cves": [
+     "CVE-2026-70412"
+    ],
+    "summary": "Versions corrigées : iDRAC9 7.20.30.50 ; iDRAC10 1.20.60.50. Dell iDRAC9, versions prior to 7.20.30.50, and Dell iDRAC10, version prior to 1.20.60.50, contain a Remanent Data Readable after Memory Erase vulnerability.",
+    "affected": [
+     "dell-idrac-7.20",
+     "dell-idrac-1.20"
+    ],
+    "attribution": null
+   },
+   {
+    "id": "DSA-2026-187",
+    "source": "dell",
+    "vendor": "Dell",
+    "title": "Dell iDRAC10 : CWE-522: Insufficiently Protected Credentials",
+    "published": "2026-04-29T03:50:56Z",
+    "url": "https://www.dell.com/support/kbdoc/en-us/000452298/dsa-2026-187-security-update-for-dell-idrac10-vulnerability",
+    "updated": "2026-04-30T03:55:52Z",
+    "severity": "high",
+    "cvss": 7.1,
+    "cves": [
+     "CVE-2026-35155"
+    ],
+    "summary": "Versions corrigées : iDRAC10 1.30.10.50. Dell iDRAC10, versions 1.20.70.50 and 1.30.05.10, contains an Insufficiently Protected Credentials vulnerability. A race condition vulnerability exists that could allow an authenticated low‑privileged attacker to gain elevated access.",
+    "affected": [
+     "dell-idrac-1.30"
+    ],
+    "attribution": null
+   }
+  ]
+ }
+}

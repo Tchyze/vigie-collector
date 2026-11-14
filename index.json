@@ -1,0 +1,498 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T06:32:36Z",
+  "eol_soon_months": 6,
+  "products": [
+    {
+      "id": "debian",
+      "label": "Debian",
+      "vendor": "Debian",
+      "category": "os",
+      "file": "products/debian.json",
+      "branch_count": 18,
+      "status_counts": {
+        "active": 2,
+        "eol_soon": 0,
+        "eol": 16
+      }
+    },
+    {
+      "id": "rhel",
+      "label": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "category": "os",
+      "file": "products/rhel.json",
+      "branch_count": 7,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 0,
+        "eol": 4
+      }
+    },
+    {
+      "id": "rocky-linux",
+      "label": "Rocky Linux",
+      "vendor": "Rocky Enterprise Software Foundation",
+      "category": "os",
+      "file": "products/rocky-linux.json",
+      "branch_count": 3,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 0,
+        "eol": 0
+      }
+    },
+    {
+      "id": "windows-server",
+      "label": "Windows Server",
+      "vendor": "Microsoft",
+      "category": "os",
+      "file": "products/windows-server.json",
+      "branch_count": 20,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 1,
+        "eol": 16
+      }
+    },
+    {
+      "id": "ubuntu",
+      "label": "Ubuntu",
+      "vendor": "Canonical",
+      "category": "os",
+      "file": "products/ubuntu.json",
+      "branch_count": 45,
+      "status_counts": {
+        "active": 4,
+        "eol_soon": 0,
+        "eol": 41
+      }
+    },
+    {
+      "id": "vmware-esxi",
+      "label": "VMware ESXi",
+      "vendor": "Broadcom (VMware)",
+      "category": "os",
+      "file": "products/vmware-esxi.json",
+      "branch_count": 10,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 0,
+        "eol": 7
+      }
+    },
+    {
+      "id": "proxmox-ve",
+      "label": "Proxmox VE",
+      "vendor": "Proxmox",
+      "category": "os",
+      "file": "products/proxmox-ve.json",
+      "branch_count": 9,
+      "status_counts": {
+        "active": 1,
+        "eol_soon": 0,
+        "eol": 8
+      }
+    },
+    {
+      "id": "fortios",
+      "label": "FortiOS",
+      "vendor": "Fortinet",
+      "category": "firewall",
+      "file": "products/fortios.json",
+      "branch_count": 8,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 0,
+        "eol": 5
+      }
+    },
+    {
+      "id": "panos",
+      "label": "PAN-OS",
+      "vendor": "Palo Alto Networks",
+      "category": "firewall",
+      "file": "products/panos.json",
+      "branch_count": 26,
+      "status_counts": {
+        "active": 2,
+        "eol_soon": 2,
+        "eol": 22
+      }
+    },
+    {
+      "id": "stormshield-sns",
+      "label": "Stormshield SNS",
+      "vendor": "Stormshield",
+      "category": "firewall",
+      "file": "products/stormshield-sns.json",
+      "branch_count": 15,
+      "status_counts": {
+        "active": 2,
+        "eol_soon": 0,
+        "eol": 13
+      }
+    },
+    {
+      "id": "cisco-ios-xe",
+      "label": "Cisco IOS XE",
+      "vendor": "Cisco",
+      "category": "switch",
+      "file": "products/cisco-ios-xe.json",
+      "branch_count": 20,
+      "status_counts": {
+        "active": 4,
+        "eol_soon": 0,
+        "eol": 16
+      }
+    },
+    {
+      "id": "vmware-vcenter",
+      "label": "VMware vCenter Server",
+      "vendor": "Broadcom (VMware)",
+      "category": "service",
+      "file": "products/vmware-vcenter.json",
+      "branch_count": 11,
+      "status_counts": {
+        "active": 3,
+        "eol_soon": 0,
+        "eol": 8
+      }
+    },
+    {
+      "id": "dell-idrac",
+      "label": "Dell iDRAC",
+      "vendor": "Dell",
+      "category": "server",
+      "file": "products/dell-idrac.json",
+      "branch_count": 4,
+      "status_counts": {
+        "active": 2,
+        "eol_soon": 1,
+        "eol": 1
+      }
+    },
+    {
+      "id": "hpe-ilo",
+      "label": "HPE iLO",
+      "vendor": "HPE",
+      "category": "server",
+      "file": "products/hpe-ilo.json",
+      "branch_count": 4,
+      "status_counts": {
+        "active": 4,
+        "eol_soon": 0,
+        "eol": 0
+      }
+    },
+    {
+      "id": "nginx",
+      "label": "nginx",
+      "vendor": "F5 NGINX",
+      "category": "service",
+      "file": "products/nginx.json",
+      "branch_count": 32,
+      "status_counts": {
+        "active": 2,
+        "eol_soon": 0,
+        "eol": 30
+      }
+    },
+    {
+      "id": "apache-httpd",
+      "label": "Apache HTTP Server",
+      "vendor": "Apache Software Foundation",
+      "category": "service",
+      "file": "products/apache-httpd.json",
+      "branch_count": 4,
+      "status_counts": {
+        "active": 1,
+        "eol_soon": 0,
+        "eol": 3
+      }
+    },
+    {
+      "id": "openssh",
+      "label": "OpenSSH",
+      "vendor": "OpenBSD",
+      "category": "service",
+      "file": "products/openssh.json",
+      "branch_count": 1,
+      "status_counts": {
+        "active": 1,
+        "eol_soon": 0,
+        "eol": 0
+      }
+    }
+  ],
+  "advisories": {
+    "file": "advisories.json",
+    "count": 2101
+  },
+  "sources": [
+    {
+      "name": "endoflife",
+      "label": "endoflife.date",
+      "kind": "versions",
+      "status": "ok",
+      "count": 228,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://endoflife.date",
+      "attribution": null
+    },
+    {
+      "name": "nginx",
+      "label": "nginx.org (CHANGES)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 29,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://nginx.org/en/CHANGES",
+      "attribution": null
+    },
+    {
+      "name": "httpd",
+      "label": "Apache httpd (tags et CHANGES_2.4)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 1,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://httpd.apache.org/",
+      "attribution": null
+    },
+    {
+      "name": "openssh",
+      "label": "OpenSSH portable (tags)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 1,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.openssh.org/",
+      "attribution": null
+    },
+    {
+      "name": "fortinet_firmware",
+      "label": "Fortinet (annonces de firmware)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 4,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://support.fortinet.com/",
+      "attribution": null
+    },
+    {
+      "name": "cisco_openvuln",
+      "label": "Cisco PSIRT openVuln (versions IOS XE)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 35,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://developer.cisco.com/docs/psirt/",
+      "attribution": "Source : Cisco Systems, Inc. — Cisco Security Advisories (usage non commercial)"
+    },
+    {
+      "name": "hpe_ilo",
+      "label": "HPE iLO (dépôt de firmware HPE)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 4,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://downloads.linux.hpe.com/SDR/",
+      "attribution": null
+    },
+    {
+      "name": "dell_idrac",
+      "label": "Dell iDRAC (catalogue Dell)",
+      "kind": "versions",
+      "status": "ok",
+      "count": 4,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.dell.com/support/kbdoc/000178115",
+      "attribution": null
+    },
+    {
+      "name": "fortinet_psirt",
+      "label": "Fortinet PSIRT (FortiGuard)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 107,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.fortiguard.com/psirt",
+      "attribution": null
+    },
+    {
+      "name": "paloalto",
+      "label": "Palo Alto Networks Security Advisories",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 105,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://security.paloaltonetworks.com/",
+      "attribution": null
+    },
+    {
+      "name": "cisco",
+      "label": "Cisco Security Advisories",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 56,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+      "attribution": "Source : Cisco Systems, Inc. — Cisco Security Advisories (usage non commercial)"
+    },
+    {
+      "name": "certfr",
+      "label": "CERT-FR (avis et alertes)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 176,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.cert.cyber.gouv.fr/",
+      "attribution": null
+    },
+    {
+      "name": "debian_dsa",
+      "label": "Debian Security Advisories (DSA)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 581,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.debian.org/security/",
+      "attribution": null
+    },
+    {
+      "name": "redhat",
+      "label": "Red Hat Security Advisories (RHSA critiques)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 173,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://access.redhat.com/security/security-updates/",
+      "attribution": null
+    },
+    {
+      "name": "rocky",
+      "label": "Rocky Linux Security Advisories (RLSA critiques)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 59,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://errata.rockylinux.org/",
+      "attribution": null
+    },
+    {
+      "name": "microsoft",
+      "label": "Microsoft Security Updates (Windows Server)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 12,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://msrc.microsoft.com/update-guide/",
+      "attribution": null
+    },
+    {
+      "name": "stormshield",
+      "label": "Stormshield Security Advisories",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 10,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://advisories.stormshield.eu/",
+      "attribution": null
+    },
+    {
+      "name": "ubuntu",
+      "label": "Ubuntu Security Notices (USN, via OSV)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 763,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://ubuntu.com/security/notices",
+      "attribution": null
+    },
+    {
+      "name": "vmware",
+      "label": "VMware Security Advisories (Broadcom)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 9,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://support.broadcom.com/web/ecx/security-advisory?segment=VC",
+      "attribution": null
+    },
+    {
+      "name": "hpe_bulletins",
+      "label": "HPE Security Bulletins",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 50,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://support.hpe.com/connect/s/securitybulletinlibrary",
+      "attribution": null
+    },
+    {
+      "name": "dell_advisories",
+      "label": "Dell iDRAC — avis DSA (enregistrements CVE de Dell)",
+      "kind": "advisories",
+      "status": "ok",
+      "count": 4,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.dell.com/support/security/",
+      "attribution": "This product uses the NVD API but is not endorsed or certified by the NVD."
+    },
+    {
+      "name": "cisa_kev",
+      "label": "CISA Known Exploited Vulnerabilities (failles exploitées)",
+      "kind": "enrichment",
+      "status": "ok",
+      "count": 1781,
+      "last_attempt": "2026-11-14T06:32:36Z",
+      "last_success": "2026-11-14T06:32:36Z",
+      "error": null,
+      "home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "attribution": null
+    }
+  ]
+}
