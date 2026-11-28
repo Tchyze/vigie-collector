@@ -1,0 +1,95 @@
+{
+ "source": "fortinet_firmware",
+ "result": {
+  "branches": [
+   {
+    "product": "fortios",
+    "branch": "7.4",
+    "label": null,
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "7.4.13",
+      "date": "2026-10-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+     }
+    ]
+   },
+   {
+    "product": "fortios",
+    "branch": "7.2",
+    "label": null,
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "7.2.14",
+      "date": "2026-10-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+     }
+    ]
+   },
+   {
+    "product": "fortios",
+    "branch": "7.6",
+    "label": null,
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "7.6.8",
+      "date": "2026-10-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+     }
+    ]
+   },
+   {
+    "product": "fortios",
+    "branch": "8.0",
+    "label": null,
+    "lts": null,
+    "release_date": null,
+    "eol_dates": {},
+    "eol_labels": {},
+    "eol_source_url": null,
+    "declared_eol": null,
+    "releases": [
+     {
+      "version": "8.0.2",
+      "date": "2026-10-22",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+     },
+     {
+      "version": "8.0.1",
+      "date": "2026-09-16",
+      "security_fix": null,
+      "summary": null,
+      "url": "https://support.fortinet.com/EndUser/FirmwareImages.aspx"
+     }
+    ]
+   }
+  ],
+  "advisories": []
+ }
+}
